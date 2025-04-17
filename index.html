@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Svadlenka</title>
-  </head>
-  <body>
-    <h1>svadlenka-praha.cz</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Svadlenka</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #262626;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    @media (min-width: 768px) {
+      img {
+        max-width: 400px;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="./logo.png" alt="Svadlenka logo" />
+  <p>in progress...</p>
+</body>
 </html>
