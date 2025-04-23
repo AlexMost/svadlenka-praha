@@ -1,47 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Svadlenka</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #262626;
-      color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-
-    img {
-      max-width: 80%;
-      height: auto;
-    }
-
-    p {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
-
-    @media (min-width: 768px) {
-      img {
-        max-width: 400px;
-      }
-
-      p {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Svadlenka</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <img src="./logo.png" alt="Svadlenka logo" />
-  <p>in progress...</p>
+<main class="main">
+    <nav class="header">
+        <a href="/">
+            <img class="logo" src="img/logo.svg" alt="Svadlenka logo"/>
+        </a>
+        <ul class="menu">
+            <li><a href="#">Služby</a></li>
+            <li><a href="#">Kontakty</a></li>
+        </ul>
+        <button class="hamburger">
+            <img src="img/burger.svg" />
+        </button>
+    </nav>
+</main>
 </body>
 </html>
