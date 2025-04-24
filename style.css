@@ -156,7 +156,7 @@ a {
 
 .hero {
     padding: 50px 30px;
-
+    line-height: 50px;
     h1 {
         font-size: 50px;
     }
