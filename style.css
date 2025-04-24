@@ -73,7 +73,7 @@ a {
     font-style: italic;
     border: 1px solid #c0bcb2;
     background: none;
-    border-radius: 8px; /* ← зробили кути більш скругленими */
+    border-radius: 30px;
     transition: all 0.3s ease;
     line-height: 1;
     color: white;
