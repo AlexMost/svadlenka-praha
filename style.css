@@ -156,7 +156,7 @@ a {
 
 .hero {
     padding: 50px 30px;
-
+    line-height: 50px;
     h1 {
         font-size: 50px;
     }
@@ -183,18 +183,21 @@ a {
         text-align: center;
         h1 {
             font-size: 33px;
+            margin-bottom: 30px;
         }
 
         h2 {
-            font-size: 25px;
+            font-size: 23px;
         }
 
         h3 {
-            font-size: 25px;
+            font-size: 20px;
+            text-align: right;
         }
 
         .schedule {
             font-size: 20px;
+            text-align: right;
         }
     }
 }
