@@ -159,6 +159,7 @@ a {
     padding: 50px 30px;
     line-height: 50px;
     z-index: 1;
+    overflow: hidden;
 
     h1 {
         font-size: 50px;
@@ -211,7 +212,7 @@ a {
     opacity: 0.2;
     background-repeat: no-repeat;
     z-index: -1;
-    background-position: right;
+    background-position: right -125px;
     min-height: 800px;
     @media (max-width: 768px) {
         background-position: right -63px;
