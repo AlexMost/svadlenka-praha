@@ -105,7 +105,7 @@ a {
     }
 
     .menu {
-        margin: auto;
+        margin: auto 0;
         font-size: 28px;
     }
 
@@ -155,8 +155,11 @@ a {
 }
 
 .hero {
+    position: relative;
     padding: 50px 30px;
     line-height: 50px;
+    z-index: 1;
+
     h1 {
         font-size: 50px;
     }
@@ -196,5 +199,22 @@ a {
         .schedule {
             font-size: 20px;
         }
+    }
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./img/svadlenka.png');
+    background-size: contain;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-position: right;
+    min-height: 800px;
+    @media (max-width: 768px) {
+        background-position: right -63px;
+        opacity: 0.1;
     }
 }
