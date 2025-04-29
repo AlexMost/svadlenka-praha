@@ -178,8 +178,19 @@ a {
 
     .schedule {
         margin-top: 30px;
-        font-size: 25px;
+        font-size: 23px;
         margin-bottom: 30px;
+        white-space: nowrap;
+        border-collapse: separate;
+        border-spacing: 30px 0px;
+    }
+
+    .schedule td:nth-child(1) {
+        text-align: right;
+    }
+
+    .schedule td:nth-child(2) {
+        text-align: left;
     }
 
     @media (max-width: 768px) {
@@ -199,6 +210,7 @@ a {
 
         .schedule {
             font-size: 20px;
+            margin: 30px auto;
         }
     }
 }
@@ -219,3 +231,4 @@ a {
         opacity: 0.1;
     }
 }
+
