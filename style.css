@@ -91,11 +91,6 @@ section {
 
 /* UI Components end */
 
-.main {
-    margin: auto;
-    width: 100%;
-}
-
 nav {
     max-width: 1200px;
     margin: auto;
@@ -231,7 +226,7 @@ nav {
     background-position: right -125px;
     min-height: 800px;
     @media (max-width: 768px) {
-        background-position: right -63px;
+        background-position: right -117px;
         opacity: 0.1;
     }
 }
