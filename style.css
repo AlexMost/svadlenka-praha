@@ -67,7 +67,14 @@ a {
 
 section {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 50px 30px;
+    line-height: 50px;
+    @media (max-width: 768px) {
+        line-height: 40px;
+        text-align: center;
+        padding: 40px 30px;
+    }
 }
 
 /* UI Components */
@@ -99,11 +106,17 @@ nav {
 
     .logo {
         width: 270px;
+        @media (max-width: 768px) {
+            width: 150px;
+        }
     }
 
     .menu {
         margin: auto 0;
         font-size: 28px;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     .menu li {
@@ -127,6 +140,9 @@ nav {
         padding: 0;
         align-items: center;
         justify-content: center;
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
 
     .hamburger-btn img {
@@ -139,40 +155,36 @@ nav {
     @media (max-width: 768px) {
         padding-right: 30px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        .logo {
-            width: 150px;
-        }
-
-        .menu {
-            display: none;
-        }
-
-        .hamburger-btn {
-            display: block;
-        }
     }
 }
 
 .hero {
     position: relative;
-    padding: 50px 30px;
-    line-height: 50px;
     z-index: 1;
     overflow: hidden;
 
     h1 {
         font-size: 50px;
+        @media (max-width: 768px) {
+            font-size: 33px;
+        }
     }
 
     h2 {
         color: #d5c18e;
         font-size: 30px;
+        @media (max-width: 768px) {
+            font-size: 25px;
+        }
     }
 
     h3 {
         font-size: 25px;
         color: #c0bcb2;
-        margin-top: 60px
+        margin-top: 60px;
+        @media (max-width: 768px) {
+            font-size: 25px;
+        }
     }
 
     .schedule {
@@ -181,7 +193,11 @@ nav {
         margin-bottom: 30px;
         white-space: nowrap;
         border-collapse: separate;
-        border-spacing: 30px 0px;
+        border-spacing: 30px 0;
+        @media (max-width: 768px) {
+            font-size: 20px;
+            margin: 40px auto;
+        }
     }
 
     .schedule td:nth-child(1) {
@@ -190,27 +206,6 @@ nav {
 
     .schedule td:nth-child(2) {
         text-align: left;
-    }
-
-    @media (max-width: 768px) {
-        line-height: 40px;
-        text-align: center;
-        h1 {
-            font-size: 33px;
-        }
-
-        h2 {
-            font-size: 25px;
-        }
-
-        h3 {
-            font-size: 25px;
-        }
-
-        .schedule {
-            font-size: 20px;
-            margin: 30px auto;
-        }
     }
 }
 
@@ -231,3 +226,10 @@ nav {
     }
 }
 
+.section-title {
+    font-size: 50px;
+    @media (max-width: 768px) {
+        font-size: 33px;
+    }
+    text-align: center;
+}
