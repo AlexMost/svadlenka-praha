@@ -95,13 +95,13 @@ a {
     }
 }
 
-header {
+nav {
     @media (max-width: 768px) {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
 }
 
-.header {
+nav {
     max-width: 1200px;
     margin: auto;
     display: flex;
