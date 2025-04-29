@@ -95,8 +95,15 @@ a {
     }
 }
 
+header {
+    @media (max-width: 768px) {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+}
+
 .header {
-    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 
@@ -140,6 +147,7 @@ a {
     }
 
     @media (max-width: 768px) {
+        padding-right: 30px;
         .logo {
             width: 150px;
         }
