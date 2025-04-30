@@ -233,3 +233,33 @@ nav {
     }
     text-align: center;
 }
+
+.services {
+    display: flex;
+    text-align: center;
+    gap: 50px 140px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .service {
+        margin-top: 80px;
+        width: 300px;
+        img {
+            border-radius: 50%;
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .service-title {
+            line-height: 1.5;
+            font-size: 35px;
+        }
+
+        .service-subtitle {
+            line-height: 1.5;
+            color: #d5c18e;
+            font-size: 20px;
+        }
+    }
+
+}
