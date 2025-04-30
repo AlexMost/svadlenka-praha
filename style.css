@@ -235,13 +235,13 @@ nav {
 }
 
 .services {
+    margin-top: 80px;
     display: flex;
     text-align: center;
-    gap: 50px 120px;
+    gap: 45px 120px;
     flex-wrap: wrap;
     justify-content: center;
     .service {
-        margin-top: 80px;
         width: 300px;
         img {
             border-radius: 50%;
