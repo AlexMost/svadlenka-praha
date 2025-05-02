@@ -97,12 +97,28 @@ section {
 }
 
 /* UI Components end */
+header {
+    @media (max-width: 768px) {
+        position: sticky;
+        top: 0;
+        transition: box-shadow 0.3s ease;
+    }
+    background-color: #262626;
+    z-index: 10;
+}
+
+.shadow {
+    @media (max-width: 768px) {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+}
 
 nav {
     max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    position: sticky;
 
     .logo {
         width: 270px;
@@ -154,7 +170,6 @@ nav {
 
     @media (max-width: 768px) {
         padding-right: 30px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -241,8 +256,10 @@ nav {
     gap: 45px 120px;
     flex-wrap: wrap;
     justify-content: center;
+
     .service {
         width: 300px;
+
         img {
             border-radius: 50%;
             width: 250px;
