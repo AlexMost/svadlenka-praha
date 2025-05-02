@@ -215,18 +215,11 @@ nav {
         white-space: nowrap;
         border-collapse: separate;
         border-spacing: 30px 0;
+        text-align: left;
         @media (max-width: 768px) {
             font-size: 20px;
             margin: 40px auto;
         }
-    }
-
-    .schedule td:nth-child(1) {
-        text-align: right;
-    }
-
-    .schedule td:nth-child(2) {
-        text-align: left;
     }
 }
 
