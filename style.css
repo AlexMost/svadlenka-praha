@@ -232,7 +232,7 @@ nav {
     opacity: 0.2;
     background-repeat: no-repeat;
     z-index: -1;
-    background-position: right -125px;
+    background-position: right -143px;
     min-height: 800px;
     @media (max-width: 768px) {
         background-position: right -117px;
