@@ -117,6 +117,12 @@ header {
     }
 }
 
+.only-desktop {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
 nav {
     max-width: 1200px;
     margin: auto;
@@ -256,6 +262,10 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 
+    @media (max-width: 768px) {
+        margin-top: 40px;
+    }
+
     .service {
         width: 300px;
 
@@ -295,13 +305,16 @@ nav {
     z-index: 999;
     padding: 40px 20px;
     transition: right 0.3s ease;
+
     ul {
         display: block;
         margin: 20px;
         font-size: 30px;
+
         li {
             margin-top: 20px;
         }
+
         li a {
             color: #d5c18e;
         }
@@ -328,4 +341,52 @@ nav {
 .sidebar-overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        margin-top: 40px;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+.place-photo {
+    img {
+        border-radius: 5%;
+        border: 1px solid white;
+    }
+}
+
+.address {
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        @media (max-width: 768px) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            @media (max-width: 768px) {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.contact-schedule {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    gap: 10px;
 }
