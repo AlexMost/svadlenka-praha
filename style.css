@@ -123,6 +123,13 @@ header {
     }
 }
 
+.only-mobile {
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
 nav {
     max-width: 1200px;
     margin: auto;
@@ -391,4 +398,12 @@ nav {
     flex-direction: row;
     align-self: flex-start;
     gap: 10px;
+}
+
+.bottom-place-img {
+    img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 500px;
+    }
 }
