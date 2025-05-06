@@ -420,3 +420,15 @@ nav {
         max-height: 500px;
     }
 }
+
+footer {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #c0bcb2;
+    @media (max-width: 768px) {
+        padding: 0 40px;
+    }
+}
