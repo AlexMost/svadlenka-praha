@@ -432,7 +432,7 @@ footer {
     flex-direction: row;
     gap: 10px;
     @media (max-width: 768px) {
-        padding: 0 40px;
+        padding: 30px 40px;
         flex-direction: column;
     }
 }
