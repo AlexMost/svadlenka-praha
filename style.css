@@ -428,7 +428,11 @@ footer {
     text-align: center;
     justify-content: center;
     color: #c0bcb2;
+    line-height: 1.5;
+    flex-direction: row;
+    gap: 10px;
     @media (max-width: 768px) {
         padding: 0 40px;
+        flex-direction: column;
     }
 }
