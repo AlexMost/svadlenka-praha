@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+import { header } from "./header";
+import { kontakty } from "./kontakty";
+
+export function baseHtml(content = "") {
+  return `
+    <!DOCTYPE html>
 <html lang="cz">
 <head>
     <meta charset="UTF-8"/>
@@ -114,107 +119,10 @@
     </script>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="/">
-            <img class="logo" src="img/logo.svg" alt="Svadlenka logo"/>
-        </a>
-        <ul class="menu">
-            <li><a href="#sluzby">Služby</a></li>
-            <li><a href="#kontakty">Kontakty</a></li>
-        </ul>
-        <div class="hamburger-menu">
-            <a class="telephone-btn" href="tel:+420775240309"><img width="30px" src="img/icons/telephone.svg"/></a>
-            <button class="hamburger-btn">
-                <img src="img/burger.svg" alt="Ikona menu"/>
-            </button>
-        </div>
-    </nav>
-</header>
+${header()}
 <main class="main">
-    <section class="hero">
-        <h1>Krejčovství Švadlenka</h1>
-        <h2>Kvalitní opravna oděvů pod Nuselským mostem</h2>
-        <h3>Rádi vás přivítáme na adrese Jaromírova 726/15</h3>
-        <table class="schedule">
-            <tr>
-                <td>Po - Čt:</td>
-                <td>10:00 - 18:00</td>
-            </tr>
-            <tr>
-                <td>Pátek:</td>
-                <td>10:00 - 16:00</td>
-            </tr>
-        </table>
-        <a href="#kontakty" class="cta-button">Najít nás</a>
-    </section>
-    <section id="sluzby">
-        <div class="section-title">Naše služby</div>
-        <div class="services">
-            <div class="service">
-                <img decoding="async" src="img/services/dziny.webp" loading="lazy" alt="Úprava džín"/>
-                <div class="service-title">Úprava džín</div>
-                <div class="service-subtitle">Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny</div>
-            </div>
-            <div class="service">
-                <img decoding="async" src="img/services/latkove.webp" loading="lazy" alt="Látkové oděvy"/>
-                <div class="service-title">Látkové oděvy</div>
-                <div class="service-subtitle">Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu</div>
-            </div>
-            <div class="service">
-                <img decoding="async" src="img/services/batohy.webp" loading="lazy" alt="Oprava batohu a kabelek"/>
-                <div class="service-title">Oprava batohu a kabelek</div>
-                <div class="service-subtitle">Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu</div>
-            </div>
-            <div class="service">
-                <img decoding="async" src="img/services/zavesy.webp" loading="lazy" alt="Závěsy a záclony"/>
-                <div class="service-title">Závěsy a záclony</div>
-                <div class="service-subtitle">
-                    Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení
-                </div>
-            </div>
-            <div class="service">
-                <img decoding="async" src="img/services/podsivky.webp" loading="lazy" alt="Výměna podšívky"/>
-                <div class="service-title">Výměna podšívky</div>
-                <div class="service-subtitle">Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách</div>
-            </div>
-            <div class="service">
-                <img decoding="async" src="img/services/druku.webp" loading="lazy" alt="Výměna druku"/>
-                <div class="service-title">Výměna druku</div>
-                <div class="service-subtitle">Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích</div>
-            </div>
-        </div>
-    </section>
-    <section id="kontakty">
-        <div class="section-title">Kontakty</div>
-        <div class="contact-info">
-            <div class="address">
-                <address>
-                    <ul class="address">
-                        <li><img width="30px" src="img/icons/location.svg"/> <a
-                                href="https://maps.app.goo.gl/tuCXWGpSLHZmgrTq8">Jaromírova 726/15, Praha 2</a></li>
-                        <li><img width="30px" src="img/icons/telephone.svg"/><a href="tel:+420775240309">+420 775 240
-                            309</a></li>
-                        <li><img width="30px" src="img/icons/email.svg"/><a href="mailto:lorikfavorit@gmail.com">lorikfavorit@gmail.com</a>
-                        </li>
-                    </ul>
-                </address>
-                <div class="contact-schedule">
-                    <img width="30px" height="30px" src="img/icons/schedule.svg"/>
-                    <ul>
-                        <li>Po – Čt: 10:00 – 18:00</li>
-                        <li>Pá: 10:00 – 16:00</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="place-photo only-desktop">
-                <img loading="lazy" decoding="async" src="img/svadlenka-place.webp"/>
-            </div>
-            <div class="place-photo only-desktop">
-                <img loading="lazy" decoding="async" src="img/svadlenka-place-2.webp"/>
-            </div>
-        </div>
-    </section>
+    ${content}
+    ${kontakty()}
     <div class="only-mobile bottom-place-img">
         <img loading="lazy" decoding="async" src="img/svadlenka-place-3.webp"/>
     </div>
@@ -243,8 +151,9 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'G-2670E96B8B');
 </script>
 </body>
 </html>
+    `;
+}
