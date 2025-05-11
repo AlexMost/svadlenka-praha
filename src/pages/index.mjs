@@ -1,7 +1,7 @@
 import { baseHtml } from "../templates/baseHTML.mjs";
 
 export default () => {
-    return baseHtml(`
+  const pageHTML = `
     <section class="hero">
         <h1>Krejčovství Švadlenka</h1>
         <h2>Kvalitní opravna oděvů pod Nuselským mostem</h2>
@@ -97,5 +97,6 @@ export default () => {
           </div>
         </div>
       </section>
-    `)
-}
+    `;
+  return baseHtml({ content: pageHTML });
+};

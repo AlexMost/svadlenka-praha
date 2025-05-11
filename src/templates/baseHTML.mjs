@@ -1,7 +1,11 @@
 import { header } from "./header.mjs";
 import { kontakty } from "./kontakty.mjs";
 
-export function baseHtml(content = "") {
+const defaultMeta = {
+  canonical: "/",
+};
+
+export function baseHtml({ content = "", meta = defaultMeta }) {
   return `
     <!DOCTYPE html>
 <html lang="cs-CZ">
@@ -18,7 +22,7 @@ export function baseHtml(content = "") {
           content="Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.">
     <meta name="keywords"
           content="krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle">
-    <link rel="canonical" href="https://svadlenka-praha.cz/">
+    <link rel="canonical" href="https://svadlenka-praha.cz${meta.canonical}">
     <meta property="og:title" content="Krejčovství Švadlenka – Praha 2">
     <meta property="og:description"
           content="Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.">
