@@ -1,30 +1,30 @@
-import { header } from "./header";
-import { kontakty } from "./kontakty";
+import { header } from "./header.mjs";
+import { kontakty } from "./kontakty.mjs";
 
 export function baseHtml(content = "") {
   return `
     <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs-CZ">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name='theme-color' content='#262626'/>
-    <meta name='msapplication-navbutton-color' content='#262626'/>
-    <meta name='apple-mobile-web-app-status-bar-style' content='#262626'/>
-    <link rel="icon" href="img/favicon-min.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='theme-color' content='#262626'>
+    <meta name='msapplication-navbutton-color' content='#262626'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='#262626'>
+    <link rel="icon" href="img/favicon-min.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2</title>
     <meta name="description"
-          content="Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15."/>
+          content="Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.">
     <meta name="keywords"
-          content="krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle"/>
-    <link rel="canonical" href="https://svadlenka-praha.cz/"/>
-    <meta property="og:title" content="Krejčovství Švadlenka – Praha 2"/>
+          content="krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle">
+    <link rel="canonical" href="https://svadlenka-praha.cz/">
+    <meta property="og:title" content="Krejčovství Švadlenka – Praha 2">
     <meta property="og:description"
-          content="Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15."/>
-    <meta property="og:image" content="https://svadlenka-praha.cz/img/logo.jpg"/>
-    <meta property="og:url" content="https://svadlenka-praha.cz/"/>
-    <meta property="og:type" content="website"/>
+          content="Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.">
+    <meta property="og:image" content="https://svadlenka-praha.cz/img/logo.jpg">
+    <meta property="og:url" content="https://svadlenka-praha.cz/">
+    <meta property="og:type" content="website">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -124,7 +124,7 @@ ${header()}
     ${content}
     ${kontakty()}
     <div class="only-mobile bottom-place-img">
-        <img loading="lazy" decoding="async" src="img/svadlenka-place-3.webp"/>
+        <img loading="lazy" decoding="async" src="img/svadlenka-place-3.webp" alt="fotografie krejčovství Švadlenka">
     </div>
     <iframe class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.1299956582297!2d14.423894077578739!3d50.065127071521246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95417e9293ed%3A0x1e25b699802f5a22!2zS3JlasSNb3ZzdHbDrSDFoHZhZGxlbmth!5e0!3m2!1sen!2scz!4v1746189430361!5m2!1sen!2scz"

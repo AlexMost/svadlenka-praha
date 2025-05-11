@@ -1,4 +1,4 @@
-import { baseHtml } from "../templates/baseHTML";
+import { baseHtml } from "../templates/baseHTML.mjs";
 
 export default () => {
     return baseHtml(`
@@ -27,7 +27,7 @@ export default () => {
               src="img/services/dziny.webp"
               loading="lazy"
               alt="Úprava džín"
-            />
+            >
             <div class="service-title">Úprava džín</div>
             <div class="service-subtitle">
               Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny
@@ -39,7 +39,7 @@ export default () => {
               src="img/services/latkove.webp"
               loading="lazy"
               alt="Látkové oděvy"
-            />
+            >
             <div class="service-title">Látkové oděvy</div>
             <div class="service-subtitle">
               Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu
@@ -51,7 +51,7 @@ export default () => {
               src="img/services/batohy.webp"
               loading="lazy"
               alt="Oprava batohu a kabelek"
-            />
+            >
             <div class="service-title">Oprava batohu a kabelek</div>
             <div class="service-subtitle">
               Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu
@@ -63,7 +63,7 @@ export default () => {
               src="img/services/zavesy.webp"
               loading="lazy"
               alt="Závěsy a záclony"
-            />
+            >
             <div class="service-title">Závěsy a záclony</div>
             <div class="service-subtitle">
               Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a
@@ -76,7 +76,7 @@ export default () => {
               src="img/services/podsivky.webp"
               loading="lazy"
               alt="Výměna podšívky"
-            />
+            >
             <div class="service-title">Výměna podšívky</div>
             <div class="service-subtitle">
               Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a
@@ -89,7 +89,7 @@ export default () => {
               src="img/services/druku.webp"
               loading="lazy"
               alt="Výměna druku"
-            />
+            >
             <div class="service-title">Výměna druku</div>
             <div class="service-subtitle">
               Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích
