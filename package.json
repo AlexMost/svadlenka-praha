@@ -2,7 +2,7 @@
   "scripts": {
     "prettier": "prettier . --write",
     "build": "node src/build/build.mjs",
-    "publish": "npm ci && npm run build cd public && git init && git commit --allow-empty -m 'update website' && git checkout -b gh-pages && git add . && git commit -am 'update website' && git push git@github.com:AlexMost/svadlenka-praha.git gh-pages --force"
+    "publish": "npm ci && npm run build cd public && git init && git commit --allow-empty -m 'update website' && git checkout gh-pages && git add . && git commit -am 'update website' && git push git@github.com:AlexMost/svadlenka-praha.git gh-pages --force"
   },
   "devDependencies": {
     "prettier": "3.5.3"
