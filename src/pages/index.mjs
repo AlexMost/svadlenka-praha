@@ -24,7 +24,7 @@ export default () => {
           <div class="service">
             <img
               decoding="async"
-              src="img/services/dziny.webp"
+              src="/img/services/dziny.webp"
               loading="lazy"
               alt="Úprava džín"
             >
@@ -36,7 +36,7 @@ export default () => {
           <div class="service">
             <img
               decoding="async"
-              src="img/services/latkove.webp"
+              src="/img/services/latkove.webp"
               loading="lazy"
               alt="Látkové oděvy"
             >
@@ -48,7 +48,7 @@ export default () => {
           <div class="service">
             <img
               decoding="async"
-              src="img/services/batohy.webp"
+              src="/img/services/batohy.webp"
               loading="lazy"
               alt="Oprava batohu a kabelek"
             >
@@ -60,7 +60,7 @@ export default () => {
           <div class="service">
             <img
               decoding="async"
-              src="img/services/zavesy.webp"
+              src="/img/services/zavesy.webp"
               loading="lazy"
               alt="Závěsy a záclony"
             >
@@ -73,7 +73,7 @@ export default () => {
           <div class="service">
             <img
               decoding="async"
-              src="img/services/podsivky.webp"
+              src="/img/services/podsivky.webp"
               loading="lazy"
               alt="Výměna podšívky"
             >
@@ -86,7 +86,7 @@ export default () => {
           <div class="service">
             <img
               decoding="async"
-              src="img/services/druku.webp"
+              src="/img/services/druku.webp"
               loading="lazy"
               alt="Výměna druku"
             >

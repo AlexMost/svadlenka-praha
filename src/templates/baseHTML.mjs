@@ -16,7 +16,7 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <meta name='msapplication-navbutton-color' content='#262626'>
     <meta name='apple-mobile-web-app-status-bar-style' content='#262626'>
     <link rel="icon" href="img/favicon-min.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css?r=$REVISION">
+    <link rel="stylesheet" href="/style.css?r=$REVISION">
     <title>Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2</title>
     <meta name="description"
           content="Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.">
@@ -128,7 +128,7 @@ ${header()}
     ${content}
     ${kontakty()}
     <div class="only-mobile bottom-place-img">
-        <img loading="lazy" decoding="async" src="img/svadlenka-place-3.webp" alt="fotografie krejčovství Švadlenka">
+        <img loading="lazy" decoding="async" src="/img/svadlenka-place-3.webp" alt="fotografie krejčovství Švadlenka">
     </div>
     <iframe class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.1299956582297!2d14.423894077578739!3d50.065127071521246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95417e9293ed%3A0x1e25b699802f5a22!2zS3JlasSNb3ZzdHbDrSDFoHZhZGxlbmth!5e0!3m2!1sen!2scz!4v1746189430361!5m2!1sen!2scz"
@@ -146,7 +146,7 @@ ${header()}
         <li><a href="#kontakty">Kontakty</a></li>
     </ul>
 </div>
-<script defer src="./script.js?r=$REVISION"></script>
+<script defer src="/script.js?r=$REVISION"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2670E96B8B"></script>
 <script>
