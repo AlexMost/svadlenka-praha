@@ -12,7 +12,7 @@ export function baseHtml(content = "") {
     <meta name='msapplication-navbutton-color' content='#262626'>
     <meta name='apple-mobile-web-app-status-bar-style' content='#262626'>
     <link rel="icon" href="img/favicon-min.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?r=$REVISION">
     <title>Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2</title>
     <meta name="description"
           content="Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.">
@@ -142,7 +142,7 @@ ${header()}
         <li><a href="#kontakty">Kontakty</a></li>
     </ul>
 </div>
-<script defer src="./script.js"></script>
+<script defer src="./script.js?r=$REVISION"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2670E96B8B"></script>
 <script>

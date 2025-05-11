@@ -1,5 +1,15 @@
 import fs from 'fs/promises';
 import path from 'path';
+import crypto from 'crypto';
+
+let revision = process.argv[2];
+if (!revision) {
+  revision = crypto.randomUUID();
+}
+
+function postProcessHTML(html) {
+  return html.replaceAll('$REVISION', revision);
+}
 
 async function copyFiles() {
   console.log('Copying files...');
@@ -14,9 +24,9 @@ async function copyFiles() {
 }
 
 async function buildPages() {
-  console.log('Building pages...');
+  console.log(`Building pages (${revision}) ...`);
   const indexPage = await import("../pages/index.mjs");
-  const html = indexPage.default();
+  const html = postProcessHTML(indexPage.default());
   await fs.writeFile(path.join('./public', 'index.html'), html, 'utf8', { flag: 'wx' });
   console.log('Saved index.html');
   console.log('Pages built.');
