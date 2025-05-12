@@ -3,6 +3,7 @@ import { kontakty } from "./kontakty.mjs";
 
 const defaultMeta = {
   canonical: "/",
+  title: 'Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2'
 };
 
 export function baseHtml({ content = "", meta = defaultMeta }) {
@@ -15,9 +16,9 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <meta name='theme-color' content='#262626'>
     <meta name='msapplication-navbutton-color' content='#262626'>
     <meta name='apple-mobile-web-app-status-bar-style' content='#262626'>
-    <link rel="icon" href="img/favicon-min.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon-min.ico" type="image/x-icon">
     <link rel="stylesheet" href="/style.css?r=$REVISION">
-    <title>Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2</title>
+    <title>${meta.title}</title>
     <meta name="description"
           content="Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.">
     <meta name="keywords"

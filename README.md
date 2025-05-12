@@ -6,9 +6,11 @@ svadlenka-praha.cz
 
 ### Setup
 > npm i
+> npm fetch-services
+
 
 ### Run
-> npm run start
+> npm run dev
 
 ## Publish
 

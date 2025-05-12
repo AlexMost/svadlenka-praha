@@ -3,7 +3,7 @@ import { baseHtml } from "../templates/baseHTML.mjs";
 export default () => {
   const pageHTML = `
     <section class="hero">
-        <h1>Krejčovství Švadlenka</h1>
+        <h1 class="hero-h1">Krejčovství Švadlenka</h1>
         <h2>Kvalitní opravna oděvů pod Nuselským mostem</h2>
         <h3>Rádi vás přivítáme na adrese Jaromírova 726/15</h3>
         <table class="schedule">
