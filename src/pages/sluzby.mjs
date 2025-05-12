@@ -25,7 +25,7 @@ export default () => {
 <section>
     <h1>Služby a ceník</h1>
 </section>
-${services.map((service) => (serviceHTML(service)))}
+${services.map((service) => (serviceHTML(service))).join('\n')}
 `;
   return baseHtml({ content: pageHTML, meta: { canonical: "/sluzby", title: 'Služby a ceník. Krejčovství Švadlenka' } });
 };

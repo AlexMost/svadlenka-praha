@@ -549,5 +549,6 @@ footer {
     .title {
         text-transform: capitalize;
         position: relative;
+        text-align: left;
     }
 }
