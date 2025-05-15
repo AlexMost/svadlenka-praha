@@ -157,6 +157,11 @@ ${header()}
     }
     gtag('js', new Date());
     gtag('config', 'G-2670E96B8B');
+    gtag('config', 'AW-17007608978');
+    
+    window.conversionFn = function() {
+        gtag('event', 'conversion', {'send_to': 'AW-17007608978/HM-aCL6T0McaEJKJ7q0_'});
+    }
 </script>
 </body>
 </html>

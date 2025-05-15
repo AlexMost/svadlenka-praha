@@ -10,7 +10,7 @@ export function header() {
             <li><a href="#kontakty">Kontakty</a></li>
         </ul>
         <div class="hamburger-menu">
-            <a class="telephone-btn" href="tel:+420775240309"><img src="/img/icons/telephone.svg" alt="telephone"></a>
+            <a class="telephone-btn" href="tel:+420775240309" onClick="conversionFn()"><img src="/img/icons/telephone.svg" alt="telephone"></a>
             <button class="hamburger-btn">
                 <img class="icon" src="/img/burger.svg" alt="Ikona menu">
             </button>
