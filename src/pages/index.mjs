@@ -86,6 +86,15 @@ export default () => {
   return baseHtml({
     content: pageHTML,
     meta: {
+      canonical: "/",
+      title: "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2",
+      description:
+        "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.",
+      keywords:
+        "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle",
+      ogTitle: "Krejčovství Švadlenka – Praha 2",
+      ogDescription:
+        "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.",
       structuredData: getStructuredData({
         makesOffer: services.map((service) => makeOffer(service)),
       }),
