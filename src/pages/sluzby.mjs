@@ -10,8 +10,8 @@ const serviceHTML = (service) => {
     <ul class="sluzby-list">
         ${service.options.map(option => (
             `<li>
-                <div class="title dot-fill">${option[0]}</div>
-                <div>${option[1]}</div>
+                <div class="title">${option[0]}</div>
+                <div class="price">${option[1]}</div>
             </li>`
         )).join('\n')}
     </ul>

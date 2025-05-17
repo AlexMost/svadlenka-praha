@@ -143,7 +143,7 @@ ${header()}
 <div class="sidebar-overlay"></div>
 <div class="sidebar">
     <ul>
-        <li><a href="#sluzby">Služby</a></li>
+        <li><a href="/sluzby">Služby a ceník</a></li>
         <li><a href="#kontakty">Kontakty</a></li>
     </ul>
 </div>

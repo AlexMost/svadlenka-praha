@@ -97,6 +97,9 @@ export default () => {
           </div>
         </div>
       </section>
+      <div class="sluzby-wrapper">
+        <a href="/sluzby" class="cta-button">Všechny služby a ceník</a>
+      </div>
     `;
   return baseHtml({ content: pageHTML });
 };

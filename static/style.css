@@ -551,4 +551,12 @@ footer {
         position: relative;
         text-align: left;
     }
+    .price {
+        white-space: nowrap;
+    }
+}
+
+.sluzby-wrapper {
+    width: fit-content;
+    margin: auto;
 }
