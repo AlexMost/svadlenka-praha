@@ -3,7 +3,11 @@ import { kontakty } from "./kontakty.mjs";
 
 const defaultMeta = {
   canonical: "/",
-  title: 'Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2'
+  title: 'Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2',
+  description: 'Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.',
+  keywords: 'krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle',
+  ogTitle: 'Krejčovství Švadlenka – Praha 2',
+  ogDescription: 'Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.'
 };
 
 export function baseHtml({ content = "", meta = defaultMeta }) {
@@ -19,16 +23,13 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <link rel="icon" href="/img/favicon-min.ico" type="image/x-icon">
     <link rel="stylesheet" href="/style.css?r=$REVISION">
     <title>${meta.title}</title>
-    <meta name="description"
-          content="Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.">
-    <meta name="keywords"
-          content="krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle">
+    <meta name="description" content="${meta.description}">
+    <meta name="keywords" content="${meta.keywords}">
     <link rel="canonical" href="https://svadlenka-praha.cz${meta.canonical}">
-    <meta property="og:title" content="Krejčovství Švadlenka – Praha 2">
-    <meta property="og:description"
-          content="Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.">
+    <meta property="og:title" content="${meta.ogTitle}">
+    <meta property="og:description" content="${meta.ogDescription}">
     <meta property="og:image" content="https://svadlenka-praha.cz/img/logo.jpg">
-    <meta property="og:url" content="https://svadlenka-praha.cz/">
+    <meta property="og:url" content="https://svadlenka-praha.cz${meta.canonical}">
     <meta property="og:type" content="website">
     <script type="application/ld+json">
         {
