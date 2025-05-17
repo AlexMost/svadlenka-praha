@@ -1,13 +1,18 @@
 import { header } from "./header.mjs";
 import { kontakty } from "./kontakty.mjs";
+import { getStructuredData } from "./structuredData.mjs";
 
 const defaultMeta = {
   canonical: "/",
-  title: 'Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2',
-  description: 'Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.',
-  keywords: 'krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle',
-  ogTitle: 'Krejčovství Švadlenka – Praha 2',
-  ogDescription: 'Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.'
+  title: "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2",
+  description:
+    "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.",
+  keywords:
+    "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle",
+  ogTitle: "Krejčovství Švadlenka – Praha 2",
+  ogDescription:
+    "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.",
+  structuredData: getStructuredData({}),
 };
 
 export function baseHtml({ content = "", meta = defaultMeta }) {
@@ -31,98 +36,13 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <meta property="og:image" content="https://svadlenka-praha.cz/img/logo.jpg">
     <meta property="og:url" content="https://svadlenka-praha.cz${meta.canonical}">
     <meta property="og:type" content="website">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Švadlenka",
-            "image": "https://svadlenka-praha.cz/img/logo.jpg",
-            "description": "Krejčovství na Praze 2. Opravujeme a upravujeme oblečení, džíny, batohy, záclony, podšívky a další.",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Jaromírova 726/15",
-                "addressLocality": "Praha 2",
-                "addressRegion": "Praha",
-                "postalCode": "128 00",
-                "addressCountry": "CZ"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 50.0651271,
-                "longitude": 14.4238941
-            },
-            "url": "https://svadlenka-praha.cz",
-            "telephone": "+420 775 240 309",
-            "openingHours": [
-                "Mo-Th 10:00-18:00",
-                "Fr 10:00-16:00"
-            ],
-            "priceRange": "Kč",
-            "sameAs": [
-                "https://maps.app.goo.gl/D2bBfxsa8yQEQPgd8",
-                "https://www.instagram.com/svadlenka_praha",
-                "https://g.co/kgs/sWZWeax"
-            ],
-            "makesOffer": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "serviceType": "Úprava a oprava oděvů",
-                        "description": "Zkracování, výměna zipů, oprava podšívek, batohů a záclon."
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "serviceType": "Úprava džín",
-                        "description": "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny."
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "serviceType": "Látkové oděvy",
-                        "description": "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu."
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "serviceType": "Oprava batohu a kabelek",
-                        "description": "Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu."
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "serviceType": "Závěsy a záclony",
-                        "description": "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení."
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "serviceType": "Výměna podšívky",
-                        "description": "Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách."
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "serviceType": "Výměna druku",
-                        "description": "Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích."
-                    }
-                }
-            ]
-        }
-    </script>
+    ${
+      meta.structuredData
+        ? `<script type="application/ld+json">
+        ${JSON.stringify(meta.structuredData, null, 2)}
+    </script>`
+        : ""
+    }
 </head>
 <body>
 ${header()}

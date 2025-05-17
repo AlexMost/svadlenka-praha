@@ -1,4 +1,59 @@
 import { baseHtml } from "../templates/baseHTML.mjs";
+import { getStructuredData, makeOffer } from "../templates/structuredData.mjs";
+
+const services = [
+  {
+    title: "Úprava džín",
+    description:
+      "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny",
+    image: "/img/services/dziny.webp",
+  },
+  {
+    title: "Látkové oděvy",
+    description:
+      "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu",
+    image: "/img/services/latkove.webp",
+  },
+  {
+    title: "Oprava batohu a kabelek",
+    description: "Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu",
+    image: "/img/services/batohy.webp",
+  },
+  {
+    title: "Závěsy a záclony",
+    description:
+      "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení",
+    image: "/img/services/zavesy.webp",
+  },
+  {
+    title: "Výměna podšívky",
+    description:
+      "Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách",
+    image: "/img/services/podsivky.webp",
+  },
+  {
+    title: "Výměna druku",
+    description:
+      "Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích",
+    image: "/img/services/druku.webp",
+  },
+];
+
+function serviceHTML({ title, description, image }) {
+  return `
+  <div class="service">
+    <img
+      decoding="async"
+      src="${image}"
+      loading="lazy"
+      alt="${title}"
+    >
+    <div class="service-title">${title}</div>
+    <div class="service-subtitle">
+      ${description}
+    </div>
+  </div>`;
+}
 
 export default () => {
   const pageHTML = `
@@ -21,85 +76,19 @@ export default () => {
       <section id="sluzby">
         <div class="section-title">Naše služby</div>
         <div class="services">
-          <div class="service">
-            <img
-              decoding="async"
-              src="/img/services/dziny.webp"
-              loading="lazy"
-              alt="Úprava džín"
-            >
-            <div class="service-title">Úprava džín</div>
-            <div class="service-subtitle">
-              Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny
-            </div>
-          </div>
-          <div class="service">
-            <img
-              decoding="async"
-              src="/img/services/latkove.webp"
-              loading="lazy"
-              alt="Látkové oděvy"
-            >
-            <div class="service-title">Látkové oděvy</div>
-            <div class="service-subtitle">
-              Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu
-            </div>
-          </div>
-          <div class="service">
-            <img
-              decoding="async"
-              src="/img/services/batohy.webp"
-              loading="lazy"
-              alt="Oprava batohu a kabelek"
-            >
-            <div class="service-title">Oprava batohu a kabelek</div>
-            <div class="service-subtitle">
-              Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu
-            </div>
-          </div>
-          <div class="service">
-            <img
-              decoding="async"
-              src="/img/services/zavesy.webp"
-              loading="lazy"
-              alt="Závěsy a záclony"
-            >
-            <div class="service-title">Závěsy a záclony</div>
-            <div class="service-subtitle">
-              Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a
-              úprava tunýlků pro zavěšení
-            </div>
-          </div>
-          <div class="service">
-            <img
-              decoding="async"
-              src="/img/services/podsivky.webp"
-              loading="lazy"
-              alt="Výměna podšívky"
-            >
-            <div class="service-title">Výměna podšívky</div>
-            <div class="service-subtitle">
-              Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a
-              bundách
-            </div>
-          </div>
-          <div class="service">
-            <img
-              decoding="async"
-              src="/img/services/druku.webp"
-              loading="lazy"
-              alt="Výměna druku"
-            >
-            <div class="service-title">Výměna druku</div>
-            <div class="service-subtitle">
-              Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích
-            </div>
-          </div>
+          ${services.map((service) => serviceHTML(service)).join("")}
         </div>
       </section>
       <div class="sluzby-wrapper">
         <a href="/sluzby" class="cta-button">Všechny služby a ceník</a>
       </div>
     `;
-  return baseHtml({ content: pageHTML });
+  return baseHtml({
+    content: pageHTML,
+    meta: {
+      structuredData: getStructuredData({
+        makesOffer: services.map((service) => makeOffer(service)),
+      }),
+    },
+  });
 };

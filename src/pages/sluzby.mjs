@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { baseHtml } from "../templates/baseHTML.mjs";
+import { getStructuredData, makeOffer } from "../templates/structuredData.mjs";
 
 const serviceHTML = (service) => {
   return `
@@ -21,6 +22,22 @@ const serviceHTML = (service) => {
   `;
 };
 
+function servicesToStructuredOffers(services) {
+  const result = [];
+  services.forEach((service) => {
+    service.options.forEach((option) => {
+      result.push(
+        makeOffer({
+          title: option[0],
+          category: service.title,
+          description: `${option[0]} ${option[1]}`,
+        }),
+      );
+    });
+  });
+  return result;
+}
+
 export default () => {
   const services = JSON.parse(
     fs.readFileSync(path.resolve("src/auto/services.json"), "utf-8"),
@@ -40,8 +57,12 @@ ${services.map((service) => serviceHTML(service)).join("\n")}
         "Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník.",
       keywords:
         "krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby",
-      ogTitle: 'Služby a ceník – Švadlenka Praha 2, Nusle',
-      ogDescription: 'Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka.',
+      ogTitle: "Služby a ceník – Švadlenka Praha 2, Nusle",
+      ogDescription:
+        "Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka.",
+      structuredData: getStructuredData({
+        makesOffer: servicesToStructuredOffers(services),
+      }),
     },
   });
 };
