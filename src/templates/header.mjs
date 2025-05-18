@@ -6,6 +6,7 @@ export function header() {
             <img class="logo" src="/img/logo.svg" alt="Svadlenka logo">
         </a>
         <ul class="menu">
+           <li><a href="/">Úvod</a></li>
             <li><a href="/sluzby">Služby a ceník</a></li>
             <li><a href="#kontakty">Kontakty</a></li>
         </ul>
