@@ -84,7 +84,11 @@ ${header()}
     
     window.conversionFn = function() {
         gtag('event', 'conversion', {'send_to': 'AW-17007608978/HM-aCL6T0McaEJKJ7q0_'});
-    }
+    };
+    
+    window.addReviewAnalytics = function() {
+      gtag('event', 'add_review_click', { send_to: 'G-2670E96B8B' });
+    };
 </script>
 </body>
 </html>
