@@ -458,6 +458,12 @@ nav {
     visibility: visible;
 }
 
+.review-sidebar {
+    position: absolute;
+    bottom: 165px;
+    margin-left: -20px;
+}
+
 .contact-info {
     display: flex;
     flex-direction: row;

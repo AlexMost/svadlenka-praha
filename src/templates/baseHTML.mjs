@@ -38,12 +38,12 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <meta property="og:url" content="https://svadlenka-praha.cz${meta.canonical}">
     <meta property="og:type" content="website">
     ${
-      meta.structuredData
-        ? `<script type="application/ld+json">
+    meta.structuredData
+      ? `<script type="application/ld+json">
         ${JSON.stringify(meta.structuredData, null, 2)}
     </script>`
-        : ""
-    }
+      : ""
+  }
 </head>
 <body>
 ${header()}
@@ -70,6 +70,9 @@ ${header()}
         <li><a href="/sluzby">Služby a ceník</a></li>
         <li><a href="#kontakty">Kontakty</a></li>
     </ul>
+    <div class="review-sidebar">
+        ${reviewHTML()}
+    </div>
 </div>
 <script defer src="/script.js?r=$REVISION"></script>
 <!-- Google tag (gtag.js) -->
