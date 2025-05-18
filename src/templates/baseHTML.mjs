@@ -1,6 +1,7 @@
 import { header } from "./header.mjs";
 import { kontakty } from "./kontakty.mjs";
 import { getStructuredData } from "./structuredData.mjs";
+import { reviewHTML } from "./review.mjs";
 
 const defaultMeta = {
   canonical: "/",
@@ -49,6 +50,7 @@ ${header()}
 <main class="main">
     ${content}
     ${kontakty()}
+    ${reviewHTML()}
     <div class="only-mobile bottom-place-img">
         <img loading="lazy" decoding="async" src="/img/svadlenka-place-3.webp" alt="fotografie krejčovství Švadlenka">
     </div>
