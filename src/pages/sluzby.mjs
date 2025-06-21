@@ -1,4 +1,5 @@
 import fs from "fs";
+import { t } from 'ttag';
 import path from "path";
 import { baseHtml } from "../templates/baseHTML.mjs";
 import { getStructuredData, makeOffer } from "../templates/structuredData.mjs";
@@ -44,7 +45,7 @@ export default () => {
   );
   const pageHTML = `
 <section>
-    <h1>Služby a ceník</h1>
+    <h1>${t`Služby a ceník`}</h1>
 </section>
 ${services.map((service) => serviceHTML(service)).join("\n")}
 `;
@@ -52,14 +53,14 @@ ${services.map((service) => serviceHTML(service)).join("\n")}
     content: pageHTML,
     meta: {
       canonical: "/sluzby",
-      title: "Služby a ceník. Krejčovství Švadlenka",
+      title: t`Služby a ceník. Krejčovství Švadlenka`,
       description:
-        "Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník.",
+        t`Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník.`,
       keywords:
-        "krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby",
-      ogTitle: "Služby a ceník – Švadlenka Praha 2, Nusle",
+        t`krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby`,
+      ogTitle: t`Služby a ceník – Švadlenka Praha 2, Nusle`,
       ogDescription:
-        "Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka.",
+        t`Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka.`,
       structuredData: getStructuredData({
         makesOffer: servicesToStructuredOffers(services),
       }),

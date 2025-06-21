@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals = 3; plural = (n % 10 == 1 && n % 100 != 11 ? 0 : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2);\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/pages/index.mjs:91
+#: src/templates/baseHTML.mjs:9
+msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2"
+msgstr "Ателье Švadlenka – ремонт и подгонка одежды в Праге 2"
+
+#: src/pages/index.mjs:93
+#: src/templates/baseHTML.mjs:11
+msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15."
+msgstr "Švadlenka — это ателье в Праге 2, предлагающее качественный ремонт и подгонку одежды — джинсы, пальто, подкладки, рюкзаки и шторы. Мы находимся по адресу Jaromírova 726/15."
+
+#: src/pages/index.mjs:95
+#: src/templates/baseHTML.mjs:13
+msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle"
+msgstr "ателье, ремонт одежды, подгонка одежды, замена молнии, подкладка, шторы, Прага 2, Нусле"
+
+#: src/pages/index.mjs:96
+#: src/templates/baseHTML.mjs:14
+msgid "Krejčovství Švadlenka – Praha 2"
+msgstr "Ателье Švadlenka – Прага 2"
+
+#: src/pages/index.mjs:98
+#: src/templates/baseHTML.mjs:16
+msgid "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15."
+msgstr "Ремонт и подгонка одежды, штор и рюкзаков — мы находимся по адресу Jaromírova 726/15."
+
+#: src/templates/baseHTML.mjs:70
+#: src/templates/header.mjs:11
+msgid "Úvod"
+msgstr "Главная"
+
+#: src/pages/sluzby.mjs:48
+#: src/templates/baseHTML.mjs:71
+#: src/templates/header.mjs:12
+msgid "Služby a ceník"
+msgstr "Услуги и прайс"
+
+#: src/templates/baseHTML.mjs:72
+#: src/templates/header.mjs:13
+#: src/templates/kontakty.mjs:5
+msgid "Kontakty"
+msgstr "Контакты"
+
+#: src/templates/kontakty.mjs:21
+msgid "Po – Čt: 10:00 – 18:00"
+msgstr "Пн – Чт: 10:00 – 18:00"
+
+#: src/templates/kontakty.mjs:22
+msgid "Pá: 10:00 – 16:00"
+msgstr "Пт: 10:00 – 16:00"
+
+#: src/templates/review.mjs:16
+msgid "Budeme vděční za vaši recenzi"
+msgstr "Будем благодарны за ваш отзыв"
+
+#: src/templates/review.mjs:20
+msgid "Napsat recenzi"
+msgstr "Оставить отзыв"
+
+#: src/pages/index.mjs:7
+msgid "Úprava džín"
+msgstr "Подгонка джинсов"
+
+#: src/pages/index.mjs:9
+msgid "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny"
+msgstr "Укорачиваем, ушиваем или ремонтируем поношенные и порванные джинсы"
+
+#: src/pages/index.mjs:13
+msgid "Látkové oděvy"
+msgstr "Одежда из ткани"
+
+#: src/pages/index.mjs:15
+msgid "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu"
+msgstr "Предлагаем изменение размеров, ушивку одежды или пришивание молнии"
+
+#: src/pages/index.mjs:19
+msgid "Oprava batohu a kabelek"
+msgstr "Ремонт рюкзаков и сумок"
+
+#: src/pages/index.mjs:20
+msgid "Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu"
+msgstr "Укрепление лямок, замена молний или ремонт разрывов ткани"
+
+#: src/pages/index.mjs:24
+msgid "Závěsy a záclony"
+msgstr "Шторы и занавески"
+
+#: src/pages/index.mjs:26
+msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení"
+msgstr "Индивидуальная подгонка штор и занавесок — укорочение, обработка краёв и доработка петель для подвешивания"
+
+#: src/pages/index.mjs:30
+msgid "Výměna podšívky"
+msgstr "Замена подкладки"
+
+#: src/pages/index.mjs:32
+msgid "Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách"
+msgstr "Меняем изношенные или повреждённые подкладки в пальто и куртках"
+
+#: src/pages/index.mjs:36
+msgid "Výměna druku"
+msgstr "Замена кнопок"
+
+#: src/pages/index.mjs:38
+msgid "Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích"
+msgstr "Быстрая замена металлических кнопок на куртках, брюках или аксессуарах"
+
+#: src/pages/index.mjs:62
+msgid "Krejčovství Švadlenka"
+msgstr "Ателье Švadlenka"
+
+#: src/pages/index.mjs:63
+msgid "Kvalitní opravna oděvů pod Nuselským mostem"
+msgstr "Качественное ателье под Нусельским мостом"
+
+#: src/pages/index.mjs:64
+msgid "Rádi vás přivítáme na adrese Jaromírova 726/15"
+msgstr "Будем рады видеть вас по адресу Jaromírova 726/15"
+
+#: src/pages/index.mjs:75
+msgid "Najít nás"
+msgstr "Найти нас"
+
+#: src/pages/index.mjs:78
+msgid "Naše služby"
+msgstr "Наши услуги"
+
+#: src/pages/index.mjs:84
+msgid "Všechny služby a ceník"
+msgstr "Все услуги и прайс"
+
+#: src/pages/sluzby.mjs:56
+msgid "Služby a ceník. Krejčovství Švadlenka"
+msgstr "Услуги и прайс. Ателье Švadlenka"
+
+#: src/pages/sluzby.mjs:58
+msgid "Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník."
+msgstr "Полный список услуг ателье Švadlenka — подгонка пальто, брюк, платьев, рубашек и кожаной одежды. Ознакомьтесь с актуальным прайсом."
+
+#: src/pages/sluzby.mjs:60
+msgid "krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby"
+msgstr "ателье, прайс на подгонку одежды, ремонт одежды Прага, замена молнии, укорочение брюк, швея Нусле, услуги Švadlenka"
+
+#: src/pages/sluzby.mjs:61
+msgid "Služby a ceník – Švadlenka Praha 2, Nusle"
+msgstr "Услуги и прайс – Švadlenka Прага 2, Нусле"
+
+#: src/pages/sluzby.mjs:63
+msgid "Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka."
+msgstr "Ознакомьтесь с полным списком услуг и ценами на подгонку одежды в ателье Švadlenka."

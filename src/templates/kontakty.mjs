@@ -1,6 +1,8 @@
+import { t } from 'ttag';
+
 export function kontakty() {
   return `<section id="kontakty">
-        <div class="section-title">Kontakty</div>
+        <div class="section-title">${t`Kontakty`}</div>
         <div class="contact-info">
             <div class="address">
                 <address>
@@ -16,8 +18,8 @@ export function kontakty() {
                 <div class="contact-schedule">
                     <img class="icon" src="/img/icons/schedule.svg" alt="otevírací doba">
                     <ul>
-                        <li>Po – Čt: 10:00 – 18:00</li>
-                        <li>Pá: 10:00 – 16:00</li>
+                        <li>${t`Po – Čt: 10:00 – 18:00`}</li>
+                        <li>${t`Pá: 10:00 – 16:00`}</li>
                     </ul>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+import { t } from 'ttag';
 import { header } from "./header.mjs";
 import { kontakty } from "./kontakty.mjs";
 import { getStructuredData } from "./structuredData.mjs";
@@ -5,14 +6,14 @@ import { reviewHTML } from "./review.mjs";
 
 const defaultMeta = {
   canonical: "/",
-  title: "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2",
+  title: t`Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2`,
   description:
-    "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.",
+    t`Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.`,
   keywords:
-    "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle",
-  ogTitle: "Krejčovství Švadlenka – Praha 2",
+    t`krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle`,
+  ogTitle: t`Krejčovství Švadlenka – Praha 2`,
   ogDescription:
-    "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.",
+    t`Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.`,
   structuredData: getStructuredData({}),
 };
 
@@ -66,9 +67,9 @@ ${header()}
 <div class="sidebar-overlay"></div>
 <div class="sidebar">
     <ul>
-        <li><a href="/">Úvod</a></li>
-        <li><a href="/sluzby">Služby a ceník</a></li>
-        <li><a href="#kontakty">Kontakty</a></li>
+        <li><a href="/">${t`Úvod`}</a></li>
+        <li><a href="/sluzby">${t`Služby a ceník`}</a></li>
+        <li><a href="#kontakty">${t`Kontakty`}</a></li>
     </ul>
     <div class="review-sidebar">
         ${reviewHTML()}

@@ -1,40 +1,41 @@
+import { t } from 'ttag';
 import { baseHtml } from "../templates/baseHTML.mjs";
 import { getStructuredData, makeOffer } from "../templates/structuredData.mjs";
 
 const services = [
   {
-    title: "Úprava džín",
+    title: t`Úprava džín`,
     description:
-      "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny",
+      t`Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny`,
     image: "/img/services/dziny.webp",
   },
   {
-    title: "Látkové oděvy",
+    title: t`Látkové oděvy`,
     description:
-      "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu",
+      t`Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu`,
     image: "/img/services/latkove.webp",
   },
   {
-    title: "Oprava batohu a kabelek",
-    description: "Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu",
+    title: t`Oprava batohu a kabelek`,
+    description: t`Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu`,
     image: "/img/services/batohy.webp",
   },
   {
-    title: "Závěsy a záclony",
+    title: t`Závěsy a záclony`,
     description:
-      "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení",
+      t`Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení`,
     image: "/img/services/zavesy.webp",
   },
   {
-    title: "Výměna podšívky",
+    title: t`Výměna podšívky`,
     description:
-      "Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách",
+      t`Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách`,
     image: "/img/services/podsivky.webp",
   },
   {
-    title: "Výměna druku",
+    title: t`Výměna druku`,
     description:
-      "Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích",
+      t`Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích`,
     image: "/img/services/druku.webp",
   },
 ];
@@ -58,9 +59,9 @@ function serviceHTML({ title, description, image }) {
 export default () => {
   const pageHTML = `
     <section class="hero">
-        <h1 class="hero-h1">Krejčovství Švadlenka</h1>
-        <h2>Kvalitní opravna oděvů pod Nuselským mostem</h2>
-        <h3>Rádi vás přivítáme na adrese Jaromírova 726/15</h3>
+        <h1 class="hero-h1">${t`Krejčovství Švadlenka`}</h1>
+        <h2>${t`Kvalitní opravna oděvů pod Nuselským mostem`}</h2>
+        <h3>${t`Rádi vás přivítáme na adrese Jaromírova 726/15`}</h3>
         <table class="schedule">
           <tr>
             <td>Po - Čt:</td>
@@ -71,30 +72,30 @@ export default () => {
             <td>10:00 - 16:00</td>
           </tr>
         </table>
-        <a href="#kontakty" class="cta-button">Najít nás</a>
+        <a href="#kontakty" class="cta-button">${t`Najít nás`}</a>
       </section>
       <section id="sluzby">
-        <div class="section-title">Naše služby</div>
+        <div class="section-title">${t`Naše služby`}</div>
         <div class="services">
           ${services.map((service) => serviceHTML(service)).join("")}
         </div>
       </section>
       <div class="sluzby-wrapper">
-        <a href="/sluzby" class="cta-button">Všechny služby a ceník</a>
+        <a href="/sluzby" class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     `;
   return baseHtml({
     content: pageHTML,
     meta: {
       canonical: "/",
-      title: "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2",
+      title: t`Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2`,
       description:
-        "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.",
+        t`Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.`,
       keywords:
-        "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle",
-      ogTitle: "Krejčovství Švadlenka – Praha 2",
+        t`krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle`,
+      ogTitle: t`Krejčovství Švadlenka – Praha 2`,
       ogDescription:
-        "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.",
+        t`Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.`,
       structuredData: getStructuredData({
         makesOffer: services.map((service) => makeOffer(service)),
       }),

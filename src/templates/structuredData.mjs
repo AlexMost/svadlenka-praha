@@ -1,3 +1,5 @@
+import { t } from 'ttag';
+
 export function makeOffer({ title, description, category }) {
   return {
     "@type": "Offer",
