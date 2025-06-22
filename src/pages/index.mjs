@@ -35,6 +35,7 @@ const services = [
     description:
       t`Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách`,
     image: "/img/services/podsivky.webp",
+    url: '/podsivka'
   },
   {
     title: t`Výměna druku`,
