@@ -44,6 +44,7 @@ async function buildPages() {
   console.log(`Building pages (${revision}) ...`);
   await buildPage("index");
   await buildPage("sluzby");
+  await buildPage("dziny");
   console.log("Pages built.");
 }
 

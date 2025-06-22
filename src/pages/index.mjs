@@ -8,6 +8,7 @@ const services = [
     description:
       t`Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny`,
     image: "/img/services/dziny.webp",
+    url: '/dziny'
   },
   {
     title: t`Látkové oděvy`,
@@ -40,8 +41,9 @@ const services = [
   },
 ];
 
-function serviceHTML({ title, description, image }) {
+function serviceHTML({ title, description, image, url }) {
   return `
+<a href="${url || '/sluzby'}">
   <div class="service">
     <img
       decoding="async"
@@ -53,7 +55,8 @@ function serviceHTML({ title, description, image }) {
     <div class="service-subtitle">
       ${description}
     </div>
-  </div>`;
+  </div>
+</a>`;
 }
 
 export default () => {

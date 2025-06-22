@@ -554,7 +554,6 @@ footer {
     max-width: 800px;
 
     .title {
-        text-transform: capitalize;
         position: relative;
         text-align: left;
     }
@@ -602,4 +601,14 @@ footer {
     }
     gap: 10px;
     display: flex;
+}
+
+.sluzby-big-picture {
+    width: 100%;
+    overflow: hidden;
+    max-height: 600px;
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
 }
