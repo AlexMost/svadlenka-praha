@@ -42,6 +42,7 @@ const services = [
     description:
       t`Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích`,
     image: "/img/services/druku.webp",
+    url: '/druk'
   },
 ];
 
