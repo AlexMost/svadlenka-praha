@@ -22,7 +22,7 @@ export default () => {
     </section>
     
       <div class="sluzby-big-picture">
-          <img src="/img/services/latkove-big.webp" alt="dziny" />
+          <img src="/img/services/latkove-big.webp" alt="latkove" />
       </div>
     
     <section>

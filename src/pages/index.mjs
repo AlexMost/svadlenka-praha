@@ -21,6 +21,7 @@ const services = [
     title: t`Oprava batohu a kabelek`,
     description: t`Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu`,
     image: "/img/services/batohy.webp",
+    url: '/batohy'
   },
   {
     title: t`Závěsy a záclony`,
