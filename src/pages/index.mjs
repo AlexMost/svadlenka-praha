@@ -28,6 +28,7 @@ const services = [
     description:
       t`Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení`,
     image: "/img/services/zavesy.webp",
+    url: '/zavesy'
   },
   {
     title: t`Výměna podšívky`,
