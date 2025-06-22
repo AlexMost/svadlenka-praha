@@ -2,7 +2,7 @@ import fs from "fs";
 import { t } from "ttag";
 import path from "path";
 import { baseHtml } from "../templates/baseHTML.mjs";
-import { getStructuredData, makeOffer } from "../templates/structuredData.mjs";
+import { getStructuredData } from "../templates/structuredData.mjs";
 import {
   servicesHTML,
   servicesToStructuredOffers,

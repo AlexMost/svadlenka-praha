@@ -15,6 +15,7 @@ const services = [
     description:
       t`Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu`,
     image: "/img/services/latkove.webp",
+    url: '/latkove'
   },
   {
     title: t`Oprava batohu a kabelek`,
