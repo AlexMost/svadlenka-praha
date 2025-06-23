@@ -1,6 +1,5 @@
-import fs from "fs";
 import { t } from "ttag";
-import path from "path";
+import { services } from "../auto/services.mjs";
 import { baseHtml } from "../templates/baseHTML.mjs";
 import { getStructuredData } from "../templates/structuredData.mjs";
 import {
@@ -18,9 +17,6 @@ const serviceHTML = (service) => {
 };
 
 export default () => {
-  const services = JSON.parse(
-    fs.readFileSync(path.resolve("src/auto/services.json"), "utf-8"),
-  );
   const pageHTML = `
 <section>
     <h1>${t`Služby a ceník`}</h1>

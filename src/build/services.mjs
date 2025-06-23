@@ -20,6 +20,14 @@ function recordsToServices(records) {
     }));
 }
 
+function convertToMjs(data) {
+  return `import { t } from "ttag";\n\nexport const services = ${
+    JSON.stringify(data, null, 2)
+      .replace(/"([^"]+)":/g, "$1:") // прибрати лапки навколо ключів
+      .replace(/"([^"]+)"/g, "t`$1`") // обгорнути значення в t`...`
+  };`;
+}
+
 const sheetURL =
   "https://docs.google.com/spreadsheets/d/1XEzx6YljRJ9p5gMkYyRPzwhVKydStVVgIVWIxKgXxHQ/gviz/tq?tqx=out:csv&sheet=sluzby";
 
@@ -29,8 +37,9 @@ export async function fetchServices() {
 
   const records = parse(csvText);
   const services = recordsToServices(records);
-  const servicesPath = path.join("./src/auto", "services.json");
-  await fs.writeFile(servicesPath, JSON.stringify(services), "utf8", {
+  const mjsServices = convertToMjs(services);
+  const mjsServicesPath = path.join("./src/auto", "services.mjs");
+  await fs.writeFile(mjsServicesPath, mjsServices, "utf8", {
     flag: "wx",
   });
 }
