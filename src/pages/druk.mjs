@@ -5,8 +5,9 @@ import {
   servicesToStructuredOffers,
 } from "../templates/services.mjs";
 import { getStructuredData } from "../templates/structuredData.mjs";
+import { siteUrl } from "../templates/siteUrl.mjs";
 
-const dzinyServices = [
+const dzinyServices = () => [
   [t`Výměna jednoho druku (kompletní sada)`, t`od 120 Kč`],
   [t`Výměna více druků (např. u bundy)`, t`od 300 Kč`],
   [t`Výměna kovových patentek nebo cvočků`, t`od 150 Kč`],
@@ -26,18 +27,18 @@ export default () => {
       </div>
     
     <section>
-        ${servicesHTML(dzinyServices)}
+        ${servicesHTML(dzinyServices())}
     </section>
     <section>
       <div class="sluzby-wrapper">
-          <a href="/sluzby" class="cta-button">${t`Všechny služby a ceník`}</a>
+          <a href=${siteUrl("/sluzby")} class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     </section>
 `;
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: "/druk",
+      canonical: siteUrl("/druk"),
       title: t`Výměna druku a patentek Praha 2 – bundy, kalhoty, tašky. Krejčovství Švadlenka.`,
       description: t`Rychlá výměna druku, cvočků a patentek v Praze 2. Na bundách, kalhotách, kabelkách. Krejčovství Švadlenka – Vyšehrad.`,
       keywords: t`výměna druku, výměna patentek, oprava cvočků, druk bunda, patentka kalhoty, krejčovství Praha 2, Švadlenka Vyšehrad`,
@@ -46,8 +47,8 @@ export default () => {
       structuredData: getStructuredData({
         makesOffer: servicesToStructuredOffers([
           {
-            title: "Výměna druku",
-            options: dzinyServices,
+            title: t`Výměna druku`,
+            options: dzinyServices(),
           },
         ]),
       }),

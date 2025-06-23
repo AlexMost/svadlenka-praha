@@ -5,8 +5,9 @@ import {
   servicesToStructuredOffers,
 } from "../templates/services.mjs";
 import { getStructuredData } from "../templates/structuredData.mjs";
+import { siteUrl } from "../templates/siteUrl.mjs";
 
-const batohyServices = [
+const batohyServices = () => [
   [t`Výměna zipu u batohu / kabelky`, t`od 400 Kč`],
   [t`Oprava podšívky (částečná nebo celková)`, t`od 450 Kč`],
   [t`Zpevnění nebo výměna uch`, t`od 400 Kč`],
@@ -26,18 +27,18 @@ export default () => {
       </div>
     
     <section>
-        ${servicesHTML(batohyServices)}
+        ${servicesHTML(batohyServices())}
     </section>
     <section>
       <div class="sluzby-wrapper">
-          <a href="/sluzby" class="cta-button">${t`Všechny služby a ceník`}</a>
+          <a href=${siteUrl("/sluzby")} class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     </section>
 `;
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: "/batohy",
+      canonical: siteUrl("/batohy"),
       title: t`Oprava batohů a kabelek Praha – zipy, podšívky, ucha | Krejčovství Švadlenka.`,
       description: t`Profesionální opravy batohů a kabelek v Praze. Výměna zipů, ucha, podšívky a víc. Krejčovství Švadlenka – Vyšehrad.`,
       keywords: t`oprava batohů, oprava kabelek, výměna zipu, podšívka kabelka, šití batohu, Švadlenka Praha, krejčovství kabelky Praha 2`,
@@ -46,8 +47,8 @@ export default () => {
       structuredData: getStructuredData({
         makesOffer: servicesToStructuredOffers([
           {
-            title: "Oprava batohů a kabelek",
-            options: batohyServices,
+            title: t`Oprava batohů a kabelek`,
+            options: batohyServices(),
           },
         ]),
       }),

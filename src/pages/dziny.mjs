@@ -5,8 +5,9 @@ import {
   servicesToStructuredOffers,
 } from "../templates/services.mjs";
 import { getStructuredData } from "../templates/structuredData.mjs";
+import { siteUrl } from "../templates/siteUrl.mjs";
 
-const dzinyServices = [
+const dzinyServices = () => [
   [t`Zkrácení délky`, t`od 350 Kč`],
   [t`Zúžení džín v pase nebo nohavicích`, t`od 400 Kč`],
   [t`Zkrácení nohavic s originálním lemem`, t`od 500 Kč`],
@@ -27,18 +28,18 @@ export default () => {
       </div>
     
     <section>
-        ${servicesHTML(dzinyServices)}
+        ${servicesHTML(dzinyServices())}
     </section>
     <section>
       <div class="sluzby-wrapper">
-          <a href="/sluzby" class="cta-button">${t`Všechny služby a ceník`}</a>
+          <a href=${siteUrl("/sluzby")} class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     </section>
 `;
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: "/dziny",
+      canonical: siteUrl("/dziny"),
       title: t`Úprava džín Praha. Krejčovství Švadlenka.`,
       description: t`Profesionální úprava džín v Praze – zkrácení, zúžení, oprava zipů a švů. Přijďte bez objednání do Krejčovství Švadlenka na Vyšehradě.`,
       keywords: t`úprava džín Praha, zkrácení džín, oprava džín, zúžení kalhot, výměna zipu, oprava švů, krejčovství Praha 2, švadlena džín, Švadlenka Praha`,
@@ -47,8 +48,8 @@ export default () => {
       structuredData: getStructuredData({
         makesOffer: servicesToStructuredOffers([
           {
-            title: "Úprava džín",
-            options: dzinyServices,
+            title: t`Úprava džín`,
+            options: dzinyServices(),
           },
         ]),
       }),

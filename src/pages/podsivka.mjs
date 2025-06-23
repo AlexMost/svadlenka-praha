@@ -5,8 +5,9 @@ import {
   servicesToStructuredOffers,
 } from "../templates/services.mjs";
 import { getStructuredData } from "../templates/structuredData.mjs";
+import { siteUrl } from "../templates/siteUrl.mjs";
 
-const savesyServices = [
+const savesyServices = () => [
   [t`Celková výměna podšívky u kabátu nebo bundy`, t`od 900 Kč`],
   [t`Částečná výměna podšívky (např. rukávy, záda)`, t`od 600 Kč`],
   [t`Výměna podšívky u kabelky nebo batohu`, t`od 450 Kč`],
@@ -26,18 +27,18 @@ export default () => {
       </div>
     
     <section>
-        ${servicesHTML(savesyServices)}
+        ${servicesHTML(savesyServices())}
     </section>
     <section>
       <div class="sluzby-wrapper">
-          <a href="/sluzby" class="cta-button">${t`Všechny služby a ceník`}</a>
+          <a href=${siteUrl("/sluzby")} class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     </section>
 `;
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: "/podsivka",
+      canonical: siteUrl("/podsivka"),
       title: t`Výměna podšívky Praha – kabáty, bundy, kabelky | Krejčovství Švadlenka`,
       description: t`Výměna a oprava podšívky u kabátů, bund a kabelek v Praze. Rychlá a pečlivá práce bez objednání. Krejčovství Švadlenka – Vyšehrad.`,
       keywords: t`výměna podšívky, oprava podšívky, podšívka kabát, podšívka kabelka, švadlena Praha, švadlena Praha 2, krejčovství Vyšehrad`,
@@ -46,8 +47,8 @@ export default () => {
       structuredData: getStructuredData({
         makesOffer: servicesToStructuredOffers([
           {
-            title: "Výměna podšívky",
-            options: savesyServices,
+            title: t`Výměna podšívky`,
+            options: savesyServices(),
           },
         ]),
       }),

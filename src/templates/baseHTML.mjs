@@ -3,6 +3,7 @@ import { header } from "./header.mjs";
 import { kontakty } from "./kontakty.mjs";
 import { getStructuredData } from "./structuredData.mjs";
 import { reviewHTML } from "./review.mjs";
+import {siteUrl} from "./siteUrl.mjs";
 
 const defaultMeta = {
   canonical: "/",
@@ -67,8 +68,8 @@ ${header()}
 <div class="sidebar-overlay"></div>
 <div class="sidebar">
     <ul>
-        <li><a href="/">${t`Úvod`}</a></li>
-        <li><a href="/sluzby">${t`Služby a ceník`}</a></li>
+        <li><a href=${siteUrl('/')}>${t`Úvod`}</a></li>
+        <li><a href=${siteUrl('/sluzby')}>${t`Služby a ceník`}</a></li>
         <li><a href="#kontakty">${t`Kontakty`}</a></li>
     </ul>
     <div class="review-sidebar">

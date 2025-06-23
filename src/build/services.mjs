@@ -21,11 +21,15 @@ function recordsToServices(records) {
 }
 
 function convertToMjs(data) {
-  return `import { t } from "ttag";\n\nexport const services = ${
-    JSON.stringify(data, null, 2)
-      .replace(/"([^"]+)":/g, "$1:") // прибрати лапки навколо ключів
-      .replace(/"([^"]+)"/g, "t`$1`") // обгорнути значення в t`...`
-  };`;
+  const replacer = (match, value) => {
+    return /^\d[\d\s-]*$/.test(value) ? `"${value}"` : `t\`${value}\``;
+  };
+
+  const jsonString = JSON.stringify(data, null, 2)
+    .replace(/"([^"]+)":/g, '$1:') // прибрати лапки навколо ключів
+    .replace(/"([^"]+)"/g, replacer); // обробити значення
+
+  return `import { t } from "ttag";\n\nexport const getServices = () => ${jsonString};`;
 }
 
 const sheetURL =

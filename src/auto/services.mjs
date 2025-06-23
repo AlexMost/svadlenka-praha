@@ -1,6 +1,6 @@
 import { t } from "ttag";
 
-export const services = [
+export const getServices = () => [
   {
     title: t`Kalhoty a rifli`,
     options: [
@@ -8,31 +8,31 @@ export const services = [
         t`zkrácení strojem`,
         t`250 Kč`,
         t`zkrácení strojem`,
-        t`250`
+        "250"
       ],
       [
         t`zkrácení riflí strojem`,
         t`300 Kč`,
         t`zkrácení rifli strojem`,
-        t`300`
+        "300"
       ],
       [
         t`zkrácení ručně neviditelným švem`,
         t`300 Kč`,
         t`zkrácení ručně neviditelným švem`,
-        t`300`
+        "300"
       ],
       [
         t`zkrácení s manžetou nebo rozparky`,
         t`400 Kč`,
         t`zkrácení s manžetou nebo rozparky`,
-        t`400`
+        "400"
       ],
       [
         t`zkrácení riflí s originálním lemem`,
         t`400 Kč`,
         t`zkrácení riflí s originálním lemem`,
-        t`400`
+        "400"
       ],
       [
         t`zkrácení lyžařských kalhot`,
@@ -44,13 +44,13 @@ export const services = [
         t`zúžení nebo rozšíření v pase`,
         t`350-500 Kč`,
         t`zúžení nebo rozšíření v pase`,
-        t`350-500`
+        "350-500"
       ],
       [
         t`zúžení nebo rozšíření bočních švů, krokových švů`,
         t`300-600 Kč`,
         t`zúžení nebo rozšíření bočních švů, krokových švů u kalhot`,
-        t`300-600`
+        "300-600"
       ],
       [
         t`výměna zipů`,
@@ -62,19 +62,19 @@ export const services = [
         t`výměna kapsy`,
         t`300-400 Kč`,
         t`výměna kapsy`,
-        t`300-400`
+        "300-400"
       ],
       [
         t`výměna gumy`,
         t`300 Kč`,
         t`výměna gumy`,
-        t`300`
+        "300"
       ],
       [
         t`štepování/látaní riflí`,
         t`200-500 Kč`,
         t`štepování rifle`,
-        t`200-500`
+        "200-500"
       ]
     ]
   },
@@ -85,25 +85,25 @@ export const services = [
         t`zkrácení delky trička`,
         t`400-500 Kč`,
         t`zkrácení délky trička`,
-        t`400-500`
+        "400-500"
       ],
       [
         t`zkrácení rukavu trička`,
         t`250-300 Kč`,
         t`zkrácení rukávů trička`,
-        t`250-300`
+        "250-300"
       ],
       [
         t`zkrácení kalhot`,
         t`400-500 Kč`,
         t`zkrácení kalhot`,
-        t`400-500`
+        "400-500"
       ],
       [
         t`vyměna manžety mikiny`,
         t`400-500 Kč`,
         t`výměna manžety mikiny`,
-        t`400-500`
+        "400-500"
       ]
     ]
   },
@@ -112,45 +112,45 @@ export const services = [
     options: [
       [
         t`zkrácení strojem`,
-        t`300-500`,
+        "300-500",
         t`zkrácení strojem`,
-        t`300-500`
+        "300-500"
       ],
       [
         t`zkrácení plesových šatů`,
-        t`700-1000`,
+        "700-1000",
         t`zkrácení plesových šatů`,
-        t`700-1000`
+        "700-1000"
       ],
       [
         t`zúžení bočních stran`,
-        t`300-600`,
+        "300-600",
         t`zúžení bočních stran`,
-        t`300-600`
+        "300-600"
       ],
       [
         t`zúžení rukávů`,
-        t`200-400`,
+        "200-400",
         t`zúžení rukávů`,
-        t`200-400`
+        "200-400"
       ],
       [
         t`zkrácení rukávů`,
-        t`200-300`,
+        "200-300",
         t`zkrácení rukávů`,
-        t`200-300`
+        "200-300"
       ],
       [
         t`výměna zipů`,
-        t`300-500`,
+        "300-500",
         t`výměna zipů`,
-        t`300-500`
+        "300-500"
       ],
       [
         t`zúžení zadního středového švu`,
-        t`200-400`,
+        "200-400",
         t`zúžení zadního středového švu`,
-        t`200-400`
+        "200-400"
       ]
     ]
   },
@@ -161,25 +161,25 @@ export const services = [
         t`zkrácení délky`,
         t`300-500 Kč`,
         t`zkrácení délky`,
-        t`300-500`
+        "300-500"
       ],
       [
         t`zkrácení rukávů`,
         t`200-400 Kč`,
         t`zkrácení rukávů`,
-        t`200-400`
+        "200-400"
       ],
       [
         t`zúžení bočních stran`,
         t`200-300 Kč`,
         t`zúžení bočních stran`,
-        t`200-300`
+        "200-300"
       ],
       [
         t`zúžení rukávů`,
         t`150-200 Kč`,
         t`zúžení rukávů`,
-        t`150-200`
+        "150-200"
       ]
     ]
   },
@@ -208,19 +208,19 @@ export const services = [
         t`zúžení v ramenech`,
         t`1000 Kč`,
         t`zúžení v ramenech`,
-        t`1000`
+        "1000"
       ],
       [
         t`zúžení rukávů`,
         t`300-500 Kč`,
         t`zúžení rukávů`,
-        t`300-500`
+        "300-500"
       ],
       [
         t`výměna kapsy`,
         t`300 Kč`,
         t`výměna kapsy`,
-        t`300`
+        "300"
       ],
       [
         t`výměna zipů (vč. zipu)`,
@@ -238,7 +238,7 @@ export const services = [
         t`došití švů`,
         t`200-300 Kč`,
         t`došití švů`,
-        t`200-300`
+        "200-300"
       ]
     ]
   },
@@ -249,13 +249,13 @@ export const services = [
         t`zkrácení délky závěs a záclon`,
         t`300 Kč`,
         t`zkrácení délky zavěs a zaslon`,
-        t`300`
+        "300"
       ],
       [
         t`ušití povlaku na polštář se zipem`,
         t`300 Kč`,
         t`ušití povlaku na polštář se zipem`,
-        t`300`
+        "300"
       ],
       [
         t`výměna jezdců u zipů (vč. ceny jezdců)`,
@@ -302,13 +302,13 @@ export const services = [
         t`zkrácení délky u sako ,kabatu`,
         t`1000 Kč`,
         t`zkrácení délky u kabátů`,
-        t`1000`
+        "1000"
       ],
       [
         t`zkrácení rukávů`,
         t`800 Kč`,
         t`zkrácení rukávů`,
-        t`800`
+        "800"
       ],
       [
         t`výměna zipů (vč. zipu)`,

@@ -5,8 +5,9 @@ import {
   servicesToStructuredOffers,
 } from "../templates/services.mjs";
 import { getStructuredData } from "../templates/structuredData.mjs";
+import { siteUrl } from "../templates/siteUrl.mjs";
 
-const latkoveServices = [
+const latkoveServices = () => [
   [t`Zkrácení sukně nebo šatů`, t`od 400 Kč`],
   [t`Zúžení šatů nebo halenky v pase / bocích`, t`od 450 Kč`],
   [t`Zkrácení rukávů u halenky nebo šatů`, t`od 350 Kč`],
@@ -26,18 +27,18 @@ export default () => {
       </div>
     
     <section>
-        ${servicesHTML(latkoveServices)}
+        ${servicesHTML(latkoveServices())}
     </section>
     <section>
       <div class="sluzby-wrapper">
-          <a href="/sluzby" class="cta-button">${t`Všechny služby a ceník`}</a>
+          <a href=${siteUrl("/sluzby")} class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     </section>
 `;
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: "/latkove",
+      canonical: siteUrl("/latkove"),
       title: t`Úprava látkových oděvů Praha – šaty, halenky, sukně | Praha 2 | Krejčovství Švadlenka`,
       description: t`Zkrácení, zúžení a opravy látkových oděvů v Praze – šaty, halenky, sukně. Krejčovství Švadlenka, Vyšehrad.`,
       keywords: t`úprava šatů Praha, oprava halenky, zkrácení sukně, šaty úprava, látkové oděvy, krejčovství Praha, krejčovství Praha 2, Švadlenka`,
@@ -46,8 +47,8 @@ export default () => {
       structuredData: getStructuredData({
         makesOffer: servicesToStructuredOffers([
           {
-            title: "Látkové oděvy",
-            options: latkoveServices,
+            title: t`Látkové oděvy`,
+            options: latkoveServices(),
           },
         ]),
       }),
