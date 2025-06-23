@@ -175,7 +175,7 @@ msgstr "View the full list of services and clothing alteration prices at Švadle
 
 #: src/pages/batohy.mjs:10
 msgid "Výměna zipu u batohu / kabelky"
-msgstr ""
+msgstr "Zipper replacement on backpack / handbag"
 
 #: src/pages/batohy.mjs:10
 #: src/pages/batohy.mjs:12
@@ -187,25 +187,25 @@ msgstr ""
 #: src/pages/podsivka.mjs:14
 #: src/pages/zavesy.mjs:13
 msgid "od 400 Kč"
-msgstr ""
+msgstr "from CZK 400"
 
 #: src/pages/batohy.mjs:11
 msgid "Oprava podšívky (částečná nebo celková)"
-msgstr ""
+msgstr "Lining repair (partial or full)"
 
 #: src/pages/batohy.mjs:11
 #: src/pages/latkove.mjs:11
 #: src/pages/podsivka.mjs:12
 msgid "od 450 Kč"
-msgstr ""
+msgstr "from CZK 450"
 
 #: src/pages/batohy.mjs:12
 msgid "Zpevnění nebo výměna uch"
-msgstr ""
+msgstr "Reinforcement or replacement of handles"
 
 #: src/pages/batohy.mjs:13
 msgid "Zpevnění dna, začištění trhlin"
-msgstr ""
+msgstr "Reinforcing bottom, mending tears"
 
 #: src/auto/services.mjs:268
 #: src/pages/batohy.mjs:13
@@ -215,264 +215,264 @@ msgstr ""
 #: src/pages/podsivka.mjs:13
 #: src/pages/zavesy.mjs:11
 msgid "od 300 Kč"
-msgstr ""
+msgstr "from CZK 300"
 
 #: src/pages/batohy.mjs:14
 msgid "Oprava zapínání nebo suchých zipů"
-msgstr ""
+msgstr "Repair of fasteners or Velcro"
 
 #: src/pages/batohy.mjs:20
 msgid "Oprava batohů a kabelek"
-msgstr ""
+msgstr "Backpack and handbag repair"
 
 #: src/pages/batohy.mjs:41
 #: src/pages/batohy.mjs:44
 msgid "Oprava batohů a kabelek Praha – zipy, podšívky, ucha | Krejčovství Švadlenka."
-msgstr ""
+msgstr "Backpack and handbag repair in Prague – zippers, linings, handles | Tailor Švadlenka."
 
 #: src/pages/batohy.mjs:42
 #: src/pages/batohy.mjs:45
 msgid "Profesionální opravy batohů a kabelek v Praze. Výměna zipů, ucha, podšívky a víc. Krejčovství Švadlenka – Vyšehrad."
-msgstr ""
+msgstr "Professional backpack and handbag repairs in Prague. Zipper, handle, lining replacement and more. Tailor Švadlenka – Vyšehrad."
 
 #: src/pages/batohy.mjs:43
 msgid "oprava batohů, oprava kabelek, výměna zipu, podšívka kabelka, šití batohu, Švadlenka Praha, krejčovství kabelky Praha 2"
-msgstr ""
+msgstr "backpack repair, handbag repair, zipper replacement, handbag lining, backpack sewing, Švadlenka Prague, handbag tailor Prague 2"
 
 #: src/pages/druk.mjs:10
 msgid "Výměna jednoho druku (kompletní sada)"
-msgstr ""
+msgstr "Replacement of one snap fastener (complete set)"
 
 #: src/pages/druk.mjs:10
 msgid "od 120 Kč"
-msgstr ""
+msgstr "from CZK 120"
 
 #: src/pages/druk.mjs:11
 msgid "Výměna více druků (např. u bundy)"
-msgstr ""
+msgstr "Replacement of multiple snaps (e.g. on a jacket)"
 
 #: src/pages/druk.mjs:12
 msgid "Výměna kovových patentek nebo cvočků"
-msgstr ""
+msgstr "Replacement of metal press-studs or rivets"
 
 #: src/pages/druk.mjs:12
 msgid "od 150 Kč"
-msgstr ""
+msgstr "from CZK 150"
 
 #: src/pages/druk.mjs:13
 msgid "Zpevnění místa, kde byl druk / přidání podložky"
-msgstr ""
+msgstr "Reinforcing area where snap was / adding backing"
 
 #: src/auto/services.mjs:262
 #: src/auto/services.mjs:274
 #: src/pages/druk.mjs:13
 msgid "od 100 Kč"
-msgstr ""
+msgstr "from CZK 100"
 
 #: src/pages/druk.mjs:14
 msgid "Odstranění starého druku bez poškození látky"
-msgstr ""
+msgstr "Removing old snap without damaging fabric"
 
 #: src/pages/druk.mjs:14
 msgid "v ceně služby"
-msgstr ""
+msgstr "included in the service"
 
 #: src/pages/druk.mjs:41
 #: src/pages/druk.mjs:44
 msgid "Výměna druku a patentek Praha 2 – bundy, kalhoty, tašky. Krejčovství Švadlenka."
-msgstr ""
+msgstr "Snap and fastener replacement Prague 2 – jackets, trousers, bags. Tailor Švadlenka."
 
 #: src/pages/druk.mjs:42
 #: src/pages/druk.mjs:45
 msgid "Rychlá výměna druku, cvočků a patentek v Praze 2. Na bundách, kalhotách, kabelkách. Krejčovství Švadlenka – Vyšehrad."
-msgstr ""
+msgstr "Fast replacement of snaps, rivets and fasteners in Prague 2. On jackets, trousers, handbags. Tailor Švadlenka – Vyšehrad."
 
 #: src/pages/druk.mjs:43
 msgid "výměna druku, výměna patentek, oprava cvočků, druk bunda, patentka kalhoty, krejčovství Praha 2, Švadlenka Vyšehrad"
-msgstr ""
+msgstr "snap replacement, fastener replacement, rivet repair, jacket snap, trouser fastener, tailor Prague 2, Švadlenka Vyšehrad"
 
 #: src/pages/dziny.mjs:10
 msgid "Zkrácení délky"
-msgstr ""
+msgstr "Length shortening"
 
 #: src/pages/dziny.mjs:10
 #: src/pages/dziny.mjs:15
 #: src/pages/latkove.mjs:12
 #: src/pages/zavesy.mjs:12
 msgid "od 350 Kč"
-msgstr ""
+msgstr "from CZK 350"
 
 #: src/pages/dziny.mjs:11
 msgid "Zúžení džín v pase nebo nohavicích"
-msgstr ""
+msgstr "Jeans slimming at waist or legs"
 
 #: src/pages/dziny.mjs:12
 msgid "Zkrácení nohavic s originálním lemem"
-msgstr ""
+msgstr "Shortening of legs with original hem"
 
 #: src/auto/services.mjs:39
 #: src/auto/services.mjs:197
 #: src/pages/dziny.mjs:12
 msgid "od 500 Kč"
-msgstr ""
+msgstr "from CZK 500"
 
 #: src/pages/dziny.mjs:13
 msgid "Oprava roztržených švů, děr nebo kapsy"
-msgstr ""
+msgstr "Repair of torn seams, holes or pockets"
 
 #: src/pages/dziny.mjs:14
 msgid "Výměna zipu"
-msgstr ""
+msgstr "Zipper replacement"
 
 #: src/pages/dziny.mjs:15
 msgid "Záplaty na kolenou, úprava sedu"
-msgstr ""
+msgstr "Knee patches, seat adjustment"
 
 #: src/pages/dziny.mjs:42
 msgid "Úprava džín Praha. Krejčovství Švadlenka."
-msgstr ""
+msgstr "Jeans alterations Prague. Tailor Švadlenka."
 
 #: src/pages/dziny.mjs:43
 #: src/pages/dziny.mjs:46
 msgid "Profesionální úprava džín v Praze – zkrácení, zúžení, oprava zipů a švů. Přijďte bez objednání do Krejčovství Švadlenka na Vyšehradě."
-msgstr ""
+msgstr "Professional jeans alterations in Prague – shortening, slimming, zipper and seam repair. Walk-ins welcome at Tailor Švadlenka in Vyšehrad."
 
 #: src/pages/dziny.mjs:44
 msgid "úprava džín Praha, zkrácení džín, oprava džín, zúžení kalhot, výměna zipu, oprava švů, krejčovství Praha 2, švadlena džín, Švadlenka Praha"
-msgstr ""
+msgstr "jeans alteration Prague, jeans shortening, jeans repair, trousers slimming, zipper replacement, seam repair, tailor Prague 2, jeans seamstress, Švadlenka Prague"
 
 #: src/pages/dziny.mjs:45
 msgid "Úprava džín. Krejčovství Švadlenka"
-msgstr ""
+msgstr "Jeans alteration. Tailor Švadlenka"
 
 #: src/pages/latkove.mjs:10
 msgid "Zkrácení sukně nebo šatů"
-msgstr ""
+msgstr "Shortening skirt or dress"
 
 #: src/pages/latkove.mjs:11
 msgid "Zúžení šatů nebo halenky v pase / bocích"
-msgstr ""
+msgstr "Slimming dress or blouse at waist / hips"
 
 #: src/pages/latkove.mjs:12
 msgid "Zkrácení rukávů u halenky nebo šatů"
-msgstr ""
+msgstr "Shortening sleeves on blouse or dress"
 
 #: src/pages/latkove.mjs:13
 msgid "Úprava délky ramínek / průramků"
-msgstr ""
+msgstr "Adjusting strap / armhole length"
 
 #: src/pages/latkove.mjs:14
 msgid "Oprava děr, výměna zipu, začištění okrajů"
-msgstr ""
+msgstr "Repair of holes, zipper replacement, edge finishing"
 
 #: src/pages/latkove.mjs:41
 #: src/pages/latkove.mjs:44
 msgid "Úprava látkových oděvů Praha – šaty, halenky, sukně | Praha 2 | Krejčovství Švadlenka"
-msgstr ""
+msgstr "Fabric garment alterations Prague – dresses, blouses, skirts | Prague 2 | Tailor Švadlenka"
 
 #: src/pages/latkove.mjs:42
 #: src/pages/latkove.mjs:45
 msgid "Zkrácení, zúžení a opravy látkových oděvů v Praze – šaty, halenky, sukně. Krejčovství Švadlenka, Vyšehrad."
-msgstr ""
+msgstr "Shortening, slimming and repairs of fabric garments in Prague – dresses, blouses, skirts. Tailor Švadlenka, Vyšehrad."
 
 #: src/pages/latkove.mjs:43
 msgid "úprava šatů Praha, oprava halenky, zkrácení sukně, šaty úprava, látkové oděvy, krejčovství Praha, krejčovství Praha 2, Švadlenka"
-msgstr ""
+msgstr "dress alteration Prague, blouse repair, skirt shortening, dress fitting, fabric garments, tailor Prague, tailor Prague 2, Švadlenka"
 
 #: src/pages/podsivka.mjs:10
 msgid "Celková výměna podšívky u kabátu nebo bundy"
-msgstr ""
+msgstr "Complete lining replacement for coat or jacket"
 
 #: src/pages/podsivka.mjs:10
 msgid "od 900 Kč"
-msgstr ""
+msgstr "from CZK 900"
 
 #: src/pages/podsivka.mjs:11
 msgid "Částečná výměna podšívky (např. rukávy, záda)"
-msgstr ""
+msgstr "Partial lining replacement (e.g. sleeves, back)"
 
 #: src/pages/podsivka.mjs:11
 msgid "od 600 Kč"
-msgstr ""
+msgstr "from CZK 600"
 
 #: src/pages/podsivka.mjs:12
 msgid "Výměna podšívky u kabelky nebo batohu"
-msgstr ""
+msgstr "Lining replacement for handbag or backpack"
 
 #: src/pages/podsivka.mjs:13
 msgid "Oprava natržené podšívky (zašití, doplnění)"
-msgstr ""
+msgstr "Repair of torn lining (stitching, patching)"
 
 #: src/pages/podsivka.mjs:14
 msgid "Začištění okrajů nebo zpevnění vnitřní části"
-msgstr ""
+msgstr "Edge finishing or reinforcement of interior"
 
 #: src/pages/podsivka.mjs:41
 #: src/pages/podsivka.mjs:44
 msgid "Výměna podšívky Praha – kabáty, bundy, kabelky | Krejčovství Švadlenka"
-msgstr ""
+msgstr "Lining replacement Prague – coats, jackets, handbags | Tailor Švadlenka"
 
 #: src/pages/podsivka.mjs:42
 #: src/pages/podsivka.mjs:45
 msgid "Výměna a oprava podšívky u kabátů, bund a kabelek v Praze. Rychlá a pečlivá práce bez objednání. Krejčovství Švadlenka – Vyšehrad."
-msgstr ""
+msgstr "Lining replacement and repair for coats, jackets and handbags in Prague. Quick and careful service without appointment. Tailor Švadlenka – Vyšehrad."
 
 #: src/pages/podsivka.mjs:43
 msgid "výměna podšívky, oprava podšívky, podšívka kabát, podšívka kabelka, švadlena Praha, švadlena Praha 2, krejčovství Vyšehrad"
-msgstr ""
+msgstr "lining replacement, lining repair, coat lining, handbag lining, seamstress Prague, seamstress Prague 2, tailor Vyšehrad"
 
 #: src/pages/zavesy.mjs:10
 msgid "Zkrácení závěsů nebo záclon na míru"
-msgstr ""
+msgstr "Custom shortening of curtains or drapes"
 
 #: src/pages/zavesy.mjs:10
 msgid "od 350 Kč / pár"
-msgstr ""
+msgstr "from CZK 350 / pair"
 
 #: src/pages/zavesy.mjs:11
 msgid "Začištění okrajů a lemování"
-msgstr ""
+msgstr "Edge finishing and hemming"
 
 #: src/pages/zavesy.mjs:12
 msgid "Přešití tunýlku, přidání řasící pásky"
-msgstr ""
+msgstr "Resewing rod pocket, adding ruffle tape"
 
 #: src/pages/zavesy.mjs:13
 msgid "Úprava délky nebo šířky závěsů"
-msgstr ""
+msgstr "Adjustment of curtain length or width"
 
 #: src/pages/zavesy.mjs:40
 #: src/pages/zavesy.mjs:43
 msgid "Úprava závěsů a záclon Praha – zkracování | Krejčovství Švadlenka."
-msgstr ""
+msgstr "Curtain and drape alterations Prague – shortening | Tailor Švadlenka."
 
 #: src/pages/zavesy.mjs:41
 #: src/pages/zavesy.mjs:44
 msgid "Zkrácení, začištění a úpravy závěsů a záclon v Praze. Rychle, pečlivě a bez objednání. Krejčovství Švadlenka."
-msgstr ""
+msgstr "Shortening, finishing and alterations of curtains and drapes in Prague. Fast, meticulous and no appointment needed. Tailor Švadlenka."
 
 #: src/pages/zavesy.mjs:42
 msgid "zkrácení závěsů, úprava záclon, šití závěsů, záclony na míru, krejčovství Praha 2, Švadlenka Vyšehrad"
-msgstr ""
+msgstr "curtain shortening, drape alteration, curtain sewing, custom drapes, tailor Prague 2, Švadlenka Vyšehrad"
 
 #: src/auto/services.mjs:5
 msgid "Kalhoty a rifli"
-msgstr ""
+msgstr "Trousers and jeans"
 
 #: src/auto/services.mjs:8
 #: src/auto/services.mjs:10
 #: src/auto/services.mjs:114
 #: src/auto/services.mjs:116
 msgid "zkrácení strojem"
-msgstr ""
+msgstr "shortening by machine"
 
 #: src/auto/services.mjs:9
 msgid "250 Kč"
-msgstr ""
+msgstr "CZK 250"
 
 #: src/auto/services.mjs:14
 msgid "zkrácení riflí strojem"
-msgstr ""
+msgstr "jeans shortening by machine"
 
 #: src/auto/services.mjs:15
 #: src/auto/services.mjs:21
@@ -481,62 +481,62 @@ msgstr ""
 #: src/auto/services.mjs:250
 #: src/auto/services.mjs:256
 msgid "300 Kč"
-msgstr ""
+msgstr "CZK 300"
 
 #: src/auto/services.mjs:16
 msgid "zkrácení rifli strojem"
-msgstr ""
+msgstr "jeans shortening by machine"
 
 #: src/auto/services.mjs:20
 #: src/auto/services.mjs:22
 msgid "zkrácení ručně neviditelným švem"
-msgstr ""
+msgstr "shortening with invisible hand stitch"
 
 #: src/auto/services.mjs:26
 #: src/auto/services.mjs:28
 msgid "zkrácení s manžetou nebo rozparky"
-msgstr ""
+msgstr "shortening with cuff or slits"
 
 #: src/auto/services.mjs:27
 #: src/auto/services.mjs:33
 msgid "400 Kč"
-msgstr ""
+msgstr "CZK 400"
 
 #: src/auto/services.mjs:32
 #: src/auto/services.mjs:34
 msgid "zkrácení riflí s originálním lemem"
-msgstr ""
+msgstr "shortening jeans with original hem"
 
 #: src/auto/services.mjs:38
 #: src/auto/services.mjs:40
 msgid "zkrácení lyžařských kalhot"
-msgstr ""
+msgstr "shortening ski trousers"
 
 #: src/auto/services.mjs:41
 #: src/auto/services.mjs:199
 msgid "od 500"
-msgstr ""
+msgstr "from 500"
 
 #: src/auto/services.mjs:44
 #: src/auto/services.mjs:46
 msgid "zúžení nebo rozšíření v pase"
-msgstr ""
+msgstr "waist slimming or widening"
 
 #: src/auto/services.mjs:45
 msgid "350-500 Kč"
-msgstr ""
+msgstr "CZK 350–500"
 
 #: src/auto/services.mjs:50
 msgid "zúžení nebo rozšíření bočních švů, krokových švů"
-msgstr ""
+msgstr "slimming or widening side seams, inseams"
 
 #: src/auto/services.mjs:51
 msgid "300-600 Kč"
-msgstr ""
+msgstr "CZK 300–600"
 
 #: src/auto/services.mjs:52
 msgid "zúžení nebo rozšíření bočních švů, krokových švů u kalhot"
-msgstr ""
+msgstr "slimming or widening side and inseams on trousers"
 
 #: src/auto/services.mjs:56
 #: src/auto/services.mjs:58
@@ -545,102 +545,102 @@ msgstr ""
 #: src/auto/services.mjs:267
 #: src/auto/services.mjs:269
 msgid "výměna zipů"
-msgstr ""
+msgstr "zipper replacement"
 
 #: src/auto/services.mjs:57
 msgid "300-500 Kč + zip"
-msgstr ""
+msgstr "CZK 300–500 + zipper"
 
 #: src/auto/services.mjs:59
 msgid "300-500 + zip"
-msgstr ""
+msgstr "CZK 300–500 + zipper"
 
 #: src/auto/services.mjs:62
 #: src/auto/services.mjs:64
 #: src/auto/services.mjs:220
 #: src/auto/services.mjs:222
 msgid "výměna kapsy"
-msgstr ""
+msgstr "pocket replacement"
 
 #: src/auto/services.mjs:63
 msgid "300-400 Kč"
-msgstr ""
+msgstr "CZK 300–400"
 
 #: src/auto/services.mjs:68
 #: src/auto/services.mjs:70
 msgid "výměna gumy"
-msgstr ""
+msgstr "elastic replacement"
 
 #: src/auto/services.mjs:74
 msgid "štepování/látaní riflí"
-msgstr ""
+msgstr "topstitching/patching jeans"
 
 #: src/auto/services.mjs:75
 msgid "200-500 Kč"
-msgstr ""
+msgstr "CZK 200–500"
 
 #: src/auto/services.mjs:76
 msgid "štepování rifle"
-msgstr ""
+msgstr "jeans topstitching"
 
 #: src/auto/services.mjs:82
 msgid "Tričko a upletové latky"
-msgstr ""
+msgstr "T-shirts and knit fabrics"
 
 #: src/auto/services.mjs:85
 msgid "zkrácení delky trička"
-msgstr ""
+msgstr "shortening t-shirt length"
 
 #: src/auto/services.mjs:86
 #: src/auto/services.mjs:98
 #: src/auto/services.mjs:104
 msgid "400-500 Kč"
-msgstr ""
+msgstr "CZK 400–500"
 
 #: src/auto/services.mjs:87
 msgid "zkrácení délky trička"
-msgstr ""
+msgstr "shortening t-shirt length"
 
 #: src/auto/services.mjs:91
 msgid "zkrácení rukavu trička"
-msgstr ""
+msgstr "shortening t-shirt sleeve"
 
 #: src/auto/services.mjs:92
 msgid "250-300 Kč"
-msgstr ""
+msgstr "CZK 250–300"
 
 #: src/auto/services.mjs:93
 msgid "zkrácení rukávů trička"
-msgstr ""
+msgstr "shortening t-shirt sleeves"
 
 #: src/auto/services.mjs:97
 #: src/auto/services.mjs:99
 msgid "zkrácení kalhot"
-msgstr ""
+msgstr "trouser shortening"
 
 #: src/auto/services.mjs:103
 msgid "vyměna manžety mikiny"
-msgstr ""
+msgstr "sweatshirt cuff replacement"
 
 #: src/auto/services.mjs:105
 msgid "výměna manžety mikiny"
-msgstr ""
+msgstr "sweatshirt cuff replacement"
 
 #: src/auto/services.mjs:111
 msgid "ŠATY a SUKNĚ"
-msgstr ""
+msgstr "DRESSES and SKIRTS"
 
 #: src/auto/services.mjs:120
 #: src/auto/services.mjs:122
 msgid "zkrácení plesových šatů"
-msgstr ""
+msgstr "shortening evening gowns"
 
 #: src/auto/services.mjs:126
 #: src/auto/services.mjs:128
 #: src/auto/services.mjs:173
 #: src/auto/services.mjs:175
 msgid "zúžení bočních stran"
-msgstr ""
+msgstr "slimming side seams"
 
 #: src/auto/services.mjs:132
 #: src/auto/services.mjs:134
@@ -649,7 +649,7 @@ msgstr ""
 #: src/auto/services.mjs:214
 #: src/auto/services.mjs:216
 msgid "zúžení rukávů"
-msgstr ""
+msgstr "slimming sleeves"
 
 #: src/auto/services.mjs:138
 #: src/auto/services.mjs:140
@@ -658,200 +658,200 @@ msgstr ""
 #: src/auto/services.mjs:308
 #: src/auto/services.mjs:310
 msgid "zkrácení rukávů"
-msgstr ""
+msgstr "sleeve shortening"
 
 #: src/auto/services.mjs:150
 #: src/auto/services.mjs:152
 msgid "zúžení zadního středového švu"
-msgstr ""
+msgstr "slimming back center seam"
 
 #: src/auto/services.mjs:158
 msgid "Košile, halenky"
-msgstr ""
+msgstr "Shirts, blouses"
 
 #: src/auto/services.mjs:161
 #: src/auto/services.mjs:163
 #: src/auto/services.mjs:190
 #: src/auto/services.mjs:192
 msgid "zkrácení délky"
-msgstr ""
+msgstr "shortening length"
 
 #: src/auto/services.mjs:162
 #: src/auto/services.mjs:215
 msgid "300-500 Kč"
-msgstr ""
+msgstr "CZK 300–500"
 
 #: src/auto/services.mjs:168
 msgid "200-400 Kč"
-msgstr ""
+msgstr "CZK 200–400"
 
 #: src/auto/services.mjs:174
 #: src/auto/services.mjs:239
 msgid "200-300 Kč"
-msgstr ""
+msgstr "CZK 200–300"
 
 #: src/auto/services.mjs:180
 msgid "150-200 Kč"
-msgstr ""
+msgstr "CZK 150–200"
 
 #: src/auto/services.mjs:187
 msgid "Kabáty, saka, bundy"
-msgstr ""
+msgstr "Coats, jackets, blazers"
 
 #: src/auto/services.mjs:191
 #: src/auto/services.mjs:227
 #: src/auto/services.mjs:315
 msgid "od 700 Kč"
-msgstr ""
+msgstr "from CZK 700"
 
 #: src/auto/services.mjs:193
 #: src/auto/services.mjs:229
 #: src/auto/services.mjs:317
 msgid "od 700"
-msgstr ""
+msgstr "from 700"
 
 #: src/auto/services.mjs:196
 #: src/auto/services.mjs:198
 msgid "zkrácení nebo prodloužení rukávů"
-msgstr ""
+msgstr "shortening or lengthening sleeves"
 
 #: src/auto/services.mjs:202
 #: src/auto/services.mjs:204
 msgid "zkrácení rukávů vrchem"
-msgstr ""
+msgstr "shortening sleeves from shoulder"
 
 #: src/auto/services.mjs:203
 msgid "od 1200 Kč"
-msgstr ""
+msgstr "from CZK 1200"
 
 #: src/auto/services.mjs:205
 msgid "od 1200"
-msgstr ""
+msgstr "from 1200"
 
 #: src/auto/services.mjs:208
 #: src/auto/services.mjs:210
 msgid "zúžení v ramenech"
-msgstr ""
+msgstr "slimming at shoulders"
 
 #: src/auto/services.mjs:209
 #: src/auto/services.mjs:303
 msgid "1000 Kč"
-msgstr ""
+msgstr "CZK 1000"
 
 #: src/auto/services.mjs:226
 #: src/auto/services.mjs:228
 #: src/auto/services.mjs:314
 #: src/auto/services.mjs:316
 msgid "výměna zipů (vč. zipu)"
-msgstr ""
+msgstr "zipper replacement (incl. zipper)"
 
 #: src/auto/services.mjs:232
 #: src/auto/services.mjs:234
 msgid "výměna podšívky (vč. podšívky)"
-msgstr ""
+msgstr "lining replacement (incl. lining)"
 
 #: src/auto/services.mjs:233
 msgid "od 1500 Kč"
-msgstr ""
+msgstr "from CZK 1500"
 
 #: src/auto/services.mjs:235
 msgid "od 1500"
-msgstr ""
+msgstr "from 1500"
 
 #: src/auto/services.mjs:238
 #: src/auto/services.mjs:240
 msgid "došití švů"
-msgstr ""
+msgstr "seam finishing"
 
 #: src/auto/services.mjs:246
 msgid "Jiné textylové výrobky"
-msgstr ""
+msgstr "Other textile products"
 
 #: src/auto/services.mjs:249
 msgid "zkrácení délky závěs a záclon"
-msgstr ""
+msgstr "shortening curtain and drape length"
 
 #: src/auto/services.mjs:251
 msgid "zkrácení délky zavěs a zaslon"
-msgstr ""
+msgstr "shortening curtain and drape length"
 
 #: src/auto/services.mjs:255
 #: src/auto/services.mjs:257
 msgid "ušití povlaku na polštář se zipem"
-msgstr ""
+msgstr "sewing pillow cover with zipper"
 
 #: src/auto/services.mjs:261
 msgid "výměna jezdců u zipů (vč. ceny jezdců)"
-msgstr ""
+msgstr "zipper slider replacement (incl. slider cost)"
 
 #: src/auto/services.mjs:263
 msgid "výměna jezdců u zipů  (vč. ceny jezdců)"
-msgstr ""
+msgstr "zipper slider replacement (incl. slider cost)"
 
 #: src/auto/services.mjs:264
 #: src/auto/services.mjs:276
 msgid "od 100"
-msgstr ""
+msgstr "from 100"
 
 #: src/auto/services.mjs:270
 msgid "od 300"
-msgstr ""
+msgstr "from 300"
 
 #: src/auto/services.mjs:273
 #: src/auto/services.mjs:275
 msgid "výměna druku"
-msgstr ""
+msgstr "snap replacement"
 
 #: src/auto/services.mjs:279
 msgid "nastavení průchodky"
-msgstr ""
+msgstr "grommet setting"
 
 #: src/auto/services.mjs:280
 #: src/auto/services.mjs:286
 #: src/auto/services.mjs:292
 msgid "od 50 Kč"
-msgstr ""
+msgstr "from CZK 50"
 
 #: src/auto/services.mjs:281
 msgid "nastaveni průchodky"
-msgstr ""
+msgstr "grommet setting"
 
 #: src/auto/services.mjs:282
 #: src/auto/services.mjs:288
 #: src/auto/services.mjs:294
 msgid "od 50"
-msgstr ""
+msgstr "from 50"
 
 #: src/auto/services.mjs:285
 #: src/auto/services.mjs:287
 msgid "přišití knoflíku"
-msgstr ""
+msgstr "button sewing"
 
 #: src/auto/services.mjs:291
 #: src/auto/services.mjs:293
 msgid "vyšití knoflíkových dírek"
-msgstr ""
+msgstr "buttonhole embroidery"
 
 #: src/auto/services.mjs:299
 msgid "Oděvy z kůže"
-msgstr ""
+msgstr "Leather garments"
 
 #: src/auto/services.mjs:302
 msgid "zkrácení délky u sako ,kabatu"
-msgstr ""
+msgstr "shortening length of blazer, coat"
 
 #: src/auto/services.mjs:304
 msgid "zkrácení délky u kabátů"
-msgstr ""
+msgstr "shortening coat length"
 
 #: src/auto/services.mjs:309
 msgid "800 Kč"
-msgstr ""
+msgstr "CZK 800"
 
 #: src/pages/index.mjs:75
 msgid "Po - Čt:"
-msgstr ""
+msgstr "Mon - Thu:"
 
 #: src/pages/index.mjs:79
 msgid "Pátek:"
-msgstr ""
+msgstr "Friday:"

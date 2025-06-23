@@ -64,3 +64,4 @@ loadLocales();
 
 await buildPages("cz");
 await buildPages("uk");
+await buildPages("en");

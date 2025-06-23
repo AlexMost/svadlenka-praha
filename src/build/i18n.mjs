@@ -11,6 +11,12 @@ export function loadLocales() {
       standardFs.readFileSync("./i18n/uk/uk.po", "utf8").toString(),
     ),
   );
+  addLocale(
+    "en",
+    gettext.po.parse(
+      standardFs.readFileSync("./i18n/en/en.po", "utf8").toString(),
+    ),
+  );
 }
 
 export function setLocale(locale) {
