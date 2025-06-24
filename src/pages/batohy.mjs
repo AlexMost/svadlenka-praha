@@ -38,7 +38,7 @@ export default () => {
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl("/batohy"),
+      canonical: "/batohy",
       title: t`Oprava batohů a kabelek Praha – zipy, podšívky, ucha | Krejčovství Švadlenka.`,
       description: t`Profesionální opravy batohů a kabelek v Praze. Výměna zipů, ucha, podšívky a víc. Krejčovství Švadlenka – Vyšehrad.`,
       keywords: t`oprava batohů, oprava kabelek, výměna zipu, podšívka kabelka, šití batohu, Švadlenka Praha, krejčovství kabelky Praha 2`,

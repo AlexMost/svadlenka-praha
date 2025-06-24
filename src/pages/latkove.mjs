@@ -38,7 +38,7 @@ export default () => {
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl("/latkove"),
+      canonical: "/latkove",
       title: t`Úprava látkových oděvů Praha – šaty, halenky, sukně | Praha 2 | Krejčovství Švadlenka`,
       description: t`Zkrácení, zúžení a opravy látkových oděvů v Praze – šaty, halenky, sukně. Krejčovství Švadlenka, Vyšehrad.`,
       keywords: t`úprava šatů Praha, oprava halenky, zkrácení sukně, šaty úprava, látkové oděvy, krejčovství Praha, krejčovství Praha 2, Švadlenka`,

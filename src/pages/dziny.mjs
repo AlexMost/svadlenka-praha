@@ -39,7 +39,7 @@ export default () => {
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl("/dziny"),
+      canonical: "/dziny",
       title: t`Úprava džín Praha. Krejčovství Švadlenka.`,
       description: t`Profesionální úprava džín v Praze – zkrácení, zúžení, oprava zipů a švů. Přijďte bez objednání do Krejčovství Švadlenka na Vyšehradě.`,
       keywords: t`úprava džín Praha, zkrácení džín, oprava džín, zúžení kalhot, výměna zipu, oprava švů, krejčovství Praha 2, švadlena džín, Švadlenka Praha`,

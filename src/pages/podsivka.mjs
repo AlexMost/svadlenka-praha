@@ -38,7 +38,7 @@ export default () => {
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl("/podsivka"),
+      canonical: "/podsivka",
       title: t`Výměna podšívky Praha – kabáty, bundy, kabelky | Krejčovství Švadlenka`,
       description: t`Výměna a oprava podšívky u kabátů, bund a kabelek v Praze. Rychlá a pečlivá práce bez objednání. Krejčovství Švadlenka – Vyšehrad.`,
       keywords: t`výměna podšívky, oprava podšívky, podšívka kabát, podšívka kabelka, švadlena Praha, švadlena Praha 2, krejčovství Vyšehrad`,

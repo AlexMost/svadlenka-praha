@@ -28,7 +28,7 @@ export function getCurrentLocale() {
   return currentLocale;
 }
 
-const lang2Code = {
+export const lang2Code = {
   cz: 'cs',
   en: 'en',
   uk: 'uk',

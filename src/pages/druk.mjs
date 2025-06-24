@@ -38,7 +38,7 @@ export default () => {
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl("/druk"),
+      canonical: "/druk",
       title: t`Výměna druku a patentek Praha 2 – bundy, kalhoty, tašky. Krejčovství Švadlenka.`,
       description: t`Rychlá výměna druku, cvočků a patentek v Praze 2. Na bundách, kalhotách, kabelkách. Krejčovství Švadlenka – Vyšehrad.`,
       keywords: t`výměna druku, výměna patentek, oprava cvočků, druk bunda, patentka kalhoty, krejčovství Praha 2, Švadlenka Vyšehrad`,

@@ -37,7 +37,7 @@ export default () => {
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl('/zavesy'),
+      canonical: "/zavesy",
       title: t`Úprava závěsů a záclon Praha – zkracování | Krejčovství Švadlenka.`,
       description: t`Zkrácení, začištění a úpravy závěsů a záclon v Praze. Rychle, pečlivě a bez objednání. Krejčovství Švadlenka.`,
       keywords: t`zkrácení závěsů, úprava záclon, šití závěsů, záclony na míru, krejčovství Praha 2, Švadlenka Vyšehrad`,
@@ -46,7 +46,7 @@ export default () => {
       structuredData: getStructuredData({
         makesOffer: servicesToStructuredOffers([
           {
-            title: "Závěsy a záclony",
+            title: t`Závěsy a záclony`,
             options: batohyServices(),
           },
         ]),

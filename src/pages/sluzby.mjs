@@ -29,7 +29,7 @@ ${getServices()
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl("/sluzby"),
+      canonical: "/sluzby",
       title: t`Služby a ceník. Krejčovství Švadlenka`,
       description: t`Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník.`,
       keywords: t`krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby`,

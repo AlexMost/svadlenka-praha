@@ -4,7 +4,7 @@ import { kontakty } from "./kontakty.mjs";
 import { getStructuredData } from "./structuredData.mjs";
 import { reviewHTML } from "./review.mjs";
 import { siteUrl } from "./siteUrl.mjs";
-import { getLanguageCode } from "../build/i18n.mjs";
+import { getLanguageCode, lang2Code } from "../build/i18n.mjs";
 
 const defaultMeta = {
   canonical: "/",
@@ -15,6 +15,16 @@ const defaultMeta = {
   ogDescription: t`Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.`,
   structuredData: getStructuredData({}),
 };
+
+function getAlternateUrls(url) {
+  const langs = Object.values(lang2Code);
+  return langs
+    .map(
+      (lang) =>
+        `<link rel="alternate" hreflang="${lang}" href="https://svadlenka-praha.cz${lang === "cz" ? url : siteUrl(url, lang)}" />`,
+    )
+    .join("\n");
+}
 
 export function baseHtml({ content = "", meta = defaultMeta }) {
   return `
@@ -31,12 +41,14 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <title>${meta.title}</title>
     <meta name="description" content="${meta.description}">
     <meta name="keywords" content="${meta.keywords}">
-    <link rel="canonical" href="https://svadlenka-praha.cz${meta.canonical}">
+    <link rel="canonical" href="https://svadlenka-praha.cz${siteUrl(meta.canonical)}">
     <meta property="og:title" content="${meta.ogTitle}">
     <meta property="og:description" content="${meta.ogDescription}">
     <meta property="og:image" content="https://svadlenka-praha.cz/img/logo.jpg">
-    <meta property="og:url" content="https://svadlenka-praha.cz${meta.canonical}">
+    <meta property="og:url" content="https://svadlenka-praha.cz${siteUrl(meta.canonical)}}">
     <meta property="og:type" content="website">
+    ${getAlternateUrls(meta.canonical)}
+    <link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz${siteUrl(meta.canonical, 'cz')}" />
     ${
       meta.structuredData
         ? `<script type="application/ld+json">
