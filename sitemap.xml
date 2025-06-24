@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://svadlenka-praha.cz/</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/"/>
+        <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/"/>
+    </url>
+    <url>
+        <loc>https://svadlenka-praha.cz/sluzby/</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/sluzby/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/sluzby/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/sluzby/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/sluzby/"/>
+    </url>
+    <url>
+        <loc>https://svadlenka-praha.cz/dziny/</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/dziny/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/dziny/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/dziny/"/>
+        <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/dziny/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/dziny/"/>
+    </url>
+    <url>
+        <loc>https://svadlenka-praha.cz/latkove/</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/latkove/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/latkove/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/latkove/"/>
+        <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/latkove/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/latkove/"/>
+    </url>
+    <url>
+        <loc>https://svadlenka-praha.cz/batohy/</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/batohy/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/batohy/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/batohy/"/>
+        <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/batohy/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/batohy/"/>
+    </url>
+    <url>
+        <loc>https://svadlenka-praha.cz/zavesy/</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/zavesy/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/zavesy/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/zavesy/"/>
+        <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/zavesy/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/zavesy/"/>
+    </url>
+    <url>
+        <loc>https://svadlenka-praha.cz/podsivka/</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/podsivka/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/podsivka/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/podsivka/"/>
+        <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/podsivka/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/podsivka/"/>
+    </url>
+    <url>
+        <loc>https://svadlenka-praha.cz/druk/</loc>
+        <lastmod>2025-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/druk/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/druk/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/druk/"/>
+        <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/druk/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/druk/"/>
+    </url>
+</urlset>

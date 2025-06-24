@@ -24,6 +24,7 @@ async function copyFiles(locale) {
   await fs.mkdir(publicDir, { recursive: true });
   await fs.cp(staticDir, publicDir, { recursive: true });
   await fs.copyFile("./CNAME", path.join(publicDir, "CNAME"));
+  await fs.copyFile("./sitemap.xml", path.join(publicDir, "sitemap.xml"));
   console.log("Files copied.");
 }
 
