@@ -151,11 +151,11 @@ msgstr "Наши услуги"
 #: src/pages/podsivka.mjs:33
 #: src/pages/zavesy.mjs:32
 msgid "Všechny služby a ceník"
-msgstr "Все услуги и прайс"
+msgstr "Все услуги и цены"
 
 #: src/pages/sluzby.mjs:30
 msgid "Služby a ceník. Krejčovství Švadlenka"
-msgstr "Услуги и прайс. Ателье Švadlenka"
+msgstr "Услуги и цены. Ателье Švadlenka"
 
 #: src/pages/sluzby.mjs:31
 msgid "Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník."
@@ -163,11 +163,11 @@ msgstr "Полный список услуг ателье Švadlenka — под�
 
 #: src/pages/sluzby.mjs:32
 msgid "krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby"
-msgstr "ателье, прайс на подгонку одежды, ремонт одежды Прага, замена молнии, укорочение брюк, швея Нусле, услуги Švadlenka"
+msgstr "ателье, цены на подгонку одежды, ремонт одежды Прага, замена молнии, укорочение брюк, швея Нусле, услуги Švadlenka"
 
 #: src/pages/sluzby.mjs:33
 msgid "Služby a ceník – Švadlenka Praha 2, Nusle"
-msgstr "Услуги и прайс – Švadlenka Прага 2, Нусле"
+msgstr "Услуги и цены – Švadlenka Прага 2, Нусле"
 
 #: src/pages/sluzby.mjs:34
 msgid "Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka."
