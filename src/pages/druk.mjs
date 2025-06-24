@@ -8,8 +8,8 @@ import { getStructuredData } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
 
 const dzinyServices = () => [
-  [t`Výměna jednoho druku (kompletní sada)`, t`od 120 Kč`],
-  [t`Výměna více druků (např. u bundy)`, t`od 300 Kč`],
+  [t`Výměna jednoho druku (kompletní sada)`, t`od 100 Kč`],
+  [t`Výměna více druků (např. u bundy)`, t`50-100 Kč`],
   [t`Výměna kovových patentek nebo cvočků`, t`od 150 Kč`],
   [t`Zpevnění místa, kde byl druk / přidání podložky`, t`od 100 Kč`],
   [t`Odstranění starého druku bez poškození látky`, t`v ceně služby`],

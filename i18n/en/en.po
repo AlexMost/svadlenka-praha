@@ -6,44 +6,44 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/pages/index.mjs:99
-#: src/templates/baseHTML.mjs:9
+#: src/pages/index.mjs:97
+#: src/templates/baseHTML.mjs:11
 msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2"
 msgstr "Švadlenka Tailor Shop – Clothing Repairs and Alterations in Prague 2"
 
-#: src/pages/index.mjs:101
-#: src/templates/baseHTML.mjs:11
+#: src/pages/index.mjs:98
+#: src/templates/baseHTML.mjs:12
 msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15."
 msgstr "Švadlenka is a tailor shop in Prague 2 offering high-quality repairs and alterations of clothing – jeans, coats, linings, backpacks, and curtains. Visit us at Jaromírova 726/15."
 
-#: src/pages/index.mjs:103
+#: src/pages/index.mjs:99
 #: src/templates/baseHTML.mjs:13
 msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle"
 msgstr "tailor shop, clothing repair, alterations, zipper replacement, lining, curtains, Prague 2, Nusle"
 
-#: src/pages/index.mjs:104
+#: src/pages/index.mjs:100
 #: src/templates/baseHTML.mjs:14
 msgid "Krejčovství Švadlenka – Praha 2"
 msgstr "Švadlenka Tailor Shop – Prague 2"
 
-#: src/pages/index.mjs:106
-#: src/templates/baseHTML.mjs:16
+#: src/pages/index.mjs:101
+#: src/templates/baseHTML.mjs:15
 msgid "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15."
 msgstr "Repairs and alterations of clothes, curtains, and backpacks – find us at Jaromírova 726/15."
 
-#: src/templates/baseHTML.mjs:70
-#: src/templates/header.mjs:11
+#: src/templates/header.mjs:14
+#: src/templates/header.mjs:33
 msgid "Úvod"
 msgstr "Home"
 
-#: src/pages/sluzby.mjs:22
-#: src/templates/baseHTML.mjs:71
-#: src/templates/header.mjs:12
+#: src/pages/sluzby.mjs:23
+#: src/templates/header.mjs:15
+#: src/templates/header.mjs:34
 msgid "Služby a ceník"
 msgstr "Services and Price List"
 
-#: src/templates/baseHTML.mjs:72
-#: src/templates/header.mjs:13
+#: src/templates/header.mjs:16
+#: src/templates/header.mjs:35
 #: src/templates/kontakty.mjs:5
 msgid "Kontakty"
 msgstr "Contact"
@@ -64,394 +64,396 @@ msgstr "We would appreciate your review"
 msgid "Napsat recenzi"
 msgstr "Write a review"
 
-#: src/pages/dziny.mjs:21
-#: src/pages/index.mjs:7
+#: src/pages/dziny.mjs:22
+#: src/pages/dziny.mjs:51
+#: src/pages/index.mjs:8
 msgid "Úprava džín"
 msgstr "Jeans Alterations"
 
-#: src/pages/dziny.mjs:22
+#: src/pages/dziny.mjs:23
 #: src/pages/index.mjs:9
 msgid "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny"
 msgstr "We shorten, slim, or repair worn and torn jeans"
 
 #: src/pages/index.mjs:14
-#: src/pages/latkove.mjs:20
+#: src/pages/latkove.mjs:21
+#: src/pages/latkove.mjs:50
 msgid "Látkové oděvy"
 msgstr "Fabric Clothing"
 
-#: src/pages/index.mjs:16
-#: src/pages/latkove.mjs:21
+#: src/pages/index.mjs:15
+#: src/pages/latkove.mjs:22
 msgid "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu"
 msgstr "We offer resizing, slimming of garments, or zipper attachment"
 
-#: src/pages/index.mjs:21
+#: src/pages/index.mjs:20
 msgid "Oprava batohu a kabelek"
 msgstr "Backpack and Handbag Repair"
 
-#: src/pages/batohy.mjs:21
-#: src/pages/index.mjs:22
+#: src/pages/batohy.mjs:22
+#: src/pages/index.mjs:21
 msgid "Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu"
 msgstr "Strap reinforcement, zipper replacement, or fabric tear repair"
 
-#: src/pages/index.mjs:27
-#: src/pages/zavesy.mjs:19
+#: src/pages/index.mjs:26
+#: src/pages/zavesy.mjs:20
+#: src/pages/zavesy.mjs:49
 msgid "Závěsy a záclony"
 msgstr "Curtains and Drapes"
 
-#: src/pages/index.mjs:29
-#: src/pages/zavesy.mjs:20
+#: src/pages/index.mjs:27
+#: src/pages/zavesy.mjs:21
 msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení"
 msgstr "Custom alterations of curtains and drapes — shortening, edge finishing, and tunnel adjustments for hanging"
 
-#: src/pages/index.mjs:34
-#: src/pages/podsivka.mjs:20
+#: src/pages/index.mjs:32
+#: src/pages/podsivka.mjs:21
+#: src/pages/podsivka.mjs:50
 msgid "Výměna podšívky"
 msgstr "Lining Replacement"
 
-#: src/pages/index.mjs:36
-#: src/pages/podsivka.mjs:21
+#: src/pages/index.mjs:33
+#: src/pages/podsivka.mjs:22
 msgid "Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách"
 msgstr "We replace worn or damaged linings in coats and jackets"
 
-#: src/pages/druk.mjs:20
-#: src/pages/index.mjs:41
+#: src/pages/druk.mjs:21
+#: src/pages/druk.mjs:50
+#: src/pages/index.mjs:38
 msgid "Výměna druku"
 msgstr "Snap Fastener Replacement"
 
-#: src/pages/druk.mjs:21
-#: src/pages/index.mjs:43
+#: src/pages/druk.mjs:22
+#: src/pages/index.mjs:39
 msgid "Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích"
 msgstr "Quick replacement of metal snaps on jackets, trousers, or accessories"
 
-#: src/pages/index.mjs:70
+#: src/pages/index.mjs:66
 msgid "Krejčovství Švadlenka"
 msgstr "Švadlenka Tailor Shop"
 
-#: src/pages/index.mjs:71
+#: src/pages/index.mjs:67
 msgid "Kvalitní opravna oděvů pod Nuselským mostem"
 msgstr "Quality clothing repair shop under Nusle Bridge"
 
-#: src/pages/index.mjs:72
+#: src/pages/index.mjs:68
 msgid "Rádi vás přivítáme na adrese Jaromírova 726/15"
 msgstr "We’ll be happy to welcome you at Jaromírova 726/15"
 
-#: src/pages/index.mjs:83
+#: src/pages/index.mjs:79
 msgid "Najít nás"
 msgstr "Find us"
 
-#: src/pages/index.mjs:86
+#: src/pages/index.mjs:82
 msgid "Naše služby"
 msgstr "Our Services"
 
-#: src/pages/batohy.mjs:33
-#: src/pages/druk.mjs:33
-#: src/pages/dziny.mjs:34
-#: src/pages/index.mjs:92
-#: src/pages/latkove.mjs:33
-#: src/pages/podsivka.mjs:33
-#: src/pages/zavesy.mjs:32
+#: src/pages/batohy.mjs:34
+#: src/pages/druk.mjs:34
+#: src/pages/dziny.mjs:35
+#: src/pages/index.mjs:90
+#: src/pages/latkove.mjs:34
+#: src/pages/podsivka.mjs:34
+#: src/pages/zavesy.mjs:33
 msgid "Všechny služby a ceník"
 msgstr "All Services and Price List"
 
-#: src/pages/sluzby.mjs:30
+#: src/pages/sluzby.mjs:33
 msgid "Služby a ceník. Krejčovství Švadlenka"
 msgstr "Services and Price List. Švadlenka Tailor Shop"
 
-#: src/pages/sluzby.mjs:31
+#: src/pages/sluzby.mjs:34
 msgid "Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník."
 msgstr "Complete list of services by Švadlenka tailor shop – coat, trouser, dress, shirt, and leatherwear alterations. Check our current price list."
 
-#: src/pages/sluzby.mjs:32
+#: src/pages/sluzby.mjs:35
 msgid "krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby"
 msgstr "tailor shop, clothing alterations price list, clothing repair Prague, zipper replacement, trouser shortening, seamstress Nusle, Švadlenka services"
 
-#: src/pages/sluzby.mjs:33
+#: src/pages/sluzby.mjs:36
 msgid "Služby a ceník – Švadlenka Praha 2, Nusle"
 msgstr "Services and Prices – Švadlenka Prague 2, Nusle"
 
-#: src/pages/sluzby.mjs:34
+#: src/pages/sluzby.mjs:37
 msgid "Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka."
 msgstr "View the full list of services and clothing alteration prices at Švadlenka tailor shop."
 
-#: src/pages/batohy.mjs:10
+#: src/pages/batohy.mjs:11
 msgid "Výměna zipu u batohu / kabelky"
 msgstr "Zipper replacement on backpack / handbag"
 
-#: src/pages/batohy.mjs:10
-#: src/pages/batohy.mjs:12
-#: src/pages/batohy.mjs:14
-#: src/pages/dziny.mjs:11
-#: src/pages/dziny.mjs:14
-#: src/pages/latkove.mjs:10
-#: src/pages/latkove.mjs:14
-#: src/pages/podsivka.mjs:14
-#: src/pages/zavesy.mjs:13
+#: src/pages/batohy.mjs:11
+#: src/pages/batohy.mjs:13
+#: src/pages/batohy.mjs:15
+#: src/pages/dziny.mjs:12
+#: src/pages/dziny.mjs:15
+#: src/pages/latkove.mjs:11
+#: src/pages/latkove.mjs:15
+#: src/pages/podsivka.mjs:15
+#: src/pages/zavesy.mjs:14
 msgid "od 400 Kč"
 msgstr "from CZK 400"
 
-#: src/pages/batohy.mjs:11
+#: src/pages/batohy.mjs:12
 msgid "Oprava podšívky (částečná nebo celková)"
 msgstr "Lining repair (partial or full)"
 
-#: src/pages/batohy.mjs:11
-#: src/pages/latkove.mjs:11
-#: src/pages/podsivka.mjs:12
+#: src/pages/batohy.mjs:12
+#: src/pages/latkove.mjs:12
+#: src/pages/podsivka.mjs:13
 msgid "od 450 Kč"
 msgstr "from CZK 450"
 
-#: src/pages/batohy.mjs:12
+#: src/pages/batohy.mjs:13
 msgid "Zpevnění nebo výměna uch"
 msgstr "Reinforcement or replacement of handles"
 
-#: src/pages/batohy.mjs:13
+#: src/pages/batohy.mjs:14
 msgid "Zpevnění dna, začištění trhlin"
 msgstr "Reinforcing bottom, mending tears"
 
 #: src/auto/services.mjs:268
-#: src/pages/batohy.mjs:13
-#: src/pages/druk.mjs:11
-#: src/pages/dziny.mjs:13
-#: src/pages/latkove.mjs:13
-#: src/pages/podsivka.mjs:13
-#: src/pages/zavesy.mjs:11
+#: src/pages/batohy.mjs:14
+#: src/pages/dziny.mjs:14
+#: src/pages/latkove.mjs:14
+#: src/pages/podsivka.mjs:14
+#: src/pages/zavesy.mjs:12
 msgid "od 300 Kč"
 msgstr "from CZK 300"
 
-#: src/pages/batohy.mjs:14
+#: src/pages/batohy.mjs:15
 msgid "Oprava zapínání nebo suchých zipů"
 msgstr "Repair of fasteners or Velcro"
 
-#: src/pages/batohy.mjs:20
+#: src/pages/batohy.mjs:21
+#: src/pages/batohy.mjs:50
 msgid "Oprava batohů a kabelek"
 msgstr "Backpack and handbag repair"
 
-#: src/pages/batohy.mjs:41
-#: src/pages/batohy.mjs:44
+#: src/pages/batohy.mjs:42
+#: src/pages/batohy.mjs:45
 msgid "Oprava batohů a kabelek Praha – zipy, podšívky, ucha | Krejčovství Švadlenka."
 msgstr "Backpack and handbag repair in Prague – zippers, linings, handles | Tailor Švadlenka."
 
-#: src/pages/batohy.mjs:42
-#: src/pages/batohy.mjs:45
+#: src/pages/batohy.mjs:43
+#: src/pages/batohy.mjs:46
 msgid "Profesionální opravy batohů a kabelek v Praze. Výměna zipů, ucha, podšívky a víc. Krejčovství Švadlenka – Vyšehrad."
 msgstr "Professional backpack and handbag repairs in Prague. Zipper, handle, lining replacement and more. Tailor Švadlenka – Vyšehrad."
 
-#: src/pages/batohy.mjs:43
+#: src/pages/batohy.mjs:44
 msgid "oprava batohů, oprava kabelek, výměna zipu, podšívka kabelka, šití batohu, Švadlenka Praha, krejčovství kabelky Praha 2"
 msgstr "backpack repair, handbag repair, zipper replacement, handbag lining, backpack sewing, Švadlenka Prague, handbag tailor Prague 2"
 
-#: src/pages/druk.mjs:10
+#: src/pages/druk.mjs:11
 msgid "Výměna jednoho druku (kompletní sada)"
 msgstr "Replacement of one snap fastener (complete set)"
 
-#: src/pages/druk.mjs:10
-msgid "od 120 Kč"
-msgstr "from CZK 120"
-
-#: src/pages/druk.mjs:11
+#: src/pages/druk.mjs:12
 msgid "Výměna více druků (např. u bundy)"
 msgstr "Replacement of multiple snaps (e.g. on a jacket)"
 
-#: src/pages/druk.mjs:12
+#: src/pages/druk.mjs:13
 msgid "Výměna kovových patentek nebo cvočků"
 msgstr "Replacement of metal press-studs or rivets"
 
-#: src/pages/druk.mjs:12
+#: src/pages/druk.mjs:13
 msgid "od 150 Kč"
 msgstr "from CZK 150"
 
-#: src/pages/druk.mjs:13
+#: src/pages/druk.mjs:14
 msgid "Zpevnění místa, kde byl druk / přidání podložky"
 msgstr "Reinforcing area where snap was / adding backing"
 
 #: src/auto/services.mjs:262
 #: src/auto/services.mjs:274
-#: src/pages/druk.mjs:13
+#: src/pages/druk.mjs:11
+#: src/pages/druk.mjs:14
 msgid "od 100 Kč"
 msgstr "from CZK 100"
 
-#: src/pages/druk.mjs:14
+#: src/pages/druk.mjs:15
 msgid "Odstranění starého druku bez poškození látky"
 msgstr "Removing old snap without damaging fabric"
 
-#: src/pages/druk.mjs:14
+#: src/pages/druk.mjs:15
 msgid "v ceně služby"
 msgstr "included in the service"
 
-#: src/pages/druk.mjs:41
-#: src/pages/druk.mjs:44
+#: src/pages/druk.mjs:42
+#: src/pages/druk.mjs:45
 msgid "Výměna druku a patentek Praha 2 – bundy, kalhoty, tašky. Krejčovství Švadlenka."
 msgstr "Snap and fastener replacement Prague 2 – jackets, trousers, bags. Tailor Švadlenka."
 
-#: src/pages/druk.mjs:42
-#: src/pages/druk.mjs:45
+#: src/pages/druk.mjs:43
+#: src/pages/druk.mjs:46
 msgid "Rychlá výměna druku, cvočků a patentek v Praze 2. Na bundách, kalhotách, kabelkách. Krejčovství Švadlenka – Vyšehrad."
 msgstr "Fast replacement of snaps, rivets and fasteners in Prague 2. On jackets, trousers, handbags. Tailor Švadlenka – Vyšehrad."
 
-#: src/pages/druk.mjs:43
+#: src/pages/druk.mjs:44
 msgid "výměna druku, výměna patentek, oprava cvočků, druk bunda, patentka kalhoty, krejčovství Praha 2, Švadlenka Vyšehrad"
 msgstr "snap replacement, fastener replacement, rivet repair, jacket snap, trouser fastener, tailor Prague 2, Švadlenka Vyšehrad"
 
-#: src/pages/dziny.mjs:10
+#: src/pages/dziny.mjs:11
 msgid "Zkrácení délky"
 msgstr "Length shortening"
 
-#: src/pages/dziny.mjs:10
-#: src/pages/dziny.mjs:15
-#: src/pages/latkove.mjs:12
-#: src/pages/zavesy.mjs:12
+#: src/pages/dziny.mjs:11
+#: src/pages/dziny.mjs:16
+#: src/pages/latkove.mjs:13
+#: src/pages/zavesy.mjs:13
 msgid "od 350 Kč"
 msgstr "from CZK 350"
 
-#: src/pages/dziny.mjs:11
+#: src/pages/dziny.mjs:12
 msgid "Zúžení džín v pase nebo nohavicích"
 msgstr "Jeans slimming at waist or legs"
 
-#: src/pages/dziny.mjs:12
+#: src/pages/dziny.mjs:13
 msgid "Zkrácení nohavic s originálním lemem"
 msgstr "Shortening of legs with original hem"
 
 #: src/auto/services.mjs:39
 #: src/auto/services.mjs:197
-#: src/pages/dziny.mjs:12
+#: src/pages/dziny.mjs:13
 msgid "od 500 Kč"
 msgstr "from CZK 500"
 
-#: src/pages/dziny.mjs:13
+#: src/pages/dziny.mjs:14
 msgid "Oprava roztržených švů, děr nebo kapsy"
 msgstr "Repair of torn seams, holes or pockets"
 
-#: src/pages/dziny.mjs:14
+#: src/pages/dziny.mjs:15
 msgid "Výměna zipu"
 msgstr "Zipper replacement"
 
-#: src/pages/dziny.mjs:15
+#: src/pages/dziny.mjs:16
 msgid "Záplaty na kolenou, úprava sedu"
 msgstr "Knee patches, seat adjustment"
 
-#: src/pages/dziny.mjs:42
+#: src/pages/dziny.mjs:43
 msgid "Úprava džín Praha. Krejčovství Švadlenka."
 msgstr "Jeans alterations Prague. Tailor Švadlenka."
 
-#: src/pages/dziny.mjs:43
-#: src/pages/dziny.mjs:46
+#: src/pages/dziny.mjs:44
+#: src/pages/dziny.mjs:47
 msgid "Profesionální úprava džín v Praze – zkrácení, zúžení, oprava zipů a švů. Přijďte bez objednání do Krejčovství Švadlenka na Vyšehradě."
 msgstr "Professional jeans alterations in Prague – shortening, slimming, zipper and seam repair. Walk-ins welcome at Tailor Švadlenka in Vyšehrad."
 
-#: src/pages/dziny.mjs:44
+#: src/pages/dziny.mjs:45
 msgid "úprava džín Praha, zkrácení džín, oprava džín, zúžení kalhot, výměna zipu, oprava švů, krejčovství Praha 2, švadlena džín, Švadlenka Praha"
 msgstr "jeans alteration Prague, jeans shortening, jeans repair, trousers slimming, zipper replacement, seam repair, tailor Prague 2, jeans seamstress, Švadlenka Prague"
 
-#: src/pages/dziny.mjs:45
+#: src/pages/dziny.mjs:46
 msgid "Úprava džín. Krejčovství Švadlenka"
 msgstr "Jeans alteration. Tailor Švadlenka"
 
-#: src/pages/latkove.mjs:10
+#: src/pages/latkove.mjs:11
 msgid "Zkrácení sukně nebo šatů"
 msgstr "Shortening skirt or dress"
 
-#: src/pages/latkove.mjs:11
+#: src/pages/latkove.mjs:12
 msgid "Zúžení šatů nebo halenky v pase / bocích"
 msgstr "Slimming dress or blouse at waist / hips"
 
-#: src/pages/latkove.mjs:12
+#: src/pages/latkove.mjs:13
 msgid "Zkrácení rukávů u halenky nebo šatů"
 msgstr "Shortening sleeves on blouse or dress"
 
-#: src/pages/latkove.mjs:13
+#: src/pages/latkove.mjs:14
 msgid "Úprava délky ramínek / průramků"
 msgstr "Adjusting strap / armhole length"
 
-#: src/pages/latkove.mjs:14
+#: src/pages/latkove.mjs:15
 msgid "Oprava děr, výměna zipu, začištění okrajů"
 msgstr "Repair of holes, zipper replacement, edge finishing"
 
-#: src/pages/latkove.mjs:41
-#: src/pages/latkove.mjs:44
+#: src/pages/latkove.mjs:42
+#: src/pages/latkove.mjs:45
 msgid "Úprava látkových oděvů Praha – šaty, halenky, sukně | Praha 2 | Krejčovství Švadlenka"
 msgstr "Fabric garment alterations Prague – dresses, blouses, skirts | Prague 2 | Tailor Švadlenka"
 
-#: src/pages/latkove.mjs:42
-#: src/pages/latkove.mjs:45
+#: src/pages/latkove.mjs:43
+#: src/pages/latkove.mjs:46
 msgid "Zkrácení, zúžení a opravy látkových oděvů v Praze – šaty, halenky, sukně. Krejčovství Švadlenka, Vyšehrad."
 msgstr "Shortening, slimming and repairs of fabric garments in Prague – dresses, blouses, skirts. Tailor Švadlenka, Vyšehrad."
 
-#: src/pages/latkove.mjs:43
+#: src/pages/latkove.mjs:44
 msgid "úprava šatů Praha, oprava halenky, zkrácení sukně, šaty úprava, látkové oděvy, krejčovství Praha, krejčovství Praha 2, Švadlenka"
 msgstr "dress alteration Prague, blouse repair, skirt shortening, dress fitting, fabric garments, tailor Prague, tailor Prague 2, Švadlenka"
 
-#: src/pages/podsivka.mjs:10
+#: src/pages/podsivka.mjs:11
 msgid "Celková výměna podšívky u kabátu nebo bundy"
 msgstr "Complete lining replacement for coat or jacket"
 
-#: src/pages/podsivka.mjs:10
+#: src/pages/podsivka.mjs:11
 msgid "od 900 Kč"
 msgstr "from CZK 900"
 
-#: src/pages/podsivka.mjs:11
+#: src/pages/podsivka.mjs:12
 msgid "Částečná výměna podšívky (např. rukávy, záda)"
 msgstr "Partial lining replacement (e.g. sleeves, back)"
 
-#: src/pages/podsivka.mjs:11
+#: src/pages/podsivka.mjs:12
 msgid "od 600 Kč"
 msgstr "from CZK 600"
 
-#: src/pages/podsivka.mjs:12
+#: src/pages/podsivka.mjs:13
 msgid "Výměna podšívky u kabelky nebo batohu"
 msgstr "Lining replacement for handbag or backpack"
 
-#: src/pages/podsivka.mjs:13
+#: src/pages/podsivka.mjs:14
 msgid "Oprava natržené podšívky (zašití, doplnění)"
 msgstr "Repair of torn lining (stitching, patching)"
 
-#: src/pages/podsivka.mjs:14
+#: src/pages/podsivka.mjs:15
 msgid "Začištění okrajů nebo zpevnění vnitřní části"
 msgstr "Edge finishing or reinforcement of interior"
 
-#: src/pages/podsivka.mjs:41
-#: src/pages/podsivka.mjs:44
+#: src/pages/podsivka.mjs:42
+#: src/pages/podsivka.mjs:45
 msgid "Výměna podšívky Praha – kabáty, bundy, kabelky | Krejčovství Švadlenka"
 msgstr "Lining replacement Prague – coats, jackets, handbags | Tailor Švadlenka"
 
-#: src/pages/podsivka.mjs:42
-#: src/pages/podsivka.mjs:45
+#: src/pages/podsivka.mjs:43
+#: src/pages/podsivka.mjs:46
 msgid "Výměna a oprava podšívky u kabátů, bund a kabelek v Praze. Rychlá a pečlivá práce bez objednání. Krejčovství Švadlenka – Vyšehrad."
 msgstr "Lining replacement and repair for coats, jackets and handbags in Prague. Quick and careful service without appointment. Tailor Švadlenka – Vyšehrad."
 
-#: src/pages/podsivka.mjs:43
+#: src/pages/podsivka.mjs:44
 msgid "výměna podšívky, oprava podšívky, podšívka kabát, podšívka kabelka, švadlena Praha, švadlena Praha 2, krejčovství Vyšehrad"
 msgstr "lining replacement, lining repair, coat lining, handbag lining, seamstress Prague, seamstress Prague 2, tailor Vyšehrad"
 
-#: src/pages/zavesy.mjs:10
+#: src/pages/zavesy.mjs:11
 msgid "Zkrácení závěsů nebo záclon na míru"
 msgstr "Custom shortening of curtains or drapes"
 
-#: src/pages/zavesy.mjs:10
+#: src/pages/zavesy.mjs:11
 msgid "od 350 Kč / pár"
 msgstr "from CZK 350 / pair"
 
-#: src/pages/zavesy.mjs:11
+#: src/pages/zavesy.mjs:12
 msgid "Začištění okrajů a lemování"
 msgstr "Edge finishing and hemming"
 
-#: src/pages/zavesy.mjs:12
+#: src/pages/zavesy.mjs:13
 msgid "Přešití tunýlku, přidání řasící pásky"
 msgstr "Resewing rod pocket, adding ruffle tape"
 
-#: src/pages/zavesy.mjs:13
+#: src/pages/zavesy.mjs:14
 msgid "Úprava délky nebo šířky závěsů"
 msgstr "Adjustment of curtain length or width"
 
-#: src/pages/zavesy.mjs:40
-#: src/pages/zavesy.mjs:43
+#: src/pages/zavesy.mjs:41
+#: src/pages/zavesy.mjs:44
 msgid "Úprava závěsů a záclon Praha – zkracování | Krejčovství Švadlenka."
 msgstr "Curtain and drape alterations Prague – shortening | Tailor Švadlenka."
 
-#: src/pages/zavesy.mjs:41
-#: src/pages/zavesy.mjs:44
+#: src/pages/zavesy.mjs:42
+#: src/pages/zavesy.mjs:45
 msgid "Zkrácení, začištění a úpravy závěsů a záclon v Praze. Rychle, pečlivě a bez objednání. Krejčovství Švadlenka."
 msgstr "Shortening, finishing and alterations of curtains and drapes in Prague. Fast, meticulous and no appointment needed. Tailor Švadlenka."
 
-#: src/pages/zavesy.mjs:42
+#: src/pages/zavesy.mjs:43
 msgid "zkrácení závěsů, úprava záclon, šití závěsů, záclony na míru, krejčovství Praha 2, Švadlenka Vyšehrad"
 msgstr "curtain shortening, drape alteration, curtain sewing, custom drapes, tailor Prague 2, Švadlenka Vyšehrad"
 
@@ -848,10 +850,14 @@ msgstr "shortening coat length"
 msgid "800 Kč"
 msgstr "CZK 800"
 
-#: src/pages/index.mjs:75
+#: src/pages/index.mjs:71
 msgid "Po - Čt:"
 msgstr "Mon - Thu:"
 
-#: src/pages/index.mjs:79
+#: src/pages/index.mjs:75
 msgid "Pátek:"
 msgstr "Friday:"
+
+#: src/pages/druk.mjs:12
+msgid "50-100 Kč"
+msgstr "CZK 50-100"
