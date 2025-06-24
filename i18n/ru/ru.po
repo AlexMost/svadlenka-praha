@@ -40,7 +40,7 @@ msgstr "Главная"
 #: src/templates/baseHTML.mjs:71
 #: src/templates/header.mjs:12
 msgid "Služby a ceník"
-msgstr "Услуги и прайс"
+msgstr "Услуги и цены"
 
 #: src/templates/baseHTML.mjs:72
 #: src/templates/header.mjs:13
@@ -175,7 +175,7 @@ msgstr "Ознакомьтесь с полным списком услуг и ц
 
 #: src/pages/batohy.mjs:10
 msgid "Výměna zipu u batohu / kabelky"
-msgstr ""
+msgstr "Замена молнии на рюкзаке / сумке"
 
 #: src/pages/batohy.mjs:10
 #: src/pages/batohy.mjs:12
@@ -187,25 +187,25 @@ msgstr ""
 #: src/pages/podsivka.mjs:14
 #: src/pages/zavesy.mjs:13
 msgid "od 400 Kč"
-msgstr ""
+msgstr "от 400 Kč"
 
 #: src/pages/batohy.mjs:11
 msgid "Oprava podšívky (částečná nebo celková)"
-msgstr ""
+msgstr "Ремонт подкладки (частичный или полный)"
 
 #: src/pages/batohy.mjs:11
 #: src/pages/latkove.mjs:11
 #: src/pages/podsivka.mjs:12
 msgid "od 450 Kč"
-msgstr ""
+msgstr "от 450 Kč"
 
 #: src/pages/batohy.mjs:12
 msgid "Zpevnění nebo výměna uch"
-msgstr ""
+msgstr "Укрепление или замена ручек"
 
 #: src/pages/batohy.mjs:13
 msgid "Zpevnění dna, začištění trhlin"
-msgstr ""
+msgstr "Укрепление дна, заделка разрывов"
 
 #: src/auto/services.mjs:268
 #: src/pages/batohy.mjs:13
@@ -215,264 +215,264 @@ msgstr ""
 #: src/pages/podsivka.mjs:13
 #: src/pages/zavesy.mjs:11
 msgid "od 300 Kč"
-msgstr ""
+msgstr "от 300 Kč"
 
 #: src/pages/batohy.mjs:14
 msgid "Oprava zapínání nebo suchých zipů"
-msgstr ""
+msgstr "Ремонт застёжек или липучек"
 
 #: src/pages/batohy.mjs:20
 msgid "Oprava batohů a kabelek"
-msgstr ""
+msgstr "Ремонт рюкзаков и сумок"
 
 #: src/pages/batohy.mjs:41
 #: src/pages/batohy.mjs:44
 msgid "Oprava batohů a kabelek Praha – zipy, podšívky, ucha | Krejčovství Švadlenka."
-msgstr ""
+msgstr "Ремонт рюкзаков и сумок в Праге – молнии, подкладки, ручки | Ателье Швадленка."
 
 #: src/pages/batohy.mjs:42
 #: src/pages/batohy.mjs:45
 msgid "Profesionální opravy batohů a kabelek v Praze. Výměna zipů, ucha, podšívky a víc. Krejčovství Švadlenka – Vyšehrad."
-msgstr ""
+msgstr "Профессиональный ремонт рюкзаков и сумок в Праге. Замена молний, ручек, подкладки и другое. Ателье Швадленка – Вышеград."
 
 #: src/pages/batohy.mjs:43
 msgid "oprava batohů, oprava kabelek, výměna zipu, podšívka kabelka, šití batohu, Švadlenka Praha, krejčovství kabelky Praha 2"
-msgstr ""
+msgstr "ремонт рюкзаков, ремонт сумок, замена молнии, подкладка сумки, пошив рюкзака, Швадленка Прага, ателье сумок Прага 2"
 
 #: src/pages/druk.mjs:10
 msgid "Výměna jednoho druku (kompletní sada)"
-msgstr ""
+msgstr "Замена одной кнопки (полный комплект)"
 
 #: src/pages/druk.mjs:10
 msgid "od 120 Kč"
-msgstr ""
+msgstr "от 120 Kč"
 
 #: src/pages/druk.mjs:11
 msgid "Výměna více druků (např. u bundy)"
-msgstr ""
+msgstr "Замена нескольких кнопок (например, на куртке)"
 
 #: src/pages/druk.mjs:12
 msgid "Výměna kovových patentek nebo cvočků"
-msgstr ""
+msgstr "Замена металлических кнопок или заклёпок"
 
 #: src/pages/druk.mjs:12
 msgid "od 150 Kč"
-msgstr ""
+msgstr "от 150 Kč"
 
 #: src/pages/druk.mjs:13
 msgid "Zpevnění místa, kde byl druk / přidání podložky"
-msgstr ""
+msgstr "Укрепление места установки кнопки / добавление подкладки"
 
 #: src/auto/services.mjs:262
 #: src/auto/services.mjs:274
 #: src/pages/druk.mjs:13
 msgid "od 100 Kč"
-msgstr ""
+msgstr "от 100 Kč"
 
 #: src/pages/druk.mjs:14
 msgid "Odstranění starého druku bez poškození látky"
-msgstr ""
+msgstr "Удаление старой кнопки без повреждения ткани"
 
 #: src/pages/druk.mjs:14
 msgid "v ceně služby"
-msgstr ""
+msgstr "включено в стоимость услуги"
 
 #: src/pages/druk.mjs:41
 #: src/pages/druk.mjs:44
 msgid "Výměna druku a patentek Praha 2 – bundy, kalhoty, tašky. Krejčovství Švadlenka."
-msgstr ""
+msgstr "Замена кнопок и застёжек в Праге 2 – куртки, штаны, сумки. Ателье Швадленка."
 
 #: src/pages/druk.mjs:42
 #: src/pages/druk.mjs:45
 msgid "Rychlá výměna druku, cvočků a patentek v Praze 2. Na bundách, kalhotách, kabelkách. Krejčovství Švadlenka – Vyšehrad."
-msgstr ""
+msgstr "Быстрая замена кнопок, заклёпок и застёжек в Праге 2. На куртках, брюках, сумках. Ателье Швадленка – Вышеград."
 
 #: src/pages/druk.mjs:43
 msgid "výměna druku, výměna patentek, oprava cvočků, druk bunda, patentka kalhoty, krejčovství Praha 2, Švadlenka Vyšehrad"
-msgstr ""
+msgstr "замена кнопок, замена застёжек, ремонт заклёпок, кнопка куртка, застёжка брюки, ателье Прага 2, Швадленка Вышеград"
 
 #: src/pages/dziny.mjs:10
 msgid "Zkrácení délky"
-msgstr ""
+msgstr "Укорачивание длины"
 
 #: src/pages/dziny.mjs:10
 #: src/pages/dziny.mjs:15
 #: src/pages/latkove.mjs:12
 #: src/pages/zavesy.mjs:12
 msgid "od 350 Kč"
-msgstr ""
+msgstr "от 350 Kč"
 
 #: src/pages/dziny.mjs:11
 msgid "Zúžení džín v pase nebo nohavicích"
-msgstr ""
+msgstr "Узкая посадка джинс в талии или штанинах"
 
 #: src/pages/dziny.mjs:12
 msgid "Zkrácení nohavic s originálním lemem"
-msgstr ""
+msgstr "Укорачивание штанин с сохранением оригинального края"
 
 #: src/auto/services.mjs:39
 #: src/auto/services.mjs:197
 #: src/pages/dziny.mjs:12
 msgid "od 500 Kč"
-msgstr ""
+msgstr "от 500 Kč"
 
 #: src/pages/dziny.mjs:13
 msgid "Oprava roztržených švů, děr nebo kapsy"
-msgstr ""
+msgstr "Ремонт порванных швов, дыр или карманов"
 
 #: src/pages/dziny.mjs:14
 msgid "Výměna zipu"
-msgstr ""
+msgstr "Замена молнии"
 
 #: src/pages/dziny.mjs:15
 msgid "Záplaty na kolenou, úprava sedu"
-msgstr ""
+msgstr "Заплаты на коленях, корректировка посадки"
 
 #: src/pages/dziny.mjs:42
 msgid "Úprava džín Praha. Krejčovství Švadlenka."
-msgstr ""
+msgstr "Подгонка джинс в Праге. Ателье Швадленка."
 
 #: src/pages/dziny.mjs:43
 #: src/pages/dziny.mjs:46
 msgid "Profesionální úprava džín v Praze – zkrácení, zúžení, oprava zipů a švů. Přijďte bez objednání do Krejčovství Švadlenka na Vyšehradě."
-msgstr ""
+msgstr "Профессиональная подгонка джинсов в Праге – укорачивание, ушивка, ремонт молний и швов. Приходите без записи в Ателье Швадленка на Вышеграде."
 
 #: src/pages/dziny.mjs:44
 msgid "úprava džín Praha, zkrácení džín, oprava džín, zúžení kalhot, výměna zipu, oprava švů, krejčovství Praha 2, švadlena džín, Švadlenka Praha"
-msgstr ""
+msgstr "подгонка джинсов Прага, укорачивание джинсов, ремонт джинсов, ушивка брюк, замена молнии, ремонт швов, ателье Прага 2, портниха джинсов, Швадленка Прага"
 
 #: src/pages/dziny.mjs:45
 msgid "Úprava džín. Krejčovství Švadlenka"
-msgstr ""
+msgstr "Подгонка джинсов. Ателье Швадленка"
 
 #: src/pages/latkove.mjs:10
 msgid "Zkrácení sukně nebo šatů"
-msgstr ""
+msgstr "Укорачивание юбки или платья"
 
 #: src/pages/latkove.mjs:11
 msgid "Zúžení šatů nebo halenky v pase / bocích"
-msgstr ""
+msgstr "Ушивка платья или блузки в талии / по бокам"
 
 #: src/pages/latkove.mjs:12
 msgid "Zkrácení rukávů u halenky nebo šatů"
-msgstr ""
+msgstr "Укорачивание рукавов на блузке или платье"
 
 #: src/pages/latkove.mjs:13
 msgid "Úprava délky ramínek / průramků"
-msgstr ""
+msgstr "Регулировка длины бретелек / пройм"
 
 #: src/pages/latkove.mjs:14
 msgid "Oprava děr, výměna zipu, začištění okrajů"
-msgstr ""
+msgstr "Ремонт дыр, замена молнии, обработка краёв"
 
 #: src/pages/latkove.mjs:41
 #: src/pages/latkove.mjs:44
 msgid "Úprava látkových oděvů Praha – šaty, halenky, sukně | Praha 2 | Krejčovství Švadlenka"
-msgstr ""
+msgstr "Подгонка тканевых изделий в Праге – платья, блузки, юбки | Прага 2 | Ателье Швадленка"
 
 #: src/pages/latkove.mjs:42
 #: src/pages/latkove.mjs:45
 msgid "Zkrácení, zúžení a opravy látkových oděvů v Praze – šaty, halenky, sukně. Krejčovství Švadlenka, Vyšehrad."
-msgstr ""
+msgstr "Укорачивание, ушивка и ремонт тканевых изделий в Праге – платья, блузки, юбки. Ателье Швадленка, Вышеград."
 
 #: src/pages/latkove.mjs:43
 msgid "úprava šatů Praha, oprava halenky, zkrácení sukně, šaty úprava, látkové oděvy, krejčovství Praha, krejčovství Praha 2, Švadlenka"
-msgstr ""
+msgstr "подгонка платья Прага, ремонт блузки, укорачивание юбки, корректировка платья, тканевые изделия, ателье Прага, ателье Прага 2, Швадленка"
 
 #: src/pages/podsivka.mjs:10
 msgid "Celková výměna podšívky u kabátu nebo bundy"
-msgstr ""
+msgstr "Полная замена подкладки пальто или куртки"
 
 #: src/pages/podsivka.mjs:10
 msgid "od 900 Kč"
-msgstr ""
+msgstr "от 900 Kč"
 
 #: src/pages/podsivka.mjs:11
 msgid "Částečná výměna podšívky (např. rukávy, záda)"
-msgstr ""
+msgstr "Частичная замена подкладки (например, рукава, спина)"
 
 #: src/pages/podsivka.mjs:11
 msgid "od 600 Kč"
-msgstr ""
+msgstr "от 600 Kč"
 
 #: src/pages/podsivka.mjs:12
 msgid "Výměna podšívky u kabelky nebo batohu"
-msgstr ""
+msgstr "Замена подкладки в сумке или рюкзаке"
 
 #: src/pages/podsivka.mjs:13
 msgid "Oprava natržené podšívky (zašití, doplnění)"
-msgstr ""
+msgstr "Ремонт порванной подкладки (зашивка, добавление)"
 
 #: src/pages/podsivka.mjs:14
 msgid "Začištění okrajů nebo zpevnění vnitřní části"
-msgstr ""
+msgstr "Обработка краёв или укрепление внутренней части"
 
 #: src/pages/podsivka.mjs:41
 #: src/pages/podsivka.mjs:44
 msgid "Výměna podšívky Praha – kabáty, bundy, kabelky | Krejčovství Švadlenka"
-msgstr ""
+msgstr "Замена подкладки в Праге – пальто, куртки, сумки | Ателье Швадленка"
 
 #: src/pages/podsivka.mjs:42
 #: src/pages/podsivka.mjs:45
 msgid "Výměna a oprava podšívky u kabátů, bund a kabelek v Praze. Rychlá a pečlivá práce bez objednání. Krejčovství Švadlenka – Vyšehrad."
-msgstr ""
+msgstr "Замена и ремонт подкладки в пальто, куртках и сумках в Праге. Быстро и аккуратно без записи. Ателье Швадленка – Вышеград."
 
 #: src/pages/podsivka.mjs:43
 msgid "výměna podšívky, oprava podšívky, podšívka kabát, podšívka kabelka, švadlena Praha, švadlena Praha 2, krejčovství Vyšehrad"
-msgstr ""
+msgstr "замена подкладки, ремонт подкладки, подкладка пальто, подкладка сумка, швея Прага, швея Прага 2, ателье Вышеград"
 
 #: src/pages/zavesy.mjs:10
 msgid "Zkrácení závěsů nebo záclon na míru"
-msgstr ""
+msgstr "Укорачивание штор или занавесок на заказ"
 
 #: src/pages/zavesy.mjs:10
 msgid "od 350 Kč / pár"
-msgstr ""
+msgstr "от 350 Kč / пара"
 
 #: src/pages/zavesy.mjs:11
 msgid "Začištění okrajů a lemování"
-msgstr ""
+msgstr "Обработка краёв и подгиб"
 
 #: src/pages/zavesy.mjs:12
 msgid "Přešití tunýlku, přidání řasící pásky"
-msgstr ""
+msgstr "Перешив кулиски, добавление сборочной ленты"
 
 #: src/pages/zavesy.mjs:13
 msgid "Úprava délky nebo šířky závěsů"
-msgstr ""
+msgstr "Регулировка длины или ширины штор"
 
 #: src/pages/zavesy.mjs:40
 #: src/pages/zavesy.mjs:43
 msgid "Úprava závěsů a záclon Praha – zkracování | Krejčovství Švadlenka."
-msgstr ""
+msgstr "Подгонка штор и занавесок в Праге – укорачивание | Ателье Швадленка."
 
 #: src/pages/zavesy.mjs:41
 #: src/pages/zavesy.mjs:44
 msgid "Zkrácení, začištění a úpravy závěsů a záclon v Praze. Rychle, pečlivě a bez objednání. Krejčovství Švadlenka."
-msgstr ""
+msgstr "Укорачивание, обработка и подгонка штор и занавесок в Праге. Быстро, аккуратно и без записи. Ателье Швадленка."
 
 #: src/pages/zavesy.mjs:42
 msgid "zkrácení závěsů, úprava záclon, šití závěsů, záclony na míru, krejčovství Praha 2, Švadlenka Vyšehrad"
-msgstr ""
+msgstr "укорачивание штор, подгонка занавесок, пошив штор, занавески на заказ, ателье Прага 2, Швадленка Вышеград"
 
 #: src/auto/services.mjs:5
 msgid "Kalhoty a rifli"
-msgstr ""
+msgstr "Брюки и джинсы"
 
 #: src/auto/services.mjs:8
 #: src/auto/services.mjs:10
 #: src/auto/services.mjs:114
 #: src/auto/services.mjs:116
 msgid "zkrácení strojem"
-msgstr ""
+msgstr "укорачивание машинкой"
 
 #: src/auto/services.mjs:9
 msgid "250 Kč"
-msgstr ""
+msgstr "250 Kč"
 
 #: src/auto/services.mjs:14
 msgid "zkrácení riflí strojem"
-msgstr ""
+msgstr "укорачивание джинсов машинкой"
 
 #: src/auto/services.mjs:15
 #: src/auto/services.mjs:21
@@ -481,62 +481,62 @@ msgstr ""
 #: src/auto/services.mjs:250
 #: src/auto/services.mjs:256
 msgid "300 Kč"
-msgstr ""
+msgstr "300 Kč"
 
 #: src/auto/services.mjs:16
 msgid "zkrácení rifli strojem"
-msgstr ""
+msgstr "укорачивание джинсов машинкой"
 
 #: src/auto/services.mjs:20
 #: src/auto/services.mjs:22
 msgid "zkrácení ručně neviditelným švem"
-msgstr ""
+msgstr "укорачивание вручную невидимым швом"
 
 #: src/auto/services.mjs:26
 #: src/auto/services.mjs:28
 msgid "zkrácení s manžetou nebo rozparky"
-msgstr ""
+msgstr "укорачивание с манжетой или разрезами"
 
 #: src/auto/services.mjs:27
 #: src/auto/services.mjs:33
 msgid "400 Kč"
-msgstr ""
+msgstr "400 Kč"
 
 #: src/auto/services.mjs:32
 #: src/auto/services.mjs:34
 msgid "zkrácení riflí s originálním lemem"
-msgstr ""
+msgstr "укорачивание джинсов с оригинальным краем"
 
 #: src/auto/services.mjs:38
 #: src/auto/services.mjs:40
 msgid "zkrácení lyžařských kalhot"
-msgstr ""
+msgstr "укорачивание лыжных брюк"
 
 #: src/auto/services.mjs:41
 #: src/auto/services.mjs:199
 msgid "od 500"
-msgstr ""
+msgstr "от 500"
 
 #: src/auto/services.mjs:44
 #: src/auto/services.mjs:46
 msgid "zúžení nebo rozšíření v pase"
-msgstr ""
+msgstr "ушивка или расширение в талии"
 
 #: src/auto/services.mjs:45
 msgid "350-500 Kč"
-msgstr ""
+msgstr "350-500 Kč"
 
 #: src/auto/services.mjs:50
 msgid "zúžení nebo rozšíření bočních švů, krokových švů"
-msgstr ""
+msgstr "ушивка или расширение боковых и шаговых швов"
 
 #: src/auto/services.mjs:51
 msgid "300-600 Kč"
-msgstr ""
+msgstr "300-600 Kč"
 
 #: src/auto/services.mjs:52
 msgid "zúžení nebo rozšíření bočních švů, krokových švů u kalhot"
-msgstr ""
+msgstr "ушивка или расширение боковых и шаговых швов брюк"
 
 #: src/auto/services.mjs:56
 #: src/auto/services.mjs:58
@@ -545,102 +545,102 @@ msgstr ""
 #: src/auto/services.mjs:267
 #: src/auto/services.mjs:269
 msgid "výměna zipů"
-msgstr ""
+msgstr "замена молний"
 
 #: src/auto/services.mjs:57
 msgid "300-500 Kč + zip"
-msgstr ""
+msgstr "300-500 Kč + молния"
 
 #: src/auto/services.mjs:59
 msgid "300-500 + zip"
-msgstr ""
+msgstr "300-500 + молния"
 
 #: src/auto/services.mjs:62
 #: src/auto/services.mjs:64
 #: src/auto/services.mjs:220
 #: src/auto/services.mjs:222
 msgid "výměna kapsy"
-msgstr ""
+msgstr "замена кармана"
 
 #: src/auto/services.mjs:63
 msgid "300-400 Kč"
-msgstr ""
+msgstr "300-400 Kč"
 
 #: src/auto/services.mjs:68
 #: src/auto/services.mjs:70
 msgid "výměna gumy"
-msgstr ""
+msgstr "замена резинки"
 
 #: src/auto/services.mjs:74
 msgid "štepování/látaní riflí"
-msgstr ""
+msgstr "штопка/латание джинсов"
 
 #: src/auto/services.mjs:75
 msgid "200-500 Kč"
-msgstr ""
+msgstr "200-500 Kč"
 
 #: src/auto/services.mjs:76
 msgid "štepování rifle"
-msgstr ""
+msgstr "штопка джинсов"
 
 #: src/auto/services.mjs:82
 msgid "Tričko a upletové latky"
-msgstr ""
+msgstr "Футболки и трикотаж"
 
 #: src/auto/services.mjs:85
 msgid "zkrácení delky trička"
-msgstr ""
+msgstr "укорачивание футболки"
 
 #: src/auto/services.mjs:86
 #: src/auto/services.mjs:98
 #: src/auto/services.mjs:104
 msgid "400-500 Kč"
-msgstr ""
+msgstr "400-500 Kč"
 
 #: src/auto/services.mjs:87
 msgid "zkrácení délky trička"
-msgstr ""
+msgstr "укорачивание длины футболки"
 
 #: src/auto/services.mjs:91
 msgid "zkrácení rukavu trička"
-msgstr ""
+msgstr "укорачивание рукава футболки"
 
 #: src/auto/services.mjs:92
 msgid "250-300 Kč"
-msgstr ""
+msgstr "250-300 Kč"
 
 #: src/auto/services.mjs:93
 msgid "zkrácení rukávů trička"
-msgstr ""
+msgstr "укорачивание рукавов футболки"
 
 #: src/auto/services.mjs:97
 #: src/auto/services.mjs:99
 msgid "zkrácení kalhot"
-msgstr ""
+msgstr "укорачивание брюк"
 
 #: src/auto/services.mjs:103
 msgid "vyměna manžety mikiny"
-msgstr ""
+msgstr "замена манжеты худи"
 
 #: src/auto/services.mjs:105
 msgid "výměna manžety mikiny"
-msgstr ""
+msgstr "замена манжеты худи"
 
 #: src/auto/services.mjs:111
 msgid "ŠATY a SUKNĚ"
-msgstr ""
+msgstr "ПЛАТЬЯ и ЮБКИ"
 
 #: src/auto/services.mjs:120
 #: src/auto/services.mjs:122
 msgid "zkrácení plesových šatů"
-msgstr ""
+msgstr "укорачивание вечерних платьев"
 
 #: src/auto/services.mjs:126
 #: src/auto/services.mjs:128
 #: src/auto/services.mjs:173
 #: src/auto/services.mjs:175
 msgid "zúžení bočních stran"
-msgstr ""
+msgstr "ушивка по бокам"
 
 #: src/auto/services.mjs:132
 #: src/auto/services.mjs:134
@@ -649,7 +649,7 @@ msgstr ""
 #: src/auto/services.mjs:214
 #: src/auto/services.mjs:216
 msgid "zúžení rukávů"
-msgstr ""
+msgstr "ушивка рукавов"
 
 #: src/auto/services.mjs:138
 #: src/auto/services.mjs:140
@@ -658,200 +658,200 @@ msgstr ""
 #: src/auto/services.mjs:308
 #: src/auto/services.mjs:310
 msgid "zkrácení rukávů"
-msgstr ""
+msgstr "укорачивание рукавов"
 
 #: src/auto/services.mjs:150
 #: src/auto/services.mjs:152
 msgid "zúžení zadního středového švu"
-msgstr ""
+msgstr "ушивка заднего центрального шва"
 
 #: src/auto/services.mjs:158
 msgid "Košile, halenky"
-msgstr ""
+msgstr "Рубашки, блузки"
 
 #: src/auto/services.mjs:161
 #: src/auto/services.mjs:163
 #: src/auto/services.mjs:190
 #: src/auto/services.mjs:192
 msgid "zkrácení délky"
-msgstr ""
+msgstr "укорачивание длины"
 
 #: src/auto/services.mjs:162
 #: src/auto/services.mjs:215
 msgid "300-500 Kč"
-msgstr ""
+msgstr "300-500 Kč"
 
 #: src/auto/services.mjs:168
 msgid "200-400 Kč"
-msgstr ""
+msgstr "200-400 Kč"
 
 #: src/auto/services.mjs:174
 #: src/auto/services.mjs:239
 msgid "200-300 Kč"
-msgstr ""
+msgstr "200-300 Kč"
 
 #: src/auto/services.mjs:180
 msgid "150-200 Kč"
-msgstr ""
+msgstr "150-200 Kč"
 
 #: src/auto/services.mjs:187
 msgid "Kabáty, saka, bundy"
-msgstr ""
+msgstr "Пальто, пиджаки, куртки"
 
 #: src/auto/services.mjs:191
 #: src/auto/services.mjs:227
 #: src/auto/services.mjs:315
 msgid "od 700 Kč"
-msgstr ""
+msgstr "от 700 Kč"
 
 #: src/auto/services.mjs:193
 #: src/auto/services.mjs:229
 #: src/auto/services.mjs:317
 msgid "od 700"
-msgstr ""
+msgstr "от 700"
 
 #: src/auto/services.mjs:196
 #: src/auto/services.mjs:198
 msgid "zkrácení nebo prodloužení rukávů"
-msgstr ""
+msgstr "укорачивание или удлинение рукавов"
 
 #: src/auto/services.mjs:202
 #: src/auto/services.mjs:204
 msgid "zkrácení rukávů vrchem"
-msgstr ""
+msgstr "укорачивание рукавов сверху"
 
 #: src/auto/services.mjs:203
 msgid "od 1200 Kč"
-msgstr ""
+msgstr "от 1200 Kč"
 
 #: src/auto/services.mjs:205
 msgid "od 1200"
-msgstr ""
+msgstr "от 1200"
 
 #: src/auto/services.mjs:208
 #: src/auto/services.mjs:210
 msgid "zúžení v ramenech"
-msgstr ""
+msgstr "ушивка в плечах"
 
 #: src/auto/services.mjs:209
 #: src/auto/services.mjs:303
 msgid "1000 Kč"
-msgstr ""
+msgstr "1000 Kč"
 
 #: src/auto/services.mjs:226
 #: src/auto/services.mjs:228
 #: src/auto/services.mjs:314
 #: src/auto/services.mjs:316
 msgid "výměna zipů (vč. zipu)"
-msgstr ""
+msgstr "замена молний (вкл. молнию)"
 
 #: src/auto/services.mjs:232
 #: src/auto/services.mjs:234
 msgid "výměna podšívky (vč. podšívky)"
-msgstr ""
+msgstr "замена подкладки (вкл. подкладку)"
 
 #: src/auto/services.mjs:233
 msgid "od 1500 Kč"
-msgstr ""
+msgstr "от 1500 Kč"
 
 #: src/auto/services.mjs:235
 msgid "od 1500"
-msgstr ""
+msgstr "от 1500"
 
 #: src/auto/services.mjs:238
 #: src/auto/services.mjs:240
 msgid "došití švů"
-msgstr ""
+msgstr "дошив швов"
 
 #: src/auto/services.mjs:246
 msgid "Jiné textylové výrobky"
-msgstr ""
+msgstr "Другие текстильные изделия"
 
 #: src/auto/services.mjs:249
 msgid "zkrácení délky závěs a záclon"
-msgstr ""
+msgstr "укорачивание длины штор и занавесок"
 
 #: src/auto/services.mjs:251
 msgid "zkrácení délky zavěs a zaslon"
-msgstr ""
+msgstr "укорачивание длины шторы и гардины"
 
 #: src/auto/services.mjs:255
 #: src/auto/services.mjs:257
 msgid "ušití povlaku na polštář se zipem"
-msgstr ""
+msgstr "пошив наволочки на молнии"
 
 #: src/auto/services.mjs:261
 msgid "výměna jezdců u zipů (vč. ceny jezdců)"
-msgstr ""
+msgstr "замена бегунков на молниях (вкл. цену бегунков)"
 
 #: src/auto/services.mjs:263
 msgid "výměna jezdců u zipů  (vč. ceny jezdců)"
-msgstr ""
+msgstr "замена бегунков на молниях (вкл. цену бегунков)"
 
 #: src/auto/services.mjs:264
 #: src/auto/services.mjs:276
 msgid "od 100"
-msgstr ""
+msgstr "от 100"
 
 #: src/auto/services.mjs:270
 msgid "od 300"
-msgstr ""
+msgstr "от 300"
 
 #: src/auto/services.mjs:273
 #: src/auto/services.mjs:275
 msgid "výměna druku"
-msgstr ""
+msgstr "замена кнопки"
 
 #: src/auto/services.mjs:279
 msgid "nastavení průchodky"
-msgstr ""
+msgstr "установка люверсов"
 
 #: src/auto/services.mjs:280
 #: src/auto/services.mjs:286
 #: src/auto/services.mjs:292
 msgid "od 50 Kč"
-msgstr ""
+msgstr "от 50 Kč"
 
 #: src/auto/services.mjs:281
 msgid "nastaveni průchodky"
-msgstr ""
+msgstr "установка люверсов"
 
 #: src/auto/services.mjs:282
 #: src/auto/services.mjs:288
 #: src/auto/services.mjs:294
 msgid "od 50"
-msgstr ""
+msgstr "от 50"
 
 #: src/auto/services.mjs:285
 #: src/auto/services.mjs:287
 msgid "přišití knoflíku"
-msgstr ""
+msgstr "пришивание пуговицы"
 
 #: src/auto/services.mjs:291
 #: src/auto/services.mjs:293
 msgid "vyšití knoflíkových dírek"
-msgstr ""
+msgstr "вышивка петли для пуговицы"
 
 #: src/auto/services.mjs:299
 msgid "Oděvy z kůže"
-msgstr ""
+msgstr "Кожаная одежда"
 
 #: src/auto/services.mjs:302
 msgid "zkrácení délky u sako ,kabatu"
-msgstr ""
+msgstr "укорачивание длины пиджака, пальто"
 
 #: src/auto/services.mjs:304
 msgid "zkrácení délky u kabátů"
-msgstr ""
+msgstr "укорачивание длины пальто"
 
 #: src/auto/services.mjs:309
 msgid "800 Kč"
-msgstr ""
+msgstr "800 Kč"
 
 #: src/pages/index.mjs:75
 msgid "Po - Čt:"
-msgstr ""
+msgstr "Пн - Чт:"
 
 #: src/pages/index.mjs:79
 msgid "Pátek:"
-msgstr ""
+msgstr "Пятница:"
