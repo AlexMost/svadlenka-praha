@@ -21,7 +21,7 @@ function getAlternateUrls(url) {
   return langs
     .map(
       (lang) =>
-        `<link rel="alternate" hreflang="${lang}" href="https://svadlenka-praha.cz${lang === "cz" ? url : siteUrl(url, lang)}" />`,
+        `<link rel="alternate" hreflang="${lang}" href="https://svadlenka-praha.cz${lang === "cs" ? url : siteUrl(url, lang)}" />`,
     )
     .join("\n");
 }
