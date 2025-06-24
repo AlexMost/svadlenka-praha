@@ -47,6 +47,7 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <meta property="og:image" content="https://svadlenka-praha.cz/img/logo.jpg">
     <meta property="og:url" content="https://svadlenka-praha.cz${siteUrl(meta.canonical)}}">
     <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="jAqkn5ExTdL4UHW_UvAk-nwNhGqMQzg24iUvjRG4AA4" />
     ${getAlternateUrls(meta.canonical)}
     <link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz${siteUrl(meta.canonical, 'cz')}" />
     ${
