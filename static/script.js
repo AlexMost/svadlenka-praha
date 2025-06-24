@@ -29,13 +29,22 @@ const sidebar = document.querySelector(".sidebar");
 const toggleBtn = document.querySelector(".hamburger-btn");
 const overlay = document.querySelector(".sidebar-overlay");
 
+const sidebarLang = document.querySelector(".sidebar-lang");
+const langToggleBtn = document.querySelector(".lang-btn");
+
 toggleBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
   overlay.classList.toggle("active");
 });
 
+langToggleBtn.addEventListener("click", () => {
+  sidebarLang.classList.toggle("open");
+  overlay.classList.toggle("active");
+});
+
 overlay.addEventListener("click", () => {
   sidebar.classList.remove("open");
+  sidebarLang.classList.remove("open");
   overlay.classList.remove("active");
 });
 

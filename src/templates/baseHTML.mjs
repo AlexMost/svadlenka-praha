@@ -59,7 +59,7 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     }
 </head>
 <body>
-${header()}
+${header(meta.canonical)}
 <main class="main">
     ${content}
     ${kontakty()}
@@ -76,17 +76,6 @@ ${header()}
         <p>IČO: 22654321</p>
     </footer>
 </main>
-<div class="sidebar-overlay"></div>
-<div class="sidebar">
-    <ul>
-        <li><a href="${siteUrl("/")}">${t`Úvod`}</a></li>
-        <li><a href="${siteUrl("/sluzby")}">${t`Služby a ceník`}</a></li>
-        <li><a href="#kontakty">${t`Kontakty`}</a></li>
-    </ul>
-    <div class="review-sidebar">
-        ${reviewHTML()}
-    </div>
-</div>
 <script defer src="/script.js?r=$REVISION"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2670E96B8B"></script>
