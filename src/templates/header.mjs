@@ -5,12 +5,12 @@ export function header() {
   return `
     <header>
     <nav>
-        <a href=${siteUrl("/")}>
+        <a href="${siteUrl("/")}">
             <img class="logo" src="/img/logo.svg" alt="Svadlenka logo">
         </a>
         <ul class="menu">
-           <li><a href=${siteUrl('/')}>${t`Úvod`}</a></li>
-            <li><a href=${siteUrl('/sluzby')}>${t`Služby a ceník`}</a></li>
+           <li><a href="${siteUrl('/')}">${t`Úvod`}</a></li>
+            <li><a href="${siteUrl('/sluzby')}">${t`Služby a ceník`}</a></li>
             <li><a href="#kontakty">${t`Kontakty`}</a></li>
         </ul>
         <div class="hamburger-menu">

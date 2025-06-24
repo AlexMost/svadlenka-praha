@@ -1,27 +1,25 @@
-import { t } from 'ttag';
+import { t } from "ttag";
 import { header } from "./header.mjs";
 import { kontakty } from "./kontakty.mjs";
 import { getStructuredData } from "./structuredData.mjs";
 import { reviewHTML } from "./review.mjs";
-import {siteUrl} from "./siteUrl.mjs";
+import { siteUrl } from "./siteUrl.mjs";
+import { getLanguageCode } from "../build/i18n.mjs";
 
 const defaultMeta = {
   canonical: "/",
   title: t`Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2`,
-  description:
-    t`Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.`,
-  keywords:
-    t`krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle`,
+  description: t`Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.`,
+  keywords: t`krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle`,
   ogTitle: t`Krejčovství Švadlenka – Praha 2`,
-  ogDescription:
-    t`Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.`,
+  ogDescription: t`Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.`,
   structuredData: getStructuredData({}),
 };
 
 export function baseHtml({ content = "", meta = defaultMeta }) {
   return `
     <!DOCTYPE html>
-<html lang="cs-CZ">
+<html lang="${getLanguageCode()}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,12 +38,12 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <meta property="og:url" content="https://svadlenka-praha.cz${meta.canonical}">
     <meta property="og:type" content="website">
     ${
-    meta.structuredData
-      ? `<script type="application/ld+json">
+      meta.structuredData
+        ? `<script type="application/ld+json">
         ${JSON.stringify(meta.structuredData, null, 2)}
     </script>`
-      : ""
-  }
+        : ""
+    }
 </head>
 <body>
 ${header()}
@@ -68,8 +66,8 @@ ${header()}
 <div class="sidebar-overlay"></div>
 <div class="sidebar">
     <ul>
-        <li><a href=${siteUrl('/')}>${t`Úvod`}</a></li>
-        <li><a href=${siteUrl('/sluzby')}>${t`Služby a ceník`}</a></li>
+        <li><a href="${siteUrl("/")}">${t`Úvod`}</a></li>
+        <li><a href="${siteUrl("/sluzby")}">${t`Služby a ceník`}</a></li>
         <li><a href="#kontakty">${t`Kontakty`}</a></li>
     </ul>
     <div class="review-sidebar">

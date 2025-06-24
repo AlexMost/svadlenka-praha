@@ -30,14 +30,14 @@ export default () => {
     </section>
     <section>
       <div class="sluzby-wrapper">
-          <a href=${siteUrl("/sluzby")} class="cta-button">${t`Všechny služby a ceník`}</a>
+          <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     </section>
 `;
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl("/zavesy"),
+      canonical: siteUrl('/zavesy'),
       title: t`Úprava závěsů a záclon Praha – zkracování | Krejčovství Švadlenka.`,
       description: t`Zkrácení, začištění a úpravy závěsů a záclon v Praze. Rychle, pečlivě a bez objednání. Krejčovství Švadlenka.`,
       keywords: t`zkrácení závěsů, úprava záclon, šití závěsů, záclony na míru, krejčovství Praha 2, Švadlenka Vyšehrad`,

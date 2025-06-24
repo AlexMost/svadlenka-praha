@@ -44,7 +44,7 @@ const getServices = () => [
 
 function serviceHTML({ title, description, image, url }) {
   return `
-<a href=${url || siteUrl("/sluzby")}>
+<a href="${url || siteUrl("/sluzby")}">
   <div class="service">
     <img
       decoding="async"
@@ -87,13 +87,13 @@ export default () => {
         </div>
       </section>
       <div class="sluzby-wrapper">
-        <a href=${siteUrl("/sluzby")} class="cta-button">${t`Všechny služby a ceník`}</a>
+        <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     `;
   return baseHtml({
     content: pageHTML,
     meta: {
-      canonical: siteUrl("/"),
+      canonical: siteUrl('/'),
       title: t`Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2`,
       description: t`Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.`,
       keywords: t`krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle`,

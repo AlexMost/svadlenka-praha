@@ -31,7 +31,7 @@ export default () => {
     </section>
     <section>
       <div class="sluzby-wrapper">
-          <a href=${siteUrl("/sluzby")} class="cta-button">${t`Všechny služby a ceník`}</a>
+          <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     </section>
 `;
