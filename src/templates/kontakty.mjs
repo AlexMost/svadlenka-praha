@@ -7,11 +7,13 @@ export function kontakty() {
             <div class="address">
                 <address>
                     <ul class="address">
-                        <li><img class="icon" src="/img/icons/location.svg" alt="adresses"> <a onClick="conversionFn()"
+                        <li><img class="icon" src="/img/icons/location.svg" alt="adresses"> <a target="_blank" onClick="conversionFn()"
                                 href="https://maps.app.goo.gl/tuCXWGpSLHZmgrTq8">Jaromírova 726/15, Praha 2</a></li>
                         <li><img class="icon" src="/img/icons/telephone.svg" alt="telephone"><a href="tel:+420775240309" onClick="conversionFn()">+420 775 240
                             309</a></li>
                         <li><img class="icon" src="/img/icons/email.svg" alt="email"><a href="mailto:lorikfavorit@gmail.com">lorikfavorit@gmail.com</a>
+                        </li>
+                        <li><img class="icon" src="/img/icons/instagram.svg" alt="instagram"><a target="_blank" href="https://www.instagram.com/svadlenka_praha">svadlenka_praha</a>
                         </li>
                     </ul>
                 </address>
