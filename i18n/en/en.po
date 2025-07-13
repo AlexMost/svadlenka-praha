@@ -894,7 +894,7 @@ msgstr "We professionally tailor them to perfectly fit you"
 #: src/pages/saty.mjs:20
 #: src/pages/saty.mjs:57
 msgid "Úprava šatů na míru"
-msgstr "Tailoring dresses to fit"
+msgstr "Tailoring dresses"
 
 #: src/pages/index.mjs:15
 msgid "Každé šaty mohou sedět perfektně — stačí je upravit přesně na vaši postavu."
