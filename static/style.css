@@ -105,6 +105,7 @@ menu,
 nav,
 section {
     display: block;
+    font-size: 24px;
 }
 
 ol,
@@ -591,6 +592,7 @@ footer {
     color: #c0bcb2;
     line-height: 1.5;
     flex-direction: row;
+    font-size: 16px;
     gap: 10px;
     @media (max-width: 768px) {
         padding: 30px 40px;
@@ -621,6 +623,11 @@ footer {
     .price {
         white-space: nowrap;
     }
+}
+
+
+.services-more li {
+    margin-top: 20px;
 }
 
 .sluzby-wrapper {
@@ -671,4 +678,8 @@ footer {
         object-fit: cover;
         width: 100%;
     }
+}
+
+.alt-text {
+    color: #d5c18e;
 }

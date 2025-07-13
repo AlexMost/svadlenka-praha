@@ -5,10 +5,16 @@ import { siteUrl } from "../templates/siteUrl.mjs";
 
 const getServices = () => [
   {
-    title: t`Úprava džín`,
-    description: t`Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny`,
-    image: "/img/services/dziny.webp",
-    url: siteUrl("/dziny"),
+    title: t`Klasické kalhoty`,
+    description: t`Profesionálně je upravíme na míru tak, aby vám perfektně seděly`,
+    image: "/img/services/kalhoty.webp",
+    url: siteUrl("/kalhoty"),
+  },
+  {
+    title: t`Úprava šatů na míru`,
+    description: t`Každé šaty mohou sedět perfektně — stačí je upravit přesně na vaši postavu.`,
+    image: "/img/services/saty.webp",
+    url: siteUrl("/saty"),
   },
   {
     title: t`Látkové oděvy`,
@@ -17,10 +23,16 @@ const getServices = () => [
     url: siteUrl("/latkove"),
   },
   {
-    title: t`Oprava batohu a kabelek`,
-    description: t`Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu`,
-    image: "/img/services/batohy.webp",
-    url: siteUrl("/batohy"),
+    title: t`Úprava džín`,
+    description: t`Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny`,
+    image: "/img/services/dziny.webp",
+    url: siteUrl("/dziny"),
+  },
+  {
+    title: t`Výměna podšívky`,
+    description: t`Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách`,
+    image: "/img/services/podsivky.webp",
+    url: siteUrl("/podsivka"),
   },
   {
     title: t`Závěsy a záclony`,
@@ -29,10 +41,10 @@ const getServices = () => [
     url: siteUrl("/zavesy"),
   },
   {
-    title: t`Výměna podšívky`,
-    description: t`Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách`,
-    image: "/img/services/podsivky.webp",
-    url: siteUrl("/podsivka"),
+    title: t`Oprava batohu a kabelek`,
+    description: t`Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu`,
+    image: "/img/services/batohy.webp",
+    url: siteUrl("/batohy"),
   },
   {
     title: t`Výměna druku`,

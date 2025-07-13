@@ -6,27 +6,27 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/pages/index.mjs:97
+#: src/pages/index.mjs:109
 #: src/templates/baseHTML.mjs:11
 msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2"
 msgstr "Ательє Švadlenka – ремонт і пошиття одягу Прага 2"
 
-#: src/pages/index.mjs:98
+#: src/pages/index.mjs:110
 #: src/templates/baseHTML.mjs:12
 msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15."
 msgstr "Švadlenka – ательє на Празі 2, що пропонує якісний ремонт і пошиття одягу – джинси, пальта, підкладки, рюкзаки та фіранки. Ви знайдете нас за адресою Jaromírova 726/15."
 
-#: src/pages/index.mjs:99
+#: src/pages/index.mjs:111
 #: src/templates/baseHTML.mjs:13
 msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle"
 msgstr "ательє, ремонт одягу, пошиття одягу, заміна блискавки, підкладка, фіранки, Прага 2, Нусле"
 
-#: src/pages/index.mjs:100
+#: src/pages/index.mjs:112
 #: src/templates/baseHTML.mjs:14
 msgid "Krejčovství Švadlenka – Praha 2"
 msgstr "Ательє Švadlenka – Прага 2"
 
-#: src/pages/index.mjs:101
+#: src/pages/index.mjs:113
 #: src/templates/baseHTML.mjs:15
 msgid "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15."
 msgstr "Ремонт і пошиття одягу, штор, рюкзаків – ви знайдете нас за адресою Jaromírova 726/15."
@@ -48,11 +48,11 @@ msgstr "Послуги та ціни"
 msgid "Kontakty"
 msgstr "Контакти"
 
-#: src/templates/kontakty.mjs:21
+#: src/templates/kontakty.mjs:23
 msgid "Po – Čt: 10:00 – 18:00"
 msgstr "Пн – Чт: 10:00 – 18:00"
 
-#: src/templates/kontakty.mjs:22
+#: src/templates/kontakty.mjs:24
 msgid "Pá: 10:00 – 16:00"
 msgstr "Пт: 10:00 – 16:00"
 
@@ -65,43 +65,42 @@ msgid "Napsat recenzi"
 msgstr "Написати відгук"
 
 #: src/pages/dziny.mjs:22
-#: src/pages/dziny.mjs:51
-#: src/pages/index.mjs:8
+#: src/pages/dziny.mjs:57
+#: src/pages/index.mjs:26
 msgid "Úprava džín"
 msgstr "Ремонт джинсів"
 
-#: src/pages/dziny.mjs:23
-#: src/pages/index.mjs:9
+#: src/pages/index.mjs:27
 msgid "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny"
 msgstr "Укорочуємо, звужуємо або ремонтуємо потерті та порвані джинси"
 
-#: src/pages/index.mjs:14
+#: src/pages/index.mjs:20
 #: src/pages/latkove.mjs:21
 #: src/pages/latkove.mjs:50
 msgid "Látkové oděvy"
 msgstr "Тканинний одяг"
 
-#: src/pages/index.mjs:15
+#: src/pages/index.mjs:21
 #: src/pages/latkove.mjs:22
 msgid "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu"
 msgstr "Пропонуємо зміну розміру, звуження одягу або пришивання блискавки"
 
-#: src/pages/index.mjs:20
+#: src/pages/index.mjs:44
 msgid "Oprava batohu a kabelek"
 msgstr "Ремонт рюкзаків та сумок"
 
 #: src/pages/batohy.mjs:22
-#: src/pages/index.mjs:21
+#: src/pages/index.mjs:45
 msgid "Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu"
 msgstr "Посилення ременів, заміна блискавок або ремонт розривів у матеріалі"
 
-#: src/pages/index.mjs:26
+#: src/pages/index.mjs:38
 #: src/pages/zavesy.mjs:20
 #: src/pages/zavesy.mjs:49
 msgid "Závěsy a záclony"
 msgstr "Штори та занавіски"
 
-#: src/pages/index.mjs:27
+#: src/pages/index.mjs:39
 #: src/pages/zavesy.mjs:21
 msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení"
 msgstr "Індивідуальна підгонка штор і фіранок — укорочення, обробка країв та регулювання тунелю для кріплення"
@@ -119,41 +118,43 @@ msgstr "Ми замінюємо зношені або пошкоджені пі�
 
 #: src/pages/druk.mjs:21
 #: src/pages/druk.mjs:50
-#: src/pages/index.mjs:38
+#: src/pages/index.mjs:50
 msgid "Výměna druku"
 msgstr "Заміна кнопок"
 
 #: src/pages/druk.mjs:22
-#: src/pages/index.mjs:39
+#: src/pages/index.mjs:51
 msgid "Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích"
 msgstr "Швидка заміна металевих кнопок на куртках, штанах або аксесуарах"
 
-#: src/pages/index.mjs:66
+#: src/pages/index.mjs:78
 msgid "Krejčovství Švadlenka"
 msgstr "Ательє Švadlenka"
 
-#: src/pages/index.mjs:67
+#: src/pages/index.mjs:79
 msgid "Kvalitní opravna oděvů pod Nuselským mostem"
 msgstr "Якісна майстерня ремонту одягу під Нусельським мостом"
 
-#: src/pages/index.mjs:68
+#: src/pages/index.mjs:80
 msgid "Rádi vás přivítáme na adrese Jaromírova 726/15"
 msgstr "З радістю зустрінемо вас за адресою Jaromírova 726/15"
 
-#: src/pages/index.mjs:79
+#: src/pages/index.mjs:91
 msgid "Najít nás"
 msgstr "Знайти нас"
 
-#: src/pages/index.mjs:82
+#: src/pages/index.mjs:94
 msgid "Naše služby"
 msgstr "Наші послуги"
 
 #: src/pages/batohy.mjs:34
 #: src/pages/druk.mjs:34
-#: src/pages/dziny.mjs:35
-#: src/pages/index.mjs:90
+#: src/pages/dziny.mjs:41
+#: src/pages/index.mjs:102
+#: src/pages/kalhoty.mjs:34
 #: src/pages/latkove.mjs:34
 #: src/pages/podsivka.mjs:34
+#: src/pages/saty.mjs:41
 #: src/pages/zavesy.mjs:33
 msgid "Všechny služby a ceník"
 msgstr "Всі послуги та ціни"
@@ -187,6 +188,7 @@ msgstr ""
 #: src/pages/batohy.mjs:15
 #: src/pages/dziny.mjs:12
 #: src/pages/dziny.mjs:15
+#: src/pages/kalhoty.mjs:12
 #: src/pages/latkove.mjs:11
 #: src/pages/latkove.mjs:15
 #: src/pages/podsivka.mjs:15
@@ -215,8 +217,11 @@ msgstr "Посилення дна, обробка розривів"
 #: src/auto/services.mjs:268
 #: src/pages/batohy.mjs:14
 #: src/pages/dziny.mjs:14
+#: src/pages/kalhoty.mjs:13
+#: src/pages/kalhoty.mjs:14
 #: src/pages/latkove.mjs:14
 #: src/pages/podsivka.mjs:14
+#: src/pages/saty.mjs:11
 #: src/pages/zavesy.mjs:12
 msgid "od 300 Kč"
 msgstr "від 300 Kč"
@@ -330,20 +335,20 @@ msgstr "Заміна блискавки"
 msgid "Záplaty na kolenou, úprava sedu"
 msgstr "Латки на колінах, корекція посадки"
 
-#: src/pages/dziny.mjs:43
+#: src/pages/dziny.mjs:49
 msgid "Úprava džín Praha. Krejčovství Švadlenka."
 msgstr "Ремонт джинсів у Празі. Ательє Švadlenka."
 
-#: src/pages/dziny.mjs:44
-#: src/pages/dziny.mjs:47
+#: src/pages/dziny.mjs:50
+#: src/pages/dziny.mjs:53
 msgid "Profesionální úprava džín v Praze – zkrácení, zúžení, oprava zipů a švů. Přijďte bez objednání do Krejčovství Švadlenka na Vyšehradě."
 msgstr "Професійний ремонт джинсів у Празі – укорочення, звуження, ремонт блискавок і швів. Заходьте без запису до ательє Švadlenka на Вишеграді."
 
-#: src/pages/dziny.mjs:45
+#: src/pages/dziny.mjs:51
 msgid "úprava džín Praha, zkrácení džín, oprava džín, zúžení kalhot, výměna zipu, oprava švů, krejčovství Praha 2, švadlena džín, Švadlenka Praha"
 msgstr "ремонт джинсів Прага, укорочення джинсів, ремонт джинсів, звуження штанів, заміна блискавки, ремонт швів, ательє Прага 2, кравчиня джинсів, Švadlenka Прага"
 
-#: src/pages/dziny.mjs:46
+#: src/pages/dziny.mjs:52
 msgid "Úprava džín. Krejčovství Švadlenka"
 msgstr "Ремонт джинсів. Ательє Švadlenka"
 
@@ -394,6 +399,7 @@ msgid "Částečná výměna podšívky (např. rukávy, záda)"
 msgstr "Часткова заміна підкладки (наприклад, рукави, спина)"
 
 #: src/pages/podsivka.mjs:12
+#: src/pages/saty.mjs:14
 msgid "od 600 Kč"
 msgstr "від 600 Kč"
 
@@ -703,6 +709,7 @@ msgstr "Пальта, піджаки, куртки"
 #: src/auto/services.mjs:191
 #: src/auto/services.mjs:227
 #: src/auto/services.mjs:315
+#: src/pages/saty.mjs:12
 msgid "od 700 Kč"
 msgstr "від 700 Kč"
 
@@ -811,6 +818,7 @@ msgstr "встановлення люверса"
 #: src/auto/services.mjs:280
 #: src/auto/services.mjs:286
 #: src/auto/services.mjs:292
+#: src/pages/kalhoty.mjs:11
 msgid "od 50 Kč"
 msgstr "від 50 Kč"
 
@@ -850,14 +858,147 @@ msgstr "укорочення довжини пальт"
 msgid "800 Kč"
 msgstr "800 Kč"
 
-#: src/pages/index.mjs:71
+#: src/pages/index.mjs:83
 msgid "Po - Čt:"
 msgstr "Пн – Чт:"
 
-#: src/pages/index.mjs:75
+#: src/pages/index.mjs:87
 msgid "Pátek:"
 msgstr "П’ятниця:"
 
 #: src/pages/druk.mjs:12
 msgid "50-100 Kč"
 msgstr "50-100 Kč"
+
+#: src/pages/dziny.mjs:23
+msgid "Džíny jsou oblíbenou součástí každodenního oblečení. Ať už se jedná o drobný rozparek, opotřebený šev, potřebu úpravy délky nebo velkosti — postaráme se o vaše kalhoty rychle a kvalitně."
+msgstr "Джинси — улюблена частина повсякденного одягу. Незалежно від того, чи йдеться про невеликий розрив, зношений шов або потребу в корекції довжини чи розміру — ми швидко й якісно подбаємо про ваші штани."
+
+#: src/pages/dziny.mjs:35
+msgid "🧵 Při práci používáme pevné nitě a kvalitní látky. Zachováváme styl, střih i charakter vašich džínů."
+msgstr "🧵 У роботі ми використовуємо міцні нитки та якісні тканини. Зберігаємо стиль, крій і характер ваших джинсів."
+
+#: src/pages/dziny.mjs:36
+msgid "✂️ Spolehlivý servis, precizní zpracování a osobní přístup"
+msgstr "✂️ Надійний сервіс, точна обробка та індивідуальний підхід"
+
+#: src/pages/index.mjs:8
+msgid "Klasické kalhoty"
+msgstr "Класичні штани"
+
+#: src/pages/index.mjs:9
+msgid "Profesionálně je upravíme na míru tak, aby vám perfektně seděly"
+msgstr "Ми професійно підженемо їх під вашу фігуру, щоб вони ідеально сиділи"
+
+#: src/pages/index.mjs:14
+#: src/pages/saty.mjs:20
+#: src/pages/saty.mjs:57
+msgid "Úprava šatů na míru"
+msgstr "Індивідуальне коригування суконь"
+
+#: src/pages/index.mjs:15
+msgid "Každé šaty mohou sedět perfektně — stačí je upravit přesně na vaši postavu."
+msgstr "Будь-яка сукня може сидіти ідеально — потрібно лише підігнати її під вашу фігуру."
+
+#: src/pages/kalhoty.mjs:11
+msgid "Přišití knoflíku nebo háčku na zapínání"
+msgstr "Пришивання ґудзика або гачка для застібки"
+
+#: src/pages/kalhoty.mjs:12
+msgid "Zkrácení s možností zachování původního spodního lemu"
+msgstr "Вкорочення з можливістю збереження оригінального нижнього краю"
+
+#: src/pages/kalhoty.mjs:13
+msgid "Výměna kapesní látky (vnitřní kapsy)"
+msgstr "Заміна підкладки кишень (внутрішні кишені)"
+
+#: src/pages/kalhoty.mjs:14
+msgid "Úprava velikosti, včetně zúžení nebo rozšíření pasu"
+msgstr "Коригування розміру, включно з вшиванням або розширенням талії"
+
+#: src/pages/kalhoty.mjs:20
+#: src/pages/kalhoty.mjs:50
+msgid "Oprava klasických kalhot"
+msgstr "Ремонт класичних штанів"
+
+#: src/pages/kalhoty.mjs:21
+msgid ""
+"Klasické kalhoty jsou základem business stylu a často i oblíbeným kouskem šatníku.\n"
+"Profesionálně je upravíme na míru tak, aby vám perfektně seděly."
+msgstr ""
+"Класичні штани — основа ділового стилю й часто улюблена річ у гардеробі.\n"
+"Ми професійно підженемо їх по фігурі, щоб вони сиділи ідеально."
+
+#: src/pages/kalhoty.mjs:31
+msgid "🧵Při práci používáme kvalitní materiály, zachováváme barevnost a styl vašich kalhot"
+msgstr "🧵 Ми використовуємо якісні матеріали, зберігаючи колір і стиль ваших штанів"
+
+#: src/pages/kalhoty.mjs:42
+#: src/pages/kalhoty.mjs:45
+msgid "Oprava klasických kalhot – zkracování, výměna kapes a úprava pasu | Švadlenka Praha"
+msgstr "Ремонт класичних штанів — вкорочення, заміна кишень і корекція талії | Швейна майстерня Švadlenka Прага"
+
+#: src/pages/kalhoty.mjs:43
+#: src/pages/kalhoty.mjs:46
+msgid "Profesionální oprava klasických kalhot v centru Prahy – zkrácení nohavic, výměna kapesní látky, přišití knoflíku a úprava pasu. Navštivte Krejčovství Švadlenka."
+msgstr "Професійний ремонт класичних штанів у центрі Праги — вкорочення штанин, заміна підкладки кишень, пришивання ґудзика та коригування талії. Завітайте до ательє Švadlenka."
+
+#: src/pages/kalhoty.mjs:44
+msgid "oprava kalhot Praha, zkrácení kalhot, výměna kapes, úprava pasu kalhot, krejčovství Praha 2, klasické kalhoty, přišití knoflíku, švadlena Nusle"
+msgstr "ремонт штанів Прага, вкорочення штанів, заміна кишень, корекція талії штанів, ательє Прага 2, класичні штани, пришивання ґудзика, швачка Нусле"
+
+#: src/pages/saty.mjs:11
+msgid "Zúžení nebo rozšíření šatů v pase, bocích či prsou"
+msgstr "Звуження або розширення сукні в талії, стегнах чи грудях"
+
+#: src/pages/saty.mjs:12
+msgid "Zkrácení délky (celé délky nebo ramínek)"
+msgstr "Вкорочення довжини (всього виробу або бретелей)"
+
+#: src/pages/saty.mjs:13
+msgid "Úpravu rukávů nebo jejich zkrácení"
+msgstr "Коригування рукавів або їх вкорочення"
+
+#: src/pages/saty.mjs:13
+msgid "od 200 Kč"
+msgstr "від 200 крон"
+
+#: src/pages/saty.mjs:14
+msgid "Drobné opravy (např. zipy, knoflíky, rozparky)"
+msgstr "Невеликі ремонти (наприклад, блискавки, ґудзики, розрізи)"
+
+#: src/pages/saty.mjs:21
+msgid ""
+"Každé šaty mohou sedět perfektně — stačí je upravit přesně na vaši postavu.\n"
+"Ať už se jedná o nové šaty, které potřebují zkrátit nebo zúžit, nebo o oblíbený model, který\n"
+"chcete oživit – jsme tu pro vás."
+msgstr ""
+"Кожна сукня може сидіти ідеально — просто підженіть її під свою фігуру.\n"
+"Чи це нова сукня, яку потрібно вкоротити або звузити, чи улюблена модель,\n"
+"яку ви хочете оновити — ми тут для вас."
+
+#: src/pages/saty.mjs:34
+msgid "🧵 Každý model upravujeme individuálně — s důrazem na střih, styl a pohodlí při nošení."
+msgstr "🧵 Кожну модель ми коригуємо індивідуально — з увагою до крою, стилю та комфорту в носінні."
+
+#: src/pages/saty.mjs:35
+msgid "📏 Samotné měření zabere jen minimum času díky moderním metodám, které používáme."
+msgstr "📏 Сам процес зняття мірок займає мінімум часу завдяки сучасним методам, які ми використовуємо."
+
+#: src/pages/saty.mjs:36
+msgid "✂️ Precizní práce, osobní přístup a výsledky, které oceníte."
+msgstr "✂️ Точна робота, індивідуальний підхід і результат, який ви оціните."
+
+#: src/pages/saty.mjs:49
+#: src/pages/saty.mjs:52
+msgid "Úprava šatů na míru – zkrácení, zúžení, opravy zipů a rukávů | Švadlenka Praha"
+msgstr "Індивідуальне коригування суконь — вкорочення, звуження, ремонт блискавок і рукавів | Švadlenka Прага"
+
+#: src/pages/saty.mjs:50
+#: src/pages/saty.mjs:53
+msgid "Profesionální úpravy šatů v Praze – zúžení v pase, zkrácení délky nebo ramínek, opravy zipů a knoflíků. Švadlenka na Praze 2 vám šaty upraví na míru."
+msgstr "Професійне коригування суконь у Празі — звуження в талії, вкорочення довжини або бретелей, ремонт блискавок і ґудзиків. У Švadlenka на Празі 2 ми підженемо сукню під вашу фігуру."
+
+#: src/pages/saty.mjs:51
+msgid "úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, šaty na míru, krejčovství Praha 2"
+msgstr "коригування суконь, ремонт суконь, вкорочення суконь, звуження суконь, швачка Прага, корекція бретелей, ремонт блискавок, корекція рукавів, сукні на замовлення, ательє Прага 2"

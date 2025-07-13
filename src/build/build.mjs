@@ -58,6 +58,8 @@ async function buildPages(locale) {
   await buildPage("zavesy", locale);
   await buildPage("podsivka", locale);
   await buildPage("druk", locale);
+  await buildPage("kalhoty", locale);
+  await buildPage("saty", locale);
   console.log("Pages built", locale);
 }
 
