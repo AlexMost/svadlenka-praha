@@ -30,17 +30,19 @@ const toggleBtn = document.querySelector(".hamburger-btn");
 const overlay = document.querySelector(".sidebar-overlay");
 
 const sidebarLang = document.querySelector(".sidebar-lang");
-const langToggleBtn = document.querySelector(".lang-btn");
+const langToggleBtn = document.querySelectorAll(".lang-btn");
 
 toggleBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
   overlay.classList.toggle("active");
 });
 
-langToggleBtn.addEventListener("click", () => {
-  sidebarLang.classList.toggle("open");
-  overlay.classList.toggle("active");
-});
+langToggleBtn.forEach((el) => {
+  el.addEventListener("click", () => {
+    sidebarLang.classList.toggle("open");
+    overlay.classList.toggle("active");
+  });
+})
 
 overlay.addEventListener("click", () => {
   sidebar.classList.remove("open");

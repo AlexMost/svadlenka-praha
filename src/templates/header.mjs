@@ -14,6 +14,16 @@ export function header(currentUrl) {
            <li><a href="${siteUrl("/")}">${t`Úvod`}</a></li>
             <li><a href="${siteUrl("/sluzby")}">${t`Služby a ceník`}</a></li>
             <li><a href="#kontakty">${t`Kontakty`}</a></li>
+            <li>
+               <div class="language-switcher">
+                    <div class="language-switcher-inner">
+                   <button class="lang-btn">
+                        <img class="icon" src="/img/icons/lang.svg" alt="lang menu" />
+                        ${getCurrentLocale()}
+                    </button>
+                    </div>
+              </div>
+            </li>
         </ul>
         <div class="hamburger-menu">
             <a class="telephone-btn" href="tel:+420775240309" onClick="conversionFn()"><img src="/img/icons/telephone.svg" alt="telephone"></a>

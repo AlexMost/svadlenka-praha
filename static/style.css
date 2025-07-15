@@ -152,7 +152,7 @@ section {
     margin: 0 auto;
     padding: 50px 30px;
     line-height: 1.5;
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         line-height: 1.5;
         text-align: center;
         padding: 40px 30px;
@@ -189,7 +189,7 @@ section[id] {
 
 /* UI Components end */
 header {
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         position: sticky;
         top: 0;
         transition: box-shadow 0.3s ease;
@@ -201,7 +201,7 @@ header {
 section {
     h1 {
         font-size: 50px;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             font-size: 33px;
         }
     }
@@ -209,7 +209,7 @@ section {
     h2 {
         color: #d5c18e;
         font-size: 30px;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             font-size: 25px;
             margin-top: 20px;
             line-height: 1.5;
@@ -220,27 +220,27 @@ section {
         font-size: 25px;
         color: #c0bcb2;
         margin-top: 60px;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             font-size: 25px;
         }
     }
 }
 
 .shadow {
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     }
 }
 
 .only-desktop {
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         display: none;
     }
 }
 
 .only-mobile {
     display: none;
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         display: block;
     }
 }
@@ -254,7 +254,7 @@ nav {
 
     .logo {
         width: 270px;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             width: 150px;
         }
     }
@@ -262,7 +262,7 @@ nav {
     .menu {
         margin: auto 0;
         font-size: 28px;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             display: none;
         }
     }
@@ -278,7 +278,7 @@ nav {
 
     .hamburger-menu {
         display: none;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             display: flex;
             flex-direction: row;
             gap: 40px;
@@ -302,7 +302,7 @@ nav {
         padding: 0;
         align-items: center;
         justify-content: center;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             display: block;
         }
         .icon {
@@ -329,6 +329,16 @@ nav {
         }
     }
 
+    .language-switcher {
+        display: inline-block;
+        position: relative;
+    }
+
+    .language-switcher-inner {
+        top: -26px;
+        position: absolute;
+    }
+
     .hamburger-btn img {
         object-fit: contain;
         width: 100%;
@@ -347,7 +357,7 @@ nav {
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         padding-right: 30px;
     }
 }
@@ -365,7 +375,7 @@ nav {
         border-collapse: separate;
         border-spacing: 30px 0;
         text-align: left;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             font-size: 20px;
             margin: 40px auto;
         }
@@ -383,7 +393,7 @@ nav {
     z-index: -1;
     background-position: right -143px;
     min-height: 800px;
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         background-position: right -117px;
         opacity: 0.1;
     }
@@ -391,7 +401,7 @@ nav {
 
 .section-title {
     font-size: 50px;
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         font-size: 33px;
     }
     text-align: center;
@@ -405,7 +415,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         margin-top: 40px;
     }
 
@@ -447,7 +457,6 @@ nav {
     z-index: 999;
     padding: 40px 20px;
     transition: right 0.3s ease;
-
     ul {
         display: block;
         margin: 20px;
@@ -473,7 +482,10 @@ nav {
     z-index: 999;
     padding: 40px 20px;
     transition: right 0.3s ease;
-
+    @media (min-width: 1030px) {
+        top: 0;
+        width: 50%;
+    }
     ul {
         margin: auto;
         width: fit-content;
@@ -512,6 +524,9 @@ nav {
     visibility: hidden;
     transition: opacity 0.3s ease;
     z-index: 998;
+    @media (min-width: 1030px) {
+        top: 0px;
+    }
 }
 
 .sidebar-overlay.active {
@@ -522,6 +537,9 @@ nav {
 .review-sidebar {
     position: absolute;
     bottom: 165px;
+    @media (min-width: 1030px) {
+        bottom: 65px;
+    }
     margin-left: -20px;
 }
 
@@ -532,7 +550,7 @@ nav {
     gap: 80px;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         margin-top: 40px;
         justify-content: center;
         gap: 40px;
@@ -555,13 +573,13 @@ nav {
         font-size: 25px;
         white-space: nowrap;
         overflow: hidden;
-        @media (max-width: 768px) {
+        @media (max-width: 1030px) {
             font-size: 20px;
             margin-bottom: 20px;
         }
 
         a {
-            @media (max-width: 768px) {
+            @media (max-width: 1030px) {
                 text-decoration: underline;
             }
         }
@@ -594,7 +612,7 @@ footer {
     flex-direction: row;
     font-size: 16px;
     gap: 10px;
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         padding: 30px 40px;
         flex-direction: column;
     }
@@ -602,7 +620,7 @@ footer {
 
 .sluzby-list {
     font-size: 24px;
-    @media (max-width: 768px) {
+    @media (max-width: 1030px) {
         font-size: 20px;
     }
 }
