@@ -894,7 +894,7 @@ msgstr "Ми професійно підженемо їх під вашу фіг
 #: src/pages/saty.mjs:20
 #: src/pages/saty.mjs:57
 msgid "Úprava šatů na míru"
-msgstr "Індивідуальне коригування суконь"
+msgstr "Індивідуальна підшивка суконь"
 
 #: src/pages/index.mjs:15
 msgid "Každé šaty mohou sedět perfektně — stačí je upravit přesně na vaši postavu."
