@@ -32,18 +32,18 @@ msgid "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromí
 msgstr "Ремонт и подгонка одежды, штор и рюкзаков — мы находимся по адресу Jaromírova 726/15."
 
 #: src/templates/header.mjs:14
-#: src/templates/header.mjs:33
+#: src/templates/header.mjs:43
 msgid "Úvod"
 msgstr "Главная"
 
 #: src/pages/sluzby.mjs:23
 #: src/templates/header.mjs:15
-#: src/templates/header.mjs:34
+#: src/templates/header.mjs:44
 msgid "Služby a ceník"
 msgstr "Услуги и цены"
 
 #: src/templates/header.mjs:16
-#: src/templates/header.mjs:35
+#: src/templates/header.mjs:45
 #: src/templates/kontakty.mjs:5
 msgid "Kontakty"
 msgstr "Контакты"
@@ -305,6 +305,7 @@ msgstr "Укорачивание длины"
 #: src/pages/dziny.mjs:11
 #: src/pages/dziny.mjs:16
 #: src/pages/latkove.mjs:13
+#: src/pages/zavesy.mjs:11
 #: src/pages/zavesy.mjs:13
 msgid "od 350 Kč"
 msgstr "от 350 Kč"
@@ -432,10 +433,6 @@ msgstr "замена подкладки, ремонт подкладки, под
 #: src/pages/zavesy.mjs:11
 msgid "Zkrácení závěsů nebo záclon na míru"
 msgstr "Укорачивание штор или занавесок на заказ"
-
-#: src/pages/zavesy.mjs:11
-msgid "od 350 Kč / pár"
-msgstr "от 350 Kč / пара"
 
 #: src/pages/zavesy.mjs:12
 msgid "Začištění okrajů a lemování"

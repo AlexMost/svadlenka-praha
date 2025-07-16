@@ -32,18 +32,18 @@ msgid "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromí
 msgstr "Repairs and alterations of clothes, curtains, and backpacks – find us at Jaromírova 726/15."
 
 #: src/templates/header.mjs:14
-#: src/templates/header.mjs:33
+#: src/templates/header.mjs:43
 msgid "Úvod"
 msgstr "Home"
 
 #: src/pages/sluzby.mjs:23
 #: src/templates/header.mjs:15
-#: src/templates/header.mjs:34
+#: src/templates/header.mjs:44
 msgid "Služby a ceník"
 msgstr "Services and Price List"
 
 #: src/templates/header.mjs:16
-#: src/templates/header.mjs:35
+#: src/templates/header.mjs:45
 #: src/templates/kontakty.mjs:5
 msgid "Kontakty"
 msgstr "Contact"
@@ -305,6 +305,7 @@ msgstr "Length shortening"
 #: src/pages/dziny.mjs:11
 #: src/pages/dziny.mjs:16
 #: src/pages/latkove.mjs:13
+#: src/pages/zavesy.mjs:11
 #: src/pages/zavesy.mjs:13
 msgid "od 350 Kč"
 msgstr "from CZK 350"
@@ -432,10 +433,6 @@ msgstr "lining replacement, lining repair, coat lining, handbag lining, seamstre
 #: src/pages/zavesy.mjs:11
 msgid "Zkrácení závěsů nebo záclon na míru"
 msgstr "Custom shortening of curtains or drapes"
-
-#: src/pages/zavesy.mjs:11
-msgid "od 350 Kč / pár"
-msgstr "from CZK 350 / pair"
 
 #: src/pages/zavesy.mjs:12
 msgid "Začištění okrajů a lemování"

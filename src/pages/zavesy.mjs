@@ -8,7 +8,7 @@ import { getStructuredData } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
 
 const batohyServices = () => [
-  [t`Zkrácení závěsů nebo záclon na míru`, t`od 350 Kč / pár`],
+  [t`Zkrácení závěsů nebo záclon na míru`, t`od 350 Kč`],
   [t`Začištění okrajů a lemování`, t`od 300 Kč`],
   [t`Přešití tunýlku, přidání řasící pásky`, t`od 350 Kč`],
   [t`Úprava délky nebo šířky závěsů`, t`od 400 Kč`],
