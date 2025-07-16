@@ -17,11 +17,11 @@ const defaultMeta = {
 };
 
 function getAlternateUrls(url) {
-  const langs = Object.values(lang2Code);
+  const langs = Object.keys(lang2Code);
   return langs
     .map(
       (lang) =>
-        `<link rel="alternate" hreflang="${lang}" href="https://svadlenka-praha.cz${lang === "cs" ? url : siteUrl(url, lang)}" />`,
+        `<link rel="alternate" hreflang="${lang}" href="https://svadlenka-praha.cz${siteUrl(url, lang)}" />`,
     )
     .join("\n");
 }
