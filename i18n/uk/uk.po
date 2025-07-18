@@ -181,7 +181,7 @@ msgstr "Перегляньте повний перелік послуг та ц�
 
 #: src/pages/batohy.mjs:11
 msgid "Výměna zipu u batohu / kabelky"
-msgstr ""
+msgstr "Заміна блискавки на рюкзаку / сумці"
 
 #: src/pages/batohy.mjs:11
 #: src/pages/batohy.mjs:13
@@ -958,7 +958,7 @@ msgstr "Коригування рукавів або їх вкорочення"
 
 #: src/pages/saty.mjs:13
 msgid "od 200 Kč"
-msgstr "від 200 крон"
+msgstr "від 200 Kč"
 
 #: src/pages/saty.mjs:14
 msgid "Drobné opravy (např. zipy, knoflíky, rozparky)"

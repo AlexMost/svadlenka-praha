@@ -958,7 +958,7 @@ msgstr "Коррекция или укорачивание рукавов"
 
 #: src/pages/saty.mjs:13
 msgid "od 200 Kč"
-msgstr "от 200 крон"
+msgstr "от 200 Kč"
 
 #: src/pages/saty.mjs:14
 msgid "Drobné opravy (např. zipy, knoflíky, rozparky)"
