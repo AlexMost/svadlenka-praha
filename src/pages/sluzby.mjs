@@ -8,10 +8,15 @@ import {
 } from "../templates/services.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
 
+function wrapTrailingEmoji(text) {
+  const emojiRegex = /([\p{Emoji_Presentation}\p{Extended_Pictographic}]+)$/u;
+  return text.replace(emojiRegex, '<span class="emoji">$1</span>');
+}
+
 const serviceHTML = (service) => {
   return `
   <section>
-    <h2>${service.title}</h2>
+    <h2>${wrapTrailingEmoji(service.title)}</h2>
     ${servicesHTML(service.options)}
 </section>
   `;

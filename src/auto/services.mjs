@@ -2,7 +2,7 @@ import { t } from "ttag";
 
 export const getServices = () => [
   {
-    title: t`Kalhoty a rifli`,
+    title: t`Kalhoty a rifli 👖`,
     options: [
       [
         t`zkrácení strojem`,
@@ -79,7 +79,7 @@ export const getServices = () => [
     ]
   },
   {
-    title: t`Tričko a upletové latky`,
+    title: t`Tričko a upletové latky 👕`,
     options: [
       [
         t`zkrácení delky trička`,
@@ -108,7 +108,7 @@ export const getServices = () => [
     ]
   },
   {
-    title: t`ŠATY a SUKNĚ`,
+    title: t`ŠATY a SUKNĚ 👗💃`,
     options: [
       [
         t`zkrácení strojem`,
@@ -155,7 +155,7 @@ export const getServices = () => [
     ]
   },
   {
-    title: t`Košile, halenky`,
+    title: t`Košile, halenky 👔👚`,
     options: [
       [
         t`zkrácení délky`,
@@ -184,7 +184,7 @@ export const getServices = () => [
     ]
   },
   {
-    title: t`Kabáty, saka, bundy`,
+    title: t`Kabáty, saka, bundy 🧷`,
     options: [
       [
         t`zkrácení délky`,
@@ -243,7 +243,7 @@ export const getServices = () => [
     ]
   },
   {
-    title: t`Jiné textylové výrobky`,
+    title: t`Jiné textylové výrobky 🧵`,
     options: [
       [
         t`zkrácení záclon a závěsů za 1 metr šířky`,
@@ -304,7 +304,7 @@ export const getServices = () => [
     ]
   },
   {
-    title: t`Oděvy z kůže`,
+    title: t`Oděvy z kůže 🧥`,
     options: [
       [
         t`zkrácení délky u sako ,kabatu`,
@@ -327,7 +327,7 @@ export const getServices = () => [
     ]
   },
   {
-    title: t`Oprava batohů a kabelek`,
+    title: t`Oprava batohů a kabelek 🎒`,
     options: [
       [
         t`výměna zipu u batohu / kabelky`,

@@ -36,7 +36,7 @@ msgstr "Ремонт и подгонка одежды, штор и рюкзак�
 msgid "Úvod"
 msgstr "Главная"
 
-#: src/pages/sluzby.mjs:23
+#: src/pages/sluzby.mjs:28
 #: src/templates/header.mjs:15
 #: src/templates/header.mjs:44
 msgid "Služby a ceník"
@@ -159,23 +159,23 @@ msgstr "Наши услуги"
 msgid "Všechny služby a ceník"
 msgstr "Все услуги и цены"
 
-#: src/pages/sluzby.mjs:33
+#: src/pages/sluzby.mjs:38
 msgid "Služby a ceník. Krejčovství Švadlenka"
 msgstr "Услуги и цены. Ателье Švadlenka"
 
-#: src/pages/sluzby.mjs:34
+#: src/pages/sluzby.mjs:39
 msgid "Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník."
 msgstr "Полный список услуг ателье Švadlenka — подгонка пальто, брюк, платьев, рубашек и кожаной одежды. Ознакомьтесь с актуальным прайсом."
 
-#: src/pages/sluzby.mjs:35
+#: src/pages/sluzby.mjs:40
 msgid "krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby"
 msgstr "ателье, цены на подгонку одежды, ремонт одежды Прага, замена молнии, укорочение брюк, швея Нусле, услуги Švadlenka"
 
-#: src/pages/sluzby.mjs:36
+#: src/pages/sluzby.mjs:41
 msgid "Služby a ceník – Švadlenka Praha 2, Nusle"
 msgstr "Услуги и цены – Švadlenka Прага 2, Нусле"
 
-#: src/pages/sluzby.mjs:37
+#: src/pages/sluzby.mjs:42
 msgid "Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka."
 msgstr "Ознакомьтесь с полным списком услуг и ценами на подгонку одежды в ателье Švadlenka."
 
@@ -230,7 +230,6 @@ msgstr "от 300 Kč"
 msgid "Oprava zapínání nebo suchých zipů"
 msgstr "Ремонт застёжек или липучек"
 
-#: src/auto/services.mjs:330
 #: src/pages/batohy.mjs:21
 #: src/pages/batohy.mjs:50
 msgid "Oprava batohů a kabelek"
@@ -463,10 +462,6 @@ msgstr "Укорачивание, обработка и подгонка што�
 msgid "zkrácení závěsů, úprava záclon, šití závěsů, záclony na míru, krejčovství Praha 2, Švadlenka Vyšehrad"
 msgstr "укорачивание штор, подгонка занавесок, пошив штор, занавески на заказ, ателье Прага 2, Швадленка Вышеград"
 
-#: src/auto/services.mjs:5
-msgid "Kalhoty a rifli"
-msgstr "Брюки и джинсы"
-
 #: src/auto/services.mjs:8
 #: src/auto/services.mjs:10
 #: src/auto/services.mjs:114
@@ -584,10 +579,6 @@ msgstr "200-500 Kč"
 msgid "štepování rifle"
 msgstr "штопка джинсов"
 
-#: src/auto/services.mjs:82
-msgid "Tričko a upletové latky"
-msgstr "Футболки и трикотаж"
-
 #: src/auto/services.mjs:85
 msgid "zkrácení delky trička"
 msgstr "укорачивание футболки"
@@ -627,10 +618,6 @@ msgstr "замена манжеты худи"
 msgid "výměna manžety mikiny"
 msgstr "замена манжеты худи"
 
-#: src/auto/services.mjs:111
-msgid "ŠATY a SUKNĚ"
-msgstr "ПЛАТЬЯ и ЮБКИ"
-
 #: src/auto/services.mjs:120
 #: src/auto/services.mjs:122
 msgid "zkrácení plesových šatů"
@@ -666,10 +653,6 @@ msgstr "укорачивание рукавов"
 msgid "zúžení zadního středového švu"
 msgstr "ушивка заднего центрального шва"
 
-#: src/auto/services.mjs:158
-msgid "Košile, halenky"
-msgstr "Рубашки, блузки"
-
 #: src/auto/services.mjs:161
 #: src/auto/services.mjs:163
 #: src/auto/services.mjs:190
@@ -696,10 +679,6 @@ msgstr "200-400 Kč"
 #: src/auto/services.mjs:239
 msgid "200-300 Kč"
 msgstr "200-300 Kč"
-
-#: src/auto/services.mjs:187
-msgid "Kabáty, saka, bundy"
-msgstr "Пальто, пиджаки, куртки"
 
 #: src/auto/services.mjs:191
 #: src/auto/services.mjs:227
@@ -767,10 +746,6 @@ msgstr "от 1500"
 msgid "došití švů"
 msgstr "дошив швов"
 
-#: src/auto/services.mjs:246
-msgid "Jiné textylové výrobky"
-msgstr "Другие текстильные изделия"
-
 #: src/auto/services.mjs:251
 msgid "zkrácení délky zavěs a zaslon"
 msgstr "укорачивание длины шторы и гардины"
@@ -833,10 +808,6 @@ msgstr "пришивание пуговицы"
 #: src/auto/services.mjs:301
 msgid "vyšití knoflíkových dírek"
 msgstr "вышивка петли для пуговицы"
-
-#: src/auto/services.mjs:307
-msgid "Oděvy z kůže"
-msgstr "Кожаная одежда"
 
 #: src/auto/services.mjs:310
 msgid "zkrácení délky u sako ,kabatu"
@@ -1040,3 +1011,35 @@ msgstr "700-1500 Kč"
 #: src/auto/services.mjs:334
 msgid "400-1000 Kč"
 msgstr "400-1000 Kč"
+
+#: src/auto/services.mjs:5
+msgid "Kalhoty a rifli 👖"
+msgstr "Брюки и джинсы 👖"
+
+#: src/auto/services.mjs:82
+msgid "Tričko a upletové latky 👕"
+msgstr "Футболки и трикотажные ткани 👕"
+
+#: src/auto/services.mjs:111
+msgid "ŠATY a SUKNĚ 👗💃"
+msgstr "ПЛАТЬЯ и ЮБКИ 👗💃"
+
+#: src/auto/services.mjs:158
+msgid "Košile, halenky 👔👚"
+msgstr "Рубашки, блузки 👔👚"
+
+#: src/auto/services.mjs:187
+msgid "Kabáty, saka, bundy 🧷"
+msgstr "Пальто, пиджаки, куртки 🧷"
+
+#: src/auto/services.mjs:246
+msgid "Jiné textylové výrobky 🧵"
+msgstr "Другие текстильные изделия 🧵"
+
+#: src/auto/services.mjs:307
+msgid "Oděvy z kůže 🧥"
+msgstr "Кожаная одежда 🧥"
+
+#: src/auto/services.mjs:330
+msgid "Oprava batohů a kabelek 🎒"
+msgstr "Ремонт рюкзаков и сумок 🎒"
