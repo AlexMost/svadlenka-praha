@@ -272,6 +272,8 @@ msgstr "Посилення місця, де була кнопка / додава
 
 #: src/auto/services.mjs:270
 #: src/auto/services.mjs:282
+#: src/auto/services.mjs:342
+#: src/auto/services.mjs:346
 #: src/pages/druk.mjs:11
 #: src/pages/druk.mjs:14
 msgid "od 100 Kč"
@@ -533,6 +535,7 @@ msgid "zúžení nebo rozšíření bočních švů, krokových švů"
 msgstr "звуження або розширення бокових і крокових швів"
 
 #: src/auto/services.mjs:51
+#: src/auto/services.mjs:127
 msgid "300-600 Kč"
 msgstr "300-600 Kč"
 
@@ -674,15 +677,20 @@ msgstr "Сорочки, блузки"
 msgid "zkrácení délky"
 msgstr "укорочення довжини"
 
+#: src/auto/services.mjs:115
+#: src/auto/services.mjs:145
 #: src/auto/services.mjs:162
 #: src/auto/services.mjs:215
 msgid "300-500 Kč"
 msgstr "300–500 Kč"
 
+#: src/auto/services.mjs:133
+#: src/auto/services.mjs:151
 #: src/auto/services.mjs:168
 msgid "200-400 Kč"
 msgstr "200–400 Kč"
 
+#: src/auto/services.mjs:139
 #: src/auto/services.mjs:174
 #: src/auto/services.mjs:180
 #: src/auto/services.mjs:239
@@ -783,8 +791,6 @@ msgstr "заміна бігунків на блискавках (включно 
 
 #: src/auto/services.mjs:272
 #: src/auto/services.mjs:284
-#: src/auto/services.mjs:342
-#: src/auto/services.mjs:346
 msgid "od 100"
 msgstr "від 100"
 
@@ -1026,3 +1032,7 @@ msgstr "ремонт підкладки (частковий або повний)
 #: src/auto/services.mjs:345
 msgid "oprava zapínání nebo suchých zipů"
 msgstr "ремонт застібок або липучок"
+
+#: src/auto/services.mjs:121
+msgid "700-1500 Kč"
+msgstr "700-1500 Kč"
