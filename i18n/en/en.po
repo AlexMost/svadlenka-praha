@@ -1036,3 +1036,7 @@ msgstr "repair of fasteners or hook-and-loop fasteners"
 #: src/auto/services.mjs:121
 msgid "700-1500 Kč"
 msgstr "СZK 700-1500"
+
+#: src/auto/services.mjs:334
+msgid "400-1000 Kč"
+msgstr "СZK 400-1000"

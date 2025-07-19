@@ -331,7 +331,7 @@ export const getServices = () => [
     options: [
       [
         t`výměna zipu u batohu / kabelky`,
-        "400-1000"
+        t`400-1000 Kč`
       ],
       [
         t`výměna jezdců u zipů (vč. ceny jezdců)`,

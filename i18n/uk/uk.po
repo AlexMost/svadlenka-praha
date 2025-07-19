@@ -1036,3 +1036,7 @@ msgstr "ремонт застібок або липучок"
 #: src/auto/services.mjs:121
 msgid "700-1500 Kč"
 msgstr "700-1500 Kč"
+
+#: src/auto/services.mjs:334
+msgid "400-1000 Kč"
+msgstr "400-1000 Kč"
