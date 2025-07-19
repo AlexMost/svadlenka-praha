@@ -18,7 +18,7 @@ export const getServices = () => [
       ],
       [
         t`zkrácení ručně neviditelným švem`,
-        t`300 Kč`,
+        t`400 Kč`,
         t`zkrácení ručně neviditelným švem`,
         "300"
       ],
@@ -42,7 +42,7 @@ export const getServices = () => [
       ],
       [
         t`zúžení nebo rozšíření v pase`,
-        t`350-500 Kč`,
+        t`400-600 Kč`,
         t`zúžení nebo rozšíření v pase`,
         "350-500"
       ],
@@ -60,7 +60,7 @@ export const getServices = () => [
       ],
       [
         t`výměna kapsy`,
-        t`300-400 Kč`,
+        t`400-600 Kč`,
         t`výměna kapsy`,
         "300-400"
       ],
@@ -118,7 +118,7 @@ export const getServices = () => [
       ],
       [
         t`zkrácení plesových šatů`,
-        "700-1000",
+        "700-1500",
         t`zkrácení plesových šatů`,
         "700-1000"
       ],
@@ -177,7 +177,7 @@ export const getServices = () => [
       ],
       [
         t`zúžení rukávů`,
-        t`150-200 Kč`,
+        t`200-300 Kč`,
         t`zúžení rukávů`,
         "150-200"
       ]
@@ -246,10 +246,18 @@ export const getServices = () => [
     title: t`Jiné textylové výrobky`,
     options: [
       [
-        t`zkrácení délky závěs a záclon`,
-        t`300 Kč`,
+        t`zkrácení záclon a závěsů za 1 metr šířky`,
+        t`200 Kč`,
         t`zkrácení délky zavěs a zaslon`,
         "300"
+      ],
+      [
+        t`našití stuhy za 1 metr`,
+        t`50 Kč`
+      ],
+      [
+        t`ušití nebo entlování za 1 metr`,
+        t`50 Kč`
       ],
       [
         t`ušití povlaku na polštář se zipem`,
@@ -315,6 +323,27 @@ export const getServices = () => [
         t`od 700 Kč`,
         t`výměna zipů (vč. zipu)`,
         t`od 700`
+      ]
+    ]
+  },
+  {
+    title: t`Oprava batohů a kabelek`,
+    options: [
+      [
+        t`výměna zipu u batohu / kabelky`,
+        "400-1000"
+      ],
+      [
+        t`výměna jezdců u zipů (vč. ceny jezdců)`,
+        t`300 Kč`
+      ],
+      [
+        t`oprava podšívky (částečná nebo celková)`,
+        t`od 100`
+      ],
+      [
+        t`oprava zapínání nebo suchých zipů`,
+        t`od 100`
       ]
     ]
   }

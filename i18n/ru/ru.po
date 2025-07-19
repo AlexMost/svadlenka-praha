@@ -214,7 +214,7 @@ msgstr "Укрепление или замена ручек"
 msgid "Zpevnění dna, začištění trhlin"
 msgstr "Укрепление дна, заделка разрывов"
 
-#: src/auto/services.mjs:268
+#: src/auto/services.mjs:276
 #: src/pages/batohy.mjs:14
 #: src/pages/dziny.mjs:14
 #: src/pages/kalhoty.mjs:13
@@ -230,6 +230,7 @@ msgstr "от 300 Kč"
 msgid "Oprava zapínání nebo suchých zipů"
 msgstr "Ремонт застёжек или липучек"
 
+#: src/auto/services.mjs:330
 #: src/pages/batohy.mjs:21
 #: src/pages/batohy.mjs:50
 msgid "Oprava batohů a kabelek"
@@ -269,8 +270,8 @@ msgstr "от 150 Kč"
 msgid "Zpevnění místa, kde byl druk / přidání podložky"
 msgstr "Укрепление места установки кнопки / добавление подкладки"
 
-#: src/auto/services.mjs:262
-#: src/auto/services.mjs:274
+#: src/auto/services.mjs:270
+#: src/auto/services.mjs:282
 #: src/pages/druk.mjs:11
 #: src/pages/druk.mjs:14
 msgid "od 100 Kč"
@@ -480,11 +481,10 @@ msgid "zkrácení riflí strojem"
 msgstr "укорачивание джинсов машинкой"
 
 #: src/auto/services.mjs:15
-#: src/auto/services.mjs:21
 #: src/auto/services.mjs:69
 #: src/auto/services.mjs:221
-#: src/auto/services.mjs:250
-#: src/auto/services.mjs:256
+#: src/auto/services.mjs:264
+#: src/auto/services.mjs:338
 msgid "300 Kč"
 msgstr "300 Kč"
 
@@ -502,6 +502,7 @@ msgstr "укорачивание вручную невидимым швом"
 msgid "zkrácení s manžetou nebo rozparky"
 msgstr "укорачивание с манжетой или разрезами"
 
+#: src/auto/services.mjs:21
 #: src/auto/services.mjs:27
 #: src/auto/services.mjs:33
 msgid "400 Kč"
@@ -527,10 +528,6 @@ msgstr "от 500"
 msgid "zúžení nebo rozšíření v pase"
 msgstr "ушивка или расширение в талии"
 
-#: src/auto/services.mjs:45
-msgid "350-500 Kč"
-msgstr "350-500 Kč"
-
 #: src/auto/services.mjs:50
 msgid "zúžení nebo rozšíření bočních švů, krokových švů"
 msgstr "ушивка или расширение боковых и шаговых швов"
@@ -547,8 +544,8 @@ msgstr "ушивка или расширение боковых и шаговы�
 #: src/auto/services.mjs:58
 #: src/auto/services.mjs:144
 #: src/auto/services.mjs:146
-#: src/auto/services.mjs:267
-#: src/auto/services.mjs:269
+#: src/auto/services.mjs:275
+#: src/auto/services.mjs:277
 msgid "výměna zipů"
 msgstr "замена молний"
 
@@ -566,10 +563,6 @@ msgstr "300-500 + молния"
 #: src/auto/services.mjs:222
 msgid "výměna kapsy"
 msgstr "замена кармана"
-
-#: src/auto/services.mjs:63
-msgid "300-400 Kč"
-msgstr "300-400 Kč"
 
 #: src/auto/services.mjs:68
 #: src/auto/services.mjs:70
@@ -660,8 +653,8 @@ msgstr "ушивка рукавов"
 #: src/auto/services.mjs:140
 #: src/auto/services.mjs:167
 #: src/auto/services.mjs:169
-#: src/auto/services.mjs:308
-#: src/auto/services.mjs:310
+#: src/auto/services.mjs:316
+#: src/auto/services.mjs:318
 msgid "zkrácení rukávů"
 msgstr "укорачивание рукавов"
 
@@ -691,13 +684,10 @@ msgid "200-400 Kč"
 msgstr "200-400 Kč"
 
 #: src/auto/services.mjs:174
+#: src/auto/services.mjs:180
 #: src/auto/services.mjs:239
 msgid "200-300 Kč"
 msgstr "200-300 Kč"
-
-#: src/auto/services.mjs:180
-msgid "150-200 Kč"
-msgstr "150-200 Kč"
 
 #: src/auto/services.mjs:187
 msgid "Kabáty, saka, bundy"
@@ -705,14 +695,14 @@ msgstr "Пальто, пиджаки, куртки"
 
 #: src/auto/services.mjs:191
 #: src/auto/services.mjs:227
-#: src/auto/services.mjs:315
+#: src/auto/services.mjs:323
 #: src/pages/saty.mjs:12
 msgid "od 700 Kč"
 msgstr "от 700 Kč"
 
 #: src/auto/services.mjs:193
 #: src/auto/services.mjs:229
-#: src/auto/services.mjs:317
+#: src/auto/services.mjs:325
 msgid "od 700"
 msgstr "от 700"
 
@@ -740,14 +730,14 @@ msgid "zúžení v ramenech"
 msgstr "ушивка в плечах"
 
 #: src/auto/services.mjs:209
-#: src/auto/services.mjs:303
+#: src/auto/services.mjs:311
 msgid "1000 Kč"
 msgstr "1000 Kč"
 
 #: src/auto/services.mjs:226
 #: src/auto/services.mjs:228
-#: src/auto/services.mjs:314
-#: src/auto/services.mjs:316
+#: src/auto/services.mjs:322
+#: src/auto/services.mjs:324
 msgid "výměna zipů (vč. zipu)"
 msgstr "замена молний (вкл. молнию)"
 
@@ -773,85 +763,84 @@ msgstr "дошив швов"
 msgid "Jiné textylové výrobky"
 msgstr "Другие текстильные изделия"
 
-#: src/auto/services.mjs:249
-msgid "zkrácení délky závěs a záclon"
-msgstr "укорачивание длины штор и занавесок"
-
 #: src/auto/services.mjs:251
 msgid "zkrácení délky zavěs a zaslon"
 msgstr "укорачивание длины шторы и гардины"
 
-#: src/auto/services.mjs:255
-#: src/auto/services.mjs:257
+#: src/auto/services.mjs:263
+#: src/auto/services.mjs:265
 msgid "ušití povlaku na polštář se zipem"
 msgstr "пошив наволочки на молнии"
 
-#: src/auto/services.mjs:261
+#: src/auto/services.mjs:269
+#: src/auto/services.mjs:337
 msgid "výměna jezdců u zipů (vč. ceny jezdců)"
 msgstr "замена бегунков на молниях (вкл. цену бегунков)"
 
-#: src/auto/services.mjs:263
+#: src/auto/services.mjs:271
 msgid "výměna jezdců u zipů  (vč. ceny jezdců)"
 msgstr "замена бегунков на молниях (вкл. цену бегунков)"
 
-#: src/auto/services.mjs:264
-#: src/auto/services.mjs:276
+#: src/auto/services.mjs:272
+#: src/auto/services.mjs:284
+#: src/auto/services.mjs:342
+#: src/auto/services.mjs:346
 msgid "od 100"
 msgstr "от 100"
 
-#: src/auto/services.mjs:270
+#: src/auto/services.mjs:278
 msgid "od 300"
 msgstr "от 300"
 
-#: src/auto/services.mjs:273
-#: src/auto/services.mjs:275
+#: src/auto/services.mjs:281
+#: src/auto/services.mjs:283
 msgid "výměna druku"
 msgstr "замена кнопки"
 
-#: src/auto/services.mjs:279
+#: src/auto/services.mjs:287
 msgid "nastavení průchodky"
 msgstr "установка люверсов"
 
-#: src/auto/services.mjs:280
-#: src/auto/services.mjs:286
-#: src/auto/services.mjs:292
+#: src/auto/services.mjs:288
+#: src/auto/services.mjs:294
+#: src/auto/services.mjs:300
 #: src/pages/kalhoty.mjs:11
 msgid "od 50 Kč"
 msgstr "от 50 Kč"
 
-#: src/auto/services.mjs:281
+#: src/auto/services.mjs:289
 msgid "nastaveni průchodky"
 msgstr "установка люверсов"
 
-#: src/auto/services.mjs:282
-#: src/auto/services.mjs:288
-#: src/auto/services.mjs:294
+#: src/auto/services.mjs:290
+#: src/auto/services.mjs:296
+#: src/auto/services.mjs:302
 msgid "od 50"
 msgstr "от 50"
 
-#: src/auto/services.mjs:285
-#: src/auto/services.mjs:287
+#: src/auto/services.mjs:293
+#: src/auto/services.mjs:295
 msgid "přišití knoflíku"
 msgstr "пришивание пуговицы"
 
-#: src/auto/services.mjs:291
-#: src/auto/services.mjs:293
+#: src/auto/services.mjs:299
+#: src/auto/services.mjs:301
 msgid "vyšití knoflíkových dírek"
 msgstr "вышивка петли для пуговицы"
 
-#: src/auto/services.mjs:299
+#: src/auto/services.mjs:307
 msgid "Oděvy z kůže"
 msgstr "Кожаная одежда"
 
-#: src/auto/services.mjs:302
+#: src/auto/services.mjs:310
 msgid "zkrácení délky u sako ,kabatu"
 msgstr "укорачивание длины пиджака, пальто"
 
-#: src/auto/services.mjs:304
+#: src/auto/services.mjs:312
 msgid "zkrácení délky u kabátů"
 msgstr "укорачивание длины пальто"
 
-#: src/auto/services.mjs:309
+#: src/auto/services.mjs:317
 msgid "800 Kč"
 msgstr "800 Kč"
 
@@ -999,3 +988,41 @@ msgstr "Профессиональная подгонка платьев в Пр
 #: src/pages/saty.mjs:51
 msgid "úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, šaty na míru, krejčovství Praha 2"
 msgstr "подгонка платья, ремонт платья, укорочение платья, ушивка платья, швея Прага, коррекция бретелек, ремонт молний, коррекция рукавов, индивидуальные платья, ателье Прага 2"
+
+#: src/auto/services.mjs:45
+#: src/auto/services.mjs:63
+msgid "400-600 Kč"
+msgstr "400–600 Kč"
+
+#: src/auto/services.mjs:249
+msgid "zkrácení záclon a závěsů za 1 metr šířky"
+msgstr "укорочение штор и гардин за 1 метр ширины"
+
+#: src/auto/services.mjs:250
+msgid "200 Kč"
+msgstr "200 Kč"
+
+#: src/auto/services.mjs:255
+msgid "našití stuhy za 1 metr"
+msgstr "пришивание ленты за 1 метр"
+
+#: src/auto/services.mjs:256
+#: src/auto/services.mjs:260
+msgid "50 Kč"
+msgstr "50 Kč"
+
+#: src/auto/services.mjs:259
+msgid "ušití nebo entlování za 1 metr"
+msgstr "пошив или обработка края за 1 метр"
+
+#: src/auto/services.mjs:333
+msgid "výměna zipu u batohu / kabelky"
+msgstr "замена молнии на рюкзаке / сумке"
+
+#: src/auto/services.mjs:341
+msgid "oprava podšívky (částečná nebo celková)"
+msgstr "ремонт подкладки (частичный или полный)"
+
+#: src/auto/services.mjs:345
+msgid "oprava zapínání nebo suchých zipů"
+msgstr "ремонт застёжек или липучек"
