@@ -163,6 +163,9 @@ section[id] {
     scroll-margin-top: 88px;
 }
 
+.emoji {
+    font-style: normal;
+}
 /* UI Components */
 .cta-button {
     display: inline-block;
