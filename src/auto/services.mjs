@@ -6,7 +6,7 @@ export const getServices = () => [
     options: [
       [
         t`zkrácení strojem`,
-        t`250 Kč`,
+        t`300 Kč`,
         t`zkrácení strojem`,
         "250"
       ],
@@ -44,7 +44,7 @@ export const getServices = () => [
         t`zúžení nebo rozšíření v pase`,
         t`400-600 Kč`,
         t`zúžení nebo rozšíření v pase`,
-        "350-500"
+        "400-600"
       ],
       [
         t`zúžení nebo rozšíření bočních švů, krokových švů`,
@@ -62,7 +62,7 @@ export const getServices = () => [
         t`výměna kapsy`,
         t`400-600 Kč`,
         t`výměna kapsy`,
-        "300-400"
+        "400-600"
       ],
       [
         t`výměna gumy`,
@@ -120,7 +120,7 @@ export const getServices = () => [
         t`zkrácení plesových šatů`,
         t`700-1500 Kč`,
         t`zkrácení plesových šatů`,
-        "700-1000"
+        "700-1500"
       ],
       [
         t`zúžení bočních stran`,
@@ -179,7 +179,7 @@ export const getServices = () => [
         t`zúžení rukávů`,
         t`200-300 Kč`,
         t`zúžení rukávů`,
-        "150-200"
+        "200-300"
       ]
     ]
   },
@@ -200,13 +200,13 @@ export const getServices = () => [
       ],
       [
         t`zkrácení rukávů vrchem`,
-        t`od 1200 Kč`,
+        t`od 1500 Kč`,
         t`zkrácení rukávů vrchem`,
         t`od 1200`
       ],
       [
         t`zúžení v ramenech`,
-        t`1000 Kč`,
+        t`od 1200 Kč`,
         t`zúžení v ramenech`,
         "1000"
       ],
@@ -248,16 +248,20 @@ export const getServices = () => [
       [
         t`zkrácení záclon a závěsů za 1 metr šířky`,
         t`200 Kč`,
-        t`zkrácení délky zavěs a zaslon`,
-        "300"
+        t`zkrácení záclon a závěsů za 1 metr šířky`,
+        "200"
       ],
       [
         t`našití stuhy za 1 metr`,
-        t`50 Kč`
+        t`50 Kč`,
+        t`našití stuhy za 1 metr`,
+        "50"
       ],
       [
         t`ušití nebo entlování za 1 metr`,
-        t`50 Kč`
+        t`50 Kč`,
+        t`ušití nebo entlování za 1 metr`,
+        "50"
       ],
       [
         t`ušití povlaku na polštář se zipem`,
@@ -344,6 +348,27 @@ export const getServices = () => [
       [
         t`oprava zapínání nebo suchých zipů`,
         t`od 100 Kč`
+      ]
+    ]
+  },
+  {
+    title: t`Šití sukní a šatů na zakázku`,
+    options: [
+      [
+        t`Sukně`,
+        t`3 000 Kč`
+      ],
+      [
+        t`Šaty`,
+        t`4 000 - 6 000 Kč`
+      ],
+      [
+        t`Korzet k šatům`,
+        t`od 5 000 Kč`
+      ],
+      [
+        t`*сena korzetových šatů =`,
+        t`korzet + sukně`
       ]
     ]
   }
