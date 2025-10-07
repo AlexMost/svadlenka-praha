@@ -17,6 +17,12 @@ const getServices = () => [
     url: siteUrl("/saty"),
   },
   {
+    title: t`Šití sukní a šatů na zakázku`,
+    description: t`Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy`,
+    image: "/img/services/sity-na-miry.webp",
+    url: siteUrl("/sity-na-miru"),
+  },
+  {
     title: t`Látkové oděvy`,
     description: t`Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu`,
     image: "/img/services/latkove.webp",
@@ -106,11 +112,11 @@ export default () => {
     content: pageHTML,
     meta: {
       canonical: "/",
-      title: t`Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2`,
-      description: t`Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15.`,
-      keywords: t`krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle`,
-      ogTitle: t`Krejčovství Švadlenka – Praha 2`,
-      ogDescription: t`Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15.`,
+      title: t`Krejčovství Švadlenka – Oprava a úprava oděvů Praha`,
+      description: t`Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Šití sukní a šatů na zakázku. Najdete nás na Jaromírově 726/15.`,
+      keywords: t`krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, šití šatů na zakázku, šití sukní na míru, Praha 2, Nusle`,
+      ogTitle: t`Krejčovství Švadlenka – Oprava a úprava oděvů Praha`,
+      ogDescription: t`Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Šití sukní a šatů na zakázku. Najdete nás na Jaromírově 726/15.`,
       structuredData: getStructuredData({
         makesOffer: getServices().map((service) => makeOffer(service)),
       }),
