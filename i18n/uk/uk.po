@@ -6,27 +6,22 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/pages/index.mjs:109
 #: src/templates/baseHTML.mjs:11
 msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2"
 msgstr "Ательє Švadlenka – ремонт і пошиття одягу Прага 2"
 
-#: src/pages/index.mjs:110
 #: src/templates/baseHTML.mjs:12
 msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15."
 msgstr "Švadlenka – ательє на Празі 2, що пропонує якісний ремонт і пошиття одягу – джинси, пальта, підкладки, рюкзаки та фіранки. Ви знайдете нас за адресою Jaromírova 726/15."
 
-#: src/pages/index.mjs:111
 #: src/templates/baseHTML.mjs:13
 msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle"
 msgstr "ательє, ремонт одягу, пошиття одягу, заміна блискавки, підкладка, фіранки, Прага 2, Нусле"
 
-#: src/pages/index.mjs:112
 #: src/templates/baseHTML.mjs:14
 msgid "Krejčovství Švadlenka – Praha 2"
 msgstr "Ательє Švadlenka – Прага 2"
 
-#: src/pages/index.mjs:113
 #: src/templates/baseHTML.mjs:15
 msgid "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15."
 msgstr "Ремонт і пошиття одягу, штор, рюкзаків – ви знайдете нас за адресою Jaromírova 726/15."
@@ -66,95 +61,96 @@ msgstr "Написати відгук"
 
 #: src/pages/dziny.mjs:22
 #: src/pages/dziny.mjs:57
-#: src/pages/index.mjs:26
+#: src/pages/index.mjs:32
 msgid "Úprava džín"
 msgstr "Ремонт джинсів"
 
-#: src/pages/index.mjs:27
+#: src/pages/index.mjs:33
 msgid "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny"
 msgstr "Укорочуємо, звужуємо або ремонтуємо потерті та порвані джинси"
 
-#: src/pages/index.mjs:20
+#: src/pages/index.mjs:26
 #: src/pages/latkove.mjs:21
 #: src/pages/latkove.mjs:50
 msgid "Látkové oděvy"
 msgstr "Тканинний одяг"
 
-#: src/pages/index.mjs:21
+#: src/pages/index.mjs:27
 #: src/pages/latkove.mjs:22
 msgid "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu"
 msgstr "Пропонуємо зміну розміру, звуження одягу або пришивання блискавки"
 
-#: src/pages/index.mjs:44
+#: src/pages/index.mjs:50
 msgid "Oprava batohu a kabelek"
 msgstr "Ремонт рюкзаків та сумок"
 
 #: src/pages/batohy.mjs:22
-#: src/pages/index.mjs:45
+#: src/pages/index.mjs:51
 msgid "Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu"
 msgstr "Посилення ременів, заміна блискавок або ремонт розривів у матеріалі"
 
-#: src/pages/index.mjs:38
+#: src/pages/index.mjs:44
 #: src/pages/zavesy.mjs:20
 #: src/pages/zavesy.mjs:49
 msgid "Závěsy a záclony"
 msgstr "Штори та занавіски"
 
-#: src/pages/index.mjs:39
+#: src/pages/index.mjs:45
 #: src/pages/zavesy.mjs:21
 msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení"
 msgstr "Індивідуальна підгонка штор і фіранок — укорочення, обробка країв та регулювання тунелю для кріплення"
 
-#: src/pages/index.mjs:32
+#: src/pages/index.mjs:38
 #: src/pages/podsivka.mjs:21
 #: src/pages/podsivka.mjs:50
 msgid "Výměna podšívky"
 msgstr "Заміна підкладки"
 
-#: src/pages/index.mjs:33
+#: src/pages/index.mjs:39
 #: src/pages/podsivka.mjs:22
 msgid "Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách"
 msgstr "Ми замінюємо зношені або пошкоджені підкладки у пальтах і куртках"
 
 #: src/pages/druk.mjs:21
 #: src/pages/druk.mjs:50
-#: src/pages/index.mjs:50
+#: src/pages/index.mjs:56
 msgid "Výměna druku"
 msgstr "Заміна кнопок"
 
 #: src/pages/druk.mjs:22
-#: src/pages/index.mjs:51
+#: src/pages/index.mjs:57
 msgid "Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích"
 msgstr "Швидка заміна металевих кнопок на куртках, штанах або аксесуарах"
 
-#: src/pages/index.mjs:78
+#: src/pages/index.mjs:84
 msgid "Krejčovství Švadlenka"
 msgstr "Ательє Švadlenka"
 
-#: src/pages/index.mjs:79
+#: src/pages/index.mjs:85
 msgid "Kvalitní opravna oděvů pod Nuselským mostem"
 msgstr "Якісна майстерня ремонту одягу під Нусельським мостом"
 
-#: src/pages/index.mjs:80
+#: src/pages/index.mjs:86
 msgid "Rádi vás přivítáme na adrese Jaromírova 726/15"
 msgstr "З радістю зустрінемо вас за адресою Jaromírova 726/15"
 
-#: src/pages/index.mjs:91
+#: src/pages/index.mjs:97
 msgid "Najít nás"
 msgstr "Знайти нас"
 
-#: src/pages/index.mjs:94
+#: src/pages/index.mjs:100
 msgid "Naše služby"
 msgstr "Наші послуги"
 
 #: src/pages/batohy.mjs:34
 #: src/pages/druk.mjs:34
 #: src/pages/dziny.mjs:41
-#: src/pages/index.mjs:102
+#: src/pages/index.mjs:108
 #: src/pages/kalhoty.mjs:34
 #: src/pages/latkove.mjs:34
 #: src/pages/podsivka.mjs:34
 #: src/pages/saty.mjs:41
+#: src/pages/sity-na-miru.mjs:40
 #: src/pages/zavesy.mjs:33
 msgid "Všechny služby a ceník"
 msgstr "Всі послуги та ціни"
@@ -214,7 +210,7 @@ msgstr "Посилення або заміна ручок"
 msgid "Zpevnění dna, začištění trhlin"
 msgstr "Посилення дна, обробка розривів"
 
-#: src/auto/services.mjs:276
+#: src/auto/services.mjs:280
 #: src/pages/batohy.mjs:14
 #: src/pages/dziny.mjs:14
 #: src/pages/kalhoty.mjs:13
@@ -269,10 +265,10 @@ msgstr "від 150 Kč"
 msgid "Zpevnění místa, kde byl druk / přidání podložky"
 msgstr "Посилення місця, де була кнопка / додавання підкладки"
 
-#: src/auto/services.mjs:270
-#: src/auto/services.mjs:282
-#: src/auto/services.mjs:342
+#: src/auto/services.mjs:274
+#: src/auto/services.mjs:286
 #: src/auto/services.mjs:346
+#: src/auto/services.mjs:350
 #: src/pages/druk.mjs:11
 #: src/pages/druk.mjs:14
 msgid "od 100 Kč"
@@ -469,19 +465,16 @@ msgstr "укорочення штор, підгонка фіранок, ремо
 msgid "zkrácení strojem"
 msgstr "укорочення на машинці"
 
-#: src/auto/services.mjs:9
-msgid "250 Kč"
-msgstr "250 Kč"
-
 #: src/auto/services.mjs:14
 msgid "zkrácení riflí strojem"
 msgstr "укорочення джинсів машинкою"
 
+#: src/auto/services.mjs:9
 #: src/auto/services.mjs:15
 #: src/auto/services.mjs:69
 #: src/auto/services.mjs:221
-#: src/auto/services.mjs:264
-#: src/auto/services.mjs:338
+#: src/auto/services.mjs:268
+#: src/auto/services.mjs:342
 msgid "300 Kč"
 msgstr "300 Kč"
 
@@ -542,8 +535,8 @@ msgstr "звуження або розширення бокових і крок�
 #: src/auto/services.mjs:58
 #: src/auto/services.mjs:144
 #: src/auto/services.mjs:146
-#: src/auto/services.mjs:275
-#: src/auto/services.mjs:277
+#: src/auto/services.mjs:279
+#: src/auto/services.mjs:281
 msgid "výměna zipů"
 msgstr "заміна блискавок"
 
@@ -643,8 +636,8 @@ msgstr "звуження рукавів"
 #: src/auto/services.mjs:140
 #: src/auto/services.mjs:167
 #: src/auto/services.mjs:169
-#: src/auto/services.mjs:316
-#: src/auto/services.mjs:318
+#: src/auto/services.mjs:320
+#: src/auto/services.mjs:322
 msgid "zkrácení rukávů"
 msgstr "укорочення рукавів"
 
@@ -682,14 +675,14 @@ msgstr "200–300 Kč"
 
 #: src/auto/services.mjs:191
 #: src/auto/services.mjs:227
-#: src/auto/services.mjs:323
+#: src/auto/services.mjs:327
 #: src/pages/saty.mjs:12
 msgid "od 700 Kč"
 msgstr "від 700 Kč"
 
 #: src/auto/services.mjs:193
 #: src/auto/services.mjs:229
-#: src/auto/services.mjs:325
+#: src/auto/services.mjs:329
 msgid "od 700"
 msgstr "від 700"
 
@@ -703,7 +696,7 @@ msgstr "укорочення або подовження рукавів"
 msgid "zkrácení rukávů vrchem"
 msgstr "укорочення рукавів зверху"
 
-#: src/auto/services.mjs:203
+#: src/auto/services.mjs:209
 msgid "od 1200 Kč"
 msgstr "від 1200 Kč"
 
@@ -716,15 +709,14 @@ msgstr "від 1200"
 msgid "zúžení v ramenech"
 msgstr "звуження в плечах"
 
-#: src/auto/services.mjs:209
-#: src/auto/services.mjs:311
+#: src/auto/services.mjs:315
 msgid "1000 Kč"
 msgstr "1000 Kč"
 
 #: src/auto/services.mjs:226
 #: src/auto/services.mjs:228
-#: src/auto/services.mjs:322
-#: src/auto/services.mjs:324
+#: src/auto/services.mjs:326
+#: src/auto/services.mjs:328
 msgid "výměna zipů (vč. zipu)"
 msgstr "заміна блискавки (включно з блискавкою)"
 
@@ -733,6 +725,7 @@ msgstr "заміна блискавки (включно з блискавкою)
 msgid "výměna podšívky (vč. podšívky)"
 msgstr "заміна підкладки (включно з підкладкою)"
 
+#: src/auto/services.mjs:203
 #: src/auto/services.mjs:233
 msgid "od 1500 Kč"
 msgstr "від 1500 Kč"
@@ -746,86 +739,82 @@ msgstr "від 1500"
 msgid "došití švů"
 msgstr "дошивання швів"
 
-#: src/auto/services.mjs:251
-msgid "zkrácení délky zavěs a zaslon"
-msgstr "укорочення довжини штор і занавісок"
-
-#: src/auto/services.mjs:263
-#: src/auto/services.mjs:265
+#: src/auto/services.mjs:267
+#: src/auto/services.mjs:269
 msgid "ušití povlaku na polštář se zipem"
 msgstr "пошиття наволочки на подушку з блискавкою"
 
-#: src/auto/services.mjs:269
-#: src/auto/services.mjs:337
+#: src/auto/services.mjs:273
+#: src/auto/services.mjs:341
 msgid "výměna jezdců u zipů (vč. ceny jezdců)"
 msgstr "заміна бігунків на блискавках (включно з вартістю бігунків)"
 
-#: src/auto/services.mjs:271
+#: src/auto/services.mjs:275
 msgid "výměna jezdců u zipů  (vč. ceny jezdců)"
 msgstr "заміна бігунків на блискавках (включно з вартістю бігунків)"
 
-#: src/auto/services.mjs:272
-#: src/auto/services.mjs:284
+#: src/auto/services.mjs:276
+#: src/auto/services.mjs:288
 msgid "od 100"
 msgstr "від 100"
 
-#: src/auto/services.mjs:278
+#: src/auto/services.mjs:282
 msgid "od 300"
 msgstr "від 300"
 
-#: src/auto/services.mjs:281
-#: src/auto/services.mjs:283
+#: src/auto/services.mjs:285
+#: src/auto/services.mjs:287
 msgid "výměna druku"
 msgstr "заміна кнопки"
 
-#: src/auto/services.mjs:287
+#: src/auto/services.mjs:291
 msgid "nastavení průchodky"
 msgstr "встановлення люверса"
 
-#: src/auto/services.mjs:288
-#: src/auto/services.mjs:294
-#: src/auto/services.mjs:300
+#: src/auto/services.mjs:292
+#: src/auto/services.mjs:298
+#: src/auto/services.mjs:304
 #: src/pages/kalhoty.mjs:11
 msgid "od 50 Kč"
 msgstr "від 50 Kč"
 
-#: src/auto/services.mjs:289
+#: src/auto/services.mjs:293
 msgid "nastaveni průchodky"
 msgstr "встановлення люверса"
 
-#: src/auto/services.mjs:290
-#: src/auto/services.mjs:296
-#: src/auto/services.mjs:302
+#: src/auto/services.mjs:294
+#: src/auto/services.mjs:300
+#: src/auto/services.mjs:306
 msgid "od 50"
 msgstr "від 50"
 
-#: src/auto/services.mjs:293
-#: src/auto/services.mjs:295
+#: src/auto/services.mjs:297
+#: src/auto/services.mjs:299
 msgid "přišití knoflíku"
 msgstr "пришивання ґудзика"
 
-#: src/auto/services.mjs:299
-#: src/auto/services.mjs:301
+#: src/auto/services.mjs:303
+#: src/auto/services.mjs:305
 msgid "vyšití knoflíkových dírek"
 msgstr "вишивання петель для ґудзиків"
 
-#: src/auto/services.mjs:310
+#: src/auto/services.mjs:314
 msgid "zkrácení délky u sako ,kabatu"
 msgstr "укорочення довжини піджака або пальта"
 
-#: src/auto/services.mjs:312
+#: src/auto/services.mjs:316
 msgid "zkrácení délky u kabátů"
 msgstr "укорочення довжини пальт"
 
-#: src/auto/services.mjs:317
+#: src/auto/services.mjs:321
 msgid "800 Kč"
 msgstr "800 Kč"
 
-#: src/pages/index.mjs:83
+#: src/pages/index.mjs:89
 msgid "Po - Čt:"
 msgstr "Пн – Чт:"
 
-#: src/pages/index.mjs:87
+#: src/pages/index.mjs:93
 msgid "Pátek:"
 msgstr "П’ятниця:"
 
@@ -949,6 +938,7 @@ msgid "📏 Samotné měření zabere jen minimum času díky moderním metodám
 msgstr "📏 Сам процес зняття мірок займає мінімум часу завдяки сучасним методам, які ми використовуємо."
 
 #: src/pages/saty.mjs:36
+#: src/pages/sity-na-miru.mjs:35
 msgid "✂️ Precizní práce, osobní přístup a výsledky, které oceníte."
 msgstr "✂️ Точна робота, індивідуальний підхід і результат, який ви оціните."
 
@@ -972,6 +962,7 @@ msgid "400-600 Kč"
 msgstr "400–600 Kč"
 
 #: src/auto/services.mjs:249
+#: src/auto/services.mjs:251
 msgid "zkrácení záclon a závěsů za 1 metr šířky"
 msgstr "вкорочення штор і гардин за 1 метр ширини"
 
@@ -980,27 +971,29 @@ msgid "200 Kč"
 msgstr "200 Kč"
 
 #: src/auto/services.mjs:255
+#: src/auto/services.mjs:257
 msgid "našití stuhy za 1 metr"
 msgstr "нашивання стрічки за 1 метр"
 
 #: src/auto/services.mjs:256
-#: src/auto/services.mjs:260
+#: src/auto/services.mjs:262
 msgid "50 Kč"
 msgstr "50 Kč"
 
-#: src/auto/services.mjs:259
+#: src/auto/services.mjs:261
+#: src/auto/services.mjs:263
 msgid "ušití nebo entlování za 1 metr"
 msgstr "пошиття або обробка краю за 1 метр"
 
-#: src/auto/services.mjs:333
+#: src/auto/services.mjs:337
 msgid "výměna zipu u batohu / kabelky"
 msgstr "заміна блискавки в рюкзаку / сумці"
 
-#: src/auto/services.mjs:341
+#: src/auto/services.mjs:345
 msgid "oprava podšívky (částečná nebo celková)"
 msgstr "ремонт підкладки (частковий або повний)"
 
-#: src/auto/services.mjs:345
+#: src/auto/services.mjs:349
 msgid "oprava zapínání nebo suchých zipů"
 msgstr "ремонт застібок або липучок"
 
@@ -1008,7 +1001,7 @@ msgstr "ремонт застібок або липучок"
 msgid "700-1500 Kč"
 msgstr "700-1500 Kč"
 
-#: src/auto/services.mjs:334
+#: src/auto/services.mjs:338
 msgid "400-1000 Kč"
 msgstr "400-1000 Kč"
 
@@ -1036,10 +1029,114 @@ msgstr "Пальта, піджаки, куртки 🧷"
 msgid "Jiné textylové výrobky 🧵"
 msgstr "Інші текстильні вироби 🧵"
 
-#: src/auto/services.mjs:307
+#: src/auto/services.mjs:311
 msgid "Oděvy z kůže 🧥"
 msgstr "Шкіряний одяг 🧥"
 
-#: src/auto/services.mjs:330
+#: src/auto/services.mjs:334
 msgid "Oprava batohů a kabelek 🎒"
 msgstr "Ремонт рюкзаків і сумок 🎒"
+
+#: src/auto/services.mjs:355
+#: src/pages/index.mjs:20
+#: src/pages/sity-na-miru.mjs:20
+#: src/pages/sity-na-miru.mjs:56
+msgid "Šití sukní a šatů na zakázku"
+msgstr "Індивідуальне пошиття спідниць та суконь"
+
+#: src/pages/index.mjs:21
+msgid "Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy"
+msgstr "Пропонуємо створення оригінальних моделей – від класичних до сучасних фасонів"
+
+#: src/pages/index.mjs:115
+#: src/pages/index.mjs:118
+msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha"
+msgstr "Ательє Швадленка – Ремонт і перешивання одягу в Празі"
+
+#: src/pages/index.mjs:116
+#: src/pages/index.mjs:119
+msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Šití sukní a šatů na zakázku. Najdete nás na Jaromírově 726/15."
+msgstr "Швадленка — це ательє у Празі 2, яке пропонує якісний ремонт та перешивання одягу — джинси, пальта, підкладки, рюкзаки та штори. Пошиття спідниць і суконь на замовлення. Нас можна знайти за адресою: Яромірова 726/15."
+
+#: src/pages/index.mjs:117
+msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, šití šatů na zakázku, šití sukní na míru, Praha 2, Nusle"
+msgstr "ательє, ремонт одягу, перешивання, заміна блискавки, підкладка, штори, пошиття суконь на замовлення, індивідуальне пошиття спідниць, Прага 2, Нусле"
+
+#: src/pages/sity-na-miru.mjs:11
+msgid "Originalita – jen váš vlastní design"
+msgstr "Оригінальність – тільки ваш власний дизайн"
+
+#: src/pages/sity-na-miru.mjs:12
+msgid "Dokonalé padnutí – přesně na vaši postavu"
+msgstr "Ідеальна посадка – точно по вашій фігурі"
+
+#: src/pages/sity-na-miru.mjs:13
+msgid "Výběr látek a detailů – podle vašeho vkusu"
+msgstr "Вибір тканин і деталей – за вашим смаком"
+
+#: src/pages/sity-na-miru.mjs:14
+msgid "Záruka kvality a profesionální přístup"
+msgstr "Гарантія якості та професійний підхід"
+
+#: src/pages/sity-na-miru.mjs:21
+msgid ""
+"Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy.\n"
+"Každý kousek bude ušitý přímo pro vás – bez kompromisů mezi pohodlím a stylem."
+msgstr ""
+"Ми пропонуємо створення оригінальних моделей — від класичних до сучасних фасонів.\n"
+"Кожна річ буде пошита саме для вас — без компромісів між комфортом і стилем."
+
+#: src/pages/sity-na-miru.mjs:33
+msgid "🧵 Základní ceny najdete v záložce Ceník. Uvedené ceny platí pouze za práci, bez materiálu.."
+msgstr "🧵 Основні ціни ви знайдете у вкладці «Ціни». Вказані ціни — лише за роботу, без вартості матеріалів."
+
+#: src/pages/sity-na-miru.mjs:34
+msgid "📏 Každý model upravujeme individuálně — s důrazem na střih, styl a pohodlí při nošení."
+msgstr "📏 Кожну модель ми адаптуємо індивідуально — з акцентом на крій, стиль і комфорт у носінні."
+
+#: src/pages/sity-na-miru.mjs:48
+#: src/pages/sity-na-miru.mjs:51
+msgid "Šití sukní a šatů na zakázku | Originální modely na míru – Švadlenka Praha"
+msgstr "Пошиття спідниць і суконь на замовлення | Оригінальні моделі на замовлення – Швадленка Прага"
+
+#: src/pages/sity-na-miru.mjs:49
+#: src/pages/sity-na-miru.mjs:52
+msgid "Nechte si ušít šaty nebo sukni přesně podle svých představ. Nabízíme originální střihy, dokonalé padnutí a výběr kvalitních látek. Každý kousek je ručně šitý na míru – bez kompromisů mezi pohodlím a stylem."
+msgstr "Замовте сукню чи спідницю, створену саме за вашими побажаннями. Ми пропонуємо оригінальні крої, ідеальну посадку та вибір якісних тканин. Кожна річ виготовляється вручну на замовлення — без компромісів між комфортом і стилем."
+
+#: src/pages/sity-na-miru.mjs:50
+msgid "šití šatů na zakázku, šití sukní na míru, originální šaty Praha, šaty na míru Praha, sukně na zakázku, švadlena Praha, úprava šatů, krejčovství, ruční šití, módní návrh šatů, elegantní šaty, večerní šaty Praha"
+msgstr "пошиття суконь на замовлення, індивідуальне пошиття спідниць, оригінальні сукні Прага, сукні на замовлення Прага, спідниці на замовлення, швачка Прага, перешивання суконь, ательє, ручне шиття, дизайн суконь, елегантні сукні, вечірні сукні Прага"
+
+#: src/auto/services.mjs:358
+msgid "Sukně"
+msgstr "Спідниця"
+
+#: src/auto/services.mjs:359
+msgid "3 000 Kč"
+msgstr "3 000 Kč"
+
+#: src/auto/services.mjs:362
+msgid "Šaty"
+msgstr "Сукня"
+
+#: src/auto/services.mjs:363
+msgid "4 000 - 6 000 Kč"
+msgstr "4 000 – 6 000 Kč"
+
+#: src/auto/services.mjs:366
+msgid "Korzet k šatům"
+msgstr "Корсет до сукні"
+
+#: src/auto/services.mjs:367
+msgid "od 5 000 Kč"
+msgstr "від 5 000 Kč"
+
+#: src/auto/services.mjs:370
+msgid "*сena korzetových šatů ="
+msgstr "*ціна корсетної сукні ="
+
+#: src/auto/services.mjs:371
+msgid "korzet + sukně"
+msgstr "корсет + спідниця"
+
