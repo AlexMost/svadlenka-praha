@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://svadlenka-praha.cz/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/"/>
@@ -14,7 +14,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/sluzby/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/sluzby/"/>
@@ -23,8 +23,18 @@
         <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/sluzby/"/>
     </url>
     <url>
+        <loc>https://svadlenka-praha.cz/contacts/</loc>
+        <lastmod>2025-10-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/contacts/"/>
+        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/contacts/"/>
+        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/contacts/"/>
+        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/contacts/"/>
+    </url>
+    <url>
         <loc>https://svadlenka-praha.cz/dziny/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/dziny/"/>
@@ -35,7 +45,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/latkove/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/latkove/"/>
@@ -46,7 +56,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/sity-na-miru/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/sity-na-miru/"/>
@@ -57,7 +67,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/batohy/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/batohy/"/>
@@ -68,7 +78,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/zavesy/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/zavesy/"/>
@@ -79,7 +89,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/kalhoty/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/kalhoty/"/>
@@ -90,7 +100,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/saty/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/saty/"/>
@@ -101,7 +111,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/podsivka/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/podsivka/"/>
@@ -112,7 +122,7 @@
     </url>
     <url>
         <loc>https://svadlenka-praha.cz/druk/</loc>
-        <lastmod>2025-10-07</lastmod>
+        <lastmod>2025-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/druk/"/>

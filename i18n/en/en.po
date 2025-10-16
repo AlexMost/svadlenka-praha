@@ -1139,3 +1139,21 @@ msgstr "*price of corset dresses ="
 #: src/auto/services.mjs:371
 msgid "korzet + sukně"
 msgstr "corset + skirt"
+
+#: src/pages/contacts.mjs:11
+#: src/pages/contacts.mjs:14
+msgid "Kontakty | Krejčovství Švadlenka Praha – Oprava a úprava oděvů"
+msgstr "Contacts | Švadlenka Tailor Shop Prague – Clothing Repairs and Alterations"
+
+#: src/pages/contacts.mjs:12
+msgid "Navštivte nás v Krejčovství Švadlenka na adrese Jaromírova 726/15, Praha 2 – Nusle. Zavolejte, napište nebo se zastavte osobně. Otevírací doba, telefon a e-mail na jednom místě."
+msgstr "Visit us at Švadlenka Tailor Shop at Jaromírova 726/15, Prague 2 – Nusle. Call, write, or stop by in person. Opening hours, phone, and email all in one place."
+
+#: src/pages/contacts.mjs:13
+msgid "kontakt švadlenka, krejčovství praha, švadlena nusle, adresa švadlenka, telefon švadlenka, šití praha 2, oprava oděvů praha, úprava oblečení, kontaktní informace švadlenka"
+msgstr "švadlenka contact, tailor shop prague, seamstress nusle, švadlenka address, švadlenka phone, sewing prague 2, clothing repair prague, clothes alteration, švadlenka contact info"
+
+#: src/pages/contacts.mjs:15
+msgid "Navštivte nás v Krejčovství Švadlenka na adrese Jaromírova 726/15, Praha 2 – Nusle. Zavolejte, napište nebo se zastavte osobně. Otevírací doba, telefon a e-mail na jednom místě.."
+msgstr "Visit us at Švadlenka Tailor Shop at Jaromírova 726/15, Prague 2 – Nusle. Call, write, or stop by in person. Opening hours, phone, and email all in one place."
+

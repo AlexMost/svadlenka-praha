@@ -94,7 +94,7 @@ export default () => {
             <td>10:00 - 16:00</td>
           </tr>
         </table>
-        <a href="#kontakty" class="cta-button">${t`Najít nás`}</a>
+        <a href="${siteUrl("/contacts")}" class="cta-button">${t`Najít nás`}</a>
       </section>
       <section id="sluzby">
         <div class="section-title">${t`Naše služby`}</div>

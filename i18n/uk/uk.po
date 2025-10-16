@@ -1051,12 +1051,12 @@ msgstr "Пропонуємо створення оригінальних мод�
 #: src/pages/index.mjs:115
 #: src/pages/index.mjs:118
 msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha"
-msgstr "Ательє Швадленка – Ремонт і перешивання одягу в Празі"
+msgstr "Ательє Švadlenka – Ремонт і перешивання одягу в Празі"
 
 #: src/pages/index.mjs:116
 #: src/pages/index.mjs:119
 msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Šití sukní a šatů na zakázku. Najdete nás na Jaromírově 726/15."
-msgstr "Швадленка — це ательє у Празі 2, яке пропонує якісний ремонт та перешивання одягу — джинси, пальта, підкладки, рюкзаки та штори. Пошиття спідниць і суконь на замовлення. Нас можна знайти за адресою: Яромірова 726/15."
+msgstr "Švadlenka — це ательє у Празі 2, яке пропонує якісний ремонт та перешивання одягу — джинси, пальта, підкладки, рюкзаки та штори. Пошиття спідниць і суконь на замовлення. Нас можна знайти за адресою: Яромірова 726/15."
 
 #: src/pages/index.mjs:117
 msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, šití šatů na zakázku, šití sukní na míru, Praha 2, Nusle"
@@ -1097,7 +1097,7 @@ msgstr "📏 Кожну модель ми адаптуємо індивідуа�
 #: src/pages/sity-na-miru.mjs:48
 #: src/pages/sity-na-miru.mjs:51
 msgid "Šití sukní a šatů na zakázku | Originální modely na míru – Švadlenka Praha"
-msgstr "Пошиття спідниць і суконь на замовлення | Оригінальні моделі на замовлення – Швадленка Прага"
+msgstr "Пошиття спідниць і суконь на замовлення | Оригінальні моделі на замовлення – Švadlenka Прага"
 
 #: src/pages/sity-na-miru.mjs:49
 #: src/pages/sity-na-miru.mjs:52
@@ -1139,4 +1139,21 @@ msgstr "*ціна корсетної сукні ="
 #: src/auto/services.mjs:371
 msgid "korzet + sukně"
 msgstr "корсет + спідниця"
+
+#: src/pages/contacts.mjs:11
+#: src/pages/contacts.mjs:14
+msgid "Kontakty | Krejčovství Švadlenka Praha – Oprava a úprava oděvů"
+msgstr "Контакти | Ательє Švadlenka Прага – Ремонт і пошиття одягу"
+
+#: src/pages/contacts.mjs:12
+msgid "Navštivte nás v Krejčovství Švadlenka na adrese Jaromírova 726/15, Praha 2 – Nusle. Zavolejte, napište nebo se zastavte osobně. Otevírací doba, telefon a e-mail na jednom místě."
+msgstr "Завітайте до ательє Švadlenka за адресою Jaromírova 726/15, Прага 2 – Нусле. Зателефонуйте, напишіть або приходьте особисто. Години роботи, телефон і електронна пошта в одному місці."
+
+#: src/pages/contacts.mjs:13
+msgid "kontakt švadlenka, krejčovství praha, švadlena nusle, adresa švadlenka, telefon švadlenka, šití praha 2, oprava oděvů praha, úprava oblečení, kontaktní informace švadlenka"
+msgstr "контакт švadlenka, ательє прага, швачка нусле, адреса švadlenka, телефон švadlenka, шиття прага 2, ремонт одягу прага, корекція одягу, контактна інформація švadlenka"
+
+#: src/pages/contacts.mjs:15
+msgid "Navštivte nás v Krejčovství Švadlenka na adrese Jaromírova 726/15, Praha 2 – Nusle. Zavolejte, napište nebo se zastavte osobně. Otevírací doba, telefon a e-mail na jednom místě.."
+msgstr "Завітайте до ательє Švadlenka за адресою Jaromírova 726/15, Прага 2 – Нусле. Зателефонуйте, напишіть або приходьте особисто. Години роботи, телефон і електронна пошта в одному місці."
 

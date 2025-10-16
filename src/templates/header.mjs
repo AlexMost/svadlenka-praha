@@ -13,7 +13,7 @@ export function header(currentUrl) {
         <ul class="menu">
            <li><a href="${siteUrl("/")}">${t`Úvod`}</a></li>
             <li><a href="${siteUrl("/sluzby")}">${t`Služby a ceník`}</a></li>
-            <li><a href="#kontakty">${t`Kontakty`}</a></li>
+            <li><a href="${siteUrl("/contacts")}">${t`Kontakty`}</a></li>
             <li>
                <div class="language-switcher">
                     <div class="language-switcher-inner">
@@ -42,7 +42,7 @@ export function header(currentUrl) {
     <ul>
         <li><a href="${siteUrl("/")}">${t`Úvod`}</a></li>
         <li><a href="${siteUrl("/sluzby")}">${t`Služby a ceník`}</a></li>
-        <li><a href="#kontakty">${t`Kontakty`}</a></li>
+        <li><a href="${siteUrl("/contacts")}">${t`Kontakty`}</a></li>
     </ul>
     <div class="review-sidebar">
         ${reviewHTML()}
