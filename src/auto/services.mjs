@@ -8,7 +8,7 @@ export const getServices = () => [
         t`zkrácení strojem`,
         t`300 Kč`,
         t`zkrácení strojem`,
-        "250"
+        "300"
       ],
       [
         t`zkrácení riflí strojem`,
@@ -18,21 +18,33 @@ export const getServices = () => [
       ],
       [
         t`zkrácení ručně neviditelným švem`,
-        t`400 Kč`,
+        t`500 Kč`,
         t`zkrácení ručně neviditelným švem`,
-        "300"
+        "500"
       ],
       [
-        t`zkrácení s manžetou nebo rozparky`,
-        t`400 Kč`,
-        t`zkrácení s manžetou nebo rozparky`,
-        "400"
+        t`zkrácení s chránítkem, manžetou nebo rozparky`,
+        t`500 Kč`,
+        t`zkrácení s chránítkem, manžetou nebo rozparky`,
+        "500"
       ],
       [
         t`zkrácení riflí s originálním lemem`,
-        t`400 Kč`,
+        t`od 400 Kč`,
         t`zkrácení riflí s originálním lemem`,
+        t`od 400`
+      ],
+      [
+        t`zkrácení strojem kalhoty palazzo`,
+        t`400 Kč`,
+        t`zkrácení strojem kalhoty palazzo`,
         "400"
+      ],
+      [
+        t`zkrácení ručně kalhoty palazzo`,
+        t`500 Kč`,
+        t`zkrácení ručně kalhoty palazzo`,
+        "500"
       ],
       [
         t`zkrácení lyžařských kalhot`,
@@ -42,7 +54,7 @@ export const getServices = () => [
       ],
       [
         t`zúžení nebo rozšíření v pase`,
-        t`400-600 Kč`,
+        "400-600",
         t`zúžení nebo rozšíření v pase`,
         "400-600"
       ],
@@ -194,21 +206,21 @@ export const getServices = () => [
       ],
       [
         t`zkrácení nebo prodloužení rukávů`,
-        t`od 500 Kč`,
+        t`od 800 Kč`,
         t`zkrácení nebo prodloužení rukávů`,
-        t`od 500`
+        t`od 800`
       ],
       [
         t`zkrácení rukávů vrchem`,
         t`od 1500 Kč`,
         t`zkrácení rukávů vrchem`,
-        t`od 1200`
+        t`od 1500`
       ],
       [
         t`zúžení v ramenech`,
         t`od 1200 Kč`,
         t`zúžení v ramenech`,
-        "1000"
+        t`od 1200`
       ],
       [
         t`zúžení rukávů`,
@@ -223,10 +235,10 @@ export const getServices = () => [
         "300"
       ],
       [
-        t`výměna zipů (vč. zipu)`,
-        t`od 700 Kč`,
-        t`výměna zipů (vč. zipu)`,
-        t`od 700`
+        t`výměna zipů (+ cena zipu)`,
+        t`od 800 Kč + zip`,
+        t`výměna zipů (+ cena zipu)`,
+        t`od 800 + zip`
       ],
       [
         t`výměna podšívky (vč. podšívky)`,
@@ -323,10 +335,10 @@ export const getServices = () => [
         "800"
       ],
       [
-        t`výměna zipů (vč. zipu)`,
-        t`od 700 Kč`,
-        t`výměna zipů (vč. zipu)`,
-        t`od 700`
+        t`výměna zipů (+ cena zipu)`,
+        t`od 800 Kč + zip`,
+        t`výměna zipů (+ cena zipu)`,
+        t`od 800 + zip`
       ]
     ]
   },
