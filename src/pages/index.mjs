@@ -52,12 +52,6 @@ const getServices = () => [
     image: "/img/services/batohy.webp",
     url: siteUrl("/batohy"),
   },
-  {
-    title: t`Výměna druku`,
-    description: t`Rychlá výměna kovových patentek na bundách, kalhotách či doplňcích`,
-    image: "/img/services/druku.webp",
-    url: siteUrl("/druk"),
-  },
 ];
 
 function serviceHTML({ title, description, image, url }) {
