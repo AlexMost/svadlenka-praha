@@ -120,15 +120,4 @@
         <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/podsivka/"/>
         <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/podsivka/"/>
     </url>
-    <url>
-        <loc>https://svadlenka-praha.cz/druk/</loc>
-        <lastmod>2025-10-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <html:link rel="alternate" hreflang="cs" href="https://svadlenka-praha.cz/druk/"/>
-        <html:link rel="alternate" hreflang="uk" href="https://svadlenka-praha.cz/uk/druk/"/>
-        <html:link rel="alternate" hreflang="ru" href="https://svadlenka-praha.cz/ru/druk/"/>
-        <html:link rel="alternate" hreflang="en" href="https://svadlenka-praha.cz/en/druk/"/>
-        <html:link rel="alternate" hreflang="x-default" href="https://svadlenka-praha.cz/druk/"/>
-    </url>
 </urlset>
