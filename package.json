@@ -12,7 +12,8 @@
     "update-translations-uk": "ttag update i18n/uk/uk.po src",
     "update-translations-ru": "ttag update i18n/ru/ru.po src",
     "update-translations-en": "ttag update i18n/en/en.po src",
-    "update-translations": "npm run update-translations-uk && npm run update-translations-ru && npm run update-translations-en"
+    "update-translations": "npm run update-translations-uk && npm run update-translations-ru && npm run update-translations-en",
+    "fetch-portfolio": "node src/build/portfolio.mjs"
   },
   "devDependencies": {
     "csv-parse": "^5.6.0",
@@ -22,6 +23,7 @@
     "nodemon": "^3.1.10",
     "npm-run-all": "^4.1.5",
     "prettier": "3.5.3",
+    "sharp": "^0.33.5",
     "ttag-cli": "^1.10.18"
   },
   "dependencies": {
