@@ -46,12 +46,12 @@ const getServices = () => [
     image: "/img/services/zavesy.webp",
     url: siteUrl("/zavesy"),
   },
-  {
-    title: t`Oprava batohu a kabelek`,
-    description: t`Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu`,
-    image: "/img/services/batohy.webp",
-    url: siteUrl("/batohy"),
-  },
+  // {
+  //   title: t`Oprava batohu a kabelek`,
+  //   description: t`Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu`,
+  //   image: "/img/services/batohy.webp",
+  //   url: siteUrl("/batohy"),
+  // },
 ];
 
 function serviceHTML({ title, description, image, url }) {
