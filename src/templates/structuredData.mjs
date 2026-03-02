@@ -1,4 +1,5 @@
 import { t } from 'ttag';
+import { SITE } from "../config.mjs";
 
 export function makeOffer({ title, description, category }) {
   return {
@@ -17,7 +18,7 @@ export function getStructuredData({ makesOffer }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Švadlenka",
-    image: "https://svadlenka-praha.cz/img/logo.jpg",
+    image: `${SITE}/img/logo.jpg`,
     description:
       "Krejčovství na Praze 2. Opravujeme a upravujeme oblečení, džíny, batohy, záclony, podšívky a další.",
     address: {
@@ -33,7 +34,7 @@ export function getStructuredData({ makesOffer }) {
       latitude: 50.0651271,
       longitude: 14.4238941,
     },
-    url: "https://svadlenka-praha.cz",
+    url: SITE,
     telephone: "+420 775 240 309",
     openingHours: ["Mo-Th 10:00-18:00", "Fr 10:00-16:00"],
     priceRange: "Kč",

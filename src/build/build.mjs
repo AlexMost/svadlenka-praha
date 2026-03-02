@@ -2,6 +2,8 @@ import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
 import { loadLocales, setLocale } from "./i18n.mjs";
+import { generateSitemap } from "./sitemap.mjs";
+import { LOCALES, DEFAULT_LOCALE } from "../config.mjs";
 
 let revision = process.argv[2];
 if (!revision) {
@@ -9,10 +11,18 @@ if (!revision) {
 }
 
 const getBasePath = (locale) =>
-  locale === "cz" ? "./public" : `./public/${locale}`;
+  locale === DEFAULT_LOCALE ? "./public" : `./public/${locale}`;
 
 function postProcessHTML(html) {
   return html.replaceAll("$REVISION", revision);
+}
+
+async function discoverPages() {
+  const pagesDir = path.resolve("./src/pages");
+  const files = await fs.readdir(pagesDir);
+  return files
+    .filter((f) => f.endsWith(".mjs"))
+    .map((f) => f.replace(/\.mjs$/, ""));
 }
 
 async function copyFiles(locale) {
@@ -24,7 +34,6 @@ async function copyFiles(locale) {
   await fs.mkdir(publicDir, { recursive: true });
   await fs.cp(staticDir, publicDir, { recursive: true });
   await fs.copyFile("./CNAME", path.join(publicDir, "CNAME"));
-  await fs.copyFile("./sitemap.xml", path.join(publicDir, "sitemap.xml"));
   console.log("Files copied.");
 }
 
@@ -46,27 +55,25 @@ async function buildPage(pageName, locale) {
   console.log(`Page ready ${pageResultPath}`);
 }
 
-async function buildPages(locale) {
+async function buildPages(locale, pageNames) {
   setLocale(locale);
   await copyFiles(locale);
   console.log(`Building pages (${revision}) ...`);
-  await buildPage("index", locale);
-  await buildPage("sluzby", locale);
-  await buildPage("dziny", locale);
-  await buildPage("latkove", locale);
-  // await buildPage("batohy", locale);
-  await buildPage("zavesy", locale);
-  await buildPage("podsivka", locale);
-  await buildPage("kalhoty", locale);
-  await buildPage("saty", locale);
-  await buildPage("sity-na-miru", locale);
-  await buildPage("contacts", locale);
+  for (const pageName of pageNames) {
+    await buildPage(pageName, locale);
+  }
   console.log("Pages built", locale);
 }
 
 loadLocales();
 
-await buildPages("cz");
-await buildPages("uk");
-await buildPages("en");
-await buildPages("ru");
+const pageNames = await discoverPages();
+console.log(`Discovered pages: ${pageNames.join(", ")}`);
+
+for (const locale of LOCALES) {
+  await buildPages(locale, pageNames);
+}
+
+const sitemapXml = await generateSitemap(pageNames);
+await fs.writeFile("./public/sitemap.xml", sitemapXml, "utf8");
+console.log("Sitemap generated.");
