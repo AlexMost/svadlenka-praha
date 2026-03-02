@@ -8,11 +8,11 @@ import { getStructuredData } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
 
 const savesyServices = () => [
-  [t`Celková výměna podšívky u kabátu nebo bundy`, t`od 900 Kč`],
-  [t`Částečná výměna podšívky (např. rukávy, záda)`, t`od 600 Kč`],
-  [t`Výměna podšívky u kabelky nebo batohu`, t`od 450 Kč`],
-  [t`Oprava natržené podšívky (zašití, doplnění)`, t`od 300 Kč`],
-  [t`Začištění okrajů nebo zpevnění vnitřní části`, t`od 400 Kč`],
+  [t`Celková výměna podšívky u kabátu nebo bundy`],
+  [t`Částečná výměna podšívky (např. rukávy, záda)`],
+  [t`Výměna podšívky u kabelky nebo batohu`],
+  [t`Oprava natržené podšívky (zašití, doplnění)`],
+  [t`Začištění okrajů nebo zpevnění vnitřní části`],
 ];
 
 export default () => {

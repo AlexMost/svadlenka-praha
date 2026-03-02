@@ -8,11 +8,11 @@ import { getStructuredData } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
 
 const latkoveServices = () => [
-  [t`Zkrácení sukně nebo šatů`, t`od 400 Kč`],
-  [t`Zúžení šatů nebo halenky v pase / bocích`, t`od 450 Kč`],
-  [t`Zkrácení rukávů u halenky nebo šatů`, t`od 350 Kč`],
-  [t`Úprava délky ramínek / průramků`, t`od 300 Kč`],
-  [t`Oprava děr, výměna zipu, začištění okrajů`, t`od 400 Kč`],
+  [t`Zkrácení sukně nebo šatů`],
+  [t`Zúžení šatů nebo halenky v pase / bocích`],
+  [t`Zkrácení rukávů u halenky nebo šatů`],
+  [t`Úprava délky ramínek / průramků`],
+  [t`Oprava děr, výměna zipu, začištění okrajů`],
 ];
 
 export default () => {

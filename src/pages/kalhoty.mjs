@@ -8,10 +8,10 @@ import { getStructuredData } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
 
 const kalhotyServices = () => [
-  [t`Přišití knoflíku nebo háčku na zapínání`, t`od 50 Kč`],
-  [t`Zkrácení s možností zachování původního spodního lemu`, t`od 400 Kč`],
-  [t`Výměna kapesní látky (vnitřní kapsy)`, t`od 300 Kč`],
-  [t`Úprava velikosti, včetně zúžení nebo rozšíření pasu`, t`od 300 Kč`],
+  [t`Přišití knoflíku nebo háčku na zapínání`],
+  [t`Zkrácení s možností zachování původního spodního lemu`],
+  [t`Výměna kapesní látky (vnitřní kapsy)`],
+  [t`Úprava velikosti, včetně zúžení nebo rozšíření pasu`],
 ];
 
 export default () => {

@@ -8,10 +8,10 @@ import { getStructuredData } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
 
 const satyServices = () => [
-  [t`Zúžení nebo rozšíření šatů v pase, bocích či prsou`, t`od 300 Kč`],
-  [t`Zkrácení délky (celé délky nebo ramínek)`, t`od 700 Kč`],
-  [t`Úpravu rukávů nebo jejich zkrácení`, t`od 200 Kč`],
-  [t`Drobné opravy (např. zipy, knoflíky, rozparky)`, t`od 600 Kč`],
+  [t`Zúžení nebo rozšíření šatů v pase, bocích či prsou`],
+  [t`Zkrácení délky (celé délky nebo ramínek)`],
+  [t`Úpravu rukávů nebo jejich zkrácení`],
+  [t`Drobné opravy (např. zipy, knoflíky, rozparky)`],
 ];
 
 export default () => {

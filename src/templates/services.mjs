@@ -12,7 +12,7 @@ export function servicesToStructuredOffers(services) {
         makeOffer({
           title: option[0],
           category: service.title,
-          description: `${option[0]} ${option[1]}`,
+          description: `${option[0]} ${option[1] || ''}`,
         }),
       );
     });
@@ -28,7 +28,7 @@ export function servicesHTML(services) {
             (option) =>
               `<li>
                 <div class="title">${capitalizeFirst(option[0])}</div>
-                <div class="price">${option[1]}</div>
+                <div class="price">${option[1] || ''}</div>
             </li>`,
           )
           .join("\n")}

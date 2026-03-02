@@ -8,12 +8,12 @@ import { getStructuredData } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
 
 const dzinyServices = () => [
-  [t`Zkrácení délky`, t`od 350 Kč`],
-  [t`Zúžení džín v pase nebo nohavicích`, t`od 400 Kč`],
-  [t`Zkrácení nohavic s originálním lemem`, t`od 500 Kč`],
-  [t`Oprava roztržených švů, děr nebo kapsy`, t`od 300 Kč`],
-  [t`Výměna zipu`, t`od 400 Kč`],
-  [t`Záplaty na kolenou, úprava sedu`, t`od 350 Kč`],
+  [t`Zkrácení délky`],
+  [t`Zúžení džín v pase nebo nohavicích`],
+  [t`Zkrácení nohavic s originálním lemem`],
+  [t`Oprava roztržených švů, děr nebo kapsy`],
+  [t`Výměna zipu`],
+  [t`Záplaty na kolenou, úprava sedu`],
 ];
 
 export default () => {
