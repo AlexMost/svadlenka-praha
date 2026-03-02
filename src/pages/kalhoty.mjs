@@ -28,12 +28,12 @@ Profesionálně je upravíme na míru tak, aby vám perfektně seděly.`}</h2>
     <section>
         ${servicesHTML(kalhotyServices())}
     </section>
-    <section class="alt-text">${t`🧵Při práci používáme kvalitní materiály, zachováváme barevnost a styl vašich kalhot`}</section>
     <section>
       <div class="sluzby-wrapper">
           <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
       </div>
     </section>
+    <section class="alt-text">${t`🧵Při práci používáme kvalitní materiály, zachováváme barevnost a styl vašich kalhot`}</section>
 `;
   return baseHtml({
     content: pageHTML,

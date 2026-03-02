@@ -30,16 +30,16 @@ export default () => {
     <section>
         ${servicesHTML(dzinyServices())}
     </section>
+    <section>
+      <div class="sluzby-wrapper">
+          <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
+      </div>
+    </section>
     <section class="alt-text">
         <ul class="services-more">
             <li>${t`🧵 Při práci používáme pevné nitě a kvalitní látky. Zachováváme styl, střih i charakter vašich džínů.`}</li>
             <li>${t`✂️ Spolehlivý servis, precizní zpracování a osobní přístup`}</li>
         </ul>
-    </section>
-    <section>
-      <div class="sluzby-wrapper">
-          <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
-      </div>
     </section>
 `;
   return baseHtml({

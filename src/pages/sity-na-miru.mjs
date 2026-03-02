@@ -28,17 +28,17 @@ Každý kousek bude ušitý přímo pro vás – bez kompromisů mezi pohodlím 
     <section>
         ${servicesHTML(satyServices())}
     </section>
+    <section>
+      <div class="sluzby-wrapper">
+          <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
+      </div>
+    </section>
     <section class="alt-text">
       <ul class="services-more">
         <li>${t`🧵 Základní ceny najdete v záložce Ceník. Uvedené ceny platí pouze za práci, bez materiálu..`}</li>
         <li>${t`📏 Každý model upravujeme individuálně — s důrazem na střih, styl a pohodlí při nošení.`}</li>
         <li>${t`✂️ Precizní práce, osobní přístup a výsledky, které oceníte.`}</li>
       </ul>
-    </section>
-    <section>
-      <div class="sluzby-wrapper">
-          <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
-      </div>
     </section>
 `;
   return baseHtml({

@@ -29,17 +29,17 @@ chcete oživit – jsme tu pro vás.`}</h2>
     <section>
         ${servicesHTML(satyServices())}
     </section>
+    <section>
+      <div class="sluzby-wrapper">
+          <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
+      </div>
+    </section>
     <section class="alt-text">
       <ul class="services-more">
         <li>${t`🧵 Každý model upravujeme individuálně — s důrazem na střih, styl a pohodlí při nošení.`}</li>
         <li>${t`📏 Samotné měření zabere jen minimum času díky moderním metodám, které používáme.`}</li>
         <li>${t`✂️ Precizní práce, osobní přístup a výsledky, které oceníte.`}</li>
       </ul>
-    </section>
-    <section>
-      <div class="sluzby-wrapper">
-          <a href="${siteUrl("/sluzby")}" class="cta-button">${t`Všechny služby a ceník`}</a>
-      </div>
     </section>
 `;
   return baseHtml({
