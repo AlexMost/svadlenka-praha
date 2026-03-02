@@ -2,8 +2,6 @@
 
 This file provides guidance to OpenAI Codex and similar AI agents when working with code in this repository.
 
-> **Note**: This repo keeps both `CLAUDE.md` (for Claude Code) and `AGENTS.md` (for OpenAI Codex and similar agents) with identical content. When updating one, update the other to match.
-
 ## Project Overview
 
 Static site generator for a Czech tailor shop (Krejčovství Švadlenka Praha). Builds a multi-language HTML website deployed to GitHub Pages at svadlenka-praha.cz.
