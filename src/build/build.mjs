@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
+import { transform } from "lightningcss";
 import { loadLocales, setLocale } from "./i18n.mjs";
 import { generateSitemap } from "./sitemap.mjs";
 import { LOCALES, DEFAULT_LOCALE } from "../config.mjs";
@@ -13,8 +14,27 @@ if (!revision) {
 const getBasePath = (locale) =>
   locale === DEFAULT_LOCALE ? "./public" : `./public/${locale}`;
 
+let inlineCSS;
+
+async function loadMinifiedCSS() {
+  const rawCSS = await fs.readFile(path.resolve("./static/style.css"), "utf8");
+  const result = transform({
+    filename: "style.css",
+    code: Buffer.from(rawCSS),
+    minify: true,
+  });
+  const minified = result.code.toString();
+  console.log(`CSS minified: ${rawCSS.length} → ${minified.length} bytes`);
+  return minified;
+}
+
 function postProcessHTML(html) {
-  return html.replaceAll("$REVISION", revision);
+  return html
+    .replace(
+      '<link rel="stylesheet" href="/style.css?r=$REVISION">',
+      `<style>${inlineCSS}</style>`,
+    )
+    .replaceAll("$REVISION", revision);
 }
 
 async function discoverPages() {
@@ -33,6 +53,7 @@ async function copyFiles(locale) {
   await fs.rm(publicDir, { recursive: true, force: true });
   await fs.mkdir(publicDir, { recursive: true });
   await fs.cp(staticDir, publicDir, { recursive: true });
+  await fs.rm(path.join(publicDir, "style.css"), { force: true });
   await fs.copyFile("./CNAME", path.join(publicDir, "CNAME"));
   console.log("Files copied.");
 }
@@ -66,6 +87,7 @@ async function buildPages(locale, pageNames) {
 }
 
 loadLocales();
+inlineCSS = await loadMinifiedCSS();
 
 const pageNames = await discoverPages();
 console.log(`Discovered pages: ${pageNames.join(", ")}`);

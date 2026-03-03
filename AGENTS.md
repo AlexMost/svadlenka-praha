@@ -60,3 +60,11 @@ Active pages: `index`, `sluzby`, `dziny`, `latkove`, `zavesy`, `podsivka`, `kalh
 ### Cache busting
 
 The build replaces `$REVISION` placeholder in HTML with a git commit hash (prod) or random UUID (dev). Static assets reference `style.css?v=$REVISION` etc.
+
+## Verifying Changes
+
+When making visual or markup changes, always verify the result in the browser:
+
+1. Start the dev server: `npm run dev` (serves on `http://127.0.0.1:8080/`)
+2. Use MCP (Chrome DevTools) tools to inspect the page — take snapshots, screenshots, check console errors
+3. Confirm the site renders correctly before considering the task done
