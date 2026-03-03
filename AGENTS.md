@@ -21,7 +21,7 @@ npm run deploy               # Build prod + deploy to GitHub Pages via gh-pages
 
 > **Note**: README says `npm run publish` but the correct script is `npm run deploy`.
 
-There are no tests or a lint command beyond Prettier.
+There is no lint command beyond Prettier. Smoke tests use Playwright (see **Testing** section below).
 
 ## Architecture
 
@@ -40,7 +40,7 @@ i18n/{uk,en,ru}/*.po  (ttag)  ─────────
 
 Each page is an ES module with a default export `() => string` (returns full HTML). Pages call `baseHtml()` from `src/templates/baseHTML.mjs` for the shared layout (header, footer, GA, structured data, etc.).
 
-Active pages: `index`, `sluzby`, `dziny`, `latkove`, `zavesy`, `podsivka`, `kalhoty`, `saty`, `sity-na-miru`, `contacts`. To add a page: create `src/pages/<name>.mjs` and add a `buildPage("<name>", locale)` call in `build.mjs` for each locale block.
+Active pages: `index`, `sluzby`, `dziny`, `latkove`, `zavesy`, `podsivka`, `kalhoty`, `saty`, `sity-na-miru`, `contacts`. To add a page: create `src/pages/<name>.mjs` and add a `buildPage("<name>", locale)` call in `build.mjs` for each locale block. Every page must have a smoke test — add it to the `pages` array in `e2e/smoke.spec.mjs`.
 
 ### Internationalization
 
@@ -60,6 +60,18 @@ Active pages: `index`, `sluzby`, `dziny`, `latkove`, `zavesy`, `podsivka`, `kalh
 ### Cache busting
 
 The build replaces `$REVISION` placeholder in HTML with a git commit hash (prod) or random UUID (dev). Static assets reference `style.css?v=$REVISION` etc.
+
+## Testing
+
+Smoke tests live in `e2e/smoke.spec.mjs` (Playwright + Chromium). They verify every page across all 4 locales renders correctly (HTTP 200, non-empty title, visible header/main/footer, no JS errors).
+
+```bash
+npm test                     # Run smoke tests headless (site must be built)
+npm run test:headed          # Run with visible browser for debugging
+npm run test:smoke           # Build site + run tests in one command
+```
+
+Every page must have a corresponding smoke test. When adding a new page, add its name to the `pages` array in `e2e/smoke.spec.mjs`. Run `npm run test:smoke` to verify.
 
 ## Verifying Changes
 

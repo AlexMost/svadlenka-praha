@@ -3,7 +3,7 @@
     "prettier": "prettier . --write",
     "build": "node src/build/build.mjs",
     "build-prod": "NODE_ENV=production node src/build/build.mjs $(git rev-parse HEAD)",
-    "predeploy": "rm -rf public && mkdir public && npm run build-prod",
+    "predeploy": "rm -rf public && mkdir public && npm run build-prod && npm run test",
     "deploy": "gh-pages -d public",
     "dev-watch": "nodemon --watch src --watch static --ext mjs,css,js --exec \"node src/build/build.mjs\"",
     "fetch-services": "node src/build/services.mjs",
@@ -12,9 +12,13 @@
     "update-translations-uk": "ttag update i18n/uk/uk.po src",
     "update-translations-ru": "ttag update i18n/ru/ru.po src",
     "update-translations-en": "ttag update i18n/en/en.po src",
-    "update-translations": "npm run update-translations-uk && npm run update-translations-ru && npm run update-translations-en"
+    "update-translations": "npm run update-translations-uk && npm run update-translations-ru && npm run update-translations-en",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:smoke": "npm run build && npx playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "csv-parse": "^5.6.0",
     "gettext-parser": "^8.0.0",
     "gh-pages": "^6.3.0",
