@@ -2,6 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
 import { transform } from "lightningcss";
+import { minify as minifyHTML } from "html-minifier-terser";
 import { loadLocales, setLocale } from "./i18n.mjs";
 import { generateSitemap } from "./sitemap.mjs";
 import { LOCALES, DEFAULT_LOCALE } from "../config.mjs";
@@ -14,27 +15,35 @@ if (!revision) {
 const getBasePath = (locale) =>
   locale === DEFAULT_LOCALE ? "./public" : `./public/${locale}`;
 
-let inlineCSS;
-
-async function loadMinifiedCSS() {
-  const rawCSS = await fs.readFile(path.resolve("./static/style.css"), "utf8");
+async function loadMinifiedCSS(cssPath) {
+  const rawCSS = await fs.readFile(path.resolve(cssPath), "utf8");
   const result = transform({
     filename: "style.css",
     code: Buffer.from(rawCSS),
     minify: true,
   });
-  const minified = result.code.toString();
-  console.log(`CSS minified: ${rawCSS.length} → ${minified.length} bytes`);
-  return minified;
+  return result.code.toString();
 }
 
-function postProcessHTML(html) {
-  return html
+async function postProcessHTML(html) {
+  const inlineCSS = await loadMinifiedCSS("./static/style.css");
+  const processed = html
     .replace(
       '<link rel="stylesheet" href="/style.css?r=$REVISION">',
       `<style>${inlineCSS}</style>`,
     )
     .replaceAll("$REVISION", revision);
+  return minifyHTML(processed, {
+    collapseWhitespace: true,
+    removeComments: true,
+    removeAttributeQuotes: true,
+    removeEmptyAttributes: true,
+    removeRedundantAttributes: true,
+    removeScriptTypeAttributes: true,
+    removeStyleLinkTypeAttributes: true,
+    useShortDoctype: true,
+    minifyJS: true,
+  });
 }
 
 async function discoverPages() {
@@ -61,7 +70,7 @@ async function copyFiles(locale) {
 async function buildPage(pageName, locale) {
   let pagePath = `../pages/${pageName}.mjs`;
   const pageModule = await import(pagePath);
-  const pageHTML = postProcessHTML(pageModule.default());
+  const pageHTML = await postProcessHTML(pageModule.default());
   if (pageName !== "index") {
     await fs.mkdir(path.join(path.resolve(getBasePath(locale)), pageName), {
       recursive: true,
@@ -87,7 +96,6 @@ async function buildPages(locale, pageNames) {
 }
 
 loadLocales();
-inlineCSS = await loadMinifiedCSS();
 
 const pageNames = await discoverPages();
 console.log(`Discovered pages: ${pageNames.join(", ")}`);
