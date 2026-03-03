@@ -12,6 +12,19 @@ svadlenka-praha.cz
 ### Run
 > npm run dev
 
+## Tests
+
+### Setup
+```bash
+npx playwright install chromium
+```
+
+### Run
+```bash
+npm test                         # build site + run tests headless
+npm run test:headed              # run with visible browser (also builds first)
+```
+
 ## Publish
 
-> npm run publish
+> npm run deploy

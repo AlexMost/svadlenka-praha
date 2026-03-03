@@ -13,6 +13,7 @@
     "update-translations-ru": "ttag update i18n/ru/ru.po src",
     "update-translations-en": "ttag update i18n/en/en.po src",
     "update-translations": "npm run update-translations-uk && npm run update-translations-ru && npm run update-translations-en",
+    "pretest": "npm run build",
     "test": "npx playwright test",
     "test:headed": "npx playwright test --headed",
     "test:smoke": "npm run build && npx playwright test"
