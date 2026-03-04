@@ -1013,24 +1013,24 @@ msgstr "від 800 + блискавка"
 
 #: src/auto/services.mjs:38
 msgid "zkrácení kalhoty palazzo"
-msgstr ""
+msgstr "вкорочення штанів палаццо"
 
 #: src/auto/services.mjs:51
 msgid "400-700 Kč"
-msgstr ""
+msgstr "400-700 Kč"
 
 #: src/auto/services.mjs:98
 msgid "700-2000 Kč"
-msgstr ""
+msgstr "700-2000 Kč"
 
 #: src/auto/services.mjs:180
 msgid "výměna podšívky (+ cena podšívky)"
-msgstr ""
+msgstr "заміна підкладки (+ вартість підкладки)"
 
 #: src/auto/services.mjs:181
 msgid "1500-2500 Kč + latka"
-msgstr ""
+msgstr "1500-2500 Kč + тканина"
 
 #: src/auto/services.mjs:261
 msgid "našití stuhy za 1 metr švu"
-msgstr ""
+msgstr "нашивання стрічки за 1 метр шва"

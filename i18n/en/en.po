@@ -1013,24 +1013,24 @@ msgstr "from 800 + zipper"
 
 #: src/auto/services.mjs:38
 msgid "zkrácení kalhoty palazzo"
-msgstr ""
+msgstr "shortening palazzo pants"
 
 #: src/auto/services.mjs:51
 msgid "400-700 Kč"
-msgstr ""
+msgstr "400-700 CZK"
 
 #: src/auto/services.mjs:98
 msgid "700-2000 Kč"
-msgstr ""
+msgstr "700-2000 CZK"
 
 #: src/auto/services.mjs:180
 msgid "výměna podšívky (+ cena podšívky)"
-msgstr ""
+msgstr "lining replacement (+ lining cost)"
 
 #: src/auto/services.mjs:181
 msgid "1500-2500 Kč + latka"
-msgstr ""
+msgstr "1500-2500 CZK + fabric"
 
 #: src/auto/services.mjs:261
 msgid "našití stuhy za 1 metr švu"
-msgstr ""
+msgstr "sewing ribbon per 1 meter of seam"

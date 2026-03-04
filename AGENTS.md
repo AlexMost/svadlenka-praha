@@ -16,6 +16,7 @@ npm run build                # One-off build (dev, uses random revision ID)
 npm run build-prod           # Production build (uses git commit hash for cache busting)
 npm run prettier             # Format all files with Prettier
 npm run update-translations  # Sync .po files from source strings (uk, ru, en)
+npm run translate            # Auto-translate untranslated .po entries via OpenAI (requires OPENAI_API_KEY)
 npm run deploy               # Build prod + deploy to GitHub Pages via gh-pages
 ```
 
@@ -46,7 +47,8 @@ Active pages: `index`, `sluzby`, `dziny`, `latkove`, `zavesy`, `podsivka`, `kalh
 
 - Czech is the source language (strings written directly in code using tagged template literals via `ttag`)
 - Translations live in `i18n/{uk,en,ru}/*.po`
-- `npm run update-translations` extracts new strings from source into .po files; translators fill them in manually
+- `npm run update-translations` extracts new strings from source into .po files
+- `npm run translate` auto-translates untranslated entries via OpenAI (requires `OPENAI_API_KEY`)
 - `src/build/i18n.mjs` loads locales and exposes `setLocale()` / `getCurrentLocale()`
 
 ### Services/pricing data
