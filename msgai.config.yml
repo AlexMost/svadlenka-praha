@@ -1,0 +1,7 @@
+context: |
+    This is a website for "Švadlenka" — a tailor shop, offering clothing repairs, alterations, and custom tailoring.
+    - Do not translate the brand name "Švadlenka" — keep it as-is in all languages.
+    - Do not translate Czech street addresses (e.g. "Jaromírova 726/15") — keep them in their original form.                                                                                    
+    - Do not translate or convert the Czech currency symbol "Kč" — prices like "300 Kč", "od 500 Kč", "300-600 Kč" must keep "Kč" unchanged.
+    - Tailoring terminology should be translated naturally for the target audience, not word-for-word.
+    - The Czech word "krejčovství" should be translated as "ательє" in Ukrainian, "ателье" in Russian, and "tailor shop" in English.
