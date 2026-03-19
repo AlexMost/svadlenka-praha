@@ -1034,3 +1034,15 @@ msgstr "1500-2500 Kč + тканина"
 #: src/auto/services.mjs:261
 msgid "našití stuhy za 1 metr švu"
 msgstr "нашивання стрічки за 1 метр шва"
+
+#: src/templates/structuredData.mjs:23
+msgid "Krejčovství na Praze 2. Opravujeme a upravujeme oblečení, džíny, batohy, záclony, podšívky a další."
+msgstr "Ательє в Празі 2. Ремонтуємо та переробляємо одяг, джинси, рюкзаки, штори, підкладки та інше."
+
+#: src/templates/structuredData.mjs:39
+msgid "Mo-Th 10:00-18:00"
+msgstr "Пн-Чт 10:00-18:00"
+
+#: src/templates/structuredData.mjs:39
+msgid "Fr 10:00-16:00"
+msgstr "Пт 10:00-16:00"

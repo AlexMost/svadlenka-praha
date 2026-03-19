@@ -1034,3 +1034,15 @@ msgstr "1500-2500 CZK + fabric"
 #: src/auto/services.mjs:261
 msgid "našití stuhy za 1 metr švu"
 msgstr "sewing ribbon per 1 meter of seam"
+
+#: src/templates/structuredData.mjs:23
+msgid "Krejčovství na Praze 2. Opravujeme a upravujeme oblečení, džíny, batohy, záclony, podšívky a další."
+msgstr "Tailor shop in Prague 2. We repair and alter clothing, jeans, backpacks, curtains, linings, and more."
+
+#: src/templates/structuredData.mjs:39
+msgid "Mo-Th 10:00-18:00"
+msgstr "Mo-Th 10:00-18:00"
+
+#: src/templates/structuredData.mjs:39
+msgid "Fr 10:00-16:00"
+msgstr "Fr 10:00-16:00"

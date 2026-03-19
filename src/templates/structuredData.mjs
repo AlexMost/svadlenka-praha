@@ -20,7 +20,7 @@ export function getStructuredData({ makesOffer }) {
     name: "Švadlenka",
     image: `${SITE}/img/logo.jpg`,
     description:
-      "Krejčovství na Praze 2. Opravujeme a upravujeme oblečení, džíny, batohy, záclony, podšívky a další.",
+      t`Krejčovství na Praze 2. Opravujeme a upravujeme oblečení, džíny, batohy, záclony, podšívky a další.`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jaromírova 726/15",
@@ -36,7 +36,7 @@ export function getStructuredData({ makesOffer }) {
     },
     url: SITE,
     telephone: "+420 775 240 309",
-    openingHours: ["Mo-Th 10:00-18:00", "Fr 10:00-16:00"],
+    openingHours: [t`Mo-Th 10:00-18:00`, t`Fr 10:00-16:00`],
     priceRange: "Kč",
     sameAs: [
       "https://maps.app.goo.gl/D2bBfxsa8yQEQPgd8",

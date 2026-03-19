@@ -58,8 +58,19 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     </script>`
         : ""
     }
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TB65CL2K');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB65CL2K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 ${header(meta.canonical)}
 <main class="main">
     ${content}
@@ -78,25 +89,6 @@ ${header(meta.canonical)}
     </footer>
 </main>
 <script defer src="/script.js?r=$REVISION"></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2670E96B8B"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-2670E96B8B');
-    gtag('config', 'AW-17007608978');
-    
-    window.conversionFn = function() {
-        gtag('event', 'conversion', {'send_to': 'AW-17007608978/HM-aCL6T0McaEJKJ7q0_'});
-    };
-    
-    window.addReviewAnalytics = function() {
-      gtag('event', 'add_review_click', { send_to: 'G-2670E96B8B' });
-    };
-</script>
 </body>
 </html>
     `;
