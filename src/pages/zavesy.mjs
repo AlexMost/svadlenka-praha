@@ -11,7 +11,7 @@ import { promiseQuote } from "../templates/promiseQuote.mjs";
 
 const zavesyServices = () => [
   [t`Zkracování závěsů se zachováním továrního vzhledu`],
-  [t`Přesné zaměření a rovná spodní linie`],
+  [t` Přesné značení a rovná spodní linie`],
 ];
 
 const zavesyServicesAdditional = () => [

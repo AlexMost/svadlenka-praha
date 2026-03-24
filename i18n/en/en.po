@@ -81,13 +81,12 @@ msgid "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití z
 msgstr "We offer resizing, slimming of garments, or zipper attachment"
 
 #: src/pages/index.mjs:44
-#: src/pages/zavesy.mjs:20
-#: src/pages/zavesy.mjs:49
+#: src/pages/zavesy.mjs:27
+#: src/pages/zavesy.mjs:73
 msgid "Závěsy a záclony"
 msgstr "Curtains and Drapes"
 
 #: src/pages/index.mjs:45
-#: src/pages/zavesy.mjs:21
 msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení"
 msgstr "Custom alterations of curtains and drapes — shortening, edge finishing, and tunnel adjustments for hanging"
 
@@ -129,7 +128,7 @@ msgstr "Our Services"
 #: src/pages/podsivka.mjs:34
 #: src/pages/saty.mjs:34
 #: src/pages/sity-na-miru.mjs:33
-#: src/pages/zavesy.mjs:33
+#: src/pages/zavesy.mjs:57
 msgid "Všechny služby a ceník"
 msgstr "All Services and Price List"
 
@@ -277,33 +276,17 @@ msgstr "Lining replacement and repair for coats, jackets and handbags in Prague.
 msgid "výměna podšívky, oprava podšívky, podšívka kabát, podšívka kabelka, švadlena Praha, švadlena Praha 2, krejčovství Vyšehrad"
 msgstr "lining replacement, lining repair, coat lining, handbag lining, seamstress Prague, seamstress Prague 2, tailor Vyšehrad"
 
-#: src/pages/zavesy.mjs:11
-msgid "Zkrácení závěsů nebo záclon na míru"
-msgstr "Custom shortening of curtains or drapes"
-
-#: src/pages/zavesy.mjs:12
-msgid "Začištění okrajů a lemování"
-msgstr "Edge finishing and hemming"
-
-#: src/pages/zavesy.mjs:13
-msgid "Přešití tunýlku, přidání řasící pásky"
-msgstr "Resewing rod pocket, adding ruffle tape"
-
-#: src/pages/zavesy.mjs:14
-msgid "Úprava délky nebo šířky závěsů"
-msgstr "Adjustment of curtain length or width"
-
-#: src/pages/zavesy.mjs:41
-#: src/pages/zavesy.mjs:44
+#: src/pages/zavesy.mjs:65
+#: src/pages/zavesy.mjs:68
 msgid "Úprava závěsů a záclon Praha – zkracování | Krejčovství Švadlenka."
 msgstr "Curtain and drape alterations Prague – shortening | Tailor Švadlenka."
 
-#: src/pages/zavesy.mjs:42
-#: src/pages/zavesy.mjs:45
+#: src/pages/zavesy.mjs:66
+#: src/pages/zavesy.mjs:69
 msgid "Zkrácení, začištění a úpravy závěsů a záclon v Praze. Rychle, pečlivě a bez objednání. Krejčovství Švadlenka."
 msgstr "Shortening, finishing and alterations of curtains and drapes in Prague. Fast, meticulous and no appointment needed. Tailor Švadlenka."
 
-#: src/pages/zavesy.mjs:43
+#: src/pages/zavesy.mjs:67
 msgid "zkrácení závěsů, úprava záclon, šití závěsů, záclony na míru, krejčovství Praha 2, Švadlenka Vyšehrad"
 msgstr "curtain shortening, drape alteration, curtain sewing, custom drapes, tailor Prague 2, Švadlenka Vyšehrad"
 
@@ -1046,3 +1029,67 @@ msgstr "Mo-Th 10:00-18:00"
 #: src/templates/structuredData.mjs:39
 msgid "Fr 10:00-16:00"
 msgstr "Fr 10:00-16:00"
+
+#: src/pages/zavesy.mjs:13
+msgid "Zkracování závěsů se zachováním továrního vzhledu"
+msgstr "Shortening curtains while maintaining the factory appearance"
+
+#: src/pages/zavesy.mjs:18
+msgid "Výměna nebo našití řasící pásky"
+msgstr "Replacement or sewing of gathering tape"
+
+#: src/pages/zavesy.mjs:19
+msgid "Rozšíření závěsů (pokud je k dispozici látka)"
+msgstr "Extension of curtains (if fabric is available)"
+
+#: src/pages/zavesy.mjs:20
+msgid "Oprava roztržení a poškození"
+msgstr "Repair of tears and damage"
+
+#: src/pages/zavesy.mjs:21
+msgid "Úprava šířky"
+msgstr "Width adjustment"
+
+#: src/pages/zavesy.mjs:28
+msgid "Profesionálně provádíme úpravu záclon a závěsů na výšku a další práce spojené s přešitím a dokončením — pečlivě, ровně a v rozumných termínech"
+msgstr "We professionally adjust curtains and drapes for height and perform other related sewing and finishing tasks — carefully, evenly, and within reasonable timeframes"
+
+#: src/pages/zavesy.mjs:36
+msgid "Hlavní práce"
+msgstr "Main tasks"
+
+#: src/pages/zavesy.mjs:40
+msgid "Další práce"
+msgstr "Additional tasks"
+
+#: src/pages/zavesy.mjs:44
+msgid "Vaše závěsy budou vypadat, jako by byly od začátku ušity přesně pro váš interiér."
+msgstr "Your curtains will look as if they were originally sewn specifically for your interior."
+
+#: src/pages/zavesy.mjs:47
+msgid "Důležité"
+msgstr "Important"
+
+#: src/pages/zavesy.mjs:48
+msgid "Neprovádíme výjezdy k zákazníkovi za účelem zaměření"
+msgstr "We do not make customer visits for measurements"
+
+#: src/pages/zavesy.mjs:49
+msgid "Nezabýváme se výběrem garnýží ani výpočty souvisejícími s výškou stropů a montážními specifiky."
+msgstr "We do not handle the selection of curtain rods or calculations related to ceiling heights and installation specifics."
+
+#: src/pages/zavesy.mjs:50
+msgid "Pro realizaci zakázky potřebujeme znát přesnou výslednou výšku závěsu, kterou chcete získat."
+msgstr "To complete the order, we need to know the exact final height of the curtain you want."
+
+#: src/pages/zavesy.mjs:51
+msgid "Pro správné určení výšky je nutné, abyste si sami změřili vzdálenost od garnýže k požadované délce závěsu."
+msgstr "To determine the correct height, you need to measure the distance from the curtain rod to the desired curtain length yourself."
+
+#: src/pages/zavesy.mjs:52
+msgid "Zakázky ve formátu „zkrátit o 10 cm” bez přesného uvedení výsledné výšky nepřijímáme, protože ve většině případů mají i drahé závěsy nerovnoměrnou délku"
+msgstr "We do not accept orders in the format \"shorten by 10 cm\" without specifying the exact final height, because in most cases even expensive curtains have uneven lengths."
+
+#: src/pages/zavesy.mjs:14
+msgid " Přesné značení a rovná spodní linie"
+msgstr "Precise marking and straight bottom line"
