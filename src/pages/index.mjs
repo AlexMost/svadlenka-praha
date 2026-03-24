@@ -42,7 +42,7 @@ const getServices = () => [
   },
   {
     title: t`Závěsy a záclony`,
-    description: t`Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení`,
+    description: t`Úpravy záclon a závěsů na míru — zkracování, začištění okrajů`,
     image: "/img/services/zavesy.webp",
     url: siteUrl("/zavesy"),
   },

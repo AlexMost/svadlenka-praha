@@ -86,10 +86,6 @@ msgstr "We offer resizing, slimming of garments, or zipper attachment"
 msgid "Závěsy a záclony"
 msgstr "Curtains and Drapes"
 
-#: src/pages/index.mjs:45
-msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů a úprava tunýlků pro zavěšení"
-msgstr "Custom alterations of curtains and drapes — shortening, edge finishing, and tunnel adjustments for hanging"
-
 #: src/pages/index.mjs:38
 #: src/pages/podsivka.mjs:21
 #: src/pages/podsivka.mjs:50
@@ -1050,10 +1046,6 @@ msgstr "Repair of tears and damage"
 msgid "Úprava šířky"
 msgstr "Width adjustment"
 
-#: src/pages/zavesy.mjs:28
-msgid "Profesionálně provádíme úpravu záclon a závěsů na výšku a další práce spojené s přešitím a dokončením — pečlivě, ровně a v rozumných termínech"
-msgstr "We professionally adjust curtains and drapes for height and perform other related sewing and finishing tasks — carefully, evenly, and within reasonable timeframes"
-
 #: src/pages/zavesy.mjs:36
 msgid "Hlavní práce"
 msgstr "Main tasks"
@@ -1093,3 +1085,11 @@ msgstr "We do not accept orders in the format \"shorten by 10 cm\" without speci
 #: src/pages/zavesy.mjs:14
 msgid " Přesné značení a rovná spodní linie"
 msgstr "Precise marking and straight bottom line"
+
+#: src/pages/index.mjs:45
+msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů"
+msgstr "Custom curtain and drape alterations — shortening, edge finishing"
+
+#: src/pages/zavesy.mjs:28
+msgid "Profesionálně provádíme úpravu závěsů na výšku a další práce spojené s přešitím a dokončením — pečlivě, rovně a v rozumných termínech."
+msgstr "We professionally adjust curtains to the required height and carry out other work related to resewing and finishing — carefully, evenly, and within reasonable timeframes."

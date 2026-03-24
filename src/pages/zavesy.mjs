@@ -25,7 +25,7 @@ export default () => {
   const pageHTML = `
     <section>
         <h1>${t`Závěsy a záclony`}</h1>
-        <h2>${t`Profesionálně provádíme úpravu záclon a závěsů na výšku a další práce spojené s přešitím a dokončením — pečlivě, ровně a v rozumných termínech`}</h2>
+        <h2>${t`Profesionálně provádíme úpravu závěsů na výšku a další práce spojené s přešitím a dokončením — pečlivě, rovně a v rozumných termínech.`}</h2>
     </section>
     
       <div class="sluzby-big-picture">
