@@ -1,4 +1,9 @@
-import { t } from 'ttag';
+import { t } from "ttag";
+import {
+  temporaryScheduleNotice,
+  regularScheduleCaption,
+  regularScheduleClass,
+} from "./temporaryHours.mjs";
 
 export function kontakty() {
   return `<section id="kontakty">
@@ -19,10 +24,14 @@ export function kontakty() {
                 </address>
                 <div class="contact-schedule">
                     <img class="icon" src="/img/icons/schedule.svg" alt="otevírací doba">
-                    <ul>
+                    <div class="contact-schedule-body">
+                    ${temporaryScheduleNotice()}
+                    ${regularScheduleCaption()}
+                    <ul class="${regularScheduleClass().trim()}">
                         <li>${t`Po – Čt: 10:00 – 18:00`}</li>
                         <li>${t`Pá: 10:00 – 16:00`}</li>
                     </ul>
+                    </div>
                 </div>
             </div>
             <div class="place-photo only-desktop">
