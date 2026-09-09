@@ -1,4 +1,9 @@
 import { t } from "ttag";
+import {
+  temporaryScheduleNotice,
+  regularScheduleCaption,
+  regularScheduleClass,
+} from "../templates/temporaryHours.mjs";
 import { baseHtml } from "../templates/baseHTML.mjs";
 import { getStructuredData, makeOffer } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
@@ -78,7 +83,9 @@ export default () => {
         <h1 class="hero-h1">${t`Krejčovství Švadlenka`}</h1>
         <h2>${t`Kvalitní opravna oděvů pod Nuselským mostem`}</h2>
         <h3>${t`Rádi vás přivítáme na adrese Jaromírova 726/15`}</h3>
-        <table class="schedule">
+        ${temporaryScheduleNotice()}
+        ${regularScheduleCaption()}
+        <table class="schedule${regularScheduleClass()}">
           <tr>
             <td>${t`Po - Čt:`}</td>
             <td>10:00 - 18:00</td>

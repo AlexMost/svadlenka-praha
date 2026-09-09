@@ -1,5 +1,6 @@
-import { t } from 'ttag';
+import { t } from "ttag";
 import { SITE } from "../config.mjs";
+import { specialOpeningHoursSpecification } from "./temporaryHours.mjs";
 
 export function makeOffer({ title, description, category }) {
   return {
@@ -19,8 +20,7 @@ export function getStructuredData({ makesOffer }) {
     "@type": "LocalBusiness",
     name: "Švadlenka",
     image: `${SITE}/img/logo.jpg`,
-    description:
-      t`Krejčovství na Praze 2. Opravujeme a upravujeme oblečení, džíny, batohy, záclony, podšívky a další.`,
+    description: t`Krejčovství na Praze 2. Opravujeme a upravujeme oblečení, džíny, batohy, záclony, podšívky a další.`,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Jaromírova 726/15",
@@ -37,6 +37,7 @@ export function getStructuredData({ makesOffer }) {
     url: SITE,
     telephone: "+420 775 240 309",
     openingHours: [t`Mo-Th 10:00-18:00`, t`Fr 10:00-16:00`],
+    specialOpeningHoursSpecification: specialOpeningHoursSpecification(),
     priceRange: "Kč",
     sameAs: [
       "https://maps.app.goo.gl/D2bBfxsa8yQEQPgd8",
