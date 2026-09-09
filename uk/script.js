@@ -42,7 +42,7 @@ langToggleBtn.forEach((el) => {
     sidebarLang.classList.toggle("open");
     overlay.classList.toggle("active");
   });
-})
+});
 
 overlay.addEventListener("click", () => {
   sidebar.classList.remove("open");
@@ -55,4 +55,18 @@ document.querySelectorAll(".sidebar a").forEach((link) => {
     sidebar.classList.remove("open");
     overlay.classList.remove("active");
   });
+});
+
+// Hide expired temporary-hours notices (safety net if the site isn't rebuilt in time)
+document.querySelectorAll("[data-valid-through]").forEach((el) => {
+  const end = new Date(el.dataset.validThrough + "T23:59:59");
+  if (Number.isNaN(end.getTime()) || new Date() <= end) return;
+  el.hidden = true;
+  const scope = el.parentElement;
+  scope
+    .querySelectorAll(".schedule-regular-caption")
+    .forEach((c) => (c.hidden = true));
+  scope
+    .querySelectorAll(".schedule--regular")
+    .forEach((r) => r.classList.remove("schedule--regular"));
 });
