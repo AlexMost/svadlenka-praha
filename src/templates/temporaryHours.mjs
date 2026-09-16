@@ -3,13 +3,20 @@ import { t } from "ttag";
 /**
  * Temporary opening hours (e.g. vacation). Rendered only while active.
  * After `validThrough` a rebuild drops the notice automatically.
+ *
+ * Set to `null` to disable. To enable again, fill in the dates and hours
+ * and update the texts in `temporaryScheduleNotice()` (e.g. "Dočasně do 15. 9.",
+ * "Po – Pá: 10:00 – 15:00"), then run `npm run update-translations`.
+ *
+ * Example:
+ *   export const TEMPORARY_HOURS = {
+ *     validFrom: "2026-09-09",
+ *     validThrough: "2026-09-15",
+ *     opens: "10:00",
+ *     closes: "15:00",
+ *   };
  */
-export const TEMPORARY_HOURS = {
-  validFrom: "2026-09-09",
-  validThrough: "2026-09-15",
-  opens: "10:00",
-  closes: "15:00",
-};
+export const TEMPORARY_HOURS = null;
 
 const WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
@@ -18,6 +25,7 @@ const WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
  * @returns {boolean} true while today <= validThrough (inclusive)
  */
 export function isTemporaryHoursActive(now = new Date()) {
+  if (!TEMPORARY_HOURS) return false;
   const end = new Date(`${TEMPORARY_HOURS.validThrough}T23:59:59`);
   return now <= end;
 }
