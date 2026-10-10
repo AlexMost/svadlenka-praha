@@ -926,18 +926,22 @@ footer {
     height: 16px;
     flex-shrink: 0;
     background-color: currentColor;
+    -webkit-mask: center / contain no-repeat;
     mask: center / contain no-repeat;
 }
 
 .order-terms-icon--calendar {
+    -webkit-mask-image: url("/img/icons/calendar.svg");
     mask-image: url("/img/icons/calendar.svg");
 }
 
 .order-terms-icon--bolt {
+    -webkit-mask-image: url("/img/icons/bolt.svg");
     mask-image: url("/img/icons/bolt.svg");
 }
 
 .order-terms-icon--clock {
+    -webkit-mask-image: url("/img/icons/clock.svg");
     mask-image: url("/img/icons/clock.svg");
 }
 
