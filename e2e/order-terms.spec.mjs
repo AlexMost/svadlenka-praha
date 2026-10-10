@@ -83,7 +83,6 @@ const otherPages = [
   "/podsivka/",
   "/kalhoty/",
   "/saty/",
-  "/contacts/",
   "/uk/",
   "/en/",
   "/ru/",
@@ -115,6 +114,11 @@ test("the price list page shows the block only once, under the heading", async (
   await page.goto("/sluzby/");
   await expect(page.locator(".order-terms")).toHaveCount(1);
   await expect(page.locator("section#terminy")).toHaveCount(0);
+});
+
+test("the contacts page does not show the block", async ({ page }) => {
+  await page.goto("/contacts/");
+  await expect(page.locator(".order-terms")).toHaveCount(0);
 });
 
 test("mobile — order terms tiles stack vertically", async ({ page }) => {
