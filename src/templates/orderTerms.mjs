@@ -1,14 +1,8 @@
 import { t } from "ttag";
 
-const ICONS = {
-  calendar: `<svg class="order-terms-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>`,
-  bolt: `<svg class="order-terms-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 4 14 12 14 11 22 20 10 12 10 13 2"/></svg>`,
-  clock: `<svg class="order-terms-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>`,
-};
-
 const item = ({ icon, label, value, caption }) => `
       <div class="order-terms-item">
-        <div class="order-terms-label">${ICONS[icon]}<span>${label}</span></div>
+        <div class="order-terms-label"><span class="order-terms-icon order-terms-icon--${icon}" aria-hidden="true"></span><span>${label}</span></div>
         <div class="order-terms-value">${value}</div>
         ${caption ? `<div class="order-terms-caption">${caption}</div>` : ""}
       </div>`;

@@ -920,10 +920,25 @@ footer {
     line-height: 1.3;
 }
 
+/* Icons are plain SVGs in img/icons; the mask lets them take the label color */
 .order-terms-icon {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
+    background-color: currentColor;
+    mask: center / contain no-repeat;
+}
+
+.order-terms-icon--calendar {
+    mask-image: url("/img/icons/calendar.svg");
+}
+
+.order-terms-icon--bolt {
+    mask-image: url("/img/icons/bolt.svg");
+}
+
+.order-terms-icon--clock {
+    mask-image: url("/img/icons/clock.svg");
 }
 
 .order-terms-value {
