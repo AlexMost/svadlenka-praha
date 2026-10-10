@@ -10,7 +10,7 @@ const pages = [
   "podsivka",
   "kalhoty",
   "saty",
-  "sity-na-miru",
+  // "sity-na-miru",
   "contacts",
 ];
 

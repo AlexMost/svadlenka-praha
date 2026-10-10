@@ -41,7 +41,9 @@ i18n/{uk,en,ru}/*.po  (ttag)  ─────────
 
 Each page is an ES module with a default export `() => string` (returns full HTML). Pages call `baseHtml()` from `src/templates/baseHTML.mjs` for the shared layout (header, footer, GA, structured data, etc.).
 
-Active pages: `index`, `sluzby`, `dziny`, `latkove`, `zavesy`, `podsivka`, `kalhoty`, `saty`, `sity-na-miru`, `contacts`. To add a page: create `src/pages/<name>.mjs` and add a `buildPage("<name>", locale)` call in `build.mjs` for each locale block. Every page must have a smoke test — add it to the `pages` array in `e2e/smoke.spec.mjs`.
+Active pages: `index`, `sluzby`, `dziny`, `latkove`, `zavesy`, `podsivka`, `kalhoty`, `saty`, `contacts`. `build.mjs` discovers pages automatically from `src/pages/*.mjs`. To add a page: create `src/pages/<name>.mjs` and add its name to the `pages` arrays in `e2e/smoke.spec.mjs` and `e2e/sitemap.spec.mjs`. Every published page must have a smoke test.
+
+Hidden pages: `sity-na-miru` (custom dress and skirt sewing) is kept in `src/pages/` but not published. To hide a page, add its name to `DISABLED_PAGES` in `src/build/build.mjs` (this also drops it from the sitemap), comment out its entry in both e2e `pages` arrays, and comment out links to it (e.g. the service card in `src/pages/index.mjs`). Do not re-add hidden pages to the e2e arrays — they are not built, so the tests would fail. To bring a page back, reverse these steps.
 
 ### Internationalization
 
@@ -53,7 +55,7 @@ Active pages: `index`, `sluzby`, `dziny`, `latkove`, `zavesy`, `podsivka`, `kalh
 
 ### Services/pricing data
 
-`src/auto/services.mjs` is auto-generated from Google Sheets via `npm run fetch-services` (uses `src/build/services.mjs`). This file is gitignored — run fetch-services after cloning before building.
+`src/auto/services.mjs` is auto-generated from Google Sheets via `npm run fetch-services` (uses `src/build/services.mjs`). Although it is listed in `.gitignore`, the file is tracked in git, so regenerated prices show up as changes and are committed with the rest; run fetch-services before building to get the current price list.
 
 ### URL routing
 
@@ -73,7 +75,7 @@ npm run test:headed          # Run with visible browser for debugging
 npm run test:smoke           # Build site + run tests in one command
 ```
 
-Every page must have a corresponding smoke test. When adding a new page, add its name to the `pages` array in `e2e/smoke.spec.mjs`. Run `npm run test:smoke` to verify.
+Every published page must have a corresponding smoke test. When adding a new page, add its name to the `pages` arrays in `e2e/smoke.spec.mjs` and `e2e/sitemap.spec.mjs`. Pages listed in `DISABLED_PAGES` are not built and must stay commented out there. Run `npm run test:smoke` to verify.
 
 ## Verifying Changes
 

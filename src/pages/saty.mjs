@@ -48,7 +48,7 @@ chcete oživit – jsme tu pro vás.`}</h2>
       canonical: "/saty",
       title: t`Úprava šatů na míru – zkrácení, zúžení, opravy zipů a rukávů | Švadlenka Praha`,
       description: t`Profesionální úpravy šatů v Praze – zúžení v pase, zkrácení délky nebo ramínek, opravy zipů a knoflíků. Švadlenka na Praze 2 vám šaty upraví na míru.`,
-      keywords: t`úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, šaty na míru, krejčovství Praha 2`,
+      keywords: t`úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, krejčovství Praha 2`,
       ogTitle: t`Úprava šatů na míru – zkrácení, zúžení, opravy zipů a rukávů | Švadlenka Praha`,
       ogDescription: t`Profesionální úpravy šatů v Praze – zúžení v pase, zkrácení délky nebo ramínek, opravy zipů a knoflíků. Švadlenka na Praze 2 vám šaty upraví na míru.`,
       structuredData: getStructuredData({
