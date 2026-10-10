@@ -7,6 +7,7 @@ import {
   servicesToStructuredOffers,
 } from "../templates/services.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
+import { orderTermsHTML } from "../templates/orderTerms.mjs";
 
 function wrapTrailingEmoji(text) {
   const emojiRegex = /([\p{Emoji_Presentation}\p{Extended_Pictographic}]+)$/u;
@@ -26,6 +27,7 @@ export default () => {
   const pageHTML = `
 <section>
     <h1>${t`Služby a ceník`}</h1>
+    ${orderTermsHTML()}
 </section>
 ${getServices()
   .map((service) => serviceHTML(service))
@@ -33,6 +35,8 @@ ${getServices()
 `;
   return baseHtml({
     content: pageHTML,
+    // the order terms are already shown under the page heading
+    showOrderTerms: false,
     meta: {
       canonical: "/sluzby",
       title: t`Služby a ceník. Krejčovství Švadlenka`,

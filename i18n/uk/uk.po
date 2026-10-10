@@ -6,26 +6,26 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/templates/baseHTML.mjs:12
+#: src/templates/baseHTML.mjs:13
 msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2"
 msgstr "Ательє Švadlenka – ремонт і підгонка одягу Прага 2"
 
 #: src/pages/index.mjs:117
 #: src/pages/index.mjs:120
-#: src/templates/baseHTML.mjs:13
+#: src/templates/baseHTML.mjs:14
 msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15."
 msgstr "Švadlenka — це ательє у Празі 2, яке пропонує якісний ремонт та перешивання одягу — джинси, пальта, підкладки, рюкзаки та штори. Нас можна знайти за адресою: Яромірова 726/15."
 
 #: src/pages/index.mjs:118
-#: src/templates/baseHTML.mjs:14
+#: src/templates/baseHTML.mjs:15
 msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle"
 msgstr "ательє, ремонт одягу, підгонка одягу, заміна блискавки, підкладка, фіранки, Прага 2, Нусле"
 
-#: src/templates/baseHTML.mjs:15
+#: src/templates/baseHTML.mjs:16
 msgid "Krejčovství Švadlenka – Praha 2"
 msgstr "Ательє Švadlenka – Прага 2"
 
-#: src/templates/baseHTML.mjs:16
+#: src/templates/baseHTML.mjs:17
 msgid "Opravy a úpravy oblečení, záclon, batohů – najdete nás na Jaromírově 726/15."
 msgstr "Ремонт і підгонка одягу, штор, рюкзаків – ви знайдете нас за адресою Jaromírova 726/15."
 
@@ -34,7 +34,7 @@ msgstr "Ремонт і підгонка одягу, штор, рюкзаків 
 msgid "Úvod"
 msgstr "Головна"
 
-#: src/pages/sluzby.mjs:28
+#: src/pages/sluzby.mjs:29
 #: src/templates/header.mjs:15
 #: src/templates/header.mjs:44
 msgid "Služby a ceník"
@@ -131,23 +131,23 @@ msgstr "Наші послуги"
 msgid "Všechny služby a ceník"
 msgstr "Всі послуги та ціни"
 
-#: src/pages/sluzby.mjs:38
+#: src/pages/sluzby.mjs:42
 msgid "Služby a ceník. Krejčovství Švadlenka"
 msgstr "Послуги та ціни. Ательє Švadlenka"
 
-#: src/pages/sluzby.mjs:39
+#: src/pages/sluzby.mjs:43
 msgid "Kompletní nabídka služeb krejčovství Švadlenka – úpravy kabátů, kalhot, šatů, košil i koženého oblečení. Prohlédněte si aktuální ceník."
 msgstr "Повний спектр послуг ательє Švadlenka – підгонка пальт, штанів, суконь, сорочок та шкіряного одягу. Перегляньте актуальний прайс‑лист."
 
-#: src/pages/sluzby.mjs:40
+#: src/pages/sluzby.mjs:44
 msgid "krejčovství, ceník úprav oděvů, oprava oblečení Praha, výměna zipu, zkrácení kalhot, švadlena Nusle, Švadlenka služby"
 msgstr "ательє, прайс‑лист на ремонт одягу, ремонт одягу Прага, заміна блискавки, укорочення штанів, кравчиня Нусле, послуги Švadlenka"
 
-#: src/pages/sluzby.mjs:41
+#: src/pages/sluzby.mjs:45
 msgid "Služby a ceník – Švadlenka Praha 2, Nusle"
 msgstr "Послуги та ціни – Švadlenka Прага 2, Нусле"
 
-#: src/pages/sluzby.mjs:42
+#: src/pages/sluzby.mjs:46
 msgid "Zobrazte si kompletní nabídku služeb a ceny úprav oděvů v krejčovství Švadlenka."
 msgstr "Перегляньте повний перелік послуг та цін на ремонт і підгонку одягу в ательє Švadlenka."
 
@@ -1065,3 +1065,47 @@ msgstr "Звичайний графік"
 #: src/pages/saty.mjs:51
 msgid "úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, krejčovství Praha 2"
 msgstr "коригування суконь, ремонт суконь, вкорочення суконь, звуження суконь, швачка Прага, корекція бретелей, ремонт блискавок, корекція рукавів, ательє Прага 2"
+
+#: src/templates/orderTerms.mjs:27
+msgid "Standardní termín"
+msgstr "Стандартний термін"
+
+#: src/templates/orderTerms.mjs:28
+msgid "1–2 týdny"
+msgstr "1–2 тижні"
+
+#: src/templates/orderTerms.mjs:29
+msgid "Konkrétní termín dokončení bude dohodnut při přijetí zakázky."
+msgstr "Конкретний термін завершення буде узгоджено під час прийняття замовлення."
+
+#: src/templates/orderTerms.mjs:33
+msgid "Expres · do druhého dne"
+msgstr "Експрес · до наступного дня"
+
+#: src/templates/orderTerms.mjs:34
+msgid "příplatek 50 %"
+msgstr "доплата 50 %"
+
+#: src/templates/orderTerms.mjs:35
+msgid "Zakázky přijaté do 12:00."
+msgstr "Замовлення, прийняті до 12:00."
+
+#: src/templates/orderTerms.mjs:39
+msgid "Expres · na počkání"
+msgstr "Експрес · поки чекаєте"
+
+#: src/templates/orderTerms.mjs:40
+msgid "příplatek 100 %"
+msgstr "доплата 100 %"
+
+#: src/templates/orderTerms.mjs:41
+msgid "Dle aktuální vytíženosti."
+msgstr "Залежно від поточного завантаження."
+
+#: src/templates/orderTerms.mjs:44
+msgid "Expresní zhotovení dle aktuální vytíženosti. Příplatky se vztahují k ceně práce."
+msgstr "Експресне виконання залежно від поточного завантаження. Доплати стосуються вартості роботи."
+
+#: src/templates/orderTerms.mjs:57
+msgid "Termíny zhotovení"
+msgstr "Терміни виконання"
