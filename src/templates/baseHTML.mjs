@@ -1,6 +1,7 @@
 import { t } from "ttag";
 import { header } from "./header.mjs";
 import { kontakty } from "./kontakty.mjs";
+import { orderTermsSection } from "./orderTerms.mjs";
 import { getStructuredData } from "./structuredData.mjs";
 import { reviewHTML } from "./review.mjs";
 import { siteUrl } from "./siteUrl.mjs";
@@ -27,7 +28,11 @@ function getAlternateUrls(url) {
     .join("\n");
 }
 
-export function baseHtml({ content = "", meta = defaultMeta }) {
+export function baseHtml({
+  content = "",
+  meta = defaultMeta,
+  showOrderTerms = true,
+}) {
   return `
     <!DOCTYPE html>
 <html lang="${getLanguageCode()}">
@@ -50,7 +55,7 @@ export function baseHtml({ content = "", meta = defaultMeta }) {
     <meta property="og:type" content="website">
     <meta name="google-site-verification" content="jAqkn5ExTdL4UHW_UvAk-nwNhGqMQzg24iUvjRG4AA4" />
     ${getAlternateUrls(meta.canonical)}
-    <link rel="alternate" hreflang="x-default" href="${SITE}${siteUrl(meta.canonical, 'cz')}" />
+    <link rel="alternate" hreflang="x-default" href="${SITE}${siteUrl(meta.canonical, "cz")}" />
     ${
       meta.structuredData
         ? `<script type="application/ld+json">
@@ -74,6 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 ${header(meta.canonical)}
 <main class="main">
     ${content}
+    ${showOrderTerms ? orderTermsSection() : ""}
     ${kontakty()}
     ${reviewHTML()}
     <div class="only-mobile bottom-place-img">

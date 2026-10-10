@@ -1,11 +1,11 @@
 import { t } from "ttag";
 import { baseHtml } from "../templates/baseHTML.mjs";
 
-
 export default () => {
   const pageHTML = ``;
   return baseHtml({
     content: pageHTML,
+    showOrderTerms: false,
     meta: {
       canonical: "/contacts",
       title: t`Kontakty | Krejčovství Švadlenka Praha – Oprava a úprava oděvů`,
