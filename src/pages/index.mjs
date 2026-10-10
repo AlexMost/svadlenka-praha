@@ -21,12 +21,6 @@ const getServices = () => [
     image: "/img/services/saty.webp",
     url: siteUrl("/saty"),
   },
-  // {
-  //   title: t`Šití sukní a šatů na zakázku`,
-  //   description: t`Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy`,
-  //   image: "/img/services/sity-na-miry.webp",
-  //   url: siteUrl("/sity-na-miru"),
-  // },
   {
     title: t`Látkové oděvy`,
     description: t`Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu`,
@@ -56,6 +50,12 @@ const getServices = () => [
   //   description: t`Zpevnění popruhů, výměna zipů nebo oprava trhlin v materiálu`,
   //   image: "/img/services/batohy.webp",
   //   url: siteUrl("/batohy"),
+  // },
+  // {
+  //   title: t`Šití sukní a šatů na zakázku`,
+  //   description: t`Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy`,
+  //   image: "/img/services/sity-na-miry.webp",
+  //   url: siteUrl("/sity-na-miru"),
   // },
 ];
 

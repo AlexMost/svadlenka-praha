@@ -64,50 +64,38 @@ msgstr "Write a review"
 
 #: src/pages/dziny.mjs:22
 #: src/pages/dziny.mjs:57
-#: src/pages/index.mjs:37
+#: src/pages/index.mjs:31
 msgid "Úprava džín"
 msgstr "Jeans Alterations"
 
-#: src/pages/index.mjs:38
+#: src/pages/index.mjs:32
 msgid "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny"
 msgstr "We shorten, slim, or repair worn and torn jeans"
 
-#: src/pages/index.mjs:31
+#: src/pages/index.mjs:25
 #: src/pages/latkove.mjs:21
 #: src/pages/latkove.mjs:50
-#. {
-#. title: t`Šití sukní a šatů na zakázku`,
-#. description: t`Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy`,
-#. image: "/img/services/sity-na-miry.webp",
-#. url: siteUrl("/sity-na-miru"),
-#. },
 msgid "Látkové oděvy"
 msgstr "Fabric Clothing"
 
-#: src/pages/index.mjs:32
+#: src/pages/index.mjs:26
 #: src/pages/latkove.mjs:22
-#. {
-#. title: t`Šití sukní a šatů na zakázku`,
-#. description: t`Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy`,
-#. image: "/img/services/sity-na-miry.webp",
-#. url: siteUrl("/sity-na-miru"),
-#. },
 msgid "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu"
 msgstr "We offer resizing, slimming of garments, or zipper attachment"
 
-#: src/pages/index.mjs:49
+#: src/pages/index.mjs:43
 #: src/pages/zavesy.mjs:27
 #: src/pages/zavesy.mjs:73
 msgid "Závěsy a záclony"
 msgstr "Curtains and Drapes"
 
-#: src/pages/index.mjs:43
+#: src/pages/index.mjs:37
 #: src/pages/podsivka.mjs:21
 #: src/pages/podsivka.mjs:50
 msgid "Výměna podšívky"
 msgstr "Lining Replacement"
 
-#: src/pages/index.mjs:44
+#: src/pages/index.mjs:38
 #: src/pages/podsivka.mjs:22
 msgid "Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách"
 msgstr "We replace worn or damaged linings in coats and jackets"
@@ -1036,7 +1024,7 @@ msgstr "We do not accept orders in the format \"shorten by 10 cm\" without speci
 msgid " Přesné značení a rovná spodní linie"
 msgstr "Precise marking and straight bottom line"
 
-#: src/pages/index.mjs:50
+#: src/pages/index.mjs:44
 msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů"
 msgstr "Custom curtain and drape alterations — shortening, edge finishing"
 

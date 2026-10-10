@@ -64,50 +64,38 @@ msgstr "Оставить отзыв"
 
 #: src/pages/dziny.mjs:22
 #: src/pages/dziny.mjs:57
-#: src/pages/index.mjs:37
+#: src/pages/index.mjs:31
 msgid "Úprava džín"
 msgstr "Подгонка джинсов"
 
-#: src/pages/index.mjs:38
+#: src/pages/index.mjs:32
 msgid "Zkracujeme, zužujeme nebo opravujeme prošoupané a potrhané džíny"
 msgstr "Укорачиваем, ушиваем или ремонтируем поношенные и порванные джинсы"
 
-#: src/pages/index.mjs:31
+#: src/pages/index.mjs:25
 #: src/pages/latkove.mjs:21
 #: src/pages/latkove.mjs:50
-#. {
-#. title: t`Šití sukní a šatů na zakázku`,
-#. description: t`Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy`,
-#. image: "/img/services/sity-na-miry.webp",
-#. url: siteUrl("/sity-na-miru"),
-#. },
 msgid "Látkové oděvy"
 msgstr "Одежда из ткани"
 
-#: src/pages/index.mjs:32
+#: src/pages/index.mjs:26
 #: src/pages/latkove.mjs:22
-#. {
-#. title: t`Šití sukní a šatů na zakázku`,
-#. description: t`Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy`,
-#. image: "/img/services/sity-na-miry.webp",
-#. url: siteUrl("/sity-na-miru"),
-#. },
 msgid "Nabízíme úpravy velikostí, vyštíhlení oblečení nebo přišití zipu"
 msgstr "Предлагаем изменение размеров, ушивку одежды или пришивание молнии"
 
-#: src/pages/index.mjs:49
+#: src/pages/index.mjs:43
 #: src/pages/zavesy.mjs:27
 #: src/pages/zavesy.mjs:73
 msgid "Závěsy a záclony"
 msgstr "Шторы и занавески"
 
-#: src/pages/index.mjs:43
+#: src/pages/index.mjs:37
 #: src/pages/podsivka.mjs:21
 #: src/pages/podsivka.mjs:50
 msgid "Výměna podšívky"
 msgstr "Замена подкладки"
 
-#: src/pages/index.mjs:44
+#: src/pages/index.mjs:38
 #: src/pages/podsivka.mjs:22
 msgid "Vyměňujeme opotřebované nebo poškozené podšívky v kabátech a bundách"
 msgstr "Меняем изношенные или повреждённые подкладки в пальто и куртках"
@@ -1036,7 +1024,7 @@ msgstr "Заказы в формате «укоротить на 10 см» бе�
 msgid " Přesné značení a rovná spodní linie"
 msgstr "Точная разметка и ровная линия низа"
 
-#: src/pages/index.mjs:50
+#: src/pages/index.mjs:44
 msgid "Úpravy záclon a závěsů na míru — zkracování, začištění okrajů"
 msgstr "Подгонка тюля и штор по вашим размерам — укорачивание, обработка краёв"
 
