@@ -57,15 +57,15 @@ Hidden pages: `sity-na-miru` (custom dress and skirt sewing) is kept in `src/pag
 The price list on `/sluzby` is edited in the CRM (Web section, «Ceník na webu»). `npm run fetch-services` (`src/build/services.mjs`) fetches `GET https://admin.svadlenka-praha.cz/api/public/price-list` — `{categories:[{title, rows:[{name, price, priceKind, priceLowCents, priceHighCents, priceNote}]}]}` — and writes `src/auto/services.mjs` in the `getServices()` shape `[{title, options:[[name, price]]}]`, every string wrapped in ttag `t`. Prices are translated per msgid: the rendered `price` string is the msgid, the raw price fields are ignored.
 
 - `CRM_URL` (env or `.env`) points the fetch at another CRM, e.g. `CRM_URL=http://localhost:3000 npm run fetch-services`.
-- The fetch retries 3 times (15 s timeout each), validates the shape and exits 1 on a non-2xx, an invalid shape, or zero categories/rows. Nothing falls back to an older list.
+- The fetch makes up to 3 attempts (15 s timeout each), retrying only network errors, timeouts, 429 and 5xx; it validates the shape and exits 1 on a failed fetch, an invalid shape, zero categories or a category without rows. Nothing falls back to an older list.
 - `src/auto/services.mjs` is a build artifact: git-ignored and untracked. A fresh clone has none, and `build.mjs` stops with «run `npm run fetch-services` first».
 - `src/build/fixtures/price-list.json` is a copy of the endpoint's response (the Google Sheet as imported into the CRM) for the unit tests.
 
 ### Publishing
 
-`.github/workflows/publish.yml` publishes the site. It runs on every push to `main` and on `workflow_dispatch`, which the CRM sends after every change to the price list (the file name is a constant in the CRM — do not rename it). Steps: `npm ci` → Playwright Chromium → `fetch-services` → `update-translations` → `translate` (`OPENAI_API_KEY` Actions secret; allowed to fail, untranslated strings show in Czech until the next run) → `build-prod` → all Playwright tests → `gh-pages -d public` with `GITHUB_TOKEN` → commits changed `i18n/**` back to `main` with `[skip ci]` (a `GITHUB_TOKEN` push never starts another run). `concurrency: publish` with `cancel-in-progress`, so a burst of CRM edits ends in one build that sees them all.
+`.github/workflows/publish.yml` publishes the site. It runs on every push to `main` and on `workflow_dispatch`, which the CRM sends after every change to the price list (the file name is a constant in the CRM — do not rename it). Steps: `npm ci` → `test:unit` → Playwright Chromium → `fetch-services` → `update-translations` → `translate` (`OPENAI_API_KEY` Actions secret; allowed to fail, untranslated strings show in Czech until the next run) → `build-prod` → all Playwright tests → `gh-pages -d public` with `GITHUB_TOKEN` → commits changed `i18n/**` back to `main` with `[skip ci]` (a `GITHUB_TOKEN` push never starts another run). `concurrency: publish` with `cancel-in-progress`, so a burst of CRM edits ends in one build that sees them all.
 
-Start a run without building locally: `gh workflow run publish.yml`. Laptop fallback: `npm run deploy` (fetches, builds, tests and pushes `gh-pages`; translations stay manual: `npm run update-translations && npm run translate`).
+Start a run without building locally: `gh workflow run publish.yml`. Laptop fallback: `npm run deploy` (unit tests, fetch, prod build, Playwright, then pushes `gh-pages`; translations stay manual: `npm run update-translations && npm run translate`).
 
 ### URL routing
 

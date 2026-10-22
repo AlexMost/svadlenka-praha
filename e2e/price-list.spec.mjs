@@ -43,14 +43,21 @@ for (const { locale, url } of locales) {
   });
 }
 
-test("cz — /sluzby rows follow the CRM order", async ({ page }) => {
+test("cz — /sluzby shows every category and row in the CRM order", async ({
+  page,
+}) => {
   await page.goto("/sluzby/");
-  const firstService = services[0];
-  const firstRow = page.locator(".sluzby-list").first().locator("li").first();
-  await expect(page.locator("main section > h2").first()).toHaveText(
-    firstService.title,
+  const capitalizeFirst = (text) =>
+    text.charAt(0).toUpperCase() + text.slice(1);
+  const options = services.flatMap((s) => s.options);
+
+  await expect(page.locator("main section > h2")).toHaveText(
+    services.map((s) => s.title),
   );
-  await expect(firstRow.locator(".price")).toHaveText(
-    firstService.options[0][1],
+  await expect(page.locator(".sluzby-list li .title")).toHaveText(
+    options.map(([name]) => capitalizeFirst(name)),
+  );
+  await expect(page.locator(".sluzby-list li .price")).toHaveText(
+    options.map(([, price]) => price),
   );
 });
