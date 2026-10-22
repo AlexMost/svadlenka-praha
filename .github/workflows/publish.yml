@@ -26,6 +26,9 @@ jobs:
       - uses: actions/checkout@v7
         with:
           ref: main
+          # Keep the write token out of .git/config, so npm scripts and msgai
+          # never see it; the two pushes below pass it explicitly.
+          persist-credentials: false
 
       - uses: actions/setup-node@v7
         with:
@@ -33,6 +36,8 @@ jobs:
           cache: npm
 
       - run: npm ci
+
+      - run: npm run test:unit
 
       - run: npx playwright install --with-deps chromium
 
@@ -67,6 +72,8 @@ jobs:
           git diff --quiet -- i18n || (
             git add i18n &&
             git commit -m "chore(i18n): translate new site strings [skip ci]" &&
-            git pull --rebase &&
-            git push
+            git pull --rebase origin main &&
+            git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
           )
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
