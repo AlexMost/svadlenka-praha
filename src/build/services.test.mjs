@@ -4,6 +4,9 @@ import http from "node:http";
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+import { fileURLToPath } from "node:url";
 import {
   toServices,
   toModule,
@@ -87,6 +90,15 @@ for (const [label, json] of [
   ["categories not an array", { categories: {} }],
   ["zero categories", { categories: [] }],
   ["zero rows", { categories: [{ title: "A", rows: [] }] }],
+  [
+    "a category without rows",
+    {
+      categories: [
+        { title: "A", rows: [{ name: "x", price: "1 Kč" }] },
+        { title: "B", rows: [] },
+      ],
+    },
+  ],
   [
     "title not a string",
     { categories: [{ title: 1, rows: [{ name: "x", price: "1 Kč" }] }] },
@@ -173,6 +185,51 @@ test("fetchPriceList gives up after the last attempt", async () => {
   }
 });
 
+for (const [label, handler] of [
+  [
+    "a 404",
+    (res) => {
+      res.statusCode = 404;
+      res.end("Not Found");
+    },
+  ],
+  ["invalid JSON", (res) => res.end("<html>")],
+]) {
+  test(`fetchPriceList does not retry ${label}`, async () => {
+    let calls = 0;
+    const crm = await serve((_req, res) => {
+      calls += 1;
+      handler(res);
+    });
+    try {
+      await assert.rejects(
+        fetchPriceList(`${crm.url}/api/public/price-list`, fast),
+      );
+      assert.equal(calls, 1);
+    } finally {
+      crm.close();
+    }
+  });
+}
+
+test("fetchPriceList retries a 429", async () => {
+  let calls = 0;
+  const crm = await serve((_req, res) => {
+    calls += 1;
+    if (calls === 1) {
+      res.statusCode = 429;
+      return res.end();
+    }
+    res.end(JSON.stringify(fixture));
+  });
+  try {
+    await fetchPriceList(`${crm.url}/api/public/price-list`, fast);
+    assert.equal(calls, 2);
+  } finally {
+    crm.close();
+  }
+});
+
 test("fetchPriceList times out a hanging CRM", async () => {
   const crm = await serve(() => {});
   try {
@@ -188,7 +245,7 @@ test("fetchPriceList times out a hanging CRM", async () => {
   }
 });
 
-test("fetchServices writes the module from CRM_URL, overwriting an old one", async () => {
+test("fetchServices writes the module from crmUrl, overwriting an old one", async () => {
   const crm = await serve((_req, res) => res.end(JSON.stringify(fixture)));
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), "services-"));
   const outFile = path.join(dir, "auto", "services.mjs");
@@ -220,5 +277,59 @@ test("fetchServices fails on an empty list and leaves no module", async () => {
   } finally {
     crm.close();
     await fs.rm(dir, { recursive: true, force: true });
+  }
+});
+
+// Runs the script as `npm run fetch-services` would, but through a symlink:
+// the "run directly" check must still fire.
+async function runScript(crmUrl) {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), "services-cli-"));
+  const link = path.join(dir, "services.mjs");
+  await fs.symlink(
+    fileURLToPath(new URL("./services.mjs", import.meta.url)),
+    link,
+  );
+  const outFile = path.join(dir, "src", "auto", "services.mjs");
+  try {
+    await promisify(execFile)(process.execPath, [link], {
+      cwd: dir,
+      env: { ...process.env, CRM_URL: crmUrl },
+    });
+    return { code: 0, source: await fs.readFile(outFile, "utf8") };
+  } catch (error) {
+    if (typeof error.code !== "number") throw error;
+    return {
+      code: error.code,
+      outFileExists: await fs.access(outFile).then(
+        () => true,
+        () => false,
+      ),
+    };
+  } finally {
+    await fs.rm(dir, { recursive: true, force: true });
+  }
+}
+
+test("the script reads CRM_URL and writes the module, also via a symlink", async () => {
+  const crm = await serve((_req, res) => res.end(JSON.stringify(fixture)));
+  try {
+    const { code, source } = await runScript(crm.url);
+    assert.equal(code, 0);
+    assert.deepEqual(evaluateModule(source), toServices(fixture));
+  } finally {
+    crm.close();
+  }
+});
+
+test("the script exits 1 on an empty list", async () => {
+  const crm = await serve((_req, res) =>
+    res.end(JSON.stringify({ categories: [] })),
+  );
+  try {
+    const { code, outFileExists } = await runScript(crm.url);
+    assert.equal(code, 1);
+    assert.equal(outFileExists, false);
+  } finally {
+    crm.close();
   }
 });

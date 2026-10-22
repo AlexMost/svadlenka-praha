@@ -3,6 +3,7 @@
 // local CRM, e.g. CRM_URL=http://localhost:3000. Any failure exits with 1, so
 // the build never ships an empty or broken price list.
 import fs from "fs/promises";
+import { realpathSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -27,8 +28,9 @@ export function toServices(json) {
     if (!isNonEmptyString(category?.title)) {
       throw new Error(`price list: category ${i} has no title`);
     }
-    if (!Array.isArray(category.rows)) {
-      throw new Error(`price list: "${category.title}" rows is not an array`);
+    // The CRM omits empty categories; one here would render an empty heading.
+    if (!Array.isArray(category.rows) || category.rows.length === 0) {
+      throw new Error(`price list: "${category.title}" has no rows`);
     }
     return {
       title: category.title,
@@ -42,9 +44,6 @@ export function toServices(json) {
       }),
     };
   });
-  if (services.every((service) => service.options.length === 0)) {
-    throw new Error("price list: no rows");
-  }
   return services;
 }
 
@@ -76,30 +75,34 @@ ${categories}
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-// GETs the price list, retrying because the CRM may be mid-restart.
+const isRetryableStatus = (status) => status === 429 || status >= 500;
+
+// GETs the price list. Network errors, timeouts, 429 and 5xx are retried
+// because the CRM may be mid-restart; other 4xx and invalid JSON fail at once.
 export async function fetchPriceList(
   url,
   { attempts = 3, delayMs = 3_000, timeoutMs = 15_000 } = {},
 ) {
-  let lastError;
-  for (let attempt = 1; attempt <= attempts; attempt++) {
+  for (let attempt = 1; ; attempt++) {
     try {
       const response = await fetch(url, {
         signal: AbortSignal.timeout(timeoutMs),
       });
-      if (!response.ok) {
-        throw new Error(`GET ${url} responded ${response.status}`);
-      }
-      return await response.json();
+      if (response.ok) return await response.json();
+      throw Object.assign(
+        new Error(`GET ${url} responded ${response.status}`),
+        { retryable: isRetryableStatus(response.status) },
+      );
     } catch (error) {
-      lastError = error;
+      const retryable =
+        !(error instanceof SyntaxError) && error.retryable !== false;
+      if (!retryable || attempt >= attempts) throw error;
       console.warn(
         `price list: attempt ${attempt}/${attempts} failed: ${error.message}`,
       );
-      if (attempt < attempts) await sleep(delayMs);
+      await sleep(delayMs);
     }
   }
-  throw lastError;
 }
 
 export async function fetchServices({
@@ -121,7 +124,14 @@ export async function fetchServices({
   );
 }
 
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
+// realpath on both sides: Node resolves symlinks in import.meta.url but not in
+// process.argv[1], so a symlinked path would otherwise skip the fetch silently.
+const isMain =
+  process.argv[1] &&
+  realpathSync(process.argv[1]) ===
+    realpathSync(fileURLToPath(import.meta.url));
+
+if (isMain) {
   try {
     await fetchServices();
   } catch (error) {
