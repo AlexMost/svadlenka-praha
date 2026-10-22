@@ -1,0 +1,72 @@
+# Builds the site from the CRM price list and deploys it to the gh-pages branch.
+# Started by the CRM (workflow_dispatch on every price-list edit) and by every
+# push to main. The file name is a constant in the CRM: do not rename it.
+name: publish
+
+on:
+  workflow_dispatch:
+  # No paths-ignore: a hand-edited .po pushed to main must publish too. The
+  # .po commit-back below cannot loop: a push made with GITHUB_TOKEN never
+  # starts a workflow run, and its message carries [skip ci].
+  push:
+    branches: [main]
+
+permissions:
+  contents: write # push gh-pages + commit translated .po files back to main
+
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx playwright install --with-deps chromium
+
+      # Fails the run on an unreachable CRM or an empty/invalid price list.
+      - run: npm run fetch-services
+
+      - run: npm run update-translations
+
+      # If OpenAI is down the site still publishes; new strings show their
+      # Czech text until the next run translates them.
+      - run: npm run translate
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - run: rm -rf public && mkdir public && npm run build-prod
+
+      - run: npx playwright test
+
+      - run: >-
+          npx gh-pages -d public --silent
+          -u "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          -r "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Last, so a git race on main never blocks a publish.
+      - name: Commit translations back to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --quiet -- i18n || (
+            git add i18n &&
+            git commit -m "chore(i18n): translate new site strings [skip ci]" &&
+            git pull --rebase &&
+            git push
+          )
