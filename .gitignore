@@ -5,3 +5,4 @@ node_modules
 public
 test-results/
 playwright-report/
+src/auto/services.mjs
