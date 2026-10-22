@@ -3,7 +3,7 @@
     "prettier": "prettier . --write",
     "build": "node src/build/build.mjs",
     "build-prod": "NODE_ENV=production node src/build/build.mjs $(git rev-parse HEAD)",
-    "predeploy": "rm -rf public && mkdir public && npm run fetch-services && npm run build-prod && npm run test",
+    "predeploy": "rm -rf public && mkdir public && npm run test:unit && npm run fetch-services && npm run build-prod && npx playwright test",
     "deploy": "gh-pages -d public",
     "dev-watch": "nodemon --watch src --watch static --ext mjs,css,js --exec \"node src/build/build.mjs\"",
     "fetch-services": "node --env-file-if-exists=.env src/build/services.mjs",
@@ -22,6 +22,9 @@
     "test:headed": "npx playwright test --headed",
     "test:smoke": "npm run build && npx playwright test",
     "test:unit": "node --test \"src/**/*.test.mjs\""
+  },
+  "engines": {
+    "node": ">=22.9"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2",
