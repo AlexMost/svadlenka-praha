@@ -910,3 +910,154 @@ msgstr "1 000 Kč"
 #: src/auto/services.mjs
 msgid "400–1 000 Kč"
 msgstr "400–1 000 Kč"
+
+#: src/templates/baseHTML.mjs
+msgid "Ochrana osobních údajů"
+msgstr "Защита персональных данных"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Zásady ochrany osobních údajů"
+msgstr "Политика защиты персональных данных"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Platné od 23. 10. 2026."
+msgstr "Действует с 23. 10. 2026."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Kdo je správce"
+msgstr "Кто является контролёром данных"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Správcem osobních údajů je Larysa Mostovenko, IČO 22654321, provozující Krejčovství Švadlenka, Jaromírova 726/15, 128 00 Praha 2."
+msgstr "Контролёром персональных данных является Larysa Mostovenko, IČO 22654321, которая ведёт ателье Krejčovství Švadlenka, Jaromírova 726/15, 128 00 Praha 2."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Kontakt: e-mail ${ email }, telefon ${ phone }, nebo osobně v provozovně."
+msgstr "Контакты: e-mail ${ email }, телефон ${ phone } или лично в ателье."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje klientů"
+msgstr "Данные клиентов"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Když u nás zadáte zakázku, zapíšeme do našeho interního systému (CRM) vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky."
+msgstr "Когда вы делаете у нас заказ, мы вносим в нашу внутреннюю систему (CRM) ваше имя, номер телефона и данные заказа: вещь, нужные работы, цену, задаток, срок и возможные примечания."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje používáme jen k vyřízení zakázky: abychom věděli, co máme udělat, a mohli vás kontaktovat. Právním základem je plnění smlouvy a u dokladů naše zákonné povinnosti."
+msgstr "Мы используем эти данные только для выполнения заказа: чтобы знать, что нужно сделать, и иметь возможность связаться с вами. Правовым основанием является исполнение договора, а для документов — наши обязанности по закону."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Když je zakázka hotová, pošleme vám SMS. SMS odesíláme přes službu BulkGate, které předáváme jen vaše telefonní číslo a text zprávy."
+msgstr "Когда заказ готов, мы отправляем вам SMS. SMS отправляются через сервис BulkGate, которому мы передаём только ваш номер телефона и текст сообщения."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Vaše údaje neprodáváme a nepoužíváme k reklamě."
+msgstr "Мы не продаём ваши данные и не используем их для рекламы."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Kdo s údaji pracuje"
+msgstr "Кто работает с данными"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Naši zaměstnanci, kteří zakázky přijímají a zpracovávají."
+msgstr "Наши сотрудники, которые принимают и выполняют заказы."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "DigitalOcean – server, na kterém běží náš systém."
+msgstr "DigitalOcean – сервер, на котором работает наша система."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "BulkGate – odesílání SMS."
+msgstr "BulkGate – отправка SMS."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "OpenAI a Telegram – interní asistent, který našim zaměstnancům odpovídá na dotazy k zakázkám. OpenAI údaje nepoužívá k trénování modelů."
+msgstr "OpenAI и Telegram – внутренний ассистент, который отвечает нашим сотрудникам на вопросы о заказах. OpenAI не использует эти данные для обучения моделей."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Někteří z těchto dodavatelů mohou údaje zpracovávat i mimo Evropskou unii."
+msgstr "Некоторые из этих поставщиков могут обрабатывать данные и за пределами Европейского союза."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Jak dlouho údaje uchováváme"
+msgstr "Как долго мы храним данные"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje o zakázce uchováváme 3 roky od jejího vyřízení, kvůli případným reklamacím. Účetní doklady uchováváme po dobu, kterou stanoví zákon. Zálohy systému se mažou po 14 dnech."
+msgstr "Данные заказа мы храним 3 года после его выполнения — на случай рекламаций. Бухгалтерские документы храним в течение срока, установленного законом. Резервные копии системы удаляются через 14 дней."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Přihlášení zaměstnanců přes Google"
+msgstr "Вход сотрудников через Google"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Naši zaměstnanci se do interního systému ${ crm } přihlašují účtem Google. Od Google přitom dostáváme jen e-mail, jméno a profilovou fotografii, a používáme je jen k přihlášení a k zobrazení, kdo co v systému udělal."
+msgstr "Наши сотрудники входят во внутреннюю систему ${ crm } через аккаунт Google. От Google мы при этом получаем только e-mail, имя и фото профиля и используем их только для входа и для того, чтобы было видно, кто что сделал в системе."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje od Google (Google Business Profile)"
+msgstr "Данные от Google (Google Business Profile)"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Náš interní systém ${ crm } se může připojit k profilu firmy Krejčovství Švadlenka na Google s oprávněním business.manage. Toto oprávnění používáme jen k jednomu účelu: k úpravě otevírací doby našeho vlastního profilu firmy na Google (včetně svátků a mimořádných změn)."
+msgstr "Наша внутренняя система ${ crm } может подключаться к профилю компании Krejčovství Švadlenka в Google с разрешением business.manage. Это разрешение мы используем только для одной цели: чтобы изменять часы работы нашего собственного профиля компании в Google (в том числе на праздники и при временных изменениях)."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Přístupové tokeny od Google ukládáme jen na serveru našeho systému."
+msgstr "Токены доступа от Google мы храним только на сервере нашей системы."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Tokeny ani žádné údaje získané od Google nepředáváme třetím stranám a nepoužíváme je k ničemu jinému, ani k reklamě."
+msgstr "Мы не передаём токены или какие-либо данные, полученные от Google, третьим лицам и не используем их ни для чего другого, в том числе для рекламы."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Používání údajů získaných z Google API se řídí zásadami ${ googlePolicy }, včetně požadavků Limited Use."
+msgstr "Использование данных, полученных через Google API, соответствует правилам ${ googlePolicy }, включая требования Limited Use."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }, nebo nám napište a připojení zrušíme. Po odvolání přístupu uložené tokeny smažeme."
+msgstr "Доступ можно в любой момент отозвать в настройках аккаунта Google по адресу ${ googlePermissions } или написать нам, и мы отключим его. После отзыва доступа мы удаляем сохранённые токены."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Tento web"
+msgstr "Этот сайт"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Vaše práva"
+msgstr "Ваши права"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Máte právo požádat o přístup ke svým údajům, o jejich opravu nebo výmaz, o omezení zpracování a o přenesení údajů, a máte právo vznést námitku."
+msgstr "Вы имеете право запросить доступ к своим данным, их исправление или удаление, ограничение обработки и перенос данных, а также право возразить против обработки."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Stačí nám napsat na ${ email }, zavolat na ${ phone } nebo přijít osobně. Odpovíme do jednoho měsíce."
+msgstr "Достаточно написать нам на ${ email }, позвонить по номеру ${ phone } или прийти лично. Мы ответим в течение одного месяца."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Pokud nejste spokojeni, můžete podat stížnost u Úřadu pro ochranu osobních údajů (${ uoou })."
+msgstr "Если вы недовольны, можете подать жалобу в Úřad pro ochranu osobních údajů — чешский орган по защите персональных данных (${ uoou })."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Zásady ochrany osobních údajů | Krejčovství Švadlenka"
+msgstr "Политика защиты персональных данных | Ателье Švadlenka"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Jak Krejčovství Švadlenka zpracovává osobní údaje klientů a údaje od Google, a jak můžete uplatnit svá práva."
+msgstr "Как ателье Švadlenka обрабатывает персональные данные клиентов и данные от Google и как вы можете воспользоваться своими правами."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "ochrana osobních údajů, GDPR, krejčovství Švadlenka"
+msgstr "защита персональных данных, GDPR, ателье Švadlenka"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Na tomto webu nemáme žádné formuláře a osobní údaje přes něj nesbíráme. Používáme Google Tag Manager k měření návštěvnosti a kliknutí na telefon nebo mapu a vkládáme mapu Google Maps. Tyto služby Google mohou ve vašem prohlížeči ukládat cookies."
+msgstr "На этом сайте нет никаких форм, и мы не собираем через него персональные данные. Мы используем Google Tag Manager для измерения посещаемости и кликов по телефону или карте, а также встраиваем карту Google Maps. Эти сервисы Google могут сохранять cookies в вашем браузере."

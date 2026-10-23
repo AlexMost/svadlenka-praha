@@ -12,6 +12,7 @@ const pages = [
   "saty",
   // "sity-na-miru",
   "contacts",
+  "ochrana-osobnich-udaju",
 ];
 
 const SITE = "https://svadlenka-praha.cz";

@@ -92,6 +92,7 @@ ${header(meta.canonical)}
         <p>© 2025 Krejčovství Švadlenka</p>
         <p>Larysa Mostovenko</p>
         <p>IČO: 22654321</p>
+        <p><a class="footer-link" href="${siteUrl("/ochrana-osobnich-udaju")}">${t`Ochrana osobních údajů`}</a></p>
     </footer>
 </main>
 <script defer src="/script.js?r=$REVISION"></script>
