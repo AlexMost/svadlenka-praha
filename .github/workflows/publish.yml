@@ -57,18 +57,21 @@ jobs:
 
       - run: npx playwright test
 
-      - run: >-
-          npx gh-pages -d public --silent
-          -u "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
-          -r "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+      # The bot identity goes through git config, not `gh-pages -u`: that option
+      # parses an RFC 5322 address, and the `[bot]` in the noreply local part
+      # is not valid there (the first run failed on it). gh-pages pushes from
+      # its own cache clone, so the config must be global.
+      - run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npx gh-pages -d public --silent \
+            -r "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Last, so a git race on main never blocks a publish.
       - name: Commit translations back to main
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git diff --quiet -- i18n || (
             git add i18n &&
             git commit -m "chore(i18n): translate new site strings [skip ci]" &&
