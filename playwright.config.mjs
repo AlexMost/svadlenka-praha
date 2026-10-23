@@ -5,7 +5,13 @@ export default defineConfig({
   projects: [
     {
       name: "chromium",
-      use: { browserName: "chromium" },
+      // CI runs on the Google Chrome preinstalled on GitHub's ubuntu-latest
+      // image, so the workflow skips `playwright install` (~20 s per run).
+      // Locally the browser from `npx playwright install chromium` is used.
+      use: {
+        browserName: "chromium",
+        ...(process.env.CI && { channel: "chrome" }),
+      },
     },
   ],
   webServer: {
