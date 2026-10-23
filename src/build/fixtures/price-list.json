@@ -1,0 +1,476 @@
+{
+  "categories": [
+    {
+      "title": "Kalhoty a rifli 👖",
+      "rows": [
+        {
+          "name": "zkrácení strojem",
+          "price": "300 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 30000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení riflí strojem",
+          "price": "400 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 40000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení ručně neviditelným švem",
+          "price": "500 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 50000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení s chránítkem, manžetou nebo rozparky",
+          "price": "500 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 50000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení riflí s originálním lemem",
+          "price": "500 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 50000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení kalhoty palazzo",
+          "price": "500 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 50000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení lyžařských kalhot",
+          "price": "od 500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 50000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení nebo rozšíření v pase",
+          "price": "400–700 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 70000,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení nebo rozšíření bočních švů, krokových švů",
+          "price": "400–700 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 70000,
+          "priceNote": null
+        },
+        {
+          "name": "výměna zipů",
+          "price": "300–500 Kč + zip",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": 50000,
+          "priceNote": "+ zip"
+        },
+        {
+          "name": "výměna kapsy",
+          "price": "400–600 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 60000,
+          "priceNote": null
+        },
+        {
+          "name": "výměna gumy",
+          "price": "300 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 30000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "štepování/látaní riflí",
+          "price": "200–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 20000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        }
+      ]
+    },
+    {
+      "title": "ŠATY a SUKNĚ 👗💃",
+      "rows": [
+        {
+          "name": "zkrácení strojem",
+          "price": "400–800 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 80000,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení plesových šatů",
+          "price": "700–2 000 Kč",
+          "priceKind": "range",
+          "priceLowCents": 70000,
+          "priceHighCents": 200000,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení bočních stran",
+          "price": "400–600 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 60000,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení zadního středového švu",
+          "price": "200–400 Kč",
+          "priceKind": "range",
+          "priceLowCents": 20000,
+          "priceHighCents": 40000,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení rukávů",
+          "price": "200–400 Kč",
+          "priceKind": "range",
+          "priceLowCents": 20000,
+          "priceHighCents": 40000,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení rukávů",
+          "price": "300–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        },
+        {
+          "name": "výměna zipů",
+          "price": "300–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        }
+      ]
+    },
+    {
+      "title": "Kabáty, saka, bundy 🧷",
+      "rows": [
+        {
+          "name": "zkrácení délky",
+          "price": "od 700 Kč",
+          "priceKind": "range",
+          "priceLowCents": 70000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení nebo prodloužení rukávů",
+          "price": "od 800 Kč",
+          "priceKind": "range",
+          "priceLowCents": 80000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení rukávů vrchem",
+          "price": "od 1 500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 150000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení v ramenech",
+          "price": "od 1 200 Kč",
+          "priceKind": "range",
+          "priceLowCents": 120000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení rukávů",
+          "price": "300–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        },
+        {
+          "name": "výměna kapsy",
+          "price": "400 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 40000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "výměna zipů (+ cena zipu)",
+          "price": "od 800 Kč + zip",
+          "priceKind": "range",
+          "priceLowCents": 80000,
+          "priceHighCents": null,
+          "priceNote": "+ zip"
+        },
+        {
+          "name": "výměna podšívky (+ cena podšívky)",
+          "price": "1 500–2 500 Kč + latka",
+          "priceKind": "range",
+          "priceLowCents": 150000,
+          "priceHighCents": 250000,
+          "priceNote": "+ latka"
+        },
+        {
+          "name": "došití švů",
+          "price": "200–300 Kč",
+          "priceKind": "range",
+          "priceLowCents": 20000,
+          "priceHighCents": 30000,
+          "priceNote": null
+        }
+      ]
+    },
+    {
+      "title": "Košile, halenky 👔👚",
+      "rows": [
+        {
+          "name": "zkrácení délky",
+          "price": "300–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení rukávů",
+          "price": "200–400 Kč",
+          "priceKind": "range",
+          "priceLowCents": 20000,
+          "priceHighCents": 40000,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení bočních stran",
+          "price": "300–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        },
+        {
+          "name": "zúžení rukávů",
+          "price": "300–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        }
+      ]
+    },
+    {
+      "title": "Tričko a upletové latky 👕",
+      "rows": [
+        {
+          "name": "zkrácení delky trička",
+          "price": "400–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení rukavu trička",
+          "price": "400 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 40000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení kalhot",
+          "price": "400–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        },
+        {
+          "name": "vyměna manžety mikiny",
+          "price": "400–500 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 50000,
+          "priceNote": null
+        }
+      ]
+    },
+    {
+      "title": "Jiné textylové výrobky 🧵",
+      "rows": [
+        {
+          "name": "zkrácení záclon a závěsů za 1 metr šířky",
+          "price": "250 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 25000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "našití stuhy za 1 metr švu",
+          "price": "60 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 6000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "ušití nebo entlování za 1 metr",
+          "price": "60 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 6000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "ušití povlaku na polštář se zipem",
+          "price": "od 300 Kč",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "výměna jezdců u zipů (vč. ceny jezdců)",
+          "price": "od 100 Kč",
+          "priceKind": "range",
+          "priceLowCents": 10000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "výměna zipů",
+          "price": "od 300 Kč",
+          "priceKind": "range",
+          "priceLowCents": 30000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "výměna druku",
+          "price": "od 100 Kč",
+          "priceKind": "range",
+          "priceLowCents": 10000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "nastavení průchodky",
+          "price": "od 50 Kč",
+          "priceKind": "range",
+          "priceLowCents": 5000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "přišití knoflíku",
+          "price": "100 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 10000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "vyšití knoflíkových dírek",
+          "price": "100 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 10000,
+          "priceHighCents": null,
+          "priceNote": null
+        }
+      ]
+    },
+    {
+      "title": "Oděvy z kůže 🧥",
+      "rows": [
+        {
+          "name": "zkrácení délky u sako ,kabatu",
+          "price": "1 000 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 100000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "zkrácení rukávů",
+          "price": "800 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 80000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "výměna zipů (+ cena zipu)",
+          "price": "od 800 Kč + zip",
+          "priceKind": "range",
+          "priceLowCents": 80000,
+          "priceHighCents": null,
+          "priceNote": "+ zip"
+        }
+      ]
+    },
+    {
+      "title": "Oprava batohů a kabelek 🎒",
+      "rows": [
+        {
+          "name": "výměna zipu u batohu / kabelky",
+          "price": "400–1 000 Kč",
+          "priceKind": "range",
+          "priceLowCents": 40000,
+          "priceHighCents": 100000,
+          "priceNote": null
+        },
+        {
+          "name": "výměna jezdců u zipů (vč. ceny jezdců)",
+          "price": "300 Kč",
+          "priceKind": "fixed",
+          "priceLowCents": 30000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "oprava podšívky (částečná nebo celková)",
+          "price": "od 100 Kč",
+          "priceKind": "range",
+          "priceLowCents": 10000,
+          "priceHighCents": null,
+          "priceNote": null
+        },
+        {
+          "name": "oprava zapínání nebo suchých zipů",
+          "price": "od 100 Kč",
+          "priceKind": "range",
+          "priceLowCents": 10000,
+          "priceHighCents": null,
+          "priceNote": null
+        }
+      ]
+    }
+  ]
+}

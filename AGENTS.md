@@ -10,17 +10,15 @@ Static site generator for a Czech tailor shop (Krejčovství Švadlenka Praha). 
 
 ```bash
 npm i                        # Install dependencies
-npm run fetch-services       # Fetch services/pricing from Google Sheets → src/auto/services.mjs
+npm run fetch-services       # Fetch the price list from the CRM → src/auto/services.mjs (run before any build)
 npm run dev                  # Watch + rebuild + local server (http-server on /public)
 npm run build                # One-off build (dev, uses random revision ID)
 npm run build-prod           # Production build (uses git commit hash for cache busting)
 npm run prettier             # Format all files with Prettier
 npm run update-translations  # Sync .po files from source strings (uk, ru, en)
 npm run translate            # Auto-translate untranslated .po entries via OpenAI (requires OPENAI_API_KEY)
-npm run deploy               # Build prod + deploy to GitHub Pages via gh-pages
+npm run deploy               # Laptop fallback: fetch + build prod + test + deploy to GitHub Pages via gh-pages
 ```
-
-> **Note**: README says `npm run publish` but the correct script is `npm run deploy`.
 
 There is no lint command beyond Prettier. Smoke tests use Playwright (see **Testing** section below).
 
@@ -29,6 +27,7 @@ There is no lint command beyond Prettier. Smoke tests use Playwright (see **Test
 ### Build pipeline
 
 ```
+CRM GET /api/public/price-list  →  src/auto/services.mjs  (npm run fetch-services)
 src/pages/*.mjs  →  src/build/build.mjs  →  public/   →  GitHub Pages
 src/auto/services.mjs  ↗               ↗
 static/  ──────────────────────────────
@@ -55,7 +54,18 @@ Hidden pages: `sity-na-miru` (custom dress and skirt sewing) is kept in `src/pag
 
 ### Services/pricing data
 
-`src/auto/services.mjs` is auto-generated from Google Sheets via `npm run fetch-services` (uses `src/build/services.mjs`). Although it is listed in `.gitignore`, the file is tracked in git, so regenerated prices show up as changes and are committed with the rest; run fetch-services before building to get the current price list.
+The price list on `/sluzby` is edited in the CRM (Web section, «Ceník na webu»). `npm run fetch-services` (`src/build/services.mjs`) fetches `GET https://admin.svadlenka-praha.cz/api/public/price-list` — `{categories:[{title, rows:[{name, price, priceKind, priceLowCents, priceHighCents, priceNote}]}]}` — and writes `src/auto/services.mjs` in the `getServices()` shape `[{title, options:[[name, price]]}]`, every string wrapped in ttag `t`. Prices are translated per msgid: the rendered `price` string is the msgid, the raw price fields are ignored.
+
+- `CRM_URL` (env or `.env`) points the fetch at another CRM, e.g. `CRM_URL=http://localhost:3000 npm run fetch-services`.
+- The fetch makes up to 3 attempts (15 s timeout each), retrying only network errors, timeouts, 429 and 5xx; it validates the shape and exits 1 on a failed fetch, an invalid shape, zero categories or a category without rows. Nothing falls back to an older list.
+- `src/auto/services.mjs` is a build artifact: git-ignored and untracked. A fresh clone has none, and `build.mjs` stops with «run `npm run fetch-services` first».
+- `src/build/fixtures/price-list.json` is a copy of the endpoint's response (the Google Sheet as imported into the CRM) for the unit tests.
+
+### Publishing
+
+`.github/workflows/publish.yml` publishes the site. It runs on every push to `main` and on `workflow_dispatch`, which the CRM sends after every change to the price list (the file name is a constant in the CRM — do not rename it). Steps: `npm ci` → `test:unit` → Playwright Chromium → `fetch-services` → `update-translations` → `translate` (`OPENAI_API_KEY` Actions secret; allowed to fail, untranslated strings show in Czech until the next run) → `build-prod` → all Playwright tests → `gh-pages -d public` with `GITHUB_TOKEN` → commits changed `i18n/**` back to `main` with `[skip ci]` (a `GITHUB_TOKEN` push never starts another run). `concurrency: publish` with `cancel-in-progress`, so a burst of CRM edits ends in one build that sees them all.
+
+Start a run without building locally: `gh workflow run publish.yml`. Laptop fallback: `npm run deploy` (unit tests, fetch, prod build, Playwright, then pushes `gh-pages`; translations stay manual: `npm run update-translations && npm run translate`).
 
 ### URL routing
 
@@ -67,12 +77,13 @@ The build replaces `$REVISION` placeholder in HTML with a git commit hash (prod)
 
 ## Testing
 
-Smoke tests live in `e2e/smoke.spec.mjs` (Playwright + Chromium). They verify every page across all 4 locales renders correctly (HTTP 200, non-empty title, visible header/main/footer, no JS errors).
+Smoke tests live in `e2e/smoke.spec.mjs` (Playwright + Chromium). They verify every page across all 4 locales renders correctly (HTTP 200, non-empty title, visible header/main/footer, no JS errors). `e2e/price-list.spec.mjs` checks that `/sluzby` in every locale shows exactly the categories and rows of the generated `src/auto/services.mjs`, with at least 5 categories and 30 rows, so a broken or half-empty CRM feed never deploys.
 
 ```bash
 npm test                     # Run smoke tests headless (site must be built)
 npm run test:headed          # Run with visible browser for debugging
 npm run test:smoke           # Build site + run tests in one command
+npm run test:unit            # node --test for src/**/*.test.mjs (the CRM fetch and module generator)
 ```
 
 Every published page must have a corresponding smoke test. When adding a new page, add its name to the `pages` arrays in `e2e/smoke.spec.mjs` and `e2e/sitemap.spec.mjs`. Pages listed in `DISABLED_PAGES` are not built and must stay commented out there. Run `npm run test:smoke` to verify.

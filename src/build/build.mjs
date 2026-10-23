@@ -100,6 +100,16 @@ async function buildPages(locale, pageNames) {
   console.log("Pages built", locale);
 }
 
+// The price list is generated from the CRM and not tracked in git.
+try {
+  await fs.access("./src/auto/services.mjs");
+} catch {
+  console.error(
+    "src/auto/services.mjs is missing: run `npm run fetch-services` first",
+  );
+  process.exit(1);
+}
+
 loadLocales();
 
 const pageNames = await discoverPages();
