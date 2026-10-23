@@ -920,16 +920,8 @@ msgid "Zásady ochrany osobních údajů"
 msgstr "Privacy Policy"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Platné od 23. 10. 2026."
-msgstr "Effective from 23 October 2026."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Kdo je správce"
 msgstr "Who is the data controller"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Správcem osobních údajů je Larysa Mostovenko, IČO 22654321, provozující Krejčovství Švadlenka, Jaromírova 726/15, 128 00 Praha 2."
-msgstr "The data controller is Larysa Mostovenko, IČO 22654321, who runs Krejčovství Švadlenka, Jaromírova 726/15, 128 00 Praha 2."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 #, javascript-format
@@ -943,10 +935,6 @@ msgstr "Client data"
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Když u nás zadáte zakázku, zapíšeme do našeho interního systému (CRM) vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky."
 msgstr "When you place an order with us, we record in our internal system (CRM) your name, phone number and the order details: the garment, the work required, the price, the deposit, the deadline and any notes."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Údaje používáme jen k vyřízení zakázky: abychom věděli, co máme udělat, a mohli vás kontaktovat. Právním základem je plnění smlouvy a u dokladů naše zákonné povinnosti."
-msgstr "We use the data only to handle your order: to know what to do and to be able to contact you. The legal basis is the performance of a contract and, for receipts and invoices, our legal obligations."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Když je zakázka hotová, pošleme vám SMS. SMS odesíláme přes službu BulkGate, které předáváme jen vaše telefonní číslo a text zprávy."
@@ -975,10 +963,6 @@ msgstr "BulkGate – sending text messages."
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "OpenAI a Telegram – interní asistent, který našim zaměstnancům odpovídá na dotazy k zakázkám. OpenAI údaje nepoužívá k trénování modelů."
 msgstr "OpenAI and Telegram – an internal assistant that answers our staff's questions about orders. OpenAI does not use the data to train its models."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Někteří z těchto dodavatelů mohou údaje zpracovávat i mimo Evropskou unii."
-msgstr "Some of these providers may process the data outside the European Union."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Jak dlouho údaje uchováváme"
@@ -1059,5 +1043,30 @@ msgid "ochrana osobních údajů, GDPR, krejčovství Švadlenka"
 msgstr "privacy policy, GDPR, Švadlenka tailor"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Na tomto webu nemáme žádné formuláře a osobní údaje přes něj nesbíráme. Používáme Google Tag Manager k měření návštěvnosti a kliknutí na telefon nebo mapu a vkládáme mapu Google Maps. Tyto služby Google mohou ve vašem prohlížeči ukládat cookies."
-msgstr "This website has no forms and we do not collect personal data through it. We use Google Tag Manager to measure visits and clicks on the phone number or map, and we embed a Google Maps map. These Google services may store cookies in your browser."
+#, javascript-format
+msgid "Tyto zásady platí od ${ effectiveDate }"
+msgstr "This policy is effective from ${ effectiveDate }"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Správcem osobních údajů je Larysa Mostovenko, IČO 22654321, se sídlem Dářská 665/20, 198 00 Praha 9. Pod názvem Krejčovství Švadlenka provozuje provozovnu na adrese Jaromírova 726/15, 128 00 Praha 2."
+msgstr "The data controller is Larysa Mostovenko, IČO 22654321, registered at Dářská 665/20, 198 00 Praha 9. She runs the atelier Krejčovství Švadlenka at Jaromírova 726/15, 128 00 Praha 2."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje používáme jen k vyřízení zakázky: abychom věděli, co máme udělat, a mohli vás kontaktovat. Právním základem je plnění smlouvy (čl. 6 odst. 1 písm. b) GDPR), u účetních a daňových dokladů plnění našich zákonných povinností (písm. c) a po vyřízení zakázky náš oprávněný zájem na vyřízení případné reklamace nebo sporu (písm. f)."
+msgstr "We use the data only to handle your order: to know what to do and to be able to contact you. The legal basis is the performance of a contract (Art. 6(1)(b) GDPR), for accounting and tax records our legal obligations (Art. 6(1)(c)), and after the order is completed our legitimate interest in handling any complaint or dispute (Art. 6(1)(f))."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Jméno a telefonní číslo potřebujeme k přijetí zakázky. Bez nich zakázku nemůžeme přijmout ani vám dát vědět, že je hotová."
+msgstr "We need your name and phone number to accept an order. Without them we cannot accept the order or let you know when it is ready."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "OpenAI, DigitalOcean a Telegram mohou údaje zpracovávat i mimo Evropský hospodářský prostor, zejména v USA. U OpenAI a DigitalOcean se předání řídí jejich smluvními podmínkami pro zpracování údajů se standardními smluvními doložkami schválenými Evropskou komisí, případně rozhodnutím Komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Telegram ukládá zprávy na svých serverech, které mohou být i mimo EU."
+msgstr "OpenAI, DigitalOcean and Telegram may process the data outside the European Economic Area, in particular in the USA. For OpenAI and DigitalOcean, the transfer is governed by their data processing terms with the standard contractual clauses approved by the European Commission, or by the Commission's adequacy decision (EU-U.S. Data Privacy Framework). Telegram stores messages on its servers, which may also be outside the EU."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
+msgstr "This website has no forms or user accounts. Through Google Tag Manager we use Google Analytics, to know how many people visit the website and which pages they read, and Google Ads conversion tracking, to know whether people who came to us from an ad on Google clicked our phone number or the map. The pages also embed a Google Maps map."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Cookies můžete kdykoli smazat nebo zablokovat v nastavení svého prohlížeče."
+msgstr "These services store cookies in your browser and send Google data such as your IP address, device and browser type, and the pages you visit. The provider is Google Ireland Limited; the data may also be transferred to the USA under the European Commission's adequacy decision (EU-U.S. Data Privacy Framework). You can delete or block cookies at any time in your browser settings."
