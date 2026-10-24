@@ -5,6 +5,12 @@ import { orderTermsSection } from "./orderTerms.mjs";
 import { getStructuredData } from "./structuredData.mjs";
 import { reviewHTML } from "./review.mjs";
 import { siteUrl } from "./siteUrl.mjs";
+import {
+  consentDefaultsScript,
+  cookieBar,
+  cookieSettingsLink,
+  mapEmbed,
+} from "./consent.mjs";
 import { getLanguageCode, lang2Code } from "../build/i18n.mjs";
 import { SITE } from "../config.mjs";
 
@@ -63,6 +69,7 @@ export function baseHtml({
     </script>`
         : ""
     }
+    ${consentDefaultsScript()}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -72,10 +79,6 @@ export function baseHtml({
     <!-- End Google Tag Manager -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB65CL2K"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 ${header(meta.canonical)}
 <main class="main">
     ${content}
@@ -85,16 +88,16 @@ ${header(meta.canonical)}
     <div class="only-mobile bottom-place-img">
         <img loading="lazy" decoding="async" src="/img/svadlenka-place-3.webp" alt="fotografie krejčovství Švadlenka">
     </div>
-    <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.1299956582297!2d14.423894077578739!3d50.065127071521246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95417e9293ed%3A0x1e25b699802f5a22!2zS3JlasSNb3ZzdHbDrSDFoHZhZGxlbmth!5e0!3m2!1sen!2scz!4v1746189430361!5m2!1sen!2scz"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    ${mapEmbed()}
     <footer>
         <p>© 2025 Krejčovství Švadlenka</p>
         <p>Larysa Mostovenko</p>
         <p>IČO: 22654321</p>
         <p><a class="footer-link" href="${siteUrl("/ochrana-osobnich-udaju")}">${t`Ochrana osobních údajů`}</a></p>
+        <p>${cookieSettingsLink()}</p>
     </footer>
 </main>
+${cookieBar()}
 <script defer src="/script.js?r=$REVISION"></script>
 </body>
 </html>

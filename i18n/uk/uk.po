@@ -945,14 +945,6 @@ msgid "Tyto zásady platí od ${ effectiveDate }"
 msgstr "Ця політика діє з ${ effectiveDate }"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
-msgstr "На цьому сайті немає форм чи облікових записів користувачів. Через сервіс Google Tag Manager ми використовуємо Google Analytics, щоб знати, скільки людей відвідує сайт і які сторінки вони читають, а також вимірювання конверсій Google Ads, щоб знати, чи люди, які прийшли до нас з реклами в Google, натиснули на наш телефон або карту. На сторінках також вбудована карта Google Maps."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Cookies můžete kdykoli smazat nebo zablokovat v nastavení svého prohlížeče."
-msgstr "Ці сервіси зберігають cookies у вашому браузері й передають компанії Google такі дані, як IP-адреса, тип пристрою та браузера і відвідані сторінки. Постачальником є Google Ireland Limited; дані можуть передаватися й до США на підставі рішення Європейської комісії про належний рівень захисту (EU-U.S. Data Privacy Framework). Cookies можна будь-коли видалити або заблокувати в налаштуваннях браузера."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 #, javascript-format
 msgid "Larysa Mostovenko, IČO 22654321, se sídlem Dářská 665/20, 198 00 Praha 9 (provozovna Krejčovství Švadlenka, Jaromírova 726/15, Praha 2). Kontakt: ${ email }, ${ phone }."
 msgstr "Larysa Mostovenko, IČO 22654321, зареєстрована адреса: Dářská 665/20, 198 00 Praha 9 (ательє Krejčovství Švadlenka, Jaromírova 726/15, Praha 2). Контакти: ${ email }, ${ phone }."
@@ -998,3 +990,48 @@ msgstr "Ви можете попросити доступ до своїх дан
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Jak Krejčovství Švadlenka zpracovává osobní údaje klientů a jak můžete uplatnit svá práva."
 msgstr "Як ательє Švadlenka обробляє персональні дані клієнтів і як ви можете скористатися своїми правами."
+
+#: src/templates/consent.mjs
+#, javascript-format
+msgid "Používáme ${ cookies } pro měření návštěvnosti a reklamy."
+msgstr "Використовуємо ${ cookies } для аналітики та реклами."
+
+#: src/templates/consent.mjs
+msgid "Přijmout"
+msgstr "Прийняти"
+
+#: src/templates/consent.mjs
+msgid "Odmítnout"
+msgstr "Відхилити"
+
+#: src/templates/consent.mjs
+msgid "Zobrazit mapu"
+msgstr "Показати карту"
+
+#: src/templates/consent.mjs
+msgid "Mapa se načte ze služby Google Maps."
+msgstr "Карта завантажиться із сервісу Google Maps."
+
+#: src/templates/consent.mjs
+msgid "Nastavení cookies"
+msgstr "Налаштування cookies"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu."
+msgstr "На цьому сайті немає форм чи облікових записів користувачів. Через сервіс Google Tag Manager ми використовуємо Google Analytics, щоб знати, скільки людей відвідує сайт і які сторінки вони читають, а також вимірювання конверсій Google Ads, щоб знати, чи люди, які прийшли до нас з реклами в Google, натиснули на наш телефон або карту."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Google Analytics a Google Ads ukládají cookies jen s vaším souhlasem (čl. 6 odst. 1 písm. a) GDPR), který dáte tlačítkem „Přijmout“ v liště dole na stránce. Dokud souhlas nedáte, do vašeho prohlížeče cookies neukládají a Googlu posílají jen základní signály bez cookies."
+msgstr "Google Analytics і Google Ads зберігають cookies лише з вашої згоди (ст. 6(1)(a) GDPR), яку ви даєте кнопкою «Прийняти» на панелі внизу сторінки. Доки ви не дали згоди, вони не зберігають cookies у вашому браузері й надсилають Google лише базові сигнали без cookies."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Na stránkách je také mapa Google Maps. Načte se až po vašem souhlasu, nebo když kliknete na „Zobrazit mapu“."
+msgstr "На сторінках також є карта Google Maps. Вона завантажується лише після вашої згоди або коли ви натиснете «Показати карту»."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "S vaším souhlasem tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework)."
+msgstr "З вашої згоди ці сервіси зберігають cookies у вашому браузері й передають компанії Google такі дані, як IP-адреса, тип пристрою та браузера і відвідані сторінки. Постачальником є Google Ireland Limited; дані можуть передаватися й до США на підставі рішення Європейської комісії про належний рівень захисту (EU-U.S. Data Privacy Framework)."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Souhlas můžete kdykoli odvolat nebo změnit odkazem „Nastavení cookies“ v patičce webu. Vaši volbu si pamatujeme 6 měsíců v úložišti vašeho prohlížeče, potom se zeptáme znovu."
+msgstr "Згоду можна будь-коли відкликати або змінити за посиланням «Налаштування cookies» у нижній частині сайту. Ваш вибір ми пам'ятаємо 6 місяців у сховищі вашого браузера, потім запитаємо знову."
