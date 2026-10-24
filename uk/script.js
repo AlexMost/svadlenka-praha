@@ -70,3 +70,52 @@ document.querySelectorAll("[data-valid-through]").forEach((el) => {
     .querySelectorAll(".schedule--regular")
     .forEach((r) => r.classList.remove("schedule--regular"));
 });
+
+// Cookie consent. The inline script in <head> (src/templates/consent.mjs) sets the
+// Consent Mode defaults, replays a stored choice and opens the bar when there is none.
+const CONSENT_KEY = "cookie-consent";
+const CONSENT_DAYS = 183; // ~6 months
+const CONSENT_SIGNALS = [
+  "ad_storage",
+  "ad_user_data",
+  "ad_personalization",
+  "analytics_storage",
+];
+const root = document.documentElement;
+
+// GA and Ads cookies set while consent was granted; dropped when it is withdrawn.
+function clearGoogleCookies() {
+  const domain = location.hostname.replace(/^www\./, "");
+  document.cookie.split(";").forEach((cookie) => {
+    const name = cookie.split("=")[0].trim();
+    if (!/^_(ga|gid|gcl)/.test(name)) return;
+    document.cookie = `${name}=; max-age=0; path=/`;
+    document.cookie = `${name}=; max-age=0; path=/; domain=.${domain}`;
+  });
+}
+
+function setConsent(value) {
+  const update = {};
+  CONSENT_SIGNALS.forEach((signal) => (update[signal] = value));
+  gtag("consent", "update", update);
+  try {
+    localStorage.setItem(
+      CONSENT_KEY,
+      JSON.stringify({
+        value,
+        expires: Date.now() + CONSENT_DAYS * 24 * 60 * 60 * 1000,
+      }),
+    );
+  } catch (e) {}
+  root.dataset.consent = value;
+  root.classList.remove("cookie-bar-open");
+  if (value === "denied") clearGoogleCookies();
+}
+
+document.querySelectorAll("[data-consent-choice]").forEach((btn) => {
+  btn.addEventListener("click", () => setConsent(btn.dataset.consentChoice));
+});
+
+document.querySelectorAll(".cookie-settings").forEach((btn) => {
+  btn.addEventListener("click", () => root.classList.add("cookie-bar-open"));
+});
