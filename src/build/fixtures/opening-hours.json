@@ -1,0 +1,29 @@
+{
+  "weekly": [
+    { "weekday": 1, "closed": false, "opens": "10:00", "closes": "18:00" },
+    { "weekday": 2, "closed": false, "opens": "10:00", "closes": "18:00" },
+    { "weekday": 3, "closed": false, "opens": "10:00", "closes": "18:00" },
+    { "weekday": 4, "closed": false, "opens": "10:00", "closes": "18:00" },
+    { "weekday": 5, "closed": false, "opens": "10:00", "closes": "16:00" },
+    { "weekday": 6, "closed": true, "opens": null, "closes": null },
+    { "weekday": 7, "closed": true, "opens": null, "closes": null }
+  ],
+  "exceptions": [
+    {
+      "from": "2026-10-28",
+      "to": "2026-10-28",
+      "closed": false,
+      "opens": "10:00",
+      "closes": "15:00",
+      "reason": null
+    },
+    {
+      "from": "2026-12-21",
+      "to": "2027-01-03",
+      "closed": true,
+      "opens": null,
+      "closes": null,
+      "reason": "Vánoce"
+    }
+  ]
+}

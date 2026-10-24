@@ -8,10 +8,10 @@ svadlenka-praha.cz
 
 ```bash
 npm i
-npm run fetch-services           # price list from the CRM → src/auto/services.mjs (needed before any build)
+npm run fetch-crm                # price list + opening hours from the CRM → src/auto/ (needed before any build)
 ```
 
-`fetch-services` reads `https://admin.svadlenka-praha.cz/api/public/price-list`. Point it at a local CRM with `CRM_URL=http://localhost:3000` (env or `.env`, see `.env-example`).
+`fetch-crm` runs `fetch-services` (`/api/public/price-list` → `src/auto/services.mjs`) and `fetch-opening-hours` (`/api/public/opening-hours` → `src/auto/openingHours.mjs`) against `https://admin.svadlenka-praha.cz`. Point it at a local CRM with `CRM_URL=http://localhost:3000` (env or `.env`, see `.env-example`).
 
 ### Run
 
@@ -32,12 +32,12 @@ npx playwright install chromium
 ```bash
 npm test                         # build site + run tests headless
 npm run test:headed              # run with visible browser (also builds first)
-npm run test:unit                # unit tests of the CRM fetch
+npm run test:unit                # unit tests of the CRM fetch and the opening-hours formatting
 ```
 
 ## Publish
 
-Edit the price list in the CRM (Web → Ceník na webu) or push to `main`: `.github/workflows/publish.yml` fetches the price list, translates new strings, builds, tests and deploys. `gh workflow run publish.yml` starts it by hand.
+Press «Publikovat» in the CRM (Web section) or push to `main`: `.github/workflows/publish.yml` fetches the price list and the opening hours, translates new strings, builds, tests and deploys. `gh workflow run publish.yml` starts it by hand.
 
 Fallback from a laptop:
 

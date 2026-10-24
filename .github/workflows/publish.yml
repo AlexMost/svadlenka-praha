@@ -1,6 +1,7 @@
-# Builds the site from the CRM price list and deploys it to the gh-pages branch.
-# Started by the CRM (workflow_dispatch on every price-list edit) and by every
-# push to main. The file name is a constant in the CRM: do not rename it.
+# Builds the site from the CRM price list and opening hours and deploys it to
+# the gh-pages branch. Started by the CRM (workflow_dispatch on «Publikovat» and
+# nightly at 00:05 Prague, which drops passed opening-hours exceptions) and by
+# every push to main. The file name is a constant in the CRM: do not rename it.
 name: publish
 
 on:
@@ -39,8 +40,9 @@ jobs:
 
       - run: npm run test:unit
 
-      # Fails the run on an unreachable CRM or an empty/invalid price list.
-      - run: npm run fetch-services
+      # Fails the run on an unreachable CRM or an empty/invalid price list or
+      # opening hours.
+      - run: npm run fetch-crm
 
       - run: npm run update-translations
 

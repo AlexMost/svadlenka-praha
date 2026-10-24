@@ -3,11 +3,8 @@
 // local CRM, e.g. CRM_URL=http://localhost:3000. Any failure exits with 1, so
 // the build never ships an empty or broken price list.
 import fs from "fs/promises";
-import { realpathSync } from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
-
-export const DEFAULT_CRM_URL = "https://admin.svadlenka-praha.cz";
+import { crmEndpoint, fetchCrmJson, isMainModule } from "./crm.mjs";
 export const PRICE_LIST_PATH = "/api/public/price-list";
 const OUT_FILE = "./src/auto/services.mjs";
 
@@ -73,44 +70,16 @@ ${categories}
 `;
 }
 
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-const isRetryableStatus = (status) => status === 429 || status >= 500;
-
-// GETs the price list. Network errors, timeouts, 429 and 5xx are retried
-// because the CRM may be mid-restart; other 4xx and invalid JSON fail at once.
-export async function fetchPriceList(
-  url,
-  { attempts = 3, delayMs = 3_000, timeoutMs = 15_000 } = {},
-) {
-  for (let attempt = 1; ; attempt++) {
-    try {
-      const response = await fetch(url, {
-        signal: AbortSignal.timeout(timeoutMs),
-      });
-      if (response.ok) return await response.json();
-      throw Object.assign(
-        new Error(`GET ${url} responded ${response.status}`),
-        { retryable: isRetryableStatus(response.status) },
-      );
-    } catch (error) {
-      const retryable =
-        !(error instanceof SyntaxError) && error.retryable !== false;
-      if (!retryable || attempt >= attempts) throw error;
-      console.warn(
-        `price list: attempt ${attempt}/${attempts} failed: ${error.message}`,
-      );
-      await sleep(delayMs);
-    }
-  }
-}
+// GETs the price list; see fetchCrmJson for the retry rules.
+export const fetchPriceList = (url, options) =>
+  fetchCrmJson(url, { label: "price list", ...options });
 
 export async function fetchServices({
-  crmUrl = process.env.CRM_URL || DEFAULT_CRM_URL,
+  crmUrl,
   outFile = OUT_FILE,
   ...fetchOptions
 } = {}) {
-  const url = `${crmUrl.replace(/\/+$/, "")}${PRICE_LIST_PATH}`;
+  const url = crmEndpoint(PRICE_LIST_PATH, crmUrl);
   const services = toServices(await fetchPriceList(url, fetchOptions));
   const source = toModule(services, {
     source: url,
@@ -124,14 +93,7 @@ export async function fetchServices({
   );
 }
 
-// realpath on both sides: Node resolves symlinks in import.meta.url but not in
-// process.argv[1], so a symlinked path would otherwise skip the fetch silently.
-const isMain =
-  process.argv[1] &&
-  realpathSync(process.argv[1]) ===
-    realpathSync(fileURLToPath(import.meta.url));
-
-if (isMain) {
+if (isMainModule(import.meta.url)) {
   try {
     await fetchServices();
   } catch (error) {

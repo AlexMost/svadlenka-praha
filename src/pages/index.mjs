@@ -1,9 +1,12 @@
 import { t } from "ttag";
+import { openingHours } from "../auto/openingHours.mjs";
 import {
-  temporaryScheduleNotice,
+  pragueToday,
+  scheduleNotices,
   regularScheduleCaption,
   regularScheduleClass,
-} from "../templates/temporaryHours.mjs";
+  weeklyLines,
+} from "../templates/openingHours.mjs";
 import { baseHtml } from "../templates/baseHTML.mjs";
 import { getStructuredData, makeOffer } from "../templates/structuredData.mjs";
 import { siteUrl } from "../templates/siteUrl.mjs";
@@ -78,22 +81,23 @@ function serviceHTML({ title, description, image, url }) {
 }
 
 export default () => {
+  const today = pragueToday();
   const pageHTML = `
-    <section class="hero">
+    <section class="hero" data-schedule>
         <h1 class="hero-h1">${t`Krejčovství Švadlenka`}</h1>
         <h2>${t`Kvalitní opravna oděvů pod Nuselským mostem`}</h2>
         <h3>${t`Rádi vás přivítáme na adrese Jaromírova 726/15`}</h3>
-        ${temporaryScheduleNotice()}
-        ${regularScheduleCaption()}
-        <table class="schedule${regularScheduleClass()}">
-          <tr>
-            <td>${t`Po - Čt:`}</td>
-            <td>10:00 - 18:00</td>
-          </tr>
-          <tr>
-            <td>${t`Pátek:`}</td>
-            <td>10:00 - 16:00</td>
-          </tr>
+        ${scheduleNotices(openingHours, today)}
+        ${regularScheduleCaption(openingHours, today)}
+        <table class="schedule ${regularScheduleClass(openingHours, today)}">
+          ${weeklyLines(openingHours.weekly)
+            .map(
+              ({ days, hours }) => `<tr>
+            <td>${days}:</td>
+            <td>${hours}</td>
+          </tr>`,
+            )
+            .join("")}
         </table>
         <a href="${siteUrl("/contacts")}" class="cta-button">${t`Najít nás`}</a>
       </section>
