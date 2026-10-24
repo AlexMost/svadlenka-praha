@@ -68,6 +68,6 @@ for (const locale of locales) {
     await p.waitForURL(`**${prefix}/ochrana-osobnich-udaju/`);
 
     await expect(p.locator("main h1")).toBeVisible();
-    await expect(p.locator("main")).toContainText("business.manage");
+    await expect(p.locator("main")).toContainText("Limited Use");
   });
 }

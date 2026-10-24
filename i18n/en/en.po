@@ -933,14 +933,6 @@ msgid "Údaje klientů"
 msgstr "Client data"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Když u nás zadáte zakázku, zapíšeme do našeho interního systému (CRM) vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky."
-msgstr "When you place an order with us, we record in our internal system (CRM) your name, phone number and the order details: the garment, the work required, the price, the deposit, the deadline and any notes."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Když je zakázka hotová, pošleme vám SMS. SMS odesíláme přes službu BulkGate, které předáváme jen vaše telefonní číslo a text zprávy."
-msgstr "When your order is ready, we send you a text message. Text messages are sent through the BulkGate service, which receives only your phone number and the message text."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Vaše údaje neprodáváme a nepoužíváme k reklamě."
 msgstr "We do not sell your data or use it for advertising."
 
@@ -953,33 +945,8 @@ msgid "Naši zaměstnanci, kteří zakázky přijímají a zpracovávají."
 msgstr "Our staff who take in and work on the orders."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "DigitalOcean – server, na kterém běží náš systém."
-msgstr "DigitalOcean – the server our system runs on."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "BulkGate – odesílání SMS."
-msgstr "BulkGate – sending text messages."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "OpenAI a Telegram – interní asistent, který našim zaměstnancům odpovídá na dotazy k zakázkám. OpenAI údaje nepoužívá k trénování modelů."
-msgstr "OpenAI and Telegram – an internal assistant that answers our staff's questions about orders. OpenAI does not use the data to train its models."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Jak dlouho údaje uchováváme"
 msgstr "How long we keep the data"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Údaje o zakázce uchováváme 3 roky od jejího vyřízení, kvůli případným reklamacím. Účetní doklady uchováváme po dobu, kterou stanoví zákon. Zálohy systému se mažou po 14 dnech."
-msgstr "We keep order data for 3 years after the order is completed, in case of complaints. Accounting records are kept for the period required by law. System backups are deleted after 14 days."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Přihlášení zaměstnanců přes Google"
-msgstr "Staff sign-in with Google"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
-msgid "Naši zaměstnanci se do interního systému ${ crm } přihlašují účtem Google. Od Google přitom dostáváme jen e-mail, jméno a profilovou fotografii, a používáme je jen k přihlášení a k zobrazení, kdo co v systému udělal."
-msgstr "Our staff sign in to the internal system ${ crm } with their Google account. From Google we receive only their email, name and profile photo, and use them only for signing in and to show who did what in the system."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Údaje od Google (Google Business Profile)"
@@ -987,26 +954,8 @@ msgstr "Google user data (Google Business Profile)"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 #, javascript-format
-msgid "Náš interní systém ${ crm } se může připojit k profilu firmy Krejčovství Švadlenka na Google s oprávněním business.manage. Toto oprávnění používáme jen k jednomu účelu: k úpravě otevírací doby našeho vlastního profilu firmy na Google (včetně svátků a mimořádných změn)."
-msgstr "Our internal system ${ crm } can connect to the Google Business Profile of Krejčovství Švadlenka with the business.manage permission. We use this permission for one purpose only: to update the opening hours of our own business profile on Google (including holidays and temporary changes)."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Přístupové tokeny od Google ukládáme jen na serveru našeho systému."
-msgstr "Google access tokens are stored only on our system's server."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Tokeny ani žádné údaje získané od Google nepředáváme třetím stranám a nepoužíváme je k ničemu jinému, ani k reklamě."
-msgstr "We do not share the tokens or any data received from Google with third parties, and do not use them for anything else, including advertising."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
 msgid "Používání údajů získaných z Google API se řídí zásadami ${ googlePolicy }, včetně požadavků Limited Use."
 msgstr "Our use of information received from Google APIs adheres to the ${ googlePolicy }, including the Limited Use requirements."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
-msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }, nebo nám napište a připojení zrušíme. Po odvolání přístupu uložené tokeny smažeme."
-msgstr "Access can be revoked at any time in your Google Account settings at ${ googlePermissions }, or write to us and we will disconnect it. After access is revoked, we delete the stored tokens."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Tento web"
@@ -1060,13 +1009,38 @@ msgid "Jméno a telefonní číslo potřebujeme k přijetí zakázky. Bez nich z
 msgstr "We need your name and phone number to accept an order. Without them we cannot accept the order or let you know when it is ready."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "OpenAI, DigitalOcean a Telegram mohou údaje zpracovávat i mimo Evropský hospodářský prostor, zejména v USA. U OpenAI a DigitalOcean se předání řídí jejich smluvními podmínkami pro zpracování údajů se standardními smluvními doložkami schválenými Evropskou komisí, případně rozhodnutím Komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Telegram ukládá zprávy na svých serverech, které mohou být i mimo EU."
-msgstr "OpenAI, DigitalOcean and Telegram may process the data outside the European Economic Area, in particular in the USA. For OpenAI and DigitalOcean, the transfer is governed by their data processing terms with the standard contractual clauses approved by the European Commission, or by the Commission's adequacy decision (EU-U.S. Data Privacy Framework). Telegram stores messages on its servers, which may also be outside the EU."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
 msgstr "This website has no forms or user accounts. Through Google Tag Manager we use Google Analytics, to know how many people visit the website and which pages they read, and Google Ads conversion tracking, to know whether people who came to us from an ad on Google clicked our phone number or the map. The pages also embed a Google Maps map."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Cookies můžete kdykoli smazat nebo zablokovat v nastavení svého prohlížeče."
 msgstr "These services store cookies in your browser and send Google data such as your IP address, device and browser type, and the pages you visit. The provider is Google Ireland Limited; the data may also be transferred to the USA under the European Commission's adequacy decision (EU-U.S. Data Privacy Framework). You can delete or block cookies at any time in your browser settings."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Když u nás zadáte zakázku, zapíšeme si vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky."
+msgstr "When you place an order with us, we record your name, phone number and the order details: the garment, the work required, the price, the deposit, the deadline and any notes."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Když je zakázka hotová, pošleme vám SMS."
+msgstr "When your order is ready, we send you a text message."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Poskytovatelé IT služeb (provoz serveru, odesílání SMS, softwarové nástroje), jen v rozsahu nezbytném pro jejich službu a na základě smlouvy."
+msgstr "IT service providers (server operation, sending text messages, software tools), only to the extent needed for their service and under a contract."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Někteří poskytovatelé mohou údaje zpracovávat i mimo Evropský hospodářský prostor, vždy jen se zárukami podle GDPR (například se standardními smluvními doložkami EU nebo na základě rozhodnutí Evropské komise o odpovídající ochraně)."
+msgstr "Some providers may process the data outside the European Economic Area, always only with safeguards under the GDPR (for example the EU standard contractual clauses or a European Commission adequacy decision)."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje o zakázce uchováváme 3 roky od jejího vyřízení, kvůli případným reklamacím. Účetní doklady uchováváme po dobu, kterou stanoví zákon."
+msgstr "We keep order data for 3 years after the order is completed, in case of complaints. Accounting records are kept for the period required by law."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Propojení s profilem naší firmy na Googlu (Google Business Profile) používáme jen k úpravě naší otevírací doby; údaje získané od Googlu nepředáváme třetím stranám a nepoužíváme je k ničemu jinému, ani k reklamě."
+msgstr "We use the connection to our business profile on Google (Google Business Profile) only to update our opening hours; we do not share data received from Google with third parties or use it for anything else, including advertising."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }."
+msgstr "Access can be revoked at any time in your Google Account settings at ${ googlePermissions }."
