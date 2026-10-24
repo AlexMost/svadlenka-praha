@@ -36,11 +36,8 @@ export default () => {
         <p>${t`Propojení s profilem naší firmy na Googlu používáme jen k úpravě otevírací doby. Údaje od Googlu nepředáváme dalším stranám a nepoužíváme je k ničemu jinému, v souladu se zásadami ${googlePolicy} (Limited Use). Přístup lze odvolat na ${googlePermissions}.`}</p>
 
         <h2>${t`Tento web`}</h2>
-        <p>${t`Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu.`}</p>
-        <p>${t`Google Analytics a Google Ads ukládají cookies jen s vaším souhlasem (čl. 6 odst. 1 písm. a) GDPR), který dáte tlačítkem „Přijmout“ v liště dole na stránce. Dokud souhlas nedáte, do vašeho prohlížeče cookies neukládají a Googlu posílají jen základní signály bez cookies.`}</p>
-        <p>${t`Na stránkách je také mapa Google Maps. Načte se až po vašem souhlasu, nebo když kliknete na „Zobrazit mapu“.`}</p>
-        <p>${t`S vaším souhlasem tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework).`}</p>
-        <p>${t`Souhlas můžete kdykoli odvolat nebo změnit odkazem „Nastavení cookies“ v patičce webu. Vaši volbu si pamatujeme 6 měsíců v úložišti vašeho prohlížeče, potom se zeptáme znovu.`}</p>
+        <p>${t`Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Mapa Google Maps se načte, až když na ni kliknete nebo dáte souhlas.`}</p>
+        <p>${t`Souhlas můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce webu.`}</p>
 
         <h2>${t`Vaše práva`}</h2>
         <p>${t`Můžete požádat o přístup ke svým údajům, jejich opravu, výmaz, omezení zpracování nebo přenos a vznést námitku. Stačí nám napsat nebo zavolat. Stížnost můžete podat u Úřadu pro ochranu osobních údajů (${uoou}).`}</p>
