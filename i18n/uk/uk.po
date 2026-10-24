@@ -924,40 +924,6 @@ msgid "Kdo je správce"
 msgstr "Хто є контролером даних"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
-msgid "Kontakt: e-mail ${ email }, telefon ${ phone }, nebo osobně v provozovně."
-msgstr "Контакти: e-mail ${ email }, телефон ${ phone } або особисто в ательє."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Údaje klientů"
-msgstr "Дані клієнтів"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Vaše údaje neprodáváme a nepoužíváme k reklamě."
-msgstr "Ми не продаємо ваші дані й не використовуємо їх для реклами."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Kdo s údaji pracuje"
-msgstr "Хто працює з даними"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Naši zaměstnanci, kteří zakázky přijímají a zpracovávají."
-msgstr "Наші працівники, які приймають і виконують замовлення."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Jak dlouho údaje uchováváme"
-msgstr "Як довго ми зберігаємо дані"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Údaje od Google (Google Business Profile)"
-msgstr "Дані від Google (Google Business Profile)"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
-msgid "Používání údajů získaných z Google API se řídí zásadami ${ googlePolicy }, včetně požadavků Limited Use."
-msgstr "Використання даних, отриманих через Google API, відповідає правилам ${ googlePolicy }, зокрема вимогам Limited Use."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Tento web"
 msgstr "Цей сайт"
 
@@ -966,26 +932,8 @@ msgid "Vaše práva"
 msgstr "Ваші права"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Máte právo požádat o přístup ke svým údajům, o jejich opravu nebo výmaz, o omezení zpracování a o přenesení údajů, a máte právo vznést námitku."
-msgstr "Ви маєте право вимагати доступу до своїх даних, їх виправлення чи видалення, обмеження обробки та перенесення даних, а також право заперечити проти обробки."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
-msgid "Stačí nám napsat na ${ email }, zavolat na ${ phone } nebo přijít osobně. Odpovíme do jednoho měsíce."
-msgstr "Достатньо написати нам на ${ email }, зателефонувати на ${ phone } або прийти особисто. Ми відповімо протягом одного місяця."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
-msgid "Pokud nejste spokojeni, můžete podat stížnost u Úřadu pro ochranu osobních údajů (${ uoou })."
-msgstr "Якщо ви незадоволені, можете подати скаргу до Úřad pro ochranu osobních údajů — чеського органу з захисту персональних даних (${ uoou })."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Zásady ochrany osobních údajů | Krejčovství Švadlenka"
 msgstr "Політика захисту персональних даних | Ательє Švadlenka"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Jak Krejčovství Švadlenka zpracovává osobní údaje klientů a údaje od Google, a jak můžete uplatnit svá práva."
-msgstr "Як ательє Švadlenka обробляє персональні дані клієнтів і дані від Google та як ви можете скористатися своїми правами."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "ochrana osobních údajů, GDPR, krejčovství Švadlenka"
@@ -997,14 +945,6 @@ msgid "Tyto zásady platí od ${ effectiveDate }"
 msgstr "Ця політика діє з ${ effectiveDate }"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Správcem osobních údajů je Larysa Mostovenko, IČO 22654321, se sídlem Dářská 665/20, 198 00 Praha 9. Pod názvem Krejčovství Švadlenka provozuje provozovnu na adrese Jaromírova 726/15, 128 00 Praha 2."
-msgstr "Контролером персональних даних є Larysa Mostovenko, IČO 22654321, зареєстрована адреса: Dářská 665/20, 198 00 Praha 9. Під назвою Krejčovství Švadlenka вона веде ательє за адресою Jaromírova 726/15, 128 00 Praha 2."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Údaje používáme jen k vyřízení zakázky: abychom věděli, co máme udělat, a mohli vás kontaktovat. Právním základem je plnění smlouvy (čl. 6 odst. 1 písm. b) GDPR), u účetních a daňových dokladů plnění našich zákonných povinností (písm. c) a po vyřízení zakázky náš oprávněný zájem na vyřízení případné reklamace nebo sporu (písm. f)."
-msgstr "Ми використовуємо ці дані лише для виконання замовлення: щоб знати, що потрібно зробити, і мати змогу з вами зв'язатися. Правовою підставою є виконання договору (ст. 6(1)(b) GDPR), щодо бухгалтерських і податкових документів — виконання наших обов'язків за законом (ст. 6(1)(c)), а після виконання замовлення — наш законний інтерес у розгляді можливої рекламації чи спору (ст. 6(1)(f))."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
 msgstr "На цьому сайті немає форм чи облікових записів користувачів. Через сервіс Google Tag Manager ми використовуємо Google Analytics, щоб знати, скільки людей відвідує сайт і які сторінки вони читають, а також вимірювання конверсій Google Ads, щоб знати, чи люди, які прийшли до нас з реклами в Google, натиснули на наш телефон або карту. На сторінках також вбудована карта Google Maps."
 
@@ -1013,34 +953,48 @@ msgid "Tyto služby ukládají do vašeho prohlížeče cookies a předávají s
 msgstr "Ці сервіси зберігають cookies у вашому браузері й передають компанії Google такі дані, як IP-адреса, тип пристрою та браузера і відвідані сторінки. Постачальником є Google Ireland Limited; дані можуть передаватися й до США на підставі рішення Європейської комісії про належний рівень захисту (EU-U.S. Data Privacy Framework). Cookies можна будь-коли видалити або заблокувати в налаштуваннях браузера."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Když u nás zadáte zakázku, zapíšeme si vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky."
-msgstr "Коли ви робите в нас замовлення, ми записуємо ваше ім'я, номер телефону та дані замовлення: річ, потрібні роботи, ціну, завдаток, термін і можливі примітки."
+#, javascript-format
+msgid "Larysa Mostovenko, IČO 22654321, se sídlem Dářská 665/20, 198 00 Praha 9 (provozovna Krejčovství Švadlenka, Jaromírova 726/15, Praha 2). Kontakt: ${ email }, ${ phone }."
+msgstr "Larysa Mostovenko, IČO 22654321, зареєстрована адреса: Dářská 665/20, 198 00 Praha 9 (ательє Krejčovství Švadlenka, Jaromírova 726/15, Praha 2). Контакти: ${ email }, ${ phone }."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Když je zakázka hotová, pošleme vám SMS."
-msgstr "Коли замовлення готове, ми надсилаємо вам SMS."
+msgid "Jaké údaje zpracováváme a proč"
+msgstr "Які дані ми обробляємо і навіщо"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Poskytovatelé IT služeb (provoz serveru, odesílání SMS, softwarové nástroje), jen v rozsahu nezbytném pro jejich službu a na základě smlouvy."
-msgstr "Постачальники ІТ-послуг (робота сервера, надсилання SMS, програмні інструменти) — лише в обсязі, необхідному для їхньої послуги, і на підставі договору."
+msgid "Při zadání zakázky si zapíšeme vaše jméno, telefonní číslo a údaje o zakázce. Telefon potřebujeme, abychom vás mohli kontaktovat a poslat vám SMS, že je zakázka hotová. Údaje používáme jen k vyřízení zakázky (plnění smlouvy), k vedení účetnictví (zákonná povinnost) a k vyřízení případné reklamace (oprávněný zájem). Neprodáváme je a nepoužíváme k reklamě."
+msgstr "Під час оформлення замовлення ми записуємо ваше ім'я, номер телефону та дані замовлення. Телефон потрібен нам, щоб зв'язатися з вами й надіслати SMS, коли замовлення буде готове. Ми використовуємо дані лише для виконання замовлення (виконання договору), ведення бухгалтерського обліку (обов'язок за законом) і розгляду можливої рекламації (законний інтерес). Ми не продаємо їх і не використовуємо для реклами."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Někteří poskytovatelé mohou údaje zpracovávat i mimo Evropský hospodářský prostor, vždy jen se zárukami podle GDPR (například se standardními smluvními doložkami EU nebo na základě rozhodnutí Evropské komise o odpovídající ochraně)."
-msgstr "Деякі постачальники можуть обробляти дані й за межами Європейського економічного простору — завжди лише з гарантіями відповідно до GDPR (наприклад, зі стандартними договірними положеннями ЄС або на підставі рішення Європейської комісії про належний рівень захисту)."
+msgid "Kdo k nim má přístup"
+msgstr "Хто має до них доступ"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Údaje o zakázce uchováváme 3 roky od jejího vyřízení, kvůli případným reklamacím. Účetní doklady uchováváme po dobu, kterou stanoví zákon."
-msgstr "Дані замовлення ми зберігаємо 3 роки після його виконання — на випадок рекламацій. Бухгалтерські документи зберігаємо протягом строку, встановленого законом."
+msgid "Naši zaměstnanci a poskytovatelé IT služeb (server, SMS), kteří s nimi smějí pracovat jen pro nás. Někteří mohou údaje zpracovávat i mimo EU, vždy se zárukami podle GDPR."
+msgstr "Наші працівники та постачальники ІТ-послуг (сервер, SMS), які можуть працювати з ними лише для нас. Деякі з них можуть обробляти дані й за межами ЄС — завжди з гарантіями відповідно до GDPR."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Propojení s profilem naší firmy na Googlu (Google Business Profile) používáme jen k úpravě naší otevírací doby; údaje získané od Googlu nepředáváme třetím stranám a nepoužíváme je k ničemu jinému, ani k reklamě."
-msgstr "Підключення до профілю нашої компанії в Google (Google Business Profile) ми використовуємо лише для зміни наших годин роботи; дані, отримані від Google, ми не передаємо третім особам і не використовуємо ні для чого іншого, зокрема для реклами."
+msgid "Jak dlouho je uchováváme"
+msgstr "Як довго ми їх зберігаємо"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Tři roky od vyřízení zakázky, účetní doklady po dobu stanovenou zákonem."
+msgstr "Три роки після виконання замовлення, бухгалтерські документи — протягом строку, встановленого законом."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Google Business Profile"
+msgstr "Google Business Profile"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 #, javascript-format
-msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }."
-msgstr "Доступ можна будь-коли відкликати в налаштуваннях облікового запису Google за адресою ${ googlePermissions }."
+msgid "Propojení s profilem naší firmy na Googlu používáme jen k úpravě otevírací doby. Údaje od Googlu nepředáváme dalším stranám a nepoužíváme je k ničemu jinému, v souladu se zásadami ${ googlePolicy } (Limited Use). Přístup lze odvolat na ${ googlePermissions }."
+msgstr "Підключення до профілю нашої компанії в Google ми використовуємо лише для зміни годин роботи. Дані від Google ми не передаємо іншим сторонам і не використовуємо ні для чого іншого — відповідно до правил ${ googlePolicy } (Limited Use). Доступ можна відкликати на ${ googlePermissions }."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Uvedení jména a telefonního čísla je dobrovolné. Pokud nechcete, abychom si vaše údaje zapsali, řekněte nám to při zadání zakázky – zakázku přijmeme i tak. Bez telefonního čísla vám ale nemůžeme poslat SMS, že je zakázka hotová."
-msgstr "Вказувати ім'я та номер телефону — добровільно. Якщо ви не хочете, щоб ми записували ваші дані, скажіть нам про це під час оформлення замовлення — ми все одно його приймемо. Але без номера телефону ми не зможемо надіслати вам SMS про те, що замовлення готове."
+#, javascript-format
+msgid "Můžete požádat o přístup ke svým údajům, jejich opravu, výmaz, omezení zpracování nebo přenos a vznést námitku. Stačí nám napsat nebo zavolat. Stížnost můžete podat u Úřadu pro ochranu osobních údajů (${ uoou })."
+msgstr "Ви можете попросити доступ до своїх даних, їх виправлення, видалення, обмеження обробки чи перенесення, а також заперечити проти обробки. Достатньо нам написати або зателефонувати. Скаргу можна подати до Úřad pro ochranu osobních údajů — чеського органу з захисту персональних даних (${ uoou })."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Jak Krejčovství Švadlenka zpracovává osobní údaje klientů a jak můžete uplatnit svá práva."
+msgstr "Як ательє Švadlenka обробляє персональні дані клієнтів і як ви можете скористатися своїми правами."
