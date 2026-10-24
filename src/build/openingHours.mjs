@@ -18,6 +18,18 @@ const fail = (message) => {
 
 const isTime = (value) => typeof value === "string" && TIME.test(value);
 
+// The CRM refuses longer exceptions; a guard so a bad feed never walks years of days.
+const MAX_EXCEPTION_DAYS = 366;
+const DAY_MS = 86_400_000;
+
+// YYYY-MM-DD naming a real calendar day (Date.UTC would roll 2026-02-30 over).
+const toUtcDay = (value) => {
+  if (typeof value !== "string" || !DAY.test(value)) return null;
+  const [year, month, date] = value.split("-").map(Number);
+  const ms = Date.UTC(year, month - 1, date);
+  return new Date(ms).toISOString().slice(0, 10) === value ? ms : null;
+};
+
 // `{closed, opens, closes}`: closed → null times, open → HH:MM with closes > opens.
 function hoursOf(entry, where) {
   if (typeof entry?.closed !== "boolean")
@@ -57,10 +69,15 @@ export function toOpeningHours(json) {
   if (!Array.isArray(json.exceptions)) fail("`exceptions` is not an array");
   const exceptions = json.exceptions.map((e, i) => {
     const where = `exception ${i}`;
-    if (!DAY.test(e?.from ?? "") || !DAY.test(e?.to ?? "")) {
-      fail(`${where}: \`from\` and \`to\` must be YYYY-MM-DD`);
+    const from = toUtcDay(e?.from);
+    const to = toUtcDay(e?.to);
+    if (from === null || to === null) {
+      fail(`${where}: \`from\` and \`to\` must be real YYYY-MM-DD days`);
     }
-    if (e.from > e.to) fail(`${where}: \`from\` is after \`to\``);
+    if (from > to) fail(`${where}: \`from\` is after \`to\``);
+    if ((to - from) / DAY_MS + 1 > MAX_EXCEPTION_DAYS) {
+      fail(`${where}: longer than ${MAX_EXCEPTION_DAYS} days`);
+    }
     if (e.reason !== null && typeof e.reason !== "string") {
       fail(`${where}: \`reason\` is neither a string nor null`);
     }

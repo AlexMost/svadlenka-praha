@@ -71,6 +71,13 @@ for (const [label, mutate] of [
   ["no exceptions array", (j) => delete j.exceptions],
   ["a date not YYYY-MM-DD", (j) => (j.exceptions[0].from = "28. 10. 2026")],
   ["from after to", (j) => (j.exceptions[1].from = "2027-01-04")],
+  ["a day that does not exist", (j) => (j.exceptions[0].from = "2026-02-30")],
+  ["a month that does not exist", (j) => (j.exceptions[0].to = "2026-13-01")],
+  [
+    "a range over 366 days",
+    (j) =>
+      Object.assign(j.exceptions[1], { from: "2026-01-01", to: "2027-01-02" }),
+  ],
   ["changed hours without times", (j) => (j.exceptions[0].closes = null)],
   ["a non-string reason", (j) => (j.exceptions[0].reason = 5)],
 ]) {
@@ -80,6 +87,12 @@ for (const [label, mutate] of [
     assert.throws(() => toOpeningHours(json), /^Error: opening hours: /);
   });
 }
+
+test("toOpeningHours accepts a range of exactly 366 days", () => {
+  const json = clone();
+  Object.assign(json.exceptions[1], { from: "2028-01-01", to: "2028-12-31" });
+  assert.equal(toOpeningHours(json).exceptions[1].to, "2028-12-31");
+});
 
 test("toOpeningHours accepts no exceptions", () => {
   const json = { ...clone(), exceptions: [] };

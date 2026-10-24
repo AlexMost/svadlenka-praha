@@ -58,8 +58,9 @@ document.querySelectorAll(".sidebar a").forEach((link) => {
 });
 
 // Hide opening-hours notices past their last day (safety net if the nightly
-// rebuild is late). Once no notice is left in a schedule block, its regular
-// hours lose the caption and the dimming.
+// rebuild is late). Once no notice is left in a schedule block, the notices
+// wrapper goes too (its margin would leave a gap) and the regular hours lose
+// the caption and the dimming.
 document.querySelectorAll("[data-valid-through]").forEach((el) => {
   const end = new Date(el.dataset.validThrough + "T23:59:59");
   if (Number.isNaN(end.getTime()) || new Date() <= end) return;
@@ -67,7 +68,7 @@ document.querySelectorAll("[data-valid-through]").forEach((el) => {
   const scope = el.closest("[data-schedule]");
   if (!scope || scope.querySelector(".schedule-notice:not([hidden])")) return;
   scope
-    .querySelectorAll(".schedule-regular-caption")
+    .querySelectorAll(".schedule-notices, .schedule-regular-caption")
     .forEach((c) => (c.hidden = true));
   scope
     .querySelectorAll(".schedule--regular")

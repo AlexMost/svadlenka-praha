@@ -74,7 +74,7 @@ The weekly schedule and its exceptions (closed or changed hours, one day or a ra
 - above them, one gold notice per upcoming exception (`scheduleNotices`): label «St 28. 10.» / «9. 9. – 15. 9.» / «Dočasně do 15. 9.» once running, hours «Zavřeno» or «Po – Pá: 10:00 – 15:00», the reason in Czech on every locale; while any notice shows, the regular hours get the «Běžná otevírací doba» caption and dim;
 - JSON-LD (`src/templates/structuredData.mjs`): `openingHours` («Mo-Th 10:00-18:00», never translated) and `specialOpeningHoursSpecification`, one entry per exception per affected weekday, closed = `00:00`–`00:00`.
 
-Each notice carries `data-valid-through`; `static/script.js` hides one past its last day and, once none is left in its `[data-schedule]` block, drops the caption and dimming. The nightly CRM rebuild removes it for real.
+Each notice carries `data-valid-through`; `static/script.js` hides one past its last day and, once none is left in its `[data-schedule]` block (hero, Kontakty), hides the notices wrapper and drops the caption and dimming. The nightly CRM rebuild removes it for real.
 
 ### Publishing
 
@@ -96,7 +96,7 @@ The build replaces `$REVISION` placeholder in HTML with a git commit hash (prod)
 
 ## Testing
 
-Smoke tests live in `e2e/smoke.spec.mjs` (Playwright + Chromium). They verify every page across all 4 locales renders correctly (HTTP 200, non-empty title, visible header/main/footer, no JS errors). `e2e/price-list.spec.mjs` checks that `/sluzby` in every locale shows exactly the categories and rows of the generated `src/auto/services.mjs`, with at least 5 categories and 30 rows, so a broken or half-empty CRM feed never deploys. `e2e/opening-hours.spec.mjs` checks that the hero, Kontakty and JSON-LD in every locale render the generated hours and notices, and drives the client-side notice expiry with a fixed clock.
+Smoke tests live in `e2e/smoke.spec.mjs` (Playwright + Chromium). They verify every page across all 4 locales renders correctly (HTTP 200, non-empty title, visible header/main/footer, no JS errors). `e2e/price-list.spec.mjs` checks that `/sluzby` in every locale shows exactly the categories and rows of the generated `src/auto/services.mjs`, with at least 5 categories and 30 rows, so a broken or half-empty CRM feed never deploys. `e2e/opening-hours.spec.mjs` checks that the hero, Kontakty and JSON-LD in every locale render the generated hours and notices, and drives the client-side notice expiry in both blocks with a fixed clock. Exception ranges are validated as real days of at most 366.
 
 ```bash
 npm test                     # Run smoke tests headless (site must be built)

@@ -75,44 +75,72 @@ const changed = (from, to) => ({
   reason: null,
 });
 
+// Swaps the synthetic notices into both schedule blocks, in front of their
+// regular hours, which get the dimming class.
 async function homeWithNotices(page, exceptions) {
   const hours = { weekly: openingHours.weekly, exceptions };
+  const block =
+    scheduleNotices(hours, "2099-12-01") +
+    regularScheduleCaption(hours, "2099-12-01");
   await page.route("/", async (route) => {
     const response = await route.fetch();
-    const html = (await response.text()).replace(
-      /<table class="?schedule[^>]*>/,
-      `${scheduleNotices(hours, "2099-12-01")}${regularScheduleCaption(hours, "2099-12-01")}<table class="schedule schedule--regular">`,
-    );
+    const html = (await response.text())
+      .replace(
+        /<table class="?schedule[^>]*>/,
+        () => `${block}<table class="schedule schedule--regular">`,
+      )
+      .replace(
+        /(class="?contact-schedule-body"? data-schedule>[\s\S]*?)<ul[^>]*>/,
+        (_, head) => `${head}${block}<ul class="schedule--regular">`,
+      );
     await route.fulfill({ response, body: html });
   });
   await page.clock.install({ time: new Date("2100-01-02T10:00:00") });
   await page.goto("/");
 }
 
-test("a notice past its last day hides, and with it the caption and dimming", async ({
-  page,
-}) => {
-  await homeWithNotices(page, [changed("2099-12-20", "2099-12-31")]);
-  const hero = page.locator(".hero");
-  await expect(hero.locator('[data-valid-through="2099-12-31"]')).toBeHidden();
-  await expect(hero.locator(".schedule-notice:visible")).toHaveCount(0);
-  await expect(hero.locator(".schedule-regular-caption:visible")).toHaveCount(
-    0,
-  );
-  await expect(hero.locator(".schedule--regular")).toHaveCount(0);
-});
+for (const scope of [".hero", "#kontakty"]) {
+  test(`${scope} — a passed notice hides, with its caption, dimming and spacing`, async ({
+    page,
+  }) => {
+    await homeWithNotices(page, [changed("2099-12-20", "2099-12-31")]);
+    const block = page.locator(scope);
+    await expect(
+      block.locator('[data-valid-through="2099-12-31"]'),
+    ).toBeHidden();
+    await expect(block.locator(".schedule-notice:visible")).toHaveCount(0);
+    // An emptied wrapper has no box, so Playwright already calls it hidden,
+    // yet its margin still pushes the regular hours down: check display.
+    const wrapperDisplays = await block
+      .locator(".schedule-notices")
+      .evaluateAll((els) => els.map((el) => getComputedStyle(el).display));
+    expect(wrapperDisplays.length).toBeGreaterThan(0);
+    expect(wrapperDisplays.every((d) => d === "none")).toBe(true);
+    await expect(
+      block.locator(".schedule-regular-caption:visible"),
+    ).toHaveCount(0);
+    await expect(block.locator(".schedule--regular")).toHaveCount(0);
+  });
 
-test("the caption and dimming stay while another notice is still valid", async ({
-  page,
-}) => {
-  await homeWithNotices(page, [
-    changed("2099-12-20", "2099-12-31"),
-    changed("2100-01-05", "2100-12-31"),
-  ]);
-  const hero = page.locator(".hero");
-  await expect(hero.locator('[data-valid-through="2099-12-31"]')).toBeHidden();
-  await expect(hero.locator('[data-valid-through="2100-12-31"]')).toBeVisible();
-  // .last(): the real page may carry its own notices and caption above.
-  await expect(hero.locator(".schedule-regular-caption").last()).toBeVisible();
-  await expect(hero.locator(".schedule.schedule--regular")).toHaveCount(1);
-});
+  test(`${scope} — the caption and dimming stay while another notice is valid`, async ({
+    page,
+  }) => {
+    await homeWithNotices(page, [
+      changed("2099-12-20", "2099-12-31"),
+      changed("2100-01-05", "2100-12-31"),
+    ]);
+    const block = page.locator(scope);
+    await expect(
+      block.locator('[data-valid-through="2099-12-31"]'),
+    ).toBeHidden();
+    await expect(
+      block.locator('[data-valid-through="2100-12-31"]'),
+    ).toBeVisible();
+    // .last(): the real page may carry its own notices and caption above.
+    await expect(block.locator(".schedule-notices").last()).toBeVisible();
+    await expect(
+      block.locator(".schedule-regular-caption").last(),
+    ).toBeVisible();
+    await expect(block.locator(".schedule--regular")).toHaveCount(1);
+  });
+}

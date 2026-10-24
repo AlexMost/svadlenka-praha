@@ -801,6 +801,11 @@ footer {
     margin-top: 30px;
 }
 
+/* display: flex above would otherwise win over the hidden attribute. */
+.schedule-notices[hidden] {
+    display: none;
+}
+
 /* The hero centres its text on narrow screens; the notices follow it. */
 .hero .schedule-notices {
     @media (max-width: 1030px) {

@@ -287,3 +287,31 @@ test("specialOpeningHoursSpecification is undefined without visible exceptions",
     undefined,
   );
 });
+
+// Ranges over a week revisit every weekday: each must appear once.
+test("exceptionHoursLine names each weekday once over several weeks", () => {
+  assert.equal(
+    exceptionHoursLine(changed("2026-12-07", "2026-12-23"), weekly),
+    "Po – Pá: 10:00 – 15:00",
+  );
+});
+
+test("specialOpeningHoursSpecification has one entry per weekday over several weeks", () => {
+  const hours = {
+    weekly,
+    exceptions: [closedRange("2026-12-21", "2027-01-03")],
+  };
+  const entries = specialOpeningHoursSpecification(hours, "2026-10-24");
+  assert.deepEqual(
+    entries.map((e) => e.dayOfWeek),
+    [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+  );
+});
