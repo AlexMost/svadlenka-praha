@@ -36,8 +36,8 @@ export default () => {
         <p>${t`Propojení s profilem naší firmy na Googlu používáme jen k úpravě otevírací doby. Údaje od Googlu nepředáváme dalším stranám a nepoužíváme je k ničemu jinému, v souladu se zásadami ${googlePolicy} (Limited Use). Přístup lze odvolat na ${googlePermissions}.`}</p>
 
         <h2>${t`Tento web`}</h2>
-        <p>${t`Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps.`}</p>
-        <p>${t`Tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Cookies můžete kdykoli smazat nebo zablokovat v nastavení svého prohlížeče.`}</p>
+        <p>${t`Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Na stránkách je také vložená mapa Google Maps.`}</p>
+        <p>${t`Souhlas můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce webu.`}</p>
 
         <h2>${t`Vaše práva`}</h2>
         <p>${t`Můžete požádat o přístup ke svým údajům, jejich opravu, výmaz, omezení zpracování nebo přenos a vznést námitku. Stačí nám napsat nebo zavolat. Stížnost můžete podat u Úřadu pro ochranu osobních údajů (${uoou}).`}</p>

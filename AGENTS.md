@@ -71,6 +71,10 @@ Start a run without building locally: `gh workflow run publish.yml`. Laptop fall
 
 `src/templates/siteUrl.mjs` exports `siteUrl(path, lang)` which prefixes non-Czech paths with `/{locale}`. Use this helper whenever generating internal links inside templates.
 
+### Cookie consent
+
+`src/templates/consent.mjs` holds the consent pieces `baseHtml()` renders. An inline script before the GTM snippet sets Google Consent Mode v2 defaults (all four signals `denied`, `wait_for_update: 500`) and replays a stored `granted` choice. The bottom bar and the «Nastavení cookies» footer button are driven by `static/script.js`. The choice is kept in `localStorage["cookie-consent"]` for 6 months. The consent covers GA and Ads only: the Google Maps iframe loads for everyone, by the owner's choice. `e2e/consent.spec.mjs` covers it and blocks all non-local requests.
+
 ### Cache busting
 
 The build replaces `$REVISION` placeholder in HTML with a git commit hash (prod) or random UUID (dev). Static assets reference `style.css?v=$REVISION` etc.

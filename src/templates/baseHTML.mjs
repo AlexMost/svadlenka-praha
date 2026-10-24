@@ -5,6 +5,11 @@ import { orderTermsSection } from "./orderTerms.mjs";
 import { getStructuredData } from "./structuredData.mjs";
 import { reviewHTML } from "./review.mjs";
 import { siteUrl } from "./siteUrl.mjs";
+import {
+  consentDefaultsScript,
+  cookieBar,
+  cookieSettingsLink,
+} from "./consent.mjs";
 import { getLanguageCode, lang2Code } from "../build/i18n.mjs";
 import { SITE } from "../config.mjs";
 
@@ -63,6 +68,7 @@ export function baseHtml({
     </script>`
         : ""
     }
+    ${consentDefaultsScript()}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -72,10 +78,6 @@ export function baseHtml({
     <!-- End Google Tag Manager -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TB65CL2K"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 ${header(meta.canonical)}
 <main class="main">
     ${content}
@@ -93,8 +95,10 @@ ${header(meta.canonical)}
         <p>Larysa Mostovenko</p>
         <p>IČO: 22654321</p>
         <p><a class="footer-link" href="${siteUrl("/ochrana-osobnich-udaju")}">${t`Ochrana osobních údajů`}</a></p>
+        <p>${cookieSettingsLink()}</p>
     </footer>
 </main>
+${cookieBar()}
 <script defer src="/script.js?r=$REVISION"></script>
 </body>
 </html>

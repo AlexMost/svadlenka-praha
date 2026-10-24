@@ -986,6 +986,96 @@ footer {
     text-decoration: underline;
 }
 
+button.footer-link {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Cookie consent bar: one compact strip, no overlay. Sticky (not fixed) at the
+   end of <body>, so at the bottom of the page it never hides the footer. */
+.cookie-bar {
+    display: none;
+    position: sticky;
+    bottom: 0;
+    z-index: 90;
+    background-color: #2f2e2e;
+    border-top: 1px solid rgba(213, 193, 142, 0.5);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cookie-bar-open .cookie-bar {
+    display: block;
+}
+
+.cookie-bar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @media (max-width: 1030px) {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 12px 12px;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+.cookie-bar-text {
+    color: #c0bcb2;
+    font-size: 16px;
+    line-height: 1.3;
+    @media (max-width: 1030px) {
+        font-size: 15px;
+    }
+
+    a {
+        color: #d5c18e;
+        text-decoration: underline;
+    }
+}
+
+.cookie-bar-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+    @media (max-width: 1030px) {
+        gap: 12px;
+    }
+}
+
+.cookie-bar-btn {
+    min-width: 110px;
+    padding: 8px 18px;
+    font-size: 16px;
+    font-family: inherit;
+    font-style: italic;
+    line-height: 1;
+    color: white;
+    background: none;
+    border: 1px solid #c0bcb2;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    @media (max-width: 1030px) {
+        flex: 1;
+        min-width: 0;
+        padding: 10px;
+        font-size: 17px;
+    }
+}
+
+.cookie-bar-btn:hover {
+    background: white;
+    color: #262626;
+}
+
 .privacy-policy {
     max-width: 900px;
     font-size: 18px;

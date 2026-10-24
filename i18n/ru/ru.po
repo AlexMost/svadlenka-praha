@@ -945,14 +945,6 @@ msgid "Tyto zásady platí od ${ effectiveDate }"
 msgstr "Эта политика действует с ${ effectiveDate }"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
-msgstr "На этом сайте нет форм или учётных записей пользователей. Через сервис Google Tag Manager мы используем Google Analytics, чтобы знать, сколько людей посещает сайт и какие страницы они читают, а также измерение конверсий Google Ads, чтобы знать, нажали ли люди, пришедшие к нам из рекламы в Google, на наш телефон или карту. На страницах также встроена карта Google Maps."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Cookies můžete kdykoli smazat nebo zablokovat v nastavení svého prohlížeče."
-msgstr "Эти сервисы сохраняют cookies в вашем браузере и передают компании Google такие данные, как IP-адрес, тип устройства и браузера и посещённые страницы. Поставщиком является Google Ireland Limited; данные могут передаваться и в США на основании решения Европейской комиссии о надлежащем уровне защиты (EU-U.S. Data Privacy Framework). Cookies можно в любой момент удалить или заблокировать в настройках браузера."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 #, javascript-format
 msgid "Larysa Mostovenko, IČO 22654321, se sídlem Dářská 665/20, 198 00 Praha 9 (provozovna Krejčovství Švadlenka, Jaromírova 726/15, Praha 2). Kontakt: ${ email }, ${ phone }."
 msgstr "Larysa Mostovenko, IČO 22654321, зарегистрированный адрес: Dářská 665/20, 198 00 Praha 9 (ателье Krejčovství Švadlenka, Jaromírova 726/15, Praha 2). Контакты: ${ email }, ${ phone }."
@@ -998,3 +990,28 @@ msgstr "Вы можете запросить доступ к своим данн
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Jak Krejčovství Švadlenka zpracovává osobní údaje klientů a jak můžete uplatnit svá práva."
 msgstr "Как ателье Švadlenka обрабатывает персональные данные клиентов и как вы можете воспользоваться своими правами."
+
+#: src/templates/consent.mjs
+#, javascript-format
+msgid "Používáme ${ cookies } pro měření návštěvnosti a reklamy."
+msgstr "Используем ${ cookies } для аналитики и рекламы."
+
+#: src/templates/consent.mjs
+msgid "Přijmout"
+msgstr "Принять"
+
+#: src/templates/consent.mjs
+msgid "Odmítnout"
+msgstr "Отклонить"
+
+#: src/templates/consent.mjs
+msgid "Nastavení cookies"
+msgstr "Настройки cookies"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Na stránkách je také vložená mapa Google Maps."
+msgstr "На этом сайте нет форм и учётных записей пользователей. Если на панели внизу страницы вы выберете «Принять», мы используем Google Analytics и измерение конверсий Google Ads (поставщик Google Ireland Ltd.; данные могут передаваться в США на основании EU-U.S. Data Privacy Framework). На страницах также встроена карта Google Maps."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Souhlas můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce webu."
+msgstr "Согласие можно в любой момент изменить по ссылке «Настройки cookies» внизу сайта."
