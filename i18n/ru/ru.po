@@ -933,14 +933,6 @@ msgid "Údaje klientů"
 msgstr "Данные клиентов"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Když u nás zadáte zakázku, zapíšeme do našeho interního systému (CRM) vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky."
-msgstr "Когда вы делаете у нас заказ, мы вносим в нашу внутреннюю систему (CRM) ваше имя, номер телефона и данные заказа: вещь, нужные работы, цену, задаток, срок и возможные примечания."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Když je zakázka hotová, pošleme vám SMS. SMS odesíláme přes službu BulkGate, které předáváme jen vaše telefonní číslo a text zprávy."
-msgstr "Когда заказ готов, мы отправляем вам SMS. SMS отправляются через сервис BulkGate, которому мы передаём только ваш номер телефона и текст сообщения."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Vaše údaje neprodáváme a nepoužíváme k reklamě."
 msgstr "Мы не продаём ваши данные и не используем их для рекламы."
 
@@ -953,33 +945,8 @@ msgid "Naši zaměstnanci, kteří zakázky přijímají a zpracovávají."
 msgstr "Наши сотрудники, которые принимают и выполняют заказы."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "DigitalOcean – server, na kterém běží náš systém."
-msgstr "DigitalOcean – сервер, на котором работает наша система."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "BulkGate – odesílání SMS."
-msgstr "BulkGate – отправка SMS."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "OpenAI a Telegram – interní asistent, který našim zaměstnancům odpovídá na dotazy k zakázkám. OpenAI údaje nepoužívá k trénování modelů."
-msgstr "OpenAI и Telegram – внутренний ассистент, который отвечает нашим сотрудникам на вопросы о заказах. OpenAI не использует эти данные для обучения моделей."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Jak dlouho údaje uchováváme"
 msgstr "Как долго мы храним данные"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Údaje o zakázce uchováváme 3 roky od jejího vyřízení, kvůli případným reklamacím. Účetní doklady uchováváme po dobu, kterou stanoví zákon. Zálohy systému se mažou po 14 dnech."
-msgstr "Данные заказа мы храним 3 года после его выполнения — на случай рекламаций. Бухгалтерские документы храним в течение срока, установленного законом. Резервные копии системы удаляются через 14 дней."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Přihlášení zaměstnanců přes Google"
-msgstr "Вход сотрудников через Google"
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
-msgid "Naši zaměstnanci se do interního systému ${ crm } přihlašují účtem Google. Od Google přitom dostáváme jen e-mail, jméno a profilovou fotografii, a používáme je jen k přihlášení a k zobrazení, kdo co v systému udělal."
-msgstr "Наши сотрудники входят во внутреннюю систему ${ crm } через аккаунт Google. От Google мы при этом получаем только e-mail, имя и фото профиля и используем их только для входа и для того, чтобы было видно, кто что сделал в системе."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Údaje od Google (Google Business Profile)"
@@ -987,26 +954,8 @@ msgstr "Данные от Google (Google Business Profile)"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 #, javascript-format
-msgid "Náš interní systém ${ crm } se může připojit k profilu firmy Krejčovství Švadlenka na Google s oprávněním business.manage. Toto oprávnění používáme jen k jednomu účelu: k úpravě otevírací doby našeho vlastního profilu firmy na Google (včetně svátků a mimořádných změn)."
-msgstr "Наша внутренняя система ${ crm } может подключаться к профилю компании Krejčovství Švadlenka в Google с разрешением business.manage. Это разрешение мы используем только для одной цели: чтобы изменять часы работы нашего собственного профиля компании в Google (в том числе на праздники и при временных изменениях)."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Přístupové tokeny od Google ukládáme jen na serveru našeho systému."
-msgstr "Токены доступа от Google мы храним только на сервере нашей системы."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Tokeny ani žádné údaje získané od Google nepředáváme třetím stranám a nepoužíváme je k ničemu jinému, ani k reklamě."
-msgstr "Мы не передаём токены или какие-либо данные, полученные от Google, третьим лицам и не используем их ни для чего другого, в том числе для рекламы."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
 msgid "Používání údajů získaných z Google API se řídí zásadami ${ googlePolicy }, včetně požadavků Limited Use."
 msgstr "Использование данных, полученных через Google API, соответствует правилам ${ googlePolicy }, включая требования Limited Use."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-#, javascript-format
-msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }, nebo nám napište a připojení zrušíme. Po odvolání přístupu uložené tokeny smažeme."
-msgstr "Доступ можно в любой момент отозвать в настройках аккаунта Google по адресу ${ googlePermissions } или написать нам, и мы отключим его. После отзыва доступа мы удаляем сохранённые токены."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Tento web"
@@ -1056,17 +1005,42 @@ msgid "Údaje používáme jen k vyřízení zakázky: abychom věděli, co mám
 msgstr "Мы используем эти данные только для выполнения заказа: чтобы знать, что нужно сделать, и иметь возможность связаться с вами. Правовым основанием является исполнение договора (ст. 6(1)(b) GDPR), для бухгалтерских и налоговых документов — исполнение наших обязанностей по закону (ст. 6(1)(c)), а после выполнения заказа — наш законный интерес в рассмотрении возможной рекламации или спора (ст. 6(1)(f))."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Jméno a telefonní číslo potřebujeme k přijetí zakázky. Bez nich zakázku nemůžeme přijmout ani vám dát vědět, že je hotová."
-msgstr "Имя и номер телефона нужны нам, чтобы принять заказ. Без них мы не можем принять заказ или сообщить вам, что он готов."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
-msgid "OpenAI, DigitalOcean a Telegram mohou údaje zpracovávat i mimo Evropský hospodářský prostor, zejména v USA. U OpenAI a DigitalOcean se předání řídí jejich smluvními podmínkami pro zpracování údajů se standardními smluvními doložkami schválenými Evropskou komisí, případně rozhodnutím Komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Telegram ukládá zprávy na svých serverech, které mohou být i mimo EU."
-msgstr "OpenAI, DigitalOcean и Telegram могут обрабатывать данные и за пределами Европейской экономической зоны, в частности в США. Для OpenAI и DigitalOcean передача регулируется их условиями обработки данных со стандартными договорными положениями, утверждёнными Европейской комиссией, или решением Комиссии о надлежащем уровне защиты (EU-U.S. Data Privacy Framework). Telegram хранит сообщения на своих серверах, которые могут находиться и за пределами ЕС."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
 msgstr "На этом сайте нет форм или учётных записей пользователей. Через сервис Google Tag Manager мы используем Google Analytics, чтобы знать, сколько людей посещает сайт и какие страницы они читают, а также измерение конверсий Google Ads, чтобы знать, нажали ли люди, пришедшие к нам из рекламы в Google, на наш телефон или карту. На страницах также встроена карта Google Maps."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Cookies můžete kdykoli smazat nebo zablokovat v nastavení svého prohlížeče."
 msgstr "Эти сервисы сохраняют cookies в вашем браузере и передают компании Google такие данные, как IP-адрес, тип устройства и браузера и посещённые страницы. Поставщиком является Google Ireland Limited; данные могут передаваться и в США на основании решения Европейской комиссии о надлежащем уровне защиты (EU-U.S. Data Privacy Framework). Cookies можно в любой момент удалить или заблокировать в настройках браузера."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Když u nás zadáte zakázku, zapíšeme si vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky."
+msgstr "Когда вы делаете у нас заказ, мы записываем ваше имя, номер телефона и данные заказа: вещь, нужные работы, цену, задаток, срок и возможные примечания."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Když je zakázka hotová, pošleme vám SMS."
+msgstr "Когда заказ готов, мы отправляем вам SMS."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Poskytovatelé IT služeb (provoz serveru, odesílání SMS, softwarové nástroje), jen v rozsahu nezbytném pro jejich službu a na základě smlouvy."
+msgstr "Поставщики ИТ-услуг (работа сервера, отправка SMS, программные инструменты) — только в объёме, необходимом для их услуги, и на основании договора."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Někteří poskytovatelé mohou údaje zpracovávat i mimo Evropský hospodářský prostor, vždy jen se zárukami podle GDPR (například se standardními smluvními doložkami EU nebo na základě rozhodnutí Evropské komise o odpovídající ochraně)."
+msgstr "Некоторые поставщики могут обрабатывать данные и за пределами Европейской экономической зоны — всегда только с гарантиями в соответствии с GDPR (например, со стандартными договорными положениями ЕС или на основании решения Европейской комиссии о надлежащем уровне защиты)."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje o zakázce uchováváme 3 roky od jejího vyřízení, kvůli případným reklamacím. Účetní doklady uchováváme po dobu, kterou stanoví zákon."
+msgstr "Данные заказа мы храним 3 года после его выполнения — на случай рекламаций. Бухгалтерские документы храним в течение срока, установленного законом."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Propojení s profilem naší firmy na Googlu (Google Business Profile) používáme jen k úpravě naší otevírací doby; údaje získané od Googlu nepředáváme třetím stranám a nepoužíváme je k ničemu jinému, ani k reklamě."
+msgstr "Подключение к профилю нашей компании в Google (Google Business Profile) мы используем только для изменения наших часов работы; данные, полученные от Google, мы не передаём третьим лицам и не используем ни для чего другого, в том числе для рекламы."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }."
+msgstr "Доступ можно в любой момент отозвать в настройках аккаунта Google по адресу ${ googlePermissions }."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Uvedení jména a telefonního čísla je dobrovolné. Pokud nechcete, abychom si vaše údaje zapsali, řekněte nám to při zadání zakázky – zakázku přijmeme i tak. Bez telefonního čísla vám ale nemůžeme poslat SMS, že je zakázka hotová."
+msgstr "Указывать имя и номер телефона — добровольно. Если вы не хотите, чтобы мы записывали ваши данные, скажите нам об этом при оформлении заказа — мы всё равно его примем. Но без номера телефона мы не сможем отправить вам SMS о том, что заказ готов."
