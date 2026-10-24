@@ -1042,5 +1042,5 @@ msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ goo
 msgstr "Доступ можна будь-коли відкликати в налаштуваннях облікового запису Google за адресою ${ googlePermissions }."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Uvedení jména a telefonního čísla je dobrovolné. Pokud nechcete, abychom si vaše údaje zapsali, řekněte nám to při zadání zakázky – zakázku přijmeme i tak. Bez telefonního čísla vám ale nemůžeme poslat SMS, že je zakázka hotová."
-msgstr "Вказувати ім'я та номер телефону — добровільно. Якщо ви не хочете, щоб ми записували ваші дані, скажіть нам про це під час оформлення замовлення — ми все одно його приймемо. Але без номера телефону ми не зможемо надіслати вам SMS про те, що замовлення готове."
+msgid "Telefonní číslo potřebujeme k přijetí zakázky, abychom vás mohli kontaktovat. Pokud nechcete, abychom vaše údaje ukládali do našeho systému, řekněte nám to při zadání zakázky a nebudeme je tam zapisovat."
+msgstr "Номер телефону потрібен нам, щоб прийняти замовлення й мати змогу з вами зв'язатися. Якщо ви не хочете, щоб ми зберігали ваші дані в нашій системі, скажіть нам про це під час оформлення замовлення, і ми не будемо їх туди вносити."

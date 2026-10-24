@@ -27,7 +27,7 @@ export default () => {
         <h2>${t`Údaje klientů`}</h2>
         <p>${t`Když u nás zadáte zakázku, zapíšeme si vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky.`}</p>
         <p>${t`Údaje používáme jen k vyřízení zakázky: abychom věděli, co máme udělat, a mohli vás kontaktovat. Právním základem je plnění smlouvy (čl. 6 odst. 1 písm. b) GDPR), u účetních a daňových dokladů plnění našich zákonných povinností (písm. c) a po vyřízení zakázky náš oprávněný zájem na vyřízení případné reklamace nebo sporu (písm. f).`}</p>
-        <p>${t`Uvedení jména a telefonního čísla je dobrovolné. Pokud nechcete, abychom si vaše údaje zapsali, řekněte nám to při zadání zakázky – zakázku přijmeme i tak. Bez telefonního čísla vám ale nemůžeme poslat SMS, že je zakázka hotová.`}</p>
+        <p>${t`Telefonní číslo potřebujeme k přijetí zakázky, abychom vás mohli kontaktovat. Pokud nechcete, abychom vaše údaje ukládali do našeho systému, řekněte nám to při zadání zakázky a nebudeme je tam zapisovat.`}</p>
         <p>${t`Když je zakázka hotová, pošleme vám SMS.`}</p>
         <p>${t`Vaše údaje neprodáváme a nepoužíváme k reklamě.`}</p>
 
