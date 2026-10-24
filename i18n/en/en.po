@@ -1005,10 +1005,6 @@ msgid "Údaje používáme jen k vyřízení zakázky: abychom věděli, co mám
 msgstr "We use the data only to handle your order: to know what to do and to be able to contact you. The legal basis is the performance of a contract (Art. 6(1)(b) GDPR), for accounting and tax records our legal obligations (Art. 6(1)(c)), and after the order is completed our legitimate interest in handling any complaint or dispute (Art. 6(1)(f))."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Jméno a telefonní číslo potřebujeme k přijetí zakázky. Bez nich zakázku nemůžeme přijmout ani vám dát vědět, že je hotová."
-msgstr "We need your name and phone number to accept an order. Without them we cannot accept the order or let you know when it is ready."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
 msgstr "This website has no forms or user accounts. Through Google Tag Manager we use Google Analytics, to know how many people visit the website and which pages they read, and Google Ads conversion tracking, to know whether people who came to us from an ad on Google clicked our phone number or the map. The pages also embed a Google Maps map."
 
@@ -1044,3 +1040,7 @@ msgstr "We use the connection to our business profile on Google (Google Business
 #, javascript-format
 msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }."
 msgstr "Access can be revoked at any time in your Google Account settings at ${ googlePermissions }."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Uvedení jména a telefonního čísla je dobrovolné. Pokud nechcete, abychom si vaše údaje zapsali, řekněte nám to při zadání zakázky – zakázku přijmeme i tak. Bez telefonního čísla vám ale nemůžeme poslat SMS, že je zakázka hotová."
+msgstr "Giving your name and phone number is voluntary. If you don't want us to record your details, tell us when you place the order – we will accept it anyway. Without a phone number, however, we can't send you a text message when the order is ready."

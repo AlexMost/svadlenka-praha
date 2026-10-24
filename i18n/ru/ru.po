@@ -1005,10 +1005,6 @@ msgid "Údaje používáme jen k vyřízení zakázky: abychom věděli, co mám
 msgstr "Мы используем эти данные только для выполнения заказа: чтобы знать, что нужно сделать, и иметь возможность связаться с вами. Правовым основанием является исполнение договора (ст. 6(1)(b) GDPR), для бухгалтерских и налоговых документов — исполнение наших обязанностей по закону (ст. 6(1)(c)), а после выполнения заказа — наш законный интерес в рассмотрении возможной рекламации или спора (ст. 6(1)(f))."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Jméno a telefonní číslo potřebujeme k přijetí zakázky. Bez nich zakázku nemůžeme přijmout ani vám dát vědět, že je hotová."
-msgstr "Имя и номер телефона нужны нам, чтобы принять заказ. Без них мы не можем принять заказ или сообщить вам, что он готов."
-
-#: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
 msgstr "На этом сайте нет форм или учётных записей пользователей. Через сервис Google Tag Manager мы используем Google Analytics, чтобы знать, сколько людей посещает сайт и какие страницы они читают, а также измерение конверсий Google Ads, чтобы знать, нажали ли люди, пришедшие к нам из рекламы в Google, на наш телефон или карту. На страницах также встроена карта Google Maps."
 
@@ -1044,3 +1040,7 @@ msgstr "Подключение к профилю нашей компании в 
 #, javascript-format
 msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }."
 msgstr "Доступ можно в любой момент отозвать в настройках аккаунта Google по адресу ${ googlePermissions }."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Uvedení jména a telefonního čísla je dobrovolné. Pokud nechcete, abychom si vaše údaje zapsali, řekněte nám to při zadání zakázky – zakázku přijmeme i tak. Bez telefonního čísla vám ale nemůžeme poslat SMS, že je zakázka hotová."
+msgstr "Указывать имя и номер телефона — добровольно. Если вы не хотите, чтобы мы записывали ваши данные, скажите нам об этом при оформлении заказа — мы всё равно его примем. Но без номера телефона мы не сможем отправить вам SMS о том, что заказ готов."
