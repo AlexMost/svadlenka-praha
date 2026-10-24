@@ -171,7 +171,6 @@ section[id] {
     display: inline-block;
     padding: 12px 24px;
     font-size: 20px;
-    font-family: inherit;
     font-style: italic;
     border: 1px solid #c0bcb2;
     background: none;
@@ -1075,30 +1074,6 @@ button.footer-link {
 .cookie-bar-btn:hover {
     background: white;
     color: #262626;
-}
-
-.map-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    background-color: #2f2e2e;
-    text-align: center;
-    padding: 30px;
-    box-sizing: border-box;
-
-    .map-placeholder-address {
-        font-size: 22px;
-        @media (max-width: 1030px) {
-            font-size: 18px;
-        }
-    }
-
-    .map-placeholder-note {
-        color: #c0bcb2;
-        font-size: 14px;
-    }
 }
 
 .privacy-policy {

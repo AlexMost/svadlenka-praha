@@ -83,18 +83,6 @@ const CONSENT_SIGNALS = [
 ];
 const root = document.documentElement;
 
-function loadMap() {
-  const placeholder = document.querySelector(".map-placeholder");
-  if (!placeholder) return;
-  const iframe = document.createElement("iframe");
-  iframe.className = "map";
-  iframe.src = placeholder.dataset.mapSrc;
-  iframe.allowFullscreen = true;
-  iframe.loading = "lazy";
-  iframe.referrerPolicy = "no-referrer-when-downgrade";
-  placeholder.replaceWith(iframe);
-}
-
 // GA and Ads cookies set while consent was granted; dropped when it is withdrawn.
 function clearGoogleCookies() {
   const domain = location.hostname.replace(/^www\./, "");
@@ -121,8 +109,7 @@ function setConsent(value) {
   } catch (e) {}
   root.dataset.consent = value;
   root.classList.remove("cookie-bar-open");
-  if (value === "granted") loadMap();
-  else clearGoogleCookies();
+  if (value === "denied") clearGoogleCookies();
 }
 
 document.querySelectorAll("[data-consent-choice]").forEach((btn) => {
@@ -132,9 +119,3 @@ document.querySelectorAll("[data-consent-choice]").forEach((btn) => {
 document.querySelectorAll(".cookie-settings").forEach((btn) => {
   btn.addEventListener("click", () => root.classList.add("cookie-bar-open"));
 });
-
-document
-  .querySelector(".map-placeholder-btn")
-  ?.addEventListener("click", loadMap);
-
-if (root.dataset.consent === "granted") loadMap();

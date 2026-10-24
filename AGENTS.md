@@ -73,7 +73,7 @@ Start a run without building locally: `gh workflow run publish.yml`. Laptop fall
 
 ### Cookie consent
 
-`src/templates/consent.mjs` holds the consent pieces `baseHtml()` renders. An inline script before the GTM snippet sets Google Consent Mode v2 defaults (all four signals `denied`, `wait_for_update: 500`) and replays a stored `granted` choice. The bottom bar, the «Nastavení cookies» footer button and the Google Maps placeholder are driven by `static/script.js`. The choice is kept in `localStorage["cookie-consent"]` for 6 months. The Maps iframe is created only after consent or a click on «Zobrazit mapu». Don't add third-party embeds or tags outside GTM without gating them the same way. `e2e/consent.spec.mjs` covers it and blocks all non-local requests.
+`src/templates/consent.mjs` holds the consent pieces `baseHtml()` renders. An inline script before the GTM snippet sets Google Consent Mode v2 defaults (all four signals `denied`, `wait_for_update: 500`) and replays a stored `granted` choice. The bottom bar and the «Nastavení cookies» footer button are driven by `static/script.js`. The choice is kept in `localStorage["cookie-consent"]` for 6 months. The consent covers GA and Ads only: the Google Maps iframe loads for everyone, by the owner's choice. `e2e/consent.spec.mjs` covers it and blocks all non-local requests.
 
 ### Cache busting
 

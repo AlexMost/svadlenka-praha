@@ -1005,20 +1005,12 @@ msgid "Odmítnout"
 msgstr "Reject"
 
 #: src/templates/consent.mjs
-msgid "Zobrazit mapu"
-msgstr "Show map"
-
-#: src/templates/consent.mjs
-msgid "Mapa se načte ze služby Google Maps."
-msgstr "The map loads from Google Maps."
-
-#: src/templates/consent.mjs
 msgid "Nastavení cookies"
 msgstr "Cookie settings"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Mapa Google Maps se načte, až když na ni kliknete nebo dáte souhlas."
-msgstr "This website has no forms or user accounts. If you choose “Accept” in the bar at the bottom of the page, we use Google Analytics and Google Ads conversion tracking (provider Google Ireland Ltd.; data may be transferred to the USA under the EU-U.S. Data Privacy Framework). The Google Maps map loads only when you click it or give consent."
+msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Na stránkách je také vložená mapa Google Maps."
+msgstr "This website has no forms or user accounts. If you choose “Accept” in the bar at the bottom of the page, we use Google Analytics and Google Ads conversion tracking (provider Google Ireland Ltd.; data may be transferred to the USA under the EU-U.S. Data Privacy Framework). The pages also include an embedded Google Maps map."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Souhlas můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce webu."

@@ -9,7 +9,6 @@ import {
   consentDefaultsScript,
   cookieBar,
   cookieSettingsLink,
-  mapEmbed,
 } from "./consent.mjs";
 import { getLanguageCode, lang2Code } from "../build/i18n.mjs";
 import { SITE } from "../config.mjs";
@@ -88,7 +87,9 @@ ${header(meta.canonical)}
     <div class="only-mobile bottom-place-img">
         <img loading="lazy" decoding="async" src="/img/svadlenka-place-3.webp" alt="fotografie krejčovství Švadlenka">
     </div>
-    ${mapEmbed()}
+    <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.1299956582297!2d14.423894077578739!3d50.065127071521246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95417e9293ed%3A0x1e25b699802f5a22!2zS3JlasSNb3ZzdHbDrSDFoHZhZGxlbmth!5e0!3m2!1sen!2scz!4v1746189430361!5m2!1sen!2scz"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>© 2025 Krejčovství Švadlenka</p>
         <p>Larysa Mostovenko</p>

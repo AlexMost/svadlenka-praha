@@ -1005,20 +1005,12 @@ msgid "Odmítnout"
 msgstr "Відхилити"
 
 #: src/templates/consent.mjs
-msgid "Zobrazit mapu"
-msgstr "Показати карту"
-
-#: src/templates/consent.mjs
-msgid "Mapa se načte ze služby Google Maps."
-msgstr "Карта завантажиться із сервісу Google Maps."
-
-#: src/templates/consent.mjs
 msgid "Nastavení cookies"
 msgstr "Налаштування cookies"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Mapa Google Maps se načte, až když na ni kliknete nebo dáte souhlas."
-msgstr "На цьому сайті немає форм чи облікових записів користувачів. Якщо на панелі внизу сторінки ви оберете «Прийняти», ми використовуємо Google Analytics і вимірювання конверсій Google Ads (постачальник Google Ireland Ltd.; дані можуть передаватися до США на підставі EU-U.S. Data Privacy Framework). Карта Google Maps завантажується лише після того, як ви натиснете на неї або дасте згоду."
+msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Na stránkách je také vložená mapa Google Maps."
+msgstr "На цьому сайті немає форм чи облікових записів користувачів. Якщо на панелі внизу сторінки ви оберете «Прийняти», ми використовуємо Google Analytics і вимірювання конверсій Google Ads (постачальник Google Ireland Ltd.; дані можуть передаватися до США на підставі EU-U.S. Data Privacy Framework). На сторінках також вбудована карта Google Maps."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Souhlas můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce webu."

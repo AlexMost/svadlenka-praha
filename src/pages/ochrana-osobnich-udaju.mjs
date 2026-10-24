@@ -36,7 +36,7 @@ export default () => {
         <p>${t`Propojení s profilem naší firmy na Googlu používáme jen k úpravě otevírací doby. Údaje od Googlu nepředáváme dalším stranám a nepoužíváme je k ničemu jinému, v souladu se zásadami ${googlePolicy} (Limited Use). Přístup lze odvolat na ${googlePermissions}.`}</p>
 
         <h2>${t`Tento web`}</h2>
-        <p>${t`Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Mapa Google Maps se načte, až když na ni kliknete nebo dáte souhlas.`}</p>
+        <p>${t`Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Na stránkách je také vložená mapa Google Maps.`}</p>
         <p>${t`Souhlas můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce webu.`}</p>
 
         <h2>${t`Vaše práva`}</h2>

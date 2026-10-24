@@ -1005,20 +1005,12 @@ msgid "Odmítnout"
 msgstr "Отклонить"
 
 #: src/templates/consent.mjs
-msgid "Zobrazit mapu"
-msgstr "Показать карту"
-
-#: src/templates/consent.mjs
-msgid "Mapa se načte ze služby Google Maps."
-msgstr "Карта загрузится из сервиса Google Maps."
-
-#: src/templates/consent.mjs
 msgid "Nastavení cookies"
 msgstr "Настройки cookies"
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Mapa Google Maps se načte, až když na ni kliknete nebo dáte souhlas."
-msgstr "На этом сайте нет форм и учётных записей пользователей. Если на панели внизу страницы вы выберете «Принять», мы используем Google Analytics и измерение конверсий Google Ads (поставщик Google Ireland Ltd.; данные могут передаваться в США на основании EU-U.S. Data Privacy Framework). Карта Google Maps загружается только после того, как вы нажмёте на неё или дадите согласие."
+msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Když v liště dole na stránce zvolíte „Přijmout“, používáme Google Analytics a měření konverzí Google Ads (poskytovatel Google Ireland Ltd.; údaje mohou být předány do USA na základě EU-U.S. Data Privacy Framework). Na stránkách je také vložená mapa Google Maps."
+msgstr "На этом сайте нет форм и учётных записей пользователей. Если на панели внизу страницы вы выберете «Принять», мы используем Google Analytics и измерение конверсий Google Ads (поставщик Google Ireland Ltd.; данные могут передаваться в США на основании EU-U.S. Data Privacy Framework). На страницах также встроена карта Google Maps."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
 msgid "Souhlas můžete kdykoli změnit odkazem „Nastavení cookies“ v patičce webu."

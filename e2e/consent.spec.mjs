@@ -77,19 +77,10 @@ test("the consent default is denied before gtm.js", async ({ page }) => {
   expect(dataLayer.some((e) => isConsent(e, "update"))).toBe(false);
 });
 
-test("accept grants consent, loads the map and survives a reload", async ({
-  page,
-}) => {
+test("accept grants consent and survives a reload", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator("iframe.map")).toHaveCount(0);
-  await expect(page.locator(".map-placeholder")).toBeVisible();
-
   await page.locator('[data-consent-choice="granted"]').click();
   await expect(page.locator(".cookie-bar")).toBeHidden();
-  await expect(page.locator("iframe.map")).toHaveAttribute(
-    "src",
-    /^https:\/\/www\.google\.com\/maps\/embed/,
-  );
   const afterClick = await readDataLayer(page);
   expect(afterClick.filter((e) => isConsent(e, "update")).at(-1)[2]).toEqual(
     GRANTED,
@@ -105,7 +96,6 @@ test("accept grants consent, loads the map and survives a reload", async ({
 
   await page.reload();
   await expect(page.locator(".cookie-bar")).toBeHidden();
-  await expect(page.locator("iframe.map")).toHaveCount(1);
   // The stored choice is replayed before GTM starts.
   const dataLayer = await readDataLayer(page);
   const updateIdx = dataLayer.findIndex((e) => isConsent(e, "update"));
@@ -115,9 +105,7 @@ test("accept grants consent, loads the map and survives a reload", async ({
   );
 });
 
-test("reject keeps consent denied and the map unloaded after a reload", async ({
-  page,
-}) => {
+test("reject keeps consent denied after a reload", async ({ page }) => {
   await page.goto("/");
   await page.locator('[data-consent-choice="denied"]').click();
   await expect(page.locator(".cookie-bar")).toBeHidden();
@@ -128,8 +116,6 @@ test("reject keeps consent denied and the map unloaded after a reload", async ({
 
   await page.reload();
   await expect(page.locator(".cookie-bar")).toBeHidden();
-  await expect(page.locator("iframe.map")).toHaveCount(0);
-  await expect(page.locator(".map-placeholder")).toBeVisible();
   const dataLayer = await readDataLayer(page);
   expect(dataLayer.some((e) => isConsent(e, "update"))).toBe(false);
 });
@@ -143,7 +129,6 @@ test("an expired choice shows the bar again", async ({ page }) => {
   );
   await page.goto("/");
   await expect(page.locator(".cookie-bar")).toBeVisible();
-  await expect(page.locator("iframe.map")).toHaveCount(0);
 });
 
 test("the footer link reopens the bar", async ({ page }) => {
@@ -162,15 +147,16 @@ test("the footer link reopens the bar", async ({ page }) => {
   ).toBe("denied");
 });
 
-test("the map placeholder loads the map on click without granting consent", async ({
+// The owner chose to keep Google Maps loading for everyone; only GA and Ads wait for consent.
+test("the Google Maps iframe is on the page before any choice", async ({
   page,
 }) => {
   await page.goto("/");
-  await page.locator(".map-placeholder-btn").click();
-  await expect(page.locator("iframe.map")).toHaveCount(1);
   await expect(page.locator(".cookie-bar")).toBeVisible();
-  const dataLayer = await readDataLayer(page);
-  expect(dataLayer.some((e) => isConsent(e, "update"))).toBe(false);
+  await expect(page.locator("iframe.map")).toHaveAttribute(
+    "src",
+    /^https:\/\/www\.google\.com\/maps\/embed/,
+  );
 });
 
 // A common 375 px phone for every locale, plus the short iPhone SE screen.
