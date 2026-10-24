@@ -1,6 +1,11 @@
 import { t } from "ttag";
 import { SITE } from "../config.mjs";
-import { specialOpeningHoursSpecification } from "./temporaryHours.mjs";
+import { openingHours } from "../auto/openingHours.mjs";
+import {
+  pragueToday,
+  schemaOpeningHours,
+  specialOpeningHoursSpecification,
+} from "./openingHours.mjs";
 
 export function makeOffer({ title, description, category }) {
   return {
@@ -36,8 +41,11 @@ export function getStructuredData({ makesOffer }) {
     },
     url: SITE,
     telephone: "+420 775 240 309",
-    openingHours: [t`Mo-Th 10:00-18:00`, t`Fr 10:00-16:00`],
-    specialOpeningHoursSpecification: specialOpeningHoursSpecification(),
+    openingHours: schemaOpeningHours(openingHours.weekly),
+    specialOpeningHoursSpecification: specialOpeningHoursSpecification(
+      openingHours,
+      pragueToday(),
+    ),
     priceRange: "Kč",
     sameAs: [
       "https://maps.app.goo.gl/D2bBfxsa8yQEQPgd8",

@@ -176,6 +176,12 @@ for (const { width, height, locales: viewportLocales } of mobileChecks) {
         page,
       }) => {
         await page.goto(home(locale));
+        // Exception notices from the CRM push the CTA down by however many the
+        // owner published; measure the regular hero so the publish never
+        // depends on them. On a short phone a notice may sit under the bar.
+        await page
+          .locator(".hero .schedule-notices, .hero .schedule-regular-caption")
+          .evaluateAll((els) => els.forEach((el) => el.remove()));
         const bar = await page.locator(".cookie-bar").boundingBox();
         const cta = await page.locator(".hero .cta-button").boundingBox();
         const phone = await page.locator(".telephone-btn").boundingBox();

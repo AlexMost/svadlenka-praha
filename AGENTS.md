@@ -10,7 +10,9 @@ Static site generator for a Czech tailor shop (Krejčovství Švadlenka Praha). 
 
 ```bash
 npm i                        # Install dependencies
-npm run fetch-services       # Fetch the price list from the CRM → src/auto/services.mjs (run before any build)
+npm run fetch-crm            # Fetch the price list and the opening hours from the CRM → src/auto/ (run before any build)
+npm run fetch-services       # Only the price list → src/auto/services.mjs
+npm run fetch-opening-hours  # Only the opening hours → src/auto/openingHours.mjs
 npm run dev                  # Watch + rebuild + local server (http-server on /public)
 npm run build                # One-off build (dev, uses random revision ID)
 npm run build-prod           # Production build (uses git commit hash for cache busting)
@@ -27,9 +29,10 @@ There is no lint command beyond Prettier. Smoke tests use Playwright (see **Test
 ### Build pipeline
 
 ```
-CRM GET /api/public/price-list  →  src/auto/services.mjs  (npm run fetch-services)
+CRM GET /api/public/price-list     →  src/auto/services.mjs      (npm run fetch-services)
+CRM GET /api/public/opening-hours  →  src/auto/openingHours.mjs  (npm run fetch-opening-hours)
 src/pages/*.mjs  →  src/build/build.mjs  →  public/   →  GitHub Pages
-src/auto/services.mjs  ↗               ↗
+src/auto/*.mjs  ↗                      ↗
 static/  ──────────────────────────────
 i18n/{uk,en,ru}/*.po  (ttag)  ─────────
 ```
@@ -58,14 +61,26 @@ The price list on `/sluzby` is edited in the CRM (Web section, «Ceník na webu�
 
 - `CRM_URL` (env or `.env`) points the fetch at another CRM, e.g. `CRM_URL=http://localhost:3000 npm run fetch-services`.
 - The fetch makes up to 3 attempts (15 s timeout each), retrying only network errors, timeouts, 429 and 5xx; it validates the shape and exits 1 on a failed fetch, an invalid shape, zero categories or a category without rows. Nothing falls back to an older list.
-- `src/auto/services.mjs` is a build artifact: git-ignored and untracked. A fresh clone has none, and `build.mjs` stops with «run `npm run fetch-services` first».
+- `src/auto/services.mjs` is a build artifact: git-ignored and untracked. A fresh clone has none, and `build.mjs` stops with «run `npm run fetch-crm` first».
 - `src/build/fixtures/price-list.json` is a copy of the endpoint's response (the Google Sheet as imported into the CRM) for the unit tests.
+
+### Opening hours
+
+The weekly schedule and its exceptions (closed or changed hours, one day or a range, optional Czech reason) are edited in the CRM (Web section, «Otevírací doba»). `npm run fetch-opening-hours` (`src/build/openingHours.mjs`) fetches `GET …/api/public/opening-hours` — `{weekly:[{weekday 1..7, closed, opens, closes}], exceptions:[{from, to, closed, opens, closes, reason}]}`, exceptions already filtered to `to ≥ today` — validates it and writes `src/auto/openingHours.mjs` (`export const openingHours`). Same retries, `CRM_URL`, failure and git-ignore rules as the price list; `src/build/fixtures/opening-hours.json` serves the unit tests.
+
+`src/templates/openingHours.mjs` turns the data into every block that shows hours, all taking the data and the Prague `today` as arguments:
+
+- the hero table (`src/pages/index.mjs`) and the Kontakty list on every page (`src/templates/kontakty.mjs`): the open weekdays, adjacent equal days grouped («Po – Čt: 10:00 – 18:00»), weekday names through ttag;
+- above them, one gold notice per upcoming exception (`scheduleNotices`): label «St 28. 10.» / «9. 9. – 15. 9.» / «Dočasně do 15. 9.» once running, hours «Zavřeno» or «Po – Pá: 10:00 – 15:00», the reason in Czech on every locale; while any notice shows, the regular hours get the «Běžná otevírací doba» caption and dim;
+- JSON-LD (`src/templates/structuredData.mjs`): `openingHours` («Mo-Th 10:00-18:00», never translated) and `specialOpeningHoursSpecification`, one entry per exception per affected weekday, closed = `00:00`–`00:00`.
+
+Each notice carries `data-valid-through`; `static/script.js` hides one past its last day and, once none is left in its `[data-schedule]` block (hero, Kontakty), hides the notices wrapper and drops the caption and dimming. The nightly CRM rebuild removes it for real.
 
 ### Publishing
 
-`.github/workflows/publish.yml` publishes the site. It runs on every push to `main` and on `workflow_dispatch`, which the CRM sends after every change to the price list (the file name is a constant in the CRM — do not rename it). Steps: `npm ci` → `test:unit` → Playwright Chromium → `fetch-services` → `update-translations` → `translate` (`OPENAI_API_KEY` Actions secret; allowed to fail, untranslated strings show in Czech until the next run) → `build-prod` → all Playwright tests → `gh-pages -d public` with `GITHUB_TOKEN` → commits changed `i18n/**` back to `main` with `[skip ci]` (a `GITHUB_TOKEN` push never starts another run). `concurrency: publish` with `cancel-in-progress`, so a burst of CRM edits ends in one build that sees them all.
+`.github/workflows/publish.yml` publishes the site. It runs on every push to `main` and on `workflow_dispatch`, which the CRM sends on «Publikovat» and nightly at 00:05 Prague (the file name is a constant in the CRM — do not rename it). Steps: `npm ci` → `test:unit` → `fetch-crm` → `update-translations` → `translate` (`OPENAI_API_KEY` Actions secret; allowed to fail, untranslated strings show in Czech until the next run) → `build-prod` → all Playwright tests → `gh-pages -d public` with `GITHUB_TOKEN` → commits changed `i18n/**` back to `main` with `[skip ci]` (a `GITHUB_TOKEN` push never starts another run). `concurrency: publish` with `cancel-in-progress`, so a burst of publishes ends in one build that sees them all.
 
-Start a run without building locally: `gh workflow run publish.yml`. Laptop fallback: `npm run deploy` (unit tests, fetch, prod build, Playwright, then pushes `gh-pages`; translations stay manual: `npm run update-translations && npm run translate`).
+Start a run without building locally: `gh workflow run publish.yml`. Laptop fallback: `npm run deploy` (unit tests, `fetch-crm`, prod build, Playwright, then pushes `gh-pages`; translations stay manual: `npm run update-translations && npm run translate`).
 
 ### URL routing
 
@@ -81,13 +96,13 @@ The build replaces `$REVISION` placeholder in HTML with a git commit hash (prod)
 
 ## Testing
 
-Smoke tests live in `e2e/smoke.spec.mjs` (Playwright + Chromium). They verify every page across all 4 locales renders correctly (HTTP 200, non-empty title, visible header/main/footer, no JS errors). `e2e/price-list.spec.mjs` checks that `/sluzby` in every locale shows exactly the categories and rows of the generated `src/auto/services.mjs`, with at least 5 categories and 30 rows, so a broken or half-empty CRM feed never deploys.
+Smoke tests live in `e2e/smoke.spec.mjs` (Playwright + Chromium). They verify every page across all 4 locales renders correctly (HTTP 200, non-empty title, visible header/main/footer, no JS errors). `e2e/price-list.spec.mjs` checks that `/sluzby` in every locale shows exactly the categories and rows of the generated `src/auto/services.mjs`, with at least 5 categories and 30 rows, so a broken or half-empty CRM feed never deploys. `e2e/opening-hours.spec.mjs` checks that the hero, Kontakty and JSON-LD in every locale render the generated hours and notices, and drives the client-side notice expiry in both blocks with a fixed clock. Exception ranges are validated as real days of at most 366.
 
 ```bash
 npm test                     # Run smoke tests headless (site must be built)
 npm run test:headed          # Run with visible browser for debugging
 npm run test:smoke           # Build site + run tests in one command
-npm run test:unit            # node --test for src/**/*.test.mjs (the CRM fetch and module generator)
+npm run test:unit            # node --test for src/**/*.test.mjs (the CRM fetches, module generators, opening-hours formatting)
 ```
 
 Every published page must have a corresponding smoke test. When adding a new page, add its name to the `pages` arrays in `e2e/smoke.spec.mjs` and `e2e/sitemap.spec.mjs`. Pages listed in `DISABLED_PAGES` are not built and must stay commented out there. Run `npm run test:smoke` to verify.

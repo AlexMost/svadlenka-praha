@@ -1,11 +1,15 @@
 import { t } from "ttag";
+import { openingHours } from "../auto/openingHours.mjs";
 import {
-  temporaryScheduleNotice,
+  pragueToday,
+  scheduleNotices,
   regularScheduleCaption,
   regularScheduleClass,
-} from "./temporaryHours.mjs";
+  weeklyLines,
+} from "./openingHours.mjs";
 
 export function kontakty() {
+  const today = pragueToday();
   return `<section id="kontakty">
         <div class="section-title">${t`Kontakty`}</div>
         <div class="contact-info">
@@ -24,12 +28,15 @@ export function kontakty() {
                 </address>
                 <div class="contact-schedule">
                     <img class="icon" src="/img/icons/schedule.svg" alt="otevírací doba">
-                    <div class="contact-schedule-body">
-                    ${temporaryScheduleNotice()}
-                    ${regularScheduleCaption()}
-                    <ul class="${regularScheduleClass().trim()}">
-                        <li>${t`Po – Čt: 10:00 – 18:00`}</li>
-                        <li>${t`Pá: 10:00 – 16:00`}</li>
+                    <div class="contact-schedule-body" data-schedule>
+                    ${scheduleNotices(openingHours, today)}
+                    ${regularScheduleCaption(openingHours, today)}
+                    <ul class="${regularScheduleClass(openingHours, today)}">
+                        ${weeklyLines(openingHours.weekly)
+                          .map(
+                            ({ days, hours }) => `<li>${days}: ${hours}</li>`,
+                          )
+                          .join("")}
                     </ul>
                     </div>
                 </div>
