@@ -11,6 +11,7 @@ const pages = [
   "saty",
   // "sity-na-miru",
   "contacts",
+  "ochrana-osobnich-udaju",
 ];
 
 const locales = ["cz", "uk", "en", "ru"];
@@ -46,14 +47,27 @@ function makeTests(page, locale) {
   });
 }
 
-// Index page — all locales
-for (const locale of locales) {
-  makeTests("index", locale);
+// Pages checked in every locale; the rest — Czech only
+const allLocalePages = ["index", "ochrana-osobnich-udaju"];
+
+for (const page of pages) {
+  for (const locale of allLocalePages.includes(page) ? locales : ["cz"]) {
+    makeTests(page, locale);
+  }
 }
 
-// Other pages — Czech only
-for (const page of pages) {
-  if (page !== "index") {
-    makeTests(page, "cz");
-  }
+// The footer links to the privacy policy in the page's own locale
+for (const locale of locales) {
+  const prefix = locale === "cz" ? "" : `/${locale}`;
+
+  test(`${locale} — footer links to the privacy policy`, async ({
+    page: p,
+  }) => {
+    await p.goto(`${prefix}/`);
+    await p.locator("footer a.footer-link").click();
+    await p.waitForURL(`**${prefix}/ochrana-osobnich-udaju/`);
+
+    await expect(p.locator("main h1")).toBeVisible();
+    await expect(p.locator("main")).toContainText("business.manage");
+  });
 }

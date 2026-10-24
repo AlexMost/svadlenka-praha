@@ -910,3 +910,163 @@ msgstr "1 000 Kč"
 #: src/auto/services.mjs
 msgid "400–1 000 Kč"
 msgstr "400–1 000 Kč"
+
+#: src/templates/baseHTML.mjs
+msgid "Ochrana osobních údajů"
+msgstr "Захист персональних даних"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Zásady ochrany osobních údajů"
+msgstr "Політика захисту персональних даних"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Kdo je správce"
+msgstr "Хто є контролером даних"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Kontakt: e-mail ${ email }, telefon ${ phone }, nebo osobně v provozovně."
+msgstr "Контакти: e-mail ${ email }, телефон ${ phone } або особисто в ательє."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje klientů"
+msgstr "Дані клієнтів"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Když u nás zadáte zakázku, zapíšeme do našeho interního systému (CRM) vaše jméno, telefonní číslo a údaje o zakázce: oděv, požadované práce, cenu, zálohu, termín a případné poznámky."
+msgstr "Коли ви робите в нас замовлення, ми вносимо до нашої внутрішньої системи (CRM) ваше ім'я, номер телефону та дані замовлення: річ, потрібні роботи, ціну, завдаток, термін і можливі примітки."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Když je zakázka hotová, pošleme vám SMS. SMS odesíláme přes službu BulkGate, které předáváme jen vaše telefonní číslo a text zprávy."
+msgstr "Коли замовлення готове, ми надсилаємо вам SMS. SMS надсилаються через сервіс BulkGate, якому ми передаємо лише ваш номер телефону та текст повідомлення."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Vaše údaje neprodáváme a nepoužíváme k reklamě."
+msgstr "Ми не продаємо ваші дані й не використовуємо їх для реклами."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Kdo s údaji pracuje"
+msgstr "Хто працює з даними"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Naši zaměstnanci, kteří zakázky přijímají a zpracovávají."
+msgstr "Наші працівники, які приймають і виконують замовлення."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "DigitalOcean – server, na kterém běží náš systém."
+msgstr "DigitalOcean – сервер, на якому працює наша система."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "BulkGate – odesílání SMS."
+msgstr "BulkGate – надсилання SMS."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "OpenAI a Telegram – interní asistent, který našim zaměstnancům odpovídá na dotazy k zakázkám. OpenAI údaje nepoužívá k trénování modelů."
+msgstr "OpenAI і Telegram – внутрішній асистент, який відповідає нашим працівникам на запитання щодо замовлень. OpenAI не використовує ці дані для навчання моделей."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Jak dlouho údaje uchováváme"
+msgstr "Як довго ми зберігаємо дані"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje o zakázce uchováváme 3 roky od jejího vyřízení, kvůli případným reklamacím. Účetní doklady uchováváme po dobu, kterou stanoví zákon. Zálohy systému se mažou po 14 dnech."
+msgstr "Дані замовлення ми зберігаємо 3 роки після його виконання — на випадок рекламацій. Бухгалтерські документи зберігаємо протягом строку, встановленого законом. Резервні копії системи видаляються через 14 днів."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Přihlášení zaměstnanců přes Google"
+msgstr "Вхід працівників через Google"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Naši zaměstnanci se do interního systému ${ crm } přihlašují účtem Google. Od Google přitom dostáváme jen e-mail, jméno a profilovou fotografii, a používáme je jen k přihlášení a k zobrazení, kdo co v systému udělal."
+msgstr "Наші працівники входять до внутрішньої системи ${ crm } через обліковий запис Google. Від Google ми при цьому отримуємо лише e-mail, ім'я та фото профілю і використовуємо їх лише для входу та для того, щоб було видно, хто що зробив у системі."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje od Google (Google Business Profile)"
+msgstr "Дані від Google (Google Business Profile)"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Náš interní systém ${ crm } se může připojit k profilu firmy Krejčovství Švadlenka na Google s oprávněním business.manage. Toto oprávnění používáme jen k jednomu účelu: k úpravě otevírací doby našeho vlastního profilu firmy na Google (včetně svátků a mimořádných změn)."
+msgstr "Наша внутрішня система ${ crm } може підключатися до профілю компанії Krejčovství Švadlenka в Google з дозволом business.manage. Цей дозвіл ми використовуємо лише для однієї мети: щоб змінювати години роботи нашого власного профілю компанії в Google (зокрема на свята та в разі тимчасових змін)."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Přístupové tokeny od Google ukládáme jen na serveru našeho systému."
+msgstr "Токени доступу від Google ми зберігаємо лише на сервері нашої системи."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Tokeny ani žádné údaje získané od Google nepředáváme třetím stranám a nepoužíváme je k ničemu jinému, ani k reklamě."
+msgstr "Ми не передаємо токени чи будь-які дані, отримані від Google, третім особам і не використовуємо їх ні для чого іншого, зокрема для реклами."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Používání údajů získaných z Google API se řídí zásadami ${ googlePolicy }, včetně požadavků Limited Use."
+msgstr "Використання даних, отриманих через Google API, відповідає правилам ${ googlePolicy }, зокрема вимогам Limited Use."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ googlePermissions }, nebo nám napište a připojení zrušíme. Po odvolání přístupu uložené tokeny smažeme."
+msgstr "Доступ можна будь-коли відкликати в налаштуваннях облікового запису Google за адресою ${ googlePermissions } або написати нам, і ми скасуємо підключення. Після відкликання доступу ми видаляємо збережені токени."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Tento web"
+msgstr "Цей сайт"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Vaše práva"
+msgstr "Ваші права"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Máte právo požádat o přístup ke svým údajům, o jejich opravu nebo výmaz, o omezení zpracování a o přenesení údajů, a máte právo vznést námitku."
+msgstr "Ви маєте право вимагати доступу до своїх даних, їх виправлення чи видалення, обмеження обробки та перенесення даних, а також право заперечити проти обробки."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Stačí nám napsat na ${ email }, zavolat na ${ phone } nebo přijít osobně. Odpovíme do jednoho měsíce."
+msgstr "Достатньо написати нам на ${ email }, зателефонувати на ${ phone } або прийти особисто. Ми відповімо протягом одного місяця."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Pokud nejste spokojeni, můžete podat stížnost u Úřadu pro ochranu osobních údajů (${ uoou })."
+msgstr "Якщо ви незадоволені, можете подати скаргу до Úřad pro ochranu osobních údajů — чеського органу з захисту персональних даних (${ uoou })."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Zásady ochrany osobních údajů | Krejčovství Švadlenka"
+msgstr "Політика захисту персональних даних | Ательє Švadlenka"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Jak Krejčovství Švadlenka zpracovává osobní údaje klientů a údaje od Google, a jak můžete uplatnit svá práva."
+msgstr "Як ательє Švadlenka обробляє персональні дані клієнтів і дані від Google та як ви можете скористатися своїми правами."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "ochrana osobních údajů, GDPR, krejčovství Švadlenka"
+msgstr "захист персональних даних, GDPR, ательє Švadlenka"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+#, javascript-format
+msgid "Tyto zásady platí od ${ effectiveDate }"
+msgstr "Ця політика діє з ${ effectiveDate }"
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Správcem osobních údajů je Larysa Mostovenko, IČO 22654321, se sídlem Dářská 665/20, 198 00 Praha 9. Pod názvem Krejčovství Švadlenka provozuje provozovnu na adrese Jaromírova 726/15, 128 00 Praha 2."
+msgstr "Контролером персональних даних є Larysa Mostovenko, IČO 22654321, зареєстрована адреса: Dářská 665/20, 198 00 Praha 9. Під назвою Krejčovství Švadlenka вона веде ательє за адресою Jaromírova 726/15, 128 00 Praha 2."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Údaje používáme jen k vyřízení zakázky: abychom věděli, co máme udělat, a mohli vás kontaktovat. Právním základem je plnění smlouvy (čl. 6 odst. 1 písm. b) GDPR), u účetních a daňových dokladů plnění našich zákonných povinností (písm. c) a po vyřízení zakázky náš oprávněný zájem na vyřízení případné reklamace nebo sporu (písm. f)."
+msgstr "Ми використовуємо ці дані лише для виконання замовлення: щоб знати, що потрібно зробити, і мати змогу з вами зв'язатися. Правовою підставою є виконання договору (ст. 6(1)(b) GDPR), щодо бухгалтерських і податкових документів — виконання наших обов'язків за законом (ст. 6(1)(c)), а після виконання замовлення — наш законний інтерес у розгляді можливої рекламації чи спору (ст. 6(1)(f))."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Jméno a telefonní číslo potřebujeme k přijetí zakázky. Bez nich zakázku nemůžeme přijmout ani vám dát vědět, že je hotová."
+msgstr "Ім'я та номер телефону потрібні нам, щоб прийняти замовлення. Без них ми не можемо прийняти замовлення чи повідомити вам, що воно готове."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "OpenAI, DigitalOcean a Telegram mohou údaje zpracovávat i mimo Evropský hospodářský prostor, zejména v USA. U OpenAI a DigitalOcean se předání řídí jejich smluvními podmínkami pro zpracování údajů se standardními smluvními doložkami schválenými Evropskou komisí, případně rozhodnutím Komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Telegram ukládá zprávy na svých serverech, které mohou být i mimo EU."
+msgstr "OpenAI, DigitalOcean і Telegram можуть обробляти дані й за межами Європейського економічного простору, зокрема у США. Для OpenAI і DigitalOcean передача регулюється їхніми умовами обробки даних зі стандартними договірними положеннями, затвердженими Європейською комісією, або рішенням Комісії про належний рівень захисту (EU-U.S. Data Privacy Framework). Telegram зберігає повідомлення на своїх серверах, які можуть бути й за межами ЄС."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Na tomto webu nemáme formuláře ani uživatelské účty. Přes službu Google Tag Manager používáme Google Analytics, abychom věděli, kolik lidí web navštěvuje a které stránky čtou, a měření konverzí Google Ads, abychom věděli, zda lidé, kteří k nám přišli z reklamy na Googlu, klikli na náš telefon nebo na mapu. Na stránkách je také vložená mapa Google Maps."
+msgstr "На цьому сайті немає форм чи облікових записів користувачів. Через сервіс Google Tag Manager ми використовуємо Google Analytics, щоб знати, скільки людей відвідує сайт і які сторінки вони читають, а також вимірювання конверсій Google Ads, щоб знати, чи люди, які прийшли до нас з реклами в Google, натиснули на наш телефон або карту. На сторінках також вбудована карта Google Maps."
+
+#: src/pages/ochrana-osobnich-udaju.mjs
+msgid "Tyto služby ukládají do vašeho prohlížeče cookies a předávají společnosti Google údaje jako IP adresu, typ zařízení a prohlížeče a navštívené stránky. Poskytovatelem je Google Ireland Limited; údaje mohou být předány i do USA na základě rozhodnutí Evropské komise o odpovídající ochraně (EU-U.S. Data Privacy Framework). Cookies můžete kdykoli smazat nebo zablokovat v nastavení svého prohlížeče."
+msgstr "Ці сервіси зберігають cookies у вашому браузері й передають компанії Google такі дані, як IP-адреса, тип пристрою та браузера і відвідані сторінки. Постачальником є Google Ireland Limited; дані можуть передаватися й до США на підставі рішення Європейської комісії про належний рівень захисту (EU-U.S. Data Privacy Framework). Cookies можна будь-коли видалити або заблокувати в налаштуваннях браузера."
