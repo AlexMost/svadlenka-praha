@@ -1042,5 +1042,5 @@ msgid "Přístup lze kdykoli odvolat v nastavení účtu Google na adrese ${ goo
 msgstr "Доступ можно в любой момент отозвать в настройках аккаунта Google по адресу ${ googlePermissions }."
 
 #: src/pages/ochrana-osobnich-udaju.mjs
-msgid "Telefonní číslo potřebujeme k přijetí zakázky, abychom vás mohli kontaktovat. Pokud nechcete, abychom vaše údaje ukládali do našeho systému, řekněte nám to při zadání zakázky a nebudeme je tam zapisovat."
-msgstr "Номер телефона нужен нам, чтобы принять заказ и иметь возможность с вами связаться. Если вы не хотите, чтобы мы хранили ваши данные в нашей системе, скажите нам об этом при оформлении заказа, и мы не будем их туда вносить."
+msgid "Telefonní číslo potřebujeme k přijetí zakázky, abychom vás mohli kontaktovat."
+msgstr "Номер телефона нужен нам, чтобы принять заказ и иметь возможность с вами связаться."
