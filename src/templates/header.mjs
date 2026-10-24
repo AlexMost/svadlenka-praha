@@ -26,7 +26,7 @@ export function header(currentUrl) {
             </li>
         </ul>
         <div class="hamburger-menu">
-            <a class="telephone-btn" href="tel:+420775240309" onClick="conversionFn()"><img src="/img/icons/telephone.svg" alt="telephone"></a>
+            <a class="telephone-btn" href="tel:+420775240309"><img src="/img/icons/telephone.svg" alt="telephone"></a>
             <button class="lang-btn">
                 <img class="icon" src="/img/icons/lang.svg" alt="lang menu" />
                 ${getCurrentLocale()}
