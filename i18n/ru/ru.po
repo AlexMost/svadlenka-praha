@@ -10,12 +10,10 @@ msgstr ""
 msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2"
 msgstr "Ателье Švadlenka – ремонт и подгонка одежды в Праге 2"
 
-#: src/pages/index.mjs
 #: src/templates/baseHTML.mjs
 msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15."
 msgstr "Švadlenka — это ателье в Праге 2, предлагающее качественный ремонт и перешив одежды — джинсы, пальто, подкладки, рюкзаки и шторы. Мы находимся по адресу Яромирова 726/15."
 
-#: src/pages/index.mjs
 #: src/templates/baseHTML.mjs
 msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle"
 msgstr "ателье, ремонт одежды, подгонка одежды, замена молнии, подкладка, шторы, Прага 2, Нусле"
@@ -583,6 +581,7 @@ msgstr "Кожаная одежда 🧥"
 msgid "Oprava batohů a kabelek 🎒"
 msgstr "Ремонт рюкзаков и сумок 🎒"
 
+#: src/pages/index.mjs
 #: src/pages/sity-na-miru.mjs
 msgid "Šití sukní a šatů na zakázku"
 msgstr "Индивидуальный пошив юбок и платьев"
@@ -770,10 +769,6 @@ msgstr "100 Kč"
 #: src/templates/openingHours.mjs
 msgid "Běžná otevírací doba"
 msgstr "Обычный график"
-
-#: src/pages/saty.mjs
-msgid "úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, krejčovství Praha 2"
-msgstr "подгонка платья, ремонт платья, укорочение платья, ушивка платья, швея Прага, коррекция бретелек, ремонт молний, коррекция рукавов, ателье Прага 2"
 
 #: src/templates/orderTerms.mjs
 msgid "Standardní termín"
@@ -1027,3 +1022,19 @@ msgstr "Временно до ${ until }"
 #: src/templates/openingHours.mjs
 msgid "Zavřeno"
 msgstr "Закрыто"
+
+#: src/pages/index.mjs
+msgid "Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy"
+msgstr "Предлагаем создание оригинальных моделей — от классики до современных фасонов"
+
+#: src/pages/index.mjs
+msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Šití sukní a šatů na zakázku. Najdete nás na Jaromírově 726/15."
+msgstr "Švadlenka — это ателье в Праге 2, предлагающее качественный ремонт и перешив одежды — джинсы, пальто, подкладки, рюкзаки и шторы. Индивидуальный пошив юбок и платьев. Мы находимся по адресу Яромирова 726/15."
+
+#: src/pages/index.mjs
+msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, šití šatů na zakázku, šití sukní na míru, Praha 2, Nusle"
+msgstr "ателье, ремонт одежды, подгонка одежды, замена молнии, подкладка, шторы, пошив платьев на заказ, пошив юбок на заказ, Прага 2, Нусле"
+
+#: src/pages/saty.mjs
+msgid "úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, šaty na míru, krejčovství Praha 2"
+msgstr "подгонка платья, ремонт платья, укорочение платья, ушивка платья, швея Прага, коррекция бретелек, ремонт молний, коррекция рукавов, индивидуальные платья, ателье Прага 2"

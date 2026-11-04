@@ -10,12 +10,10 @@ msgstr ""
 msgid "Krejčovství Švadlenka – Oprava a úprava oděvů Praha 2"
 msgstr "Švadlenka Tailor Shop – Clothing Repairs and Alterations in Prague 2"
 
-#: src/pages/index.mjs
 #: src/templates/baseHTML.mjs
 msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Najdete nás na Jaromírově 726/15."
 msgstr "Švadlenka is a tailoring shop in Prague 2 offering quality clothing repairs and alterations – jeans, coats, linings, backpacks and curtains. Find us at Jaromírova 726/15."
 
-#: src/pages/index.mjs
 #: src/templates/baseHTML.mjs
 msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, Praha 2, Nusle"
 msgstr "tailor shop, clothing repair, alterations, zipper replacement, lining, curtains, Prague 2, Nusle"
@@ -583,6 +581,7 @@ msgstr "Leather garments 🧥"
 msgid "Oprava batohů a kabelek 🎒"
 msgstr "Backpack and handbag repairs 🎒"
 
+#: src/pages/index.mjs
 #: src/pages/sity-na-miru.mjs
 msgid "Šití sukní a šatů na zakázku"
 msgstr "Custom sewing of skirts and dresses"
@@ -770,10 +769,6 @@ msgstr "100 Kč"
 #: src/templates/openingHours.mjs
 msgid "Běžná otevírací doba"
 msgstr "Regular opening hours"
-
-#: src/pages/saty.mjs
-msgid "úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, krejčovství Praha 2"
-msgstr "dress alteration, dress repair, dress shortening, dress taking in, seamstress Prague, strap adjustment, zipper repair, sleeve alteration, tailoring Prague 2"
 
 #: src/templates/orderTerms.mjs
 msgid "Standardní termín"
@@ -1027,3 +1022,19 @@ msgstr "Temporarily until ${ until }"
 #: src/templates/openingHours.mjs
 msgid "Zavřeno"
 msgstr "Closed"
+
+#: src/pages/index.mjs
+msgid "Nabízíme tvorbu originálních modelů – od klasiky až po moderní střihy"
+msgstr "We offer creation of original models – from classic to modern cuts"
+
+#: src/pages/index.mjs
+msgid "Švadlenka je krejčovství na Praze 2, které nabízí kvalitní opravy a úpravy oblečení – džíny, kabáty, podšívky, batohy i záclony. Šití sukní a šatů na zakázku. Najdete nás na Jaromírově 726/15."
+msgstr "Švadlenka is a tailoring shop in Prague 2 offering quality clothing repairs and alterations – jeans, coats, linings, backpacks and curtains. Custom sewing of skirts and dresses. Find us at Jaromírova 726/15."
+
+#: src/pages/index.mjs
+msgid "krejčovství, oprava oblečení, úprava oděvů, výměna zipu, podšívka, záclony, šití šatů na zakázku, šití sukní na míru, Praha 2, Nusle"
+msgstr "tailor shop, clothing repair, alterations, zipper replacement, lining, curtains, custom dress sewing, made‑to‑measure skirt sewing, Prague 2, Nusle"
+
+#: src/pages/saty.mjs
+msgid "úprava šatů, oprava šatů, zkrácení šatů, zúžení šatů, švadlena Praha, úprava ramínek, oprava zipů, úprava rukávů, šaty na míru, krejčovství Praha 2"
+msgstr "dress alteration, dress repair, dress shortening, dress taking in, seamstress Prague, strap adjustment, zipper repair, sleeve alteration, custom dresses, tailoring Prague 2"
