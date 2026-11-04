@@ -48,7 +48,7 @@ async function postProcessHTML(html) {
 
 // Pages that exist in src/pages but are temporarily not published.
 // Remove a name from this list to bring the page back.
-const DISABLED_PAGES = ["sity-na-miru"];
+const DISABLED_PAGES = [];
 
 async function discoverPages() {
   const pagesDir = path.resolve("./src/pages");
